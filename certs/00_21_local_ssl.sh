@@ -55,8 +55,10 @@ mkdir -p "$(dirname $LOG_DEPLOY)"
 echo "🔐 Activando entorno virtual..." | tee -a $LOG_DEPLOY
 source "$VENV_PATH/bin/activate"
 
-PROJECT_DIR="$BASE_DIR"
+PROJECT_DIR="$AP_H2_DIR"
 cd "$PROJECT_DIR"
+
+python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput
 
 CERT_CRT="$PROJECT_DIR/schemas/certs/desarrollo.crt"
 CERT_KEY="$PROJECT_DIR/schemas/certs/desarrollo.key"
