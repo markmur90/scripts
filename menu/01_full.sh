@@ -427,7 +427,7 @@ if [[ "${DEBUG_MODE:-false}" == false ]]; then
     echo ""
     echo -e "\033[1;36m============================= VARIABLES ACTUALES =============================\033[0m"
     printf "%-20s =\t%s\n" "INTERFAZ"            "$INTERFAZ"
-    printf "%-20s =\t%s\n" "SCRIPTS_DIR"         "/home/markmur88/scripts/
+    printf "%-20s =\t%s\n" "SCRIPTS_DIR"         "/home/markmur88/scripts/"
     printf "%-20s =\t%s\n" "PRIVATE_KEY_PATH"    "$AP_H2_DIR/schemas/keys/private_key.pem"
     printf "%-20s =\t%s\n" "SERVERS_DIR"         "$AP_H2_DIR/servers"
     printf "%-20s =\t%s\n" "CACHE_DIR"           "$AP_H2_DIR/tmp"
