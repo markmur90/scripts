@@ -138,7 +138,7 @@ mkdir -p "$LOG_DIR"
 chown -R markmur88 "$LOG_DIR"
 chmod 755 "$LOG_DIR"
 echo ""
-sleep 5
+sleep 20
 
 # ─── Iniciar supervisord y esperar socket ────────────────────────────────────
 echo "🔄 Iniciando supervisord…"
