@@ -25,6 +25,7 @@ sudo ufw allow 9100/tcp comment "Sup Sim"
 
 sudo ufw allow 8001/tcp comment "Extra"
 sudo ufw allow 8080/tcp comment "Extra"
+sudo ufw allow 8443/tcp comment "Extra"
 sudo ufw allow 9001/tcp comment "Extra"
 sudo ufw allow 9002/tcp comment "Extra"
 sudo ufw allow 8001/tcp comment "Extra"

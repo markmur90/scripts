@@ -60,8 +60,8 @@ cd "$PROJECT_DIR"
 
 python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput
 
-CERT_CRT="$SCRIPTS/schemas/certs/desarrollo.crt"
-CERT_KEY="$SCRIPTS/schemas/certs/desarrollo.key"
+CERT_CRT="$SCRIPTS_DIR/schemas/certs/desarrollo.crt"
+CERT_KEY="$SCRIPTS_DIR/schemas/certs/desarrollo.key"
 
 if [[ ! -f "$CERT_CRT" || ! -f "$CERT_KEY" ]]; then
     echo "⚠️ Certificados no encontrados. Generando nuevos..." | tee -a $LOG_DEPLOY
