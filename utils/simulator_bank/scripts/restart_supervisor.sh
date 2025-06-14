@@ -7,7 +7,7 @@ echo "🔁 Parando todas las instancias de supervisord..."
 # Matar todos los supervisord activos
 pkill -f "supervisord -c .*supervisor_simulador.conf"
 
-# bash /home/markmur88/Simulador/scripts/ports_stop.sh
+# bash /home/markmur88/scripts/ports_stop.sh
 
 
 # Limpiar sockets y pids viejos

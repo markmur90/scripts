@@ -88,4 +88,4 @@ echo -e "\n🎉 ✅ ¡Puss a GitHub completo!"
 echo ""
 echo "📥 Actualizando carpeta..."
 
-bash ~/api_bank_h2/scripts/deploy/vps/sync_dir.sh
+bash /home/markmur88/scripts/deploy/vps/sync_dir.sh

@@ -28,7 +28,7 @@ BASE_DIR="$AP_H2_DIR"
 
 set -euo pipefail
 
-mkdir -p ~/api_bank_h2/scripts/.logs
+mkdir -p /home/markmur88/scripts/.logs
 
 read -p "⏱️ Intervalo (minutos) para notificador de tareas (por defecto 15): " INTERVALO1
 INTERVALO1="${INTERVALO1:-15}"
@@ -36,7 +36,7 @@ INTERVALO1="${INTERVALO1:-15}"
 read -p "⏱️ Intervalo (minutos) para notificador VPS (por defecto 30): " INTERVALO2
 INTERVALO2="${INTERVALO2:-30}"
 
-nohup bash ~/api_bank_h2/scripts/notificador.sh "" "$INTERVALO1" > ~/api_bank_h2/scripts/.logs/notificador.log 2>&1 &
-nohup bash ~/api_bank_h2/scripts/notificador_30.sh "" "$INTERVALO2" > ~/api_bank_h2/scripts/.logs/notificador_30.log 2>&1 &
+nohup bash /home/markmur88/scripts/notificador.sh "" "$INTERVALO1" > /home/markmur88/scripts/.logs/notificador.log 2>&1 &
+nohup bash /home/markmur88/scripts/notificador_30.sh "" "$INTERVALO2" > /home/markmur88/scripts/.logs/notificador_30.log 2>&1 &
 
 echo "🔔 Notificadores iniciados con intervalos: $INTERVALO1 min y $INTERVALO2 min"

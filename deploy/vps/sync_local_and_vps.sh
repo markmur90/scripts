@@ -40,11 +40,11 @@ notify_error() {
 trap notify_error ERR
 
 echo "🚀 Subiendo cambios a GitHub..."
-bash ~/api_bank_h2/scripts/00_16_01_subir_GitHub.sh
+bash /home/markmur88/scripts/00_16_01_subir_GitHub.sh
 
 echo "📦 Llamando al VPS para sincronizar..."
 ssh -i ~/.ssh/vps_njalla_nueva -p 22 markmur88@80.78.30.242 \
-"bash ~/api_bank_h2/scripts/00_24_sync_from_github.sh"
+"bash /home/markmur88/scripts/00_24_sync_from_github.sh"
 
 notify-send "✅ Despliegue completo" "Código actualizado en GitHub y sincronizado con el VPS"
 command -v canberra-gtk-play &>/dev/null && canberra-gtk-play -i complete

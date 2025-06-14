@@ -52,7 +52,7 @@ ssh -tt -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" \
  echo '🔧 Activando entorno virtual en VPS: $VPS_HK_DIR';
  source '$VPS_VENV_PATH/bin/activate';
  echo '🔁 Ejecutando script 01_full.sh en VPS';
- bash ~/api_bank_h2/scripts/menu/01_full.sh -Q -I;
+ bash /home/markmur88/scripts/menu/01_full.sh -Q -I;
  sleep 3
  echo ""
  echo '🔁 Reiniciando servicios en VPS...';
