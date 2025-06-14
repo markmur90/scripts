@@ -272,3 +272,4 @@
 | 2025-06-14 03:21:09 | deploy simulador |
 | 2025-06-14 03:54:53 | arreglo por revisión |
 | 2025-06-14 04:31:24 | deploy |
+| 2025-06-14 07:19:47 | deploy sim h2 hk scr |

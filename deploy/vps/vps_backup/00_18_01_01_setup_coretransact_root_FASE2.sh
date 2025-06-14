@@ -169,7 +169,7 @@ sudo apt-get update && sudo apt-get install -y tor
 
 # Copiar configuración
 echo "📁 Copiando configuración de torrc..."
-sudo cp /home/markmur88/api_bank_h2/scripts/tor/torrc /etc/tor/torrc
+sudo cp /home/markmur88/scripts/tor/torrc /etc/tor/torrc
 
 # Reiniciar servicio
 echo "🔁 Habilitando y reiniciando Tor..."

@@ -13,7 +13,7 @@ VPS_BASE_DIR="/home/markmur88/api_bank_h2"
 VPS_VENV_PATH="/home/markmur88/envAPP"
 VPS_CORETRANS_ROOT="/home/markmur88/coretransapi"
 
-EXCLUDES="/home/markmur88/api_bank_h2/scripts/deploy/vps/excludes.txt"
+EXCLUDES="/home/markmur88/scripts/deploy/vps/excludes.txt"
 LOG_DIR="$SCRIPTS_DIR/logs/sync"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/$(date +%Y%m%d_%H%M%S)_sync_clean.log"
@@ -152,7 +152,7 @@ ssh -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" << EOF | tee -a "$LOG_FILE"
   source "/home/markmur88/envAPP/bin/activate"
 
   # echo "🔁 Ejecutando script 01_full.sh en VPS"
-  # bash /home/markmur88/api_bank_h2/scripts/menu/01_full.sh -Q -I -l
+  # bash /home/markmur88/scripts/menu/01_full.sh -Q -I -l
 
   echo "🔁 Reiniciando servicios en VPS..."
 

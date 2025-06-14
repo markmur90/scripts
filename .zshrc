@@ -263,7 +263,7 @@ fi
 
 ssh-add ~/.ssh/id_ed25519 && ssh-add ~/.ssh/vps_njalla_nueva
 
-source /home/markmur88/api_bank_h2/scripts/menu/aliases_deploy.sh
+source /home/markmur88/scripts/menu/aliases_deploy.sh
 
 
 source /home/markmur88/notas/alias_notas.sh

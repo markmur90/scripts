@@ -50,6 +50,9 @@ mkdir -p "$(dirname $LOG_SISTEMA)"
 
 
 echo -e "\033[7;30m🚀 Generando PEM...\033[0m" | tee -a $LOG_SISTEMA
+cd /home/markmur88/api_bank_h2
+source /home/markmur88/envAPP/bin/activate
+
 python3 manage.py genkey
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_SISTEMA
 echo "" | tee -a $LOG_SISTEMA

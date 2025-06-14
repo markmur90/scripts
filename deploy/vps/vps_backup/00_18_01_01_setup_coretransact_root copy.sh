@@ -358,7 +358,7 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py collectstatic --noinput
 
-sudo cp /home/markmur88/api_bank_h2/scripts/.zshrc ~
+sudo cp /home/markmur88/scripts/.zshrc ~
 
 
 EOF

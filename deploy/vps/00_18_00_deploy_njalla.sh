@@ -67,15 +67,15 @@ DJANGO_ENV="${1:-local}"
 
 echo -e "\n\033[1;36m🌐 Desplegando api_bank_h2 en VPS Njalla...\033[0m" | tee -a $LOG_DEPLOY
 
-if ! bash "/home/markmur88/api_bank_h2/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh" "$DJANGO_ENV" >> "$LOG_DEPLOY" 2>&1; then
+if ! bash "/home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh" "$DJANGO_ENV" >> "$LOG_DEPLOY" 2>&1; then
     echo -e "\033[1;31m⚠️ Fallo en el primer intento de deploy. Ejecutando instalación de dependencias...\033[0m" | tee -a $LOG_DEPLOY
-    if ! bash "/home/markmur88/api_bank_h2/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh" "$DJANGO_ENV" >> "$LOG_DEPLOY" 2>&1; then
+    if ! bash "/home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh" "$DJANGO_ENV" >> "$LOG_DEPLOY" 2>&1; then
         echo -e "\033[1;31m❌ Fallo final en despliegue remoto. Consulta logs en $LOG_DEPLOY\033[0m" | tee -a $LOG_DEPLOY
         exit 1
     fi
 fi
 
 echo -e "\n\033[1;36m🔍 Instalando la segunda fase...\033[0m" | tee -a $LOG_DEPLOY
-bash "/home/markmur88/api_bank_h2/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh" || echo -e "\033[1;31m⚠️ Error al instalar la segunda fase\033[0m"
+bash "/home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh" || echo -e "\033[1;31m⚠️ Error al instalar la segunda fase\033[0m"
 
 echo -e "\033[1;32m✅ Despliegue remoto al VPS completado.\033[0m" | tee -a $LOG_DEPLOY

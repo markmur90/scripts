@@ -23,4 +23,4 @@ HORAS_TOTAL=$((MINUTOS_TOTAL / 60))
 MSG="⏰ Alerta horaria\n📅 Hoy: $MINUTOS_HOY min ($HORAS_HOY hs)\n🧱 Proyecto: $MINUTOS_TOTAL min ($HORAS_TOTAL hs)"
 
 # Enviar por Telegram
-"/home/markmur88/api_bank_h2/scripts/utils/token/enviar_telegram.sh" "$MSG"
+"/home/markmur88/scripts/utils/token/enviar_telegram.sh" "$MSG"

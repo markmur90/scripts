@@ -147,10 +147,10 @@ unalias d_mig 2>/dev/null
 d_mig() {source /home/markmur88/envAPP/bin/activate && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput && clear}
 
 alias chmodtree='source ~/.zshrc && bash $UTILS_DIR/chmod_all.sh'
-alias fase2='source ~/.zshrc && bash /home/markmur88/api_bank_h2/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh'
+alias fase2='source ~/.zshrc && bash /home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh'
 alias vps_fase2='vps_exec "bash $DP_VP_DIR/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh"'
 alias vps_rest='vps_exec "bash $DP_VP_DIR/00_18_06_restart_coretransapi.sh"'
-alias api_restart_local='bash /home/markmur88/api_bank_h2/scripts/certs/00_21_local_ssl.sh'
+alias api_restart_local='bash /home/markmur88/scripts/certs/00_21_local_ssl.sh'
 
 # === VARIABLES API ===
 unalias d_pgm 2>/dev/null
@@ -196,9 +196,9 @@ alias vps_remote_check='vps_exec "bash $DP_VP_DIR/vps_remote_check.sh"'
 
 # Recarga Gunicorn vía Supervisor + NGINX
 alias vps_reload='vps_exec "sudo supervisorctl restart coretransapi && sudo systemctl reload nginx"'
-alias vps_stack='vps_exec "sudo bash /home/markmur88/api_bank_h2/scripts/utils/restart_stack.sh"'
-alias stack='sudo bash /home/markmur88/api_bank_h2/scripts/utils/restart_stack.sh'
-alias re_onion='sudo bash /home/markmur88/api_bank_h2/scripts/utils/restart_tor_onion.sh'
+alias vps_stack='vps_exec "sudo bash /home/markmur88/scripts/utils/restart_stack.sh"'
+alias stack='sudo bash /home/markmur88/scripts/utils/restart_stack.sh'
+alias re_onion='sudo bash /home/markmur88/scripts/utils/restart_tor_onion.sh'
 # Ver estado general del servicio de app
 alias vps_status='vps_exec "sudo supervisorctl status coretransapi"'
 
@@ -401,10 +401,10 @@ alias hk_dir='cd /home/markmur88/api_bank_heroku && clear && ls'
 alias sm_dir='cd /home/markmur88/Simulador && clear && ls'
 alias sm_bnk='cd /home/markmur88/Simulador/simulador_banco && clear && ls'
 alias bk_dir='cd /home/markmur88/backup && clear && ls'
-alias lc_ufw='sudo bash /home/markmur88/api_bank_h2/scripts/src/00_06_ufw.sh'
-alias pr_ufw='sudo bash /home/markmur88/api_bank_h2/scripts/src/ufw_produccion.sh'
+alias lc_ufw='sudo bash /home/markmur88/scripts/src/00_06_ufw.sh'
+alias pr_ufw='sudo bash /home/markmur88/scripts/src/ufw_produccion.sh'
 alias st_ufw='sudo ufw status verbose && sudo ss -tulno | grep ssh'
-alias tor_ins='sudo bash /home/markmur88/api_bank_h2/scripts/tor/instalar_tor.sh'
+alias tor_ins='sudo bash /home/markmur88/scripts/tor/instalar_tor.sh'
 
 2menu() {
     typeset -A alias_groups

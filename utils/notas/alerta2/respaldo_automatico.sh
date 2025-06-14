@@ -36,4 +36,4 @@ HORAS_TOTAL=$((MINUTOS_TOTAL / 60))
 
 # Telegram
 MSG="✅ Respaldo diario listo y datos eliminados del VPS.\n🗓️ Hoy: $MINUTOS_HOY min ($HORAS_HOY hs)\n📦 Proyecto: $MINUTOS_TOTAL min ($HORAS_TOTAL hs)"
-"/home/markmur88/api_bank_h2/scripts/utils/token/enviar_telegram.sh" "$MSG"
+"/home/markmur88/scripts/utils/token/enviar_telegram.sh" "$MSG"
