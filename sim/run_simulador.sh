@@ -12,7 +12,7 @@ APP_DIR="/home/markmur88/Simulador"
 CONF_PATH="$APP_DIR/config/gunicorn.conf.py"
 DJANGO_WSGI="simulador_banco.wsgi:application"
 
-# bash /home/markmur88/scripts/ports_stop.sh
+# bash /home/markmur88/scripts/sim/ports_stop.sh
 
 # Activar entorno virtual
 source "$VENV_PATH/bin/activate"

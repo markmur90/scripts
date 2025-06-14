@@ -21,7 +21,7 @@ SM_BK_DIR="$UTILS_DIR/simulator_bank"
 
 set -e
 
-bash /home/markmur88/scripts/ports_stop.sh
+bash /home/markmur88/scripts/sim/ports_stop.sh
 
 
 SUPERVISOR_CONF="/home/markmur88/Simulador/config/supervisor_simulador.conf"
