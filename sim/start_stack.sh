@@ -53,15 +53,15 @@ pip install -r "$REQS_PATH"
 echo ""
 sleep 3
 echo ""
-python manage.py makemigrations
+python3 manage.py makemigrations
 echo ""
 sleep 3
 echo ""
-python manage.py migrate
+python3 manage.py migrate
 echo ""
 sleep 3
 echo ""
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 echo ""
 sleep 3
 echo ""

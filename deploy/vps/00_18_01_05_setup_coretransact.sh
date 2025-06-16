@@ -78,9 +78,9 @@ find . -path "*/__pycache__" -type d -exec rm -rf {} +
 find . -name "*.pyc" -delete
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
 find . -path "*/migrations/*.pyc" -delete
-python manage.py makemigrations
-python manage.py migrate
-python manage.py collectstatic --noinput
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py collectstatic --noinput
 
 chown -R markmur88:www-data "/home/markmur88/$REPO_DIR"
 

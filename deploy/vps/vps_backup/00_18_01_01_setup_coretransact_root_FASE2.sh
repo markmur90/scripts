@@ -156,9 +156,9 @@ find . -name "*.pyc" -delete
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
 find . -path "*/migrations/*.pyc" -delete
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py collectstatic --noinput
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py collectstatic --noinput
 
 # bash $DP_DJ_DIR/00_09_cargar_json.sh
 

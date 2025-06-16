@@ -14,7 +14,7 @@ def send_validation_request(token, url):
 
 def main():
     if len(sys.argv) not in (2, 3):
-        print('Uso: python validate_token.py <ruta_json> [<nombre_campo>]')
+        print('Uso: python3 validate_token.py <ruta_json> [<nombre_campo>]')
         sys.exit(1)
     json_path = sys.argv[1]
     field_name = sys.argv[2] if len(sys.argv) == 3 else 'access_token'

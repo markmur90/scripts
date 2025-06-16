@@ -92,7 +92,7 @@ iniciar_entorno() {
     cd "$BASE_DIR"
     source "$VENV_PATH/bin/activate"
     export DATABASE_URL="postgres://markmur88:Ptf8454Jd55@0.0.0.0:5432/mydatabase"
-    python manage.py collectstatic --noinput
+    python3 manage.py collectstatic --noinput
 }
 
 verificar_seguridad() {
@@ -125,7 +125,7 @@ nohup bash "${SCRIPTS_DIR}/configurar_gunicorn.sh" > logs/gunicorn_default.log 2
 }
 
 echo -e "\033[1;34m🌀 Lanzando servicios secundarios...\033[0m" | tee -a $LOG_DEPLOY
-nohup python honeypot.py > "$LOG_DIR/honeypot.log" 2>&1 < /dev/null &
+nohup python3 honeypot.py > "$LOG_DIR/honeypot.log" 2>&1 < /dev/null &
 nohup livereload --host 127.0.0.1 --port 35729 static/ -t templates/ > "$LOG_DIR/livereload.log" 2>&1 < /dev/null &
 
 sleep 1

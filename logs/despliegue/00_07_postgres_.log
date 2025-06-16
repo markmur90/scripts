@@ -2385,3 +2385,67 @@ Abortando.
 📦 Instalando dependencias...
 ⚠️ Borrando base de datos existente: mydatabase
 [7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 20:28:51
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 20:42:17
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 21:05:26
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 21:58:52
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 22:16:54
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 22:21:38
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 22:41:35
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 22:51:20
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m

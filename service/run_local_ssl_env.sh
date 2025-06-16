@@ -49,4 +49,4 @@ if [[ ! -f "$CERT_CRT" || ! -f "$CERT_KEY" ]]; then
 fi
 
 echo "🚀 Ejecutando Django en modo SSL con runsslserver..."
-python manage.py runsslserver --certificate "$CERT_CRT" --key "$CERT_KEY"
+python3 manage.py runsslserver --certificate "$CERT_CRT" --key "$CERT_KEY"

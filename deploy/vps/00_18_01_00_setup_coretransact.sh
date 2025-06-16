@@ -112,7 +112,7 @@ sed -i "/urlpatterns = \\[/a     path('api/gpt4/', include('banco.urls'))," simu
 sed -i "s/ALLOWED_HOSTS = \\[\\]/ALLOWED_HOSTS = ['localhost']/" simulador_banco/settings.py
 
 echo "📂 Aplicando migraciones SQLite..."
-python manage.py migrate
+python3 manage.py migrate
 
 # El servicio será manejado por Supervisor
 

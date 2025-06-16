@@ -51,16 +51,16 @@ echo "🛠️  Ejecutando migraciones y colectando estáticos…"
 cd "$SIM_DIR"
 source /home/markmur88/envAPP/bin/activate
 pip3 install -r /home/markmur88/api_bank_h2/requirements.txt
-python manage.py makemigrations
+python3 manage.py makemigrations
 echo ""
 sleep 2
 echo ""
 
-python manage.py migrate
+python3 manage.py migrate
 echo ""
 sleep 2
 echo ""
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 echo ""
 sleep 2
 echo ""

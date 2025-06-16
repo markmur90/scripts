@@ -68,13 +68,13 @@ sleep 2
 
 echo ""
 echo "⚙️ Ejecutando migraciones..."
-python manage.py migrate
+python3 manage.py migrate
 reporte_estado $? "Migraciones"
 sleep 2
 
 echo ""
 echo "🎨 Recolectando archivos estáticos..."
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 reporte_estado $? "Recolección de estáticos"
 sleep 2
 

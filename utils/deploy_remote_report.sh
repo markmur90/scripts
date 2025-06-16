@@ -75,12 +75,12 @@ reporte_estado $? "restore_and_upload_force.sh"
 
 echo ""
 echo "⚙️ Ejecutando migraciones..."
-python manage.py migrate
+python3 manage.py migrate
 reporte_estado $? "Migraciones"
 
 echo ""
 echo "🎨 Recolectando archivos estáticos..."
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 reporte_estado $? "Recolección de estáticos"
 
 echo ""

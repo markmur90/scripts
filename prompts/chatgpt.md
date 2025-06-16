@@ -676,7 +676,7 @@ Perfecto, para validar el toggle y las vistas protegidas, seguí estos pasos:
 ### ✅ 1. **Iniciar servidor Django**
 Asegurate de tener el servidor corriendo:
 ```bash
-python manage.py runserver 0.0.0.0:8000
+python3 manage.py runserver 0.0.0.0:8000
 ```
 
 ---
@@ -800,7 +800,7 @@ Supongamos que tenés una API bancaria **mock** corriendo así:
 
 ```bash
 # En el VPS, ejecutás:
-python fake_bank_api.py --host 127.0.0.1 --port 9000
+python3 fake_bank_api.py --host 127.0.0.1 --port 9000
 ```
 
 Y desde Django hacés:
@@ -966,7 +966,7 @@ Para que `https://80.78.30.188:9000` funcione sin errores de seguridad:
 
 | Archivo            | Ruta en el VPS                          |
 |--------------------|------------------------------------------|
-| `mock_banco.py`    | En cualquier carpeta accesible por Python |
+| `mock_banco.py`    | En cualquier carpeta accesible por python3 |
 | Tu proyecto Django | Ya está en `/home/usuario/tu_proyecto` (ejemplo) |
 
 ---

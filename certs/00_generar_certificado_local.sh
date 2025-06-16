@@ -67,6 +67,6 @@ echo -e "   📄 Clave privada: \033[1;33m$CERT_KEY\033[0m"
 echo -e "   📄 Certificado  : \033[1;33m$CERT_CRT\033[0m"
 
 echo -e "\n\033[1;36m🌐 Para usarlo en django-sslserver:\033[0m"
-echo -e "   python manage.py runsslserver --certificate $CERT_CRT --key $CERT_KEY"
+echo -e "   python3 manage.py runsslserver --certificate $CERT_CRT --key $CERT_KEY"
 
 echo -e "\n\033[1;34m🧠 Consejo:\033[0m Abre https://127.0.0.1:8000 en tu navegador y acepta el riesgo para continuar.\n"

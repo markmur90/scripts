@@ -758,7 +758,7 @@ Revisa y refactoriza completamente el proyecto Django/Spring Boot/Simulador Banc
          
 
     Gráficos de Estadísticas:  
-        Genera gráficos dinámicos con Python (matplotlib, pandas).
+        Genera gráficos dinámicos con python3 (matplotlib, pandas).
         Muestra gráficos en HTML con imágenes Base64.
         Opcional: exportar a PDF o CSV.
          
@@ -783,7 +783,7 @@ Revisa y refactoriza completamente el proyecto Django/Spring Boot/Simulador Banc
 
     Pruebas Automatizadas:  
         Ejecuta flujo completo: login → refresh token → transferencia → OTP → GPT-4 → Telegram → Log.
-        Usa script bash o Python para probar manualmente.
+        Usa script bash o python3 para probar manualmente.
          
 
     Dockerización:  
@@ -841,7 +841,7 @@ Requisitos Generales del Proyecto
 
     Diseña un panel de control funcional con formularios mejorados (usando Django forms o django-crispy-forms).
     Muestra gráficos interactivos de transferencias diarias, montos por usuario y distribuciones estadísticas.
-    Integra gráficos dinámicos usando Python (matplotlib, pandas) y muestra imágenes Base64 en HTML.
+    Integra gráficos dinámicos usando python3 (matplotlib, pandas) y muestra imágenes Base64 en HTML.
     Opcional: permite exportar datos a PDF o CSV.
      
 
@@ -877,7 +877,7 @@ Requisitos Generales del Proyecto
 9. Pruebas Automatizadas 
 
     Ejecuta flujo completo: login → refresh token → transferencia → OTP → GPT-4 → Telegram → Log.
-    Incluye script bash o Python para probar manualmente.
+    Incluye script bash o python3 para probar manualmente.
      
 
 10. Dockerización 
@@ -956,7 +956,7 @@ Incluir código HTML/CSS/JS con diseño moderno, responsive, limpio y profesiona
 
 🧪 REQUISITOS ADICIONALES: 
 
-    Usa el mismo lenguaje/framework que se esté utilizando en el proyecto (ejemplo: Python + Django).
+    Usa el mismo lenguaje/framework que se esté utilizando en el proyecto (ejemplo: python3 + Django).
     Sigue convenciones de nombres y estructura del proyecto actual.
     Si hay un archivo base (base.html, _layout.twig, etc.), extiende desde él.
     Incluye validaciones básicas en formularios.

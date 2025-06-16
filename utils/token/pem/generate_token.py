@@ -44,7 +44,7 @@ def generar_token(user_id):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print('Uso: python generate_token.py <USER_ID>')
+        print('Uso: python3 generate_token.py <USER_ID>')
         sys.exit(1)
     user_id = sys.argv[1]
     generar_claves()

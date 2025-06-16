@@ -52,7 +52,7 @@ mkdir -p "$(dirname $LOG_DEPLOY)"
 cd "$BASE_DIR"
 source "$VENV_PATH/bin/activate"
 pip install -r requirements.txt
-echo "🧹 Eliminando cachés de Python y migraciones anteriores..." | tee -a $LOG_DEPLOY
+echo "🧹 Eliminando cachés de python3 y migraciones anteriores..." | tee -a $LOG_DEPLOY
 find . -path "*/__pycache__" -type d -exec rm -rf {} +
 find . -name "*.pyc" -delete
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
@@ -60,16 +60,16 @@ find . -path "*/migrations/*.pyc" -delete
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_DEPLOY
 echo "" | tee -a $LOG_DEPLOY
 echo "🔄 Generando migraciones de Django..." | tee -a $LOG_DEPLOY
-python manage.py makemigrations
+python3 manage.py makemigrations
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_DEPLOY
 echo "" | tee -a $LOG_DEPLOY
 echo "⏳ Aplicando migraciones de la base de datos..." | tee -a $LOG_DEPLOY
-python manage.py migrate
+python3 manage.py migrate
 echo "⏳ Migraciones a la base de datos completa." | tee -a $LOG_DEPLOY
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_DEPLOY
 echo "" | tee -a $LOG_DEPLOY
 echo "⏳ Aplicando Collectstatic..." | tee -a $LOG_DEPLOY
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 echo "⏳ Migraciones a la base de datos completa." | tee -a $LOG_DEPLOY
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_DEPLOY
 echo "" | tee -a $LOG_DEPLOY

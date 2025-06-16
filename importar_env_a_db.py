@@ -35,7 +35,7 @@ def importar_env(env_file_path, entorno='production'):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print("Uso: python importar_env_a_db.py ruta/.env [entorno]")
+        print("Uso: python3 importar_env_a_db.py ruta/.env [entorno]")
     else:
         archivo = sys.argv[1]
         entorno = sys.argv[2] if len(sys.argv) > 2 else 'production'

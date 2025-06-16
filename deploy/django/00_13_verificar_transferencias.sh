@@ -50,6 +50,6 @@ mkdir -p "$(dirname $LOG_DEPLOY)"
 
 
 echo -e "\033[7;30m🚀 Verificando logs transferencias...\033[0m" | tee -a $LOG_DEPLOY
-python manage.py verificar_transferencias --fix -c -j
+python3 manage.py verificar_transferencias --fix -c -j
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_DEPLOY
 echo "" | tee -a $LOG_DEPLOY

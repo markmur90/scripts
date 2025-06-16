@@ -14,12 +14,12 @@ Para realizar este análisis, necesitamos entender cómo se comunican ambos proy
 
 - **Repositorio API:**  
   - URL: `https://github.com/tu-usuario/api-bancaria.git`  
-  - Lenguaje principal: Node.js / Python / Java / etc.  
+  - Lenguaje principal: Node.js / python3 / Java / etc.  
   - Funcionalidad: Proporciona endpoints REST/GraphQL para operaciones bancarias como login, transferencias, consulta de saldos, etc.
 
 - **Repositorio Simulador Bancario:**  
   - URL: `https://github.com/tu-usuario/simulador-bancario.git`  
-  - Lenguaje principal: React / Angular / Flutter / Python / etc.  
+  - Lenguaje principal: React / Angular / Flutter / python3 / etc.  
   - Funcionalidad: Interfaz de usuario que consume la API para simular operaciones bancarias.
 
 ---
@@ -145,7 +145,7 @@ Perfecto, gracias por proporcionar los repositorios reales. Vamos a hacer un **a
 
 ### ✅ Repositorio Simulador:
 - **URL:** [https://github.com/markmur90/Simulador.git](https://github.com/markmur90/Simulador.git)
-- **Tecnología:** Python (Flask + Tkinter)
+- **Tecnología:** python3 (Flask + Tkinter)
 - **Funcionalidad Principal:** Interfaz gráfica para simular transacciones bancarias.
 - **Destacados:**
   - GUI sencilla con Tkinter
@@ -512,7 +512,7 @@ def realizar_transferencia(origen_id, destino_id, monto):
 
 3. Sube el simulador al VPS y ejecútalo:
    ```bash
-   python app.py
+   python3 app.py
    ```
 
 4. ¡Prueba las transferencias entre ambos ambientes!
@@ -1111,7 +1111,7 @@ Este script está pensado para **Linux o macOS**, pero también te daré una ver
   - Java
   - Maven
   - [ngrok](https://ngrok.com/download)
-  - Python 3 (para generar OTP)
+  - python3 3 (para generar OTP)
 
 ```bash
 #!/bin/bash
@@ -1892,7 +1892,7 @@ TELEGRAM_CHAT_ID = "tu-chat-id"
 ### 4. Iniciar GUI Tkinter
 
 ```bash
-python app.py
+python3 app.py
 ```
 
 ---
@@ -2048,11 +2048,11 @@ TRANSFER=$(curl -s -X POST "$API_URL/transferencias" \
     -d '{"origen":1,"destino":2,"monto":500}')
 
 echo "🧠 Analizando transferencia con GPT-4..."
-ANALISIS=$(python gpt_analyzer.py --monto 500 --destino 2 --usuario test)
+ANALISIS=$(python3 gpt_analyzer.py --monto 500 --destino 2 --usuario test)
 echo "   Análisis: $ANALISIS"
 
 echo "📨 Enviando notificación por Telegram..."
-python telegram_notifier.py --mensaje "Transferencia de \$500 realizada." --foto qr_code.png
+python3 telegram_notifier.py --mensaje "Transferencia de \$500 realizada." --foto qr_code.png
 
 echo "📄 Registrando en logs..."
 echo "[INFO] Usuario: test | Acción: Transferencia de \$500 a cuenta 2" >> logs/banco_logs.log
@@ -2341,7 +2341,7 @@ ngrok http 8080 &
 sleep 3
 
 echo "🖥️ Iniciando Dashboard..."
-cd ../dashboard && python app.py &
+cd ../dashboard && python3 app.py &
 ```
 
 Ejecútalo:

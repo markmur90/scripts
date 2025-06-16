@@ -29,7 +29,7 @@ case "$1" in
     sleep 3
     echo ""
     echo "=== Iniciando Django en puerto $DJ_PORT ==="
-    cd "/home/markmur88/api_bank_h2" && pip3 install -r requirements.txt && python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic --noinput && python manage.py runserver 0.0.0.0:$DJ_PORT >> "$LOG/service.log" 2>&1 &
+    cd "/home/markmur88/api_bank_h2" && pip3 install -r requirements.txt && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput && python3 manage.py runserver 0.0.0.0:$DJ_PORT >> "$LOG/service.log" 2>&1 &
 
     sleep 3
     echo ""

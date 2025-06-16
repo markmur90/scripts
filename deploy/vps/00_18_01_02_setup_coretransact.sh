@@ -123,8 +123,8 @@ EOSQL
 echo "⚙ Migraciones y archivos estáticos..."
 cd /home/$APP_USER/api_bank_h2
 source /home/$APP_USER/envAPP/bin/activate
-python manage.py migrate
-python manage.py collectstatic --noinput
+python3 manage.py migrate
+python3 manage.py collectstatic --noinput
 chown -R $APP_USER:www-data /home/$APP_USER/api_bank_h2
 
 echo "🧭 Configurando Supervisor para Gunicorn..."

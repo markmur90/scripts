@@ -17,7 +17,7 @@ def validate_token(token, public_key, audience, issuer):
 
 def main():
     if len(sys.argv) != 4:
-        print('Uso: python validate_token.py <ruta_json> <ruta_pubkey> <client_id>')
+        print('Uso: python3 validate_token.py <ruta_json> <ruta_pubkey> <client_id>')
         sys.exit(1)
     json_path, pub_key_path, client_id = sys.argv[1], sys.argv[2], sys.argv[3]
     token = load_token(json_path)
