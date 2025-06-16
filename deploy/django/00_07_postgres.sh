@@ -40,6 +40,9 @@ if ! command -v psql &>/dev/null; then
     exec "$0" "$@"
 fi
 
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+
 # 🧠 Identificar servicio PostgreSQL y asegurarse que esté activo
 OS="$(uname -s)"
 if [[ "$OS" == "Linux" ]]; then

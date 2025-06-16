@@ -2349,3 +2349,31 @@ Abortando.
 📦 Instalando dependencias...
 ⚠️ Borrando base de datos existente: mydatabase
 [7;30m✅ Base de datos y usuario listos.[0m
+
+📅 Fecha de ejecución: 2025-06-16 19:56:21
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+
+❌ Error en línea 81: "sudo -u postgres psql <<-EOF
+DO \$\$
+BEGIN
+    IF NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = '${DB_USER}') THEN
+        CREATE USER ${DB_USER} WITH PASSWORD '${DB_PASS}';
+    END IF;
+END
+\$\$;
+ALTER USER ${DB_USER} WITH SUPERUSER;
+GRANT ALL PRIVILEGES ON SCHEMA public TO ${DB_USER};
+EOF
+"
+Abortando.
+
+📅 Fecha de ejecución: 2025-06-16 19:59:31
+📄 Script: 00_07_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+⚠️ Borrando base de datos existente: mydatabase
+[7;30m✅ Base de datos y usuario listos.[0m

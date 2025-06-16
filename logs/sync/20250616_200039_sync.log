@@ -1,0 +1,473 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/config
+cannot delete non-empty directory: scripts/utils/simulator_bank/config
+cannot delete non-empty directory: scripts/utils/simulator_bank
+cannot delete non-empty directory: scripts/utils/simulator_bank
+cannot delete non-empty directory: scripts/utils/local/config
+cannot delete non-empty directory: scripts/utils/local/config
+cannot delete non-empty directory: scripts/utils/local
+cannot delete non-empty directory: scripts/utils/local
+cannot delete non-empty directory: scripts/utils
+cannot delete non-empty directory: scripts/utils
+cannot delete non-empty directory: scripts
+deleting Prompt_Maestro_Revision_Integral_de_Proyecto_Django.txt
+deleting Prompt_El_Revision_Total_Plus_Ultra.txt
+deleting Prompt_Analisis_integral_de_un_repositorio_de_código.txt
+deleting .env.prod
+./
+.env.production
+.env.production_old
+schemas/transferencias/
+schemas/transferencias/global_errors.log
+schemas/transferencias/30606141-c9a7-4882-86bd-d7c9db77c805/
+schemas/transferencias/30606141-c9a7-4882-86bd-d7c9db77c805/aml_30606141-c9a7-4882-86bd-d7c9db77c805.xml
+schemas/transferencias/30606141-c9a7-4882-86bd-d7c9db77c805/pain001_30606141-c9a7-4882-86bd-d7c9db77c805.xml
+schemas/transferencias/30606141-c9a7-4882-86bd-d7c9db77c805/transferencia_30606141-c9a7-4882-86bd-d7c9db77c805.log
+schemas/transferencias/8bcb4da5-58d4-49ac-a4a5-2252897756f7/
+schemas/transferencias/8bcb4da5-58d4-49ac-a4a5-2252897756f7/aml_8bcb4da5-58d4-49ac-a4a5-2252897756f7.xml
+schemas/transferencias/8bcb4da5-58d4-49ac-a4a5-2252897756f7/pain001_8bcb4da5-58d4-49ac-a4a5-2252897756f7.xml
+schemas/transferencias/8bcb4da5-58d4-49ac-a4a5-2252897756f7/transferencia_8bcb4da5-58d4-49ac-a4a5-2252897756f7.log
+schemas/transferencias/OAUTH_LOGS/oauth_general.log
+
+sent 23.844 bytes  received 1.663 bytes  3.924,15 bytes/sec
+total size is 24.162.837  speedup is 947,30
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: scripts
+deleting schemas/transferencias/SIN_SESION/transferencia_SIN_SESION.log
+deleting schemas/transferencias/SIN_SESION/
+deleting schemas/transferencias/OAUTH_LOGS/oauth_general.log
+deleting schemas/transferencias/OAUTH_LOGS/
+deleting schemas/transferencias/<django.db.models.query_utils.DeferredAttribute object at 0x7fa3796fa350>/transferencia_<django.db.models.query_utils.DeferredAttribute object at 0x7fa3796fa350>.log
+deleting schemas/transferencias/<django.db.models.query_utils.DeferredAttribute object at 0x7fa3796fa350>/
+deleting schemas/transferencias/global_errors.log
+deleting schemas/transferencias/
+deleting schemas/
+deleting api.sock
+deleting Prompt_Maestro_Revision_Integral_de_Proyecto_Django.txt
+deleting Prompt_El_Revision_Total_Plus_Ultra.txt
+deleting Prompt_Analisis_integral_de_un_repositorio_de_código.txt
+deleting .env.prod
+./
+.env.production
+.env.production_old
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt3/migrations/
+api/gpt3/migrations/0001_initial.py
+api/gpt4/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+staticfiles/admin/css/
+staticfiles/admin/css/autocomplete.css
+staticfiles/admin/css/base.css
+staticfiles/admin/css/changelists.css
+staticfiles/admin/css/dark_mode.css
+staticfiles/admin/css/dashboard.css
+staticfiles/admin/css/forms.css
+staticfiles/admin/css/login.css
+staticfiles/admin/css/nav_sidebar.css
+staticfiles/admin/css/responsive.css
+staticfiles/admin/css/responsive_rtl.css
+staticfiles/admin/css/rtl.css
+staticfiles/admin/css/unusable_password_field.css
+staticfiles/admin/css/widgets.css
+staticfiles/admin/css/vendor/select2/
+staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md
+staticfiles/admin/css/vendor/select2/select2.css
+staticfiles/admin/css/vendor/select2/select2.min.css
+staticfiles/admin/img/
+staticfiles/admin/img/LICENSE
+staticfiles/admin/img/README.txt
+staticfiles/admin/img/calendar-icons.svg
+staticfiles/admin/img/icon-addlink.svg
+staticfiles/admin/img/icon-alert.svg
+staticfiles/admin/img/icon-calendar.svg
+staticfiles/admin/img/icon-changelink.svg
+staticfiles/admin/img/icon-clock.svg
+staticfiles/admin/img/icon-deletelink.svg
+staticfiles/admin/img/icon-hidelink.svg
+staticfiles/admin/img/icon-no.svg
+staticfiles/admin/img/icon-unknown-alt.svg
+staticfiles/admin/img/icon-unknown.svg
+staticfiles/admin/img/icon-viewlink.svg
+staticfiles/admin/img/icon-yes.svg
+staticfiles/admin/img/inline-delete.svg
+staticfiles/admin/img/search.svg
+staticfiles/admin/img/selector-icons.svg
+staticfiles/admin/img/sorting-icons.svg
+staticfiles/admin/img/tooltag-add.svg
+staticfiles/admin/img/tooltag-arrowright.svg
+staticfiles/admin/img/gis/
+staticfiles/admin/img/gis/move_vertex_off.svg
+staticfiles/admin/img/gis/move_vertex_on.svg
+staticfiles/admin/js/
+staticfiles/admin/js/SelectBox.js
+staticfiles/admin/js/SelectFilter2.js
+staticfiles/admin/js/actions.js
+staticfiles/admin/js/autocomplete.js
+staticfiles/admin/js/calendar.js
+staticfiles/admin/js/cancel.js
+staticfiles/admin/js/change_form.js
+staticfiles/admin/js/core.js
+staticfiles/admin/js/filters.js
+staticfiles/admin/js/inlines.js
+staticfiles/admin/js/jquery.init.js
+staticfiles/admin/js/nav_sidebar.js
+staticfiles/admin/js/popup_response.js
+staticfiles/admin/js/prepopulate.js
+staticfiles/admin/js/prepopulate_init.js
+staticfiles/admin/js/theme.js
+staticfiles/admin/js/unusable_password_field.js
+staticfiles/admin/js/urlify.js
+staticfiles/admin/js/admin/
+staticfiles/admin/js/admin/DateTimeShortcuts.js
+staticfiles/admin/js/admin/RelatedObjectLookups.js
+staticfiles/admin/js/vendor/jquery/
+staticfiles/admin/js/vendor/jquery/LICENSE.txt
+staticfiles/admin/js/vendor/jquery/jquery.js
+staticfiles/admin/js/vendor/jquery/jquery.min.js
+staticfiles/admin/js/vendor/select2/
+staticfiles/admin/js/vendor/select2/LICENSE.md
+staticfiles/admin/js/vendor/select2/select2.full.js
+staticfiles/admin/js/vendor/select2/select2.full.min.js
+staticfiles/admin/js/vendor/select2/i18n/
+staticfiles/admin/js/vendor/select2/i18n/af.js
+staticfiles/admin/js/vendor/select2/i18n/ar.js
+staticfiles/admin/js/vendor/select2/i18n/az.js
+staticfiles/admin/js/vendor/select2/i18n/bg.js
+staticfiles/admin/js/vendor/select2/i18n/bn.js
+staticfiles/admin/js/vendor/select2/i18n/bs.js
+staticfiles/admin/js/vendor/select2/i18n/ca.js
+staticfiles/admin/js/vendor/select2/i18n/cs.js
+staticfiles/admin/js/vendor/select2/i18n/da.js
+staticfiles/admin/js/vendor/select2/i18n/de.js
+staticfiles/admin/js/vendor/select2/i18n/dsb.js
+staticfiles/admin/js/vendor/select2/i18n/el.js
+staticfiles/admin/js/vendor/select2/i18n/en.js
+staticfiles/admin/js/vendor/select2/i18n/es.js
+staticfiles/admin/js/vendor/select2/i18n/et.js
+staticfiles/admin/js/vendor/select2/i18n/eu.js
+staticfiles/admin/js/vendor/select2/i18n/fa.js
+staticfiles/admin/js/vendor/select2/i18n/fi.js
+staticfiles/admin/js/vendor/select2/i18n/fr.js
+staticfiles/admin/js/vendor/select2/i18n/gl.js
+staticfiles/admin/js/vendor/select2/i18n/he.js
+staticfiles/admin/js/vendor/select2/i18n/hi.js
+staticfiles/admin/js/vendor/select2/i18n/hr.js
+staticfiles/admin/js/vendor/select2/i18n/hsb.js
+staticfiles/admin/js/vendor/select2/i18n/hu.js
+staticfiles/admin/js/vendor/select2/i18n/hy.js
+staticfiles/admin/js/vendor/select2/i18n/id.js
+staticfiles/admin/js/vendor/select2/i18n/is.js
+staticfiles/admin/js/vendor/select2/i18n/it.js
+staticfiles/admin/js/vendor/select2/i18n/ja.js
+staticfiles/admin/js/vendor/select2/i18n/ka.js
+staticfiles/admin/js/vendor/select2/i18n/km.js
+staticfiles/admin/js/vendor/select2/i18n/ko.js
+staticfiles/admin/js/vendor/select2/i18n/lt.js
+staticfiles/admin/js/vendor/select2/i18n/lv.js
+staticfiles/admin/js/vendor/select2/i18n/mk.js
+staticfiles/admin/js/vendor/select2/i18n/ms.js
+staticfiles/admin/js/vendor/select2/i18n/nb.js
+staticfiles/admin/js/vendor/select2/i18n/ne.js
+staticfiles/admin/js/vendor/select2/i18n/nl.js
+staticfiles/admin/js/vendor/select2/i18n/pl.js
+staticfiles/admin/js/vendor/select2/i18n/ps.js
+staticfiles/admin/js/vendor/select2/i18n/pt-BR.js
+staticfiles/admin/js/vendor/select2/i18n/pt.js
+staticfiles/admin/js/vendor/select2/i18n/ro.js
+staticfiles/admin/js/vendor/select2/i18n/ru.js
+staticfiles/admin/js/vendor/select2/i18n/sk.js
+staticfiles/admin/js/vendor/select2/i18n/sl.js
+staticfiles/admin/js/vendor/select2/i18n/sq.js
+staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js
+staticfiles/admin/js/vendor/select2/i18n/sr.js
+staticfiles/admin/js/vendor/select2/i18n/sv.js
+staticfiles/admin/js/vendor/select2/i18n/th.js
+staticfiles/admin/js/vendor/select2/i18n/tk.js
+staticfiles/admin/js/vendor/select2/i18n/tr.js
+staticfiles/admin/js/vendor/select2/i18n/uk.js
+staticfiles/admin/js/vendor/select2/i18n/vi.js
+staticfiles/admin/js/vendor/select2/i18n/zh-CN.js
+staticfiles/admin/js/vendor/select2/i18n/zh-TW.js
+staticfiles/admin/js/vendor/xregexp/
+staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+staticfiles/admin/js/vendor/xregexp/xregexp.js
+staticfiles/admin/js/vendor/xregexp/xregexp.min.js
+
+sent 21.893 bytes  received 16.544 bytes  8.541,56 bytes/sec
+total size is 23.495.230  speedup is 611,27
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting typescript
+./
+.gitignore
+deleting logs/supervisord.sock
+deleting logs/supervisord.pid
+deleting simulador_banco/static_collected/admin/js/vendor/xregexp/xregexp.min.js
+deleting simulador_banco/static_collected/admin/js/vendor/xregexp/xregexp.js
+deleting simulador_banco/static_collected/admin/js/vendor/xregexp/LICENSE.txt
+deleting simulador_banco/static_collected/admin/js/vendor/xregexp/
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/zh-TW.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/zh-CN.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/vi.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/uk.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/tr.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/tk.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/th.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/sv.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/sr.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/sr-Cyrl.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/sq.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/sl.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/sk.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ru.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ro.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/pt.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/pt-BR.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ps.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/pl.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/nl.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ne.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/nb.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ms.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/mk.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/lv.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/lt.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ko.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/km.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ka.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ja.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/it.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/is.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/id.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/hy.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/hu.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/hsb.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/hr.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/hi.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/he.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/gl.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/fr.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/fi.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/fa.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/eu.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/et.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/es.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/en.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/el.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/dsb.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/de.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/da.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/cs.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ca.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/bs.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/bn.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/bg.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/az.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/ar.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/af.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/i18n/
+deleting simulador_banco/static_collected/admin/js/vendor/select2/select2.full.min.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/select2.full.js
+deleting simulador_banco/static_collected/admin/js/vendor/select2/LICENSE.md
+deleting simulador_banco/static_collected/admin/js/vendor/select2/
+deleting simulador_banco/static_collected/admin/js/vendor/jquery/jquery.min.js
+deleting simulador_banco/static_collected/admin/js/vendor/jquery/jquery.js
+deleting simulador_banco/static_collected/admin/js/vendor/jquery/LICENSE.txt
+deleting simulador_banco/static_collected/admin/js/vendor/jquery/
+deleting simulador_banco/static_collected/admin/js/vendor/
+deleting simulador_banco/static_collected/admin/js/admin/RelatedObjectLookups.js
+deleting simulador_banco/static_collected/admin/js/admin/DateTimeShortcuts.js
+deleting simulador_banco/static_collected/admin/js/admin/
+deleting simulador_banco/static_collected/admin/js/urlify.js
+deleting simulador_banco/static_collected/admin/js/unusable_password_field.js
+deleting simulador_banco/static_collected/admin/js/theme.js
+deleting simulador_banco/static_collected/admin/js/prepopulate_init.js
+deleting simulador_banco/static_collected/admin/js/prepopulate.js
+deleting simulador_banco/static_collected/admin/js/popup_response.js
+deleting simulador_banco/static_collected/admin/js/nav_sidebar.js
+deleting simulador_banco/static_collected/admin/js/jquery.init.js
+deleting simulador_banco/static_collected/admin/js/inlines.js
+deleting simulador_banco/static_collected/admin/js/filters.js
+deleting simulador_banco/static_collected/admin/js/core.js
+deleting simulador_banco/static_collected/admin/js/collapse.js
+deleting simulador_banco/static_collected/admin/js/change_form.js
+deleting simulador_banco/static_collected/admin/js/cancel.js
+deleting simulador_banco/static_collected/admin/js/calendar.js
+deleting simulador_banco/static_collected/admin/js/autocomplete.js
+deleting simulador_banco/static_collected/admin/js/actions.js
+deleting simulador_banco/static_collected/admin/js/SelectFilter2.js
+deleting simulador_banco/static_collected/admin/js/SelectBox.js
+deleting simulador_banco/static_collected/admin/js/
+deleting simulador_banco/static_collected/admin/img/gis/move_vertex_on.svg
+deleting simulador_banco/static_collected/admin/img/gis/move_vertex_off.svg
+deleting simulador_banco/static_collected/admin/img/gis/
+deleting simulador_banco/static_collected/admin/img/tooltag-arrowright.svg
+deleting simulador_banco/static_collected/admin/img/tooltag-add.svg
+deleting simulador_banco/static_collected/admin/img/sorting-icons.svg
+deleting simulador_banco/static_collected/admin/img/selector-icons.svg
+deleting simulador_banco/static_collected/admin/img/search.svg
+deleting simulador_banco/static_collected/admin/img/inline-delete.svg
+deleting simulador_banco/static_collected/admin/img/icon-yes.svg
+deleting simulador_banco/static_collected/admin/img/icon-viewlink.svg
+deleting simulador_banco/static_collected/admin/img/icon-unknown.svg
+deleting simulador_banco/static_collected/admin/img/icon-unknown-alt.svg
+deleting simulador_banco/static_collected/admin/img/icon-no.svg
+deleting simulador_banco/static_collected/admin/img/icon-hidelink.svg
+deleting simulador_banco/static_collected/admin/img/icon-deletelink.svg
+deleting simulador_banco/static_collected/admin/img/icon-clock.svg
+deleting simulador_banco/static_collected/admin/img/icon-changelink.svg
+deleting simulador_banco/static_collected/admin/img/icon-calendar.svg
+deleting simulador_banco/static_collected/admin/img/icon-alert.svg
+deleting simulador_banco/static_collected/admin/img/icon-addlink.svg
+deleting simulador_banco/static_collected/admin/img/calendar-icons.svg
+deleting simulador_banco/static_collected/admin/img/README.txt
+deleting simulador_banco/static_collected/admin/img/LICENSE
+deleting simulador_banco/static_collected/admin/img/
+deleting simulador_banco/static_collected/admin/css/vendor/select2/select2.min.css
+deleting simulador_banco/static_collected/admin/css/vendor/select2/select2.css
+deleting simulador_banco/static_collected/admin/css/vendor/select2/LICENSE-SELECT2.md
+deleting simulador_banco/static_collected/admin/css/vendor/select2/
+deleting simulador_banco/static_collected/admin/css/vendor/
+deleting simulador_banco/static_collected/admin/css/widgets.css
+deleting simulador_banco/static_collected/admin/css/unusable_password_field.css
+deleting simulador_banco/static_collected/admin/css/rtl.css
+deleting simulador_banco/static_collected/admin/css/responsive_rtl.css
+deleting simulador_banco/static_collected/admin/css/responsive.css
+deleting simulador_banco/static_collected/admin/css/nav_sidebar.css
+deleting simulador_banco/static_collected/admin/css/login.css
+deleting simulador_banco/static_collected/admin/css/forms.css
+deleting simulador_banco/static_collected/admin/css/dashboard.css
+deleting simulador_banco/static_collected/admin/css/dark_mode.css
+deleting simulador_banco/static_collected/admin/css/changelists.css
+deleting simulador_banco/static_collected/admin/css/base.css
+deleting simulador_banco/static_collected/admin/css/autocomplete.css
+deleting simulador_banco/static_collected/admin/css/
+deleting simulador_banco/static_collected/admin/
+deleting simulador_banco/static_collected/
+deleting tor_data/control_auth_cookie
+logs/
+logs/gunicorn_access.log
+logs/gunicorn_error.log
+logs/supervisord.log
+logs/tor_stdout.log
+scripts/
+scripts/create_package.sh
+scripts/env_setup.sh
+scripts/ports_stop.sh
+scripts/restart_supervisor.sh
+scripts/run_simulador.sh
+scripts/start_all.sh
+scripts/start_stack.sh
+scripts/start_stack2.sh
+scripts/status.sh
+scripts/stop_all.sh
+scripts/test_simulador_curl.sh
+simulador_banco/
+simulador_banco/banco/
+simulador_banco/banco/urls.py
+simulador_banco/banco/views.py
+simulador_banco/banco/templates/api/GPT4/
+simulador_banco/banco/templates/api/GPT4/create_clientid.html
+simulador_banco/banco/templates/api/GPT4/create_creditor.html
+simulador_banco/banco/templates/api/GPT4/create_creditor_account.html
+simulador_banco/banco/templates/api/GPT4/create_creditor_agent.html
+simulador_banco/banco/templates/api/GPT4/create_debtor.html
+simulador_banco/banco/templates/api/GPT4/create_debtor_account.html
+simulador_banco/banco/templates/api/GPT4/create_kid.html
+simulador_banco/banco/templates/api/GPT4/create_transfer.html
+simulador_banco/banco/templates/api/GPT4/edit_transfer.html
+simulador_banco/banco/templates/api/GPT4/list_creditor_accounts.html
+simulador_banco/banco/templates/api/GPT4/list_creditor_agents.html
+simulador_banco/banco/templates/api/GPT4/list_creditors.html
+simulador_banco/banco/templates/api/GPT4/list_debtor.html
+simulador_banco/banco/templates/api/GPT4/list_debtor_accounts.html
+simulador_banco/banco/templates/api/GPT4/list_logs.html
+simulador_banco/banco/templates/api/GPT4/list_transfer.html
+simulador_banco/banco/templates/api/GPT4/oauth2_authorize.html
+simulador_banco/banco/templates/api/GPT4/oauth2_callback.html
+simulador_banco/banco/templates/api/GPT4/send_transfer.html
+simulador_banco/banco/templates/api/GPT4/send_transfer_conexion.html
+simulador_banco/banco/templates/api/GPT4/send_transfer_simulator.html
+simulador_banco/banco/templates/api/GPT4/transfer_detail.html
+simulador_banco/banco/templates/api/GPT4/transfer_sca.html
+simulador_banco/banco/templates/api/GPT4/transfer_send_conexion.html
+simulador_banco/banco/templates/banco/
+simulador_banco/banco/templates/banco/dashboard.html
+simulador_banco/banco/templates/banco/transfer_simulator_frontend.html
+simulador_banco/banco/templates/banco/transferencia.html
+simulador_banco/simulador_banco/
+simulador_banco/simulador_banco/settings.py
+simulador_banco/simulador_banco/urls.py
+tor_data/
+tor_data/cached-certs
+tor_data/cached-microdesc-consensus
+tor_data/cached-microdescs.new
+tor_data/state
+
+sent 766.147 bytes  received 81.906 bytes  113.073,73 bytes/sec
+total size is 61.589.055  speedup is 72,62
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+./
+logs/commits_hist.md
+logs/01_full_deploy/full_deploy.log
+logs/despliegue/00_07_postgres_.log
+logs/despliegue/00_08_migraciones_.log
+logs/despliegue/00_14_sincronizacion_archivos_.log
+logs/despliegue/00_16_01_subir_GitHub.log
+logs/despliegue/00_21_local_ssl.log
+logs/despliegue/00_21_local_ssl_.log
+logs/sync/
+logs/sync/20250614_101835_sync.log
+logs/sync/20250616_200039_sync.log
+menu/aliases_deploy.sh
+prompts/
+prompts/Prompt_Analisis_integral_de_un_repositorio_de_código.txt
+prompts/Prompt_El_Revision_Total_Plus_Ultra.txt
+prompts/Prompt_Maestro_Experto_en_Diseno_Grafico_&_Manipulacion_Avanzada_de_Documentos.txt
+prompts/Prompt_Maestro_Revision_Integral_de_Proyecto_Django.txt
+
+sent 39.374 bytes  received 48.085 bytes  13.455,23 bytes/sec
+total size is 235.184.767  speedup is 2.689,09
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
