@@ -280,3 +280,4 @@
 | 2025-06-14 10:00:29 | deploy de prueva |
 | 2025-06-14 10:18:35 | staticfiles |
 | 2025-06-16 20:00:39 | Deploy inicial |
+| 2025-06-16 20:02:58 | Deploy inicial |
