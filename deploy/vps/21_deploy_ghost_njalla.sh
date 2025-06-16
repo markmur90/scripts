@@ -81,7 +81,7 @@ tar xzf api_bank_h2_backup.tar.gz
 rm -f api_bank_h2_backup.tar.gz "$ENC_REMOTE_FILE"
 
 # Entorno virtual
-python3 -m venv venv
+# python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 if [[ ! -f "requirements.txt" ]]; then

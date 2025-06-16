@@ -320,7 +320,7 @@ echo "📥 Clonando repositorio Django..."
 git clone "$REPO_GIT" "/home/$APP_USER/$REPO_DIR"
 
 echo "🐍 Creando entorno virtual..."
-python3 -m venv ~/envAPP
+# python3 -m venv ~/envAPP
 source ~/envAPP/bin/activate
 pip install --upgrade pip
 pip install -r ~/$REPO_DIR/requirements.txt

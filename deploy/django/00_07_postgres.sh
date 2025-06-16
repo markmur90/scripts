@@ -61,7 +61,7 @@ elif [[ "$OS" == "Darwin" ]]; then
 fi
 
 # 🐍 Crear entorno virtual y dependencias
-python3 -m venv "$VENV_PATH"
+# python3 -m venv "$VENV_PATH"
 source "$VENV_PATH/bin/activate"
 pip install --upgrade pip
 echo "📦 Instalando dependencias..." | tee -a "$LOG_DEPLOY"

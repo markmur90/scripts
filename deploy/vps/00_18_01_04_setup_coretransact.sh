@@ -106,7 +106,7 @@ sudo ufw enable
 
 
 echo "🐍 Configurando entorno virtual..."
-python3 -m venv /home/markmur88/envAPP
+# python3 -m venv /home/markmur88/envAPP
 source /home/markmur88/envAPP/bin/activate
 pip install --upgrade pip
 pip install -r /home/markmur88/api_bank_h2/requirements.txt

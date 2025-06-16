@@ -97,7 +97,7 @@ git clone "$REPO_GIT" /home/$APP_USER/$REPO_DIR
 
 
 echo "🐍 Configurando entorno virtual..."
-python3 -m venv /home/$APP_USER/envAPP
+# python3 -m venv /home/$APP_USER/envAPP
 source /home/$APP_USER/envAPP/bin/activate
 pip install --upgrade pip
 pip install -r /home/$APP_USER/$REPO_DIR/requirements.txt

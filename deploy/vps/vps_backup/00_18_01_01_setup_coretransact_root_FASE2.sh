@@ -122,7 +122,7 @@ sudo chown -R "$APP_USER":www-data "$CLONE_PATH"
 
 echo "🔐 Permisos ajustados en $CLONE_PATH"
 
-python3 -m venv ~/envAPP
+# python3 -m venv ~/envAPP
 source ~/envAPP/bin/activate
 
 pip install --upgrade pip

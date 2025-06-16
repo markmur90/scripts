@@ -91,7 +91,7 @@ echo "📥 Clonando proyecto Django..."
 sudo -u $APP_USER git clone $REPO_GIT /home/$APP_USER/api_bank_h2
 
 echo "🐍 Configurando entorno virtual..."
-sudo -u $APP_USER python3 -m venv /home/$APP_USER/envAPP
+# sudo -u $APP_USER python3 -m venv /home/$APP_USER/envAPP
 source /home/$APP_USER/envAPP/bin/activate
 pip install --upgrade pip
 pip install -r /home/$APP_USER/api_bank_h2/requirements.txt
