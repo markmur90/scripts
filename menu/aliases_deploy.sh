@@ -66,14 +66,14 @@ alias vps_sim_bank_mon='vps_exec "[ -f ~/Simulador/logs/gunicorn.log ] && tail -
 alias vps_sim_bank_env='vps_exec "bash /home/markmur88/Simulador/scripts/env_setup.sh"'
 alias vps_sim_bank_status='vps_exec "bash /home/markmur88/Simulador/scripts/status.sh"'
 alias vps_sim_bank_stop='vps_exec "bash /home/markmur88/Simulador/scripts/stop_all.sh"'
-alias vps_sim_bank_start='vps_exec "bash /home/markmur88/Simulador/scripts/start_stack.sh"'
+alias vps_sim_bank_start='vps_exec "bash /home/markmur88/Simulador/scripts/start_all.sh"'
 alias vps_sim_bank_start2='vps_exec "bash /home/markmur88/Simulador/scripts/start_stack2.sh"'
 alias vps_sim_bank_restart='vps_exec "bash /home/markmur88/Simulador/scripts/restart_supervisor.sh"'
 
 alias sim_bank_status='bash /home/markmur88/Simulador/scripts/status.sh'
 alias sim_bank_env='bash /home/markmur88/Simulador/scripts/env_setup.sh'
 alias sim_bank_stop='bash /home/markmur88/Simulador/scripts/stop_all.sh'
-alias sim_bank_start='bash /home/markmur88/Simulador/scripts/start_stack.sh'
+alias sim_bank_start='bash /home/markmur88/Simulador/scripts/start_all.sh'
 alias sim_bank_start2='bash /home/markmur88/Simulador/scripts/start_stack2.sh'
 alias sim_bank_restart='bash /home/markmur88/Simulador/scripts/restart_supervisor.sh'
 

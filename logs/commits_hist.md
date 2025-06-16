@@ -294,3 +294,4 @@
 | 2025-06-17 00:35:42 | env |
 | 2025-06-17 00:42:11 | deploy |
 | 2025-06-17 01:13:41 | gunicorn |
+| 2025-06-17 01:30:07 | cambio de ubicación de scripts sim |
