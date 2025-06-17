@@ -130,18 +130,24 @@ log_info "🧩 Iniciando compresión del proyecto completo..."
 cd "$PROJECT_BASE_DIR" || { log_error "No se pudo acceder al directorio base del proyecto"; exit 1; }
 
 EXCLUDES=(
-  "$(basename "$BASE_DIR")/__pycache__/*"
-  "$(basename "$BASE_DIR")/migrations/*"
-  "$(basename "$BASE_DIR")/*.pyc"
+#   "$(basename "$BASE_DIR")/__pycache__/*"
+#   "$(basename "$BASE_DIR")/migrations/*"
+#   "$(basename "$BASE_DIR")/*.pyc"
   "$(basename "$BASE_DIR")/*.service"
   "$(basename "$BASE_DIR")/*.sock"
   "$(basename "$BASE_DIR")/*.zip"
   "$(basename "$BASE_DIR")/.DS_Store"
   "$(basename "$BASE_DIR")/venv/*"
-  "$(basename "$BASE_DIR")/z_njalla/"
-  "$(basename "$BASE_DIR")/temp/"
-  "$(basename "$BASE_DIR")/tmp/"
-  "$(basename "$BASE_DIR")/z_njalla/"
+  "$(basename "$BASE_DIR")/z_njalla/*"
+  "$(basename "$BASE_DIR")/temp/*"
+  "$(basename "$BASE_DIR")/tmp/*"
+  "$(basename "$BASE_DIR")/z_njalla/*"
+  "$(basename "$BASE_DIR")/.git/*"
+  "$(basename "$BASE_DIR")/.vscode/*"
+  "$(basename "$BASE_DIR")/.codesandbox/*"
+  "$(basename "$BASE_DIR")/.devcontainer/*"
+  "$(basename "$BASE_DIR")/.github/*"
+  "$(basename "$BASE_DIR")/staticfiles/*"
 )
 
 zip -r9 "$ZIP_FINAL" "$(basename "$BASE_DIR")" "${EXCLUDES[@]/#/-x}" >> "$LOG_BACKUP" 2>&1
