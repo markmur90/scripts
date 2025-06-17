@@ -295,3 +295,6 @@
 | 2025-06-17 00:42:11 | deploy |
 | 2025-06-17 01:13:41 | gunicorn |
 | 2025-06-17 01:30:07 | cambio de ubicación de scripts sim |
+| 2025-06-17 01:47:45 | scripts |
+| 2025-06-17 01:54:22 | gunicorn |
+| 2025-06-17 02:09:09 | simulador |
