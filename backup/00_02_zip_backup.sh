@@ -132,15 +132,16 @@ cd "$PROJECT_BASE_DIR" || { log_error "No se pudo acceder al directorio base del
 EXCLUDES=(
   "$(basename "$BASE_DIR")/__pycache__/*"
   "$(basename "$BASE_DIR")/migrations/*"
-  "$(basename "$BASE_DIR")/*.sqlite3"
   "$(basename "$BASE_DIR")/*.pyc"
-  "$(basename "$BASE_DIR")/*.conf"
   "$(basename "$BASE_DIR")/*.service"
   "$(basename "$BASE_DIR")/*.sock"
   "$(basename "$BASE_DIR")/*.zip"
-  "$(basename "$BASE_DIR")/*.sql"
   "$(basename "$BASE_DIR")/.DS_Store"
   "$(basename "$BASE_DIR")/venv/*"
+  "$(basename "$BASE_DIR")/z_njalla/"
+  "$(basename "$BASE_DIR")/temp/"
+  "$(basename "$BASE_DIR")/tmp/"
+  "$(basename "$BASE_DIR")/z_njalla/"
 )
 
 zip -r9 "$ZIP_FINAL" "$(basename "$BASE_DIR")" "${EXCLUDES[@]/#/-x}" >> "$LOG_BACKUP" 2>&1

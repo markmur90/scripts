@@ -298,3 +298,12 @@
 | 2025-06-17 01:47:45 | scripts |
 | 2025-06-17 01:54:22 | gunicorn |
 | 2025-06-17 02:09:09 | simulador |
+| 2025-06-17 02:41:53 | middleware init |
+| 2025-06-17 04:01:24 | corrgido middleware & bootstrap5 |
+| 2025-06-17 04:13:40 | deploy key |
+| 2025-06-17 04:57:01 | tasks |
+| 2025-06-17 05:05:31 | tasks |
+| 2025-06-17 05:42:33 | sincronizar datos de bas |
+| 2025-06-17 14:33:59 | Arreglo de allow |
+| 2025-06-17 15:48:47 | Arreglo allow fake |
+| 2025-06-17 19:59:16 | Arreglo de Configuraciones y path |
