@@ -1,0 +1,190 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+.env.local
+deleting api/gpt3/migrations/0001_initial.py
+api/
+api/accounts/
+api/accounts/migrations/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/collection/
+api/collection/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/management/commands/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt/
+api/gpt/migrations/
+api/gpt2/
+api/gpt2/migrations/
+api/gpt3/
+api/gpt3/migrations/
+api/gpt4/
+api/gpt4/conexion_banco.py
+api/gpt4/views.py
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/middleware/
+api/sandbox/
+api/sandbox/migrations/
+api/sct/
+api/sct/migrations/
+api/sepa_payment/
+api/sepa_payment/migrations/
+api/transactions/
+api/transactions/migrations/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+api/utils/
+bin/
+config/
+config/schemas/
+config/settings/
+config/settings/base1.py
+config/utils/
+middleware/
+templates/
+templates/api/GPT/
+templates/api/GPT3/
+templates/api/GPT4/
+templates/api/SCT/
+templates/api/SEPA/
+templates/api/accounts/
+templates/api/claves/
+templates/api/collection/
+templates/api/configuraciones/
+templates/api/core/
+templates/api/extras/
+templates/api/sandbox/
+templates/api/sepa_payment/
+templates/api/transactions/
+templates/api/transfers/
+templates/forms/
+templates/partials/
+templates/partials/navGeneral/accounts/
+templates/partials/navGeneral/auth/
+templates/partials/navGeneral/collection/
+templates/partials/navGeneral/core/
+templates/partials/navGeneral/sct/
+templates/partials/navGeneral/sepa_payment/
+templates/partials/navGeneral/transactions/
+templates/partials/navGeneral/transfers/
+
+sent 22.737 bytes  received 1.517 bytes  3.731,38 bytes/sec
+total size is 24.157.941  speedup is 996,04
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting schemas/transferencias/
+deleting schemas/
+./
+.env.local
+api/
+api/accounts/
+api/accounts/migrations/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/collection/
+api/collection/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/management/commands/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt/
+api/gpt/migrations/
+api/gpt2/
+api/gpt2/migrations/
+api/gpt3/
+api/gpt3/migrations/
+api/gpt4/
+api/gpt4/conexion_banco.py
+api/gpt4/views.py
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/middleware/
+api/sandbox/
+api/sandbox/migrations/
+api/sct/
+api/sct/migrations/
+api/sepa_payment/
+api/sepa_payment/migrations/
+api/transactions/
+api/transactions/migrations/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+api/utils/
+bin/
+config/
+config/settings/
+config/settings/__init__.py
+config/settings/base1.py
+config/utils/
+middleware/
+templates/
+templates/forms/
+templates/partials/
+templates/partials/navGeneral/accounts/
+templates/partials/navGeneral/auth/
+templates/partials/navGeneral/collection/
+templates/partials/navGeneral/core/
+templates/partials/navGeneral/sct/
+templates/partials/navGeneral/sepa_payment/
+templates/partials/navGeneral/transactions/
+templates/partials/navGeneral/transfers/
+
+sent 21.148 bytes  received 1.188 bytes  3.436,31 bytes/sec
+total size is 23.526.459  speedup is 1.053,30
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: simulador_banco/middleware
+tor_data/
+tor_data/state
+
+sent 10.343 bytes  received 293 bytes  1.933,82 bytes/sec
+total size is 60.257.668  speedup is 5.665,44
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+deploy/django/00_08_migraciones.sh
+logs/commits_hist.md
+logs/01_full_deploy/full_deploy.log
+logs/backup/00_02_zip_backup_.log
+logs/despliegue/00_07_postgres_.log
+logs/despliegue/00_08_migraciones_.log
+logs/despliegue/00_14_sincronizacion_archivos_.log
+logs/despliegue/00_16_01_subir_GitHub.log
+logs/sync/
+logs/sync/20250617_235716_sync.log
+logs/sync/20250618_003713_sync.log
+menu/aliases_deploy.sh
+
+sent 39.452 bytes  received 112.803 bytes  20.300,67 bytes/sec
+total size is 203.103.946  speedup is 1.333,97
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
