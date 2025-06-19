@@ -1,12 +1,13 @@
-[2025-06-19 10:24:53 +0200] [159783] [INFO] Starting gunicorn 23.0.0
-[2025-06-19 10:24:53 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
-[2025-06-19 10:24:53 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
-[2025-06-19 10:24:54 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
-[2025-06-19 10:24:54 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
-[2025-06-19 10:24:55 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
-[2025-06-19 10:24:55 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
-[2025-06-19 10:24:56 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
-[2025-06-19 10:24:56 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
-[2025-06-19 10:24:57 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
-[2025-06-19 10:24:57 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
-[2025-06-19 10:24:58 +0200] [159783] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2025-06-19 18:02:48 +0200] [22294] [INFO] Starting gunicorn 23.0.0
+[2025-06-19 18:02:48 +0200] [22294] [INFO] Listening at: http://0.0.0.0:8000 (22294)
+[2025-06-19 18:02:48 +0200] [22294] [INFO] Using worker: sync
+[2025-06-19 18:02:48 +0200] [22305] [INFO] Booting worker with pid: 22305
+Not Found: /favicon.ico
+Error en /static/css/admin-overrides.css: “/home/markmur88/api_bank_h2/staticfiles/css/admin-overrides.css” does not exist
+Traceback (most recent call last):
+  File "/home/markmur88/envAPP/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/markmur88/envAPP/lib/python3.13/site-packages/django/views/static.py", line 51, in serve
+    raise Http404(_("“%(path)s” does not exist") % {"path": fullpath})
+django.http.response.Http404: “/home/markmur88/api_bank_h2/staticfiles/css/admin-overrides.css” does not exist
+Not Found: /static/css/admin-overrides.css
