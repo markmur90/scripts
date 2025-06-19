@@ -29,8 +29,8 @@ BASE_DIR="$AP_H2_DIR"
 set -euo pipefail
 
 SCRIPT_NAME="$(basename "$0")"
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/${SCRIPT_NAME%.sh}_.log"
-LOG_DETALLE="$SCRIPTS_DIR/logs/00_20_ssl_detalle.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/${SCRIPT_NAME%.sh}_.log"
+LOG_DETALLE="$SCRIPTS_DIR/.logs/00_20_ssl_detalle.log"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 mkdir -p "$(dirname "$LOG_DETALLE")"

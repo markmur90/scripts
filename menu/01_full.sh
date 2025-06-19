@@ -105,7 +105,7 @@ centrar_texto_coloreado() {
 }
 
 SCRIPT_NAME="$(basename "$0")"
- LOG_DEPLOY="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
+ LOG_DEPLOY="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
 
 # clear
 

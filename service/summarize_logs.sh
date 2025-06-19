@@ -48,7 +48,7 @@ else
 fi
 
 # 2. Carpeta de logs
-LOG_DIR="$BASE_DIR/scripts/logs"
+LOG_DIR="$BASE_DIR/.logs"
 
 # 2.a Validar que exista
 if [[ ! -d "$LOG_DIR" ]]; then

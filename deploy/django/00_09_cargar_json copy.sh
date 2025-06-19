@@ -32,7 +32,7 @@ SCRIPT_NAME="$(basename "$0")"
 
 PROJECT_DIR="$BASE_DIR"
 BACKUP_DIR="$PROJECT_DIR/backup/sql"
-LOG_FILE="$SCRIPTS_DIR/logs/restaurar_local_descifrado.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/restaurar_local_descifrado.log"
 
 DB_NAME="mydatabase"
 DB_USER="markmur88"

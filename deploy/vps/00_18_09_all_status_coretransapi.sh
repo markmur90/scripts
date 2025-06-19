@@ -67,7 +67,7 @@ PUERTOS="${6:-80 443 49222}"
 
 SCRIPT_NAME="$(basename "$0")"
 
-LOG_FILE="$SCRIPTS_DIR/logs/status/all_status_master.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/status/all_status_master.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 exec > >(tee -a "$LOG_FILE") 2>&1
 

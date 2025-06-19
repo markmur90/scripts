@@ -9,7 +9,7 @@ AP_HK_DIR="/home/markmur88/api_bank_heroku"
 VENV_PATH="/home/markmur88/envAPP"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BASE_DIR="$AP_H2_DIR"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/$(basename "$0" .sh)_.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/$(basename "$0" .sh)_.log"
 mkdir -p "$(dirname "$LOG_DEPLOY")"
 
 # Logging inicial

@@ -1,1 +1,4 @@
 ✅ chmod +x -> ./ch.sh
+✅ chmod +x -> ./utils/security/scripts/splunk.sh
+✅ chmod +x -> ./utils/security/scripts/aud_splunk_graylog.sh
+✅ chmod +x -> ./utils/security/scripts/aud_graylog_docker/setup_graylog.sh

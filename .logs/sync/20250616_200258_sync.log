@@ -1,0 +1,66 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/simulador_banco
+cannot delete non-empty directory: scripts/utils/simulator_bank/config
+cannot delete non-empty directory: scripts/utils/simulator_bank/config
+cannot delete non-empty directory: scripts/utils/simulator_bank
+cannot delete non-empty directory: scripts/utils/simulator_bank
+cannot delete non-empty directory: scripts/utils/local/config
+cannot delete non-empty directory: scripts/utils/local/config
+cannot delete non-empty directory: scripts/utils/local
+cannot delete non-empty directory: scripts/utils/local
+cannot delete non-empty directory: scripts/utils
+cannot delete non-empty directory: scripts/utils
+cannot delete non-empty directory: scripts
+
+sent 20.194 bytes  received 1.187 bytes  3.887,45 bytes/sec
+total size is 24.162.837  speedup is 1.130,11
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: scripts
+config/settings/__init__.py
+
+sent 13.393 bytes  received 186 bytes  2.089,08 bytes/sec
+total size is 23.495.230  speedup is 1.730,26
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+logs/gunicorn_error.log
+
+sent 9.189 bytes  received 23.564 bytes  5.955,09 bytes/sec
+total size is 61.589.055  speedup is 1.880,41
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+deploy/django/00_07_postgres.sh
+logs/commits_hist.md
+logs/01_full_deploy/full_deploy.log
+logs/despliegue/00_07_postgres_.log
+logs/despliegue/00_08_migraciones_.log
+logs/despliegue/00_14_sincronizacion_archivos_.log
+logs/despliegue/00_16_01_subir_GitHub.log
+logs/sync/
+logs/sync/20250616_200039_sync.log
+logs/sync/20250616_200258_sync.log
+
+sent 32.626 bytes  received 47.727 bytes  12.362,00 bytes/sec
+total size is 235.246.044  speedup is 2.927,66
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

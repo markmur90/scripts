@@ -35,8 +35,8 @@ ENV_FILE="$BASE_DIR/.env.production"
 HEROKU_APP="${1:-apibank2}"
 PEM_PATH="$AP_H2_DIR/schemas/keys/private_key.pem"
 
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/${SCRIPT_NAME%.sh}.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/${SCRIPT_NAME%.sh}.log"
 
 mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$LOG_DEPLOY")"
 

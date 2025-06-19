@@ -1,0 +1,9 @@
+[2025-06-18 01:22:31 +0200] [1380183] [INFO] Starting gunicorn 23.0.0
+[2025-06-18 01:22:31 +0200] [1380183] [INFO] Listening at: http://0.0.0.0:8000 (1380183)
+[2025-06-18 01:22:31 +0200] [1380183] [INFO] Using worker: sync
+[2025-06-18 01:22:31 +0200] [1380854] [INFO] Booting worker with pid: 1380854
+[2025-06-18 02:24:23 +0200] [1380183] [INFO] Handling signal: hup
+[2025-06-18 02:24:23 +0200] [1380183] [INFO] Hang up: Master
+[2025-06-18 02:24:23 +0200] [1380183] [INFO] Handling signal: term
+[2025-06-18 02:24:23 +0200] [3464110] [INFO] Booting worker with pid: 3464110
+[2025-06-18 02:24:23 +0200] [1380183] [ERROR] Worker (pid:1380854) was sent SIGHUP!

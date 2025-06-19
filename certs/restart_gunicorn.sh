@@ -6,7 +6,7 @@ set -euo pipefail
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 VENV_PATH="/home/markmur88/envAPP"
 SCRIPTS_DIR="/home/markmur88/scripts"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/restart_gunicorn.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/restart_gunicorn.log"
 CERT_CRT="$AP_H2_DIR/schemas/certs/desarrollo.crt"
 CERT_KEY="$AP_H2_DIR/schemas/certs/desarrollo.key"
 
@@ -36,14 +36,14 @@ if sudo lsof -i :8443 | grep -q LISTEN; then
     fi
 
     echo "🚀 Ejecutando Gunicorn en http://0.0.0.0:8000" | tee -a "$LOG_DEPLOY"
-    nohup gunicorn config.wsgi:application --bind 0.0.0.0:8000 > "$SCRIPTS_DIR/logs/despliegue/00_21_local_ssl.log" 2>&1 &
+    nohup gunicorn config.wsgi:application --bind 0.0.0.0:8000 > "$SCRIPTS_DIR/.logs/despliegue/00_21_local_ssl.log" 2>&1 &
 else
     echo "🌐 Ejecutando Gunicorn con SSL en https://0.0.0.0:8443" | tee -a "$LOG_DEPLOY"
     nohup gunicorn config.wsgi:application \
         --certfile="$CERT_CRT" \
         --keyfile="$CERT_KEY" \
         --bind 0.0.0.0:8443 \
-        > "$SCRIPTS_DIR/logs/despliegue/00_21_local_ssl.log" 2>&1 &
+        > "$SCRIPTS_DIR/.logs/despliegue/00_21_local_ssl.log" 2>&1 &
 fi
 
 echo "✅ Restart completado." | tee -a "$LOG_DEPLOY"

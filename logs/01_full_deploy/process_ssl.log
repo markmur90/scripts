@@ -1,5 +1,0 @@
-📅 Fecha de ejecución: 2025-06-14 07:51:43
-📄 Script: 00_20_ssl.sh
-═══════════════════════════════════════════
-🌐 Levantando entorno local con Gunicorn + SSL en https://0.0.0.0:8443
-nohup: fallo al ejecutar la orden 'gunicorn': No existe el fichero o el directorio

@@ -14,7 +14,7 @@ VPS_VENV_PATH="/home/markmur88/envAPP"
 VPS_CORETRANS_ROOT="/home/markmur88/coretransapi"
 
 EXCLUDES="/home/markmur88/scripts/deploy/vps/excludes.txt"
-LOG_DIR="$SCRIPTS_DIR/logs/sync"
+LOG_DIR="$SCRIPTS_DIR/.logs/sync"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/$(date +%Y%m%d_%H%M%S)_sync_clean.log"
 
