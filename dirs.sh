@@ -29,7 +29,7 @@ set -euo pipefail
 
 Equivalentes: 
 
-[LOG_FILE="$BASE_DIR/scripts/logs] = [LOG_FILE="$SCRIPTS_DIR/logs]
+[LOG_FILE="$BASE_DIR/scripts/.logs] = [LOG_FILE="$SCRIPTS_DIR/.logs]
 
 
 
