@@ -1,0 +1,231 @@
+eres un ingeniero en prompt, para lo cual mejorarás el siguiente prompt para mi haciendo lo mas completo.
+
+Eres un ingeniero en sistemas, redes y seguridad, con django sin rest.
+
+vas a refactorizar para realizar transferencias con conexion_banco_refactor.py para lo cual modificarás views, utils, templates de api/gpt4, teniendo en cuenta el oficial bancario que obtiene el token con usuario y contraseña, realizar el challenge para el otp, y esperar la respuesta del simulador para el status, para lo cual crearás nuevas plantillas que cumplan con los requerimientos, vas a revisar todo el procedimiento ya incluido para implementar en tu proceso sin omitir ningún campo ya establecido, adaptarás la lógica a lo ya establecido en las views con el def send_transfer_view.
+
+vas a tomar en cuenta las siguientes rutas del simulador:
+URL_TOKEN="api/token"
+URL_LOGIN="api/login"
+URL_CHALLENGE="api/challenge"
+URL_TRANSFER_ENTRANTES="api/transferencias/entrantes"
+URL_SEND_TRANSFER="api/send-transfer"
+URL_STATUS_TRANSFER="api/status-transfer"
+
+importante:
+Debes aplicar para que simule el dns, autentique en el simulador como oficial y obtenga ip del servidor.
+Para las templates debes aplicar el diseño ya implementado en el proyecto
+
+
+Eres un ingeniero en sistemas, redes y seguridad  con experiencia en desarrollo backend utilizando Django (sin REST Framework) . 
+
+Tu tarea es realizar un refactor completo del flujo de transferencias bancarias  dentro del proyecto actual. Para ello, trabajarás principalmente sobre los siguientes archivos: 
+
+    views.py  
+    utils.py  
+    Plantillas HTML dentro de api/gpt4/
+     
+
+Además, deberás integrar y utilizar el archivo conexion_banco_refactor.py, que contiene la lógica refactorizada de conexión al sistema bancario oficial. 
+🎯 Objetivo General 
+
+Implementar un flujo seguro y funcional para realizar transferencias bancarias salientes  desde la aplicación Django, siguiendo estos pasos: 
+
+    Obtención del token de acceso  
+        Usar: URL_TOKEN = "api/token"
+        Autenticar con usuario y contraseña del banco.
+        Guardar el token para usarlo en las siguientes llamadas.
+         
+
+    Login con token  
+        Usar: URL_LOGIN = "api/login"
+        Enviar el token obtenido previamente.
+         
+
+    Challenge OTP  
+        Usar: URL_CHALLENGE = "api/challenge"
+        Recibir un challenge del sistema bancario.
+        Mostrar un formulario en una nueva plantilla HTML para que el usuario ingrese el OTP.
+        Enviar respuesta del challenge.
+         
+
+    Envío de transferencia  
+        Usar: URL_SEND_TRANSFER = "api/send-transfer"
+        Enviar datos de la transferencia con autenticación completa.
+         
+
+    Consulta de estado de la transferencia  
+        Usar: URL_STATUS_TRANSFER = "api/status-transfer"
+        Verificar el estado de la operación tras su envío.
+         
+
+    Visualización de transferencias entrantes (opcional)  
+        Usar: URL_TRANSFER_ENTRANTES = "api/transferencias/entrantes"
+         
+     
+
+🧱 Requerimientos técnicos 
+
+    No usar Django REST Framework , mantener el estilo actual basado en vistas tradicionales y templates.
+    Crear nuevas plantillas HTML en la carpeta api/gpt4/ para:
+        Formulario de ingreso de OTP (challenge).
+        Confirmación de envío de transferencia.
+        Vista de estado final de la operación.
+         
+    Mantener buenas prácticas de seguridad:
+        Uso de sesiones seguras para almacenar tokens temporales.
+        Validaciones de entrada de datos.
+        Manejo de errores y mensajes claros al usuario.
+         
+     
+
+🔁 Flujo esperado 
+
+    El usuario inicia sesión en la app Django.
+    Ingresa los datos de la transferencia.
+    Se inicia el proceso de autenticación con el banco:
+        Obtener token → login → challenge OTP.
+         
+    Tras resolver el challenge, se envía la transferencia.
+    Se consulta el estado de la transacción hasta obtener confirmación.
+    Se muestra el resultado final al usuario mediante una nueva plantilla.
+     
+
+📌 Notas adicionales 
+
+    Todo el código debe estar bien documentado.
+    Si hay funciones auxiliares, colocarlas en utils.py.
+    Mantener consistencia con el estilo del proyecto existente.
+    
+
+
+
+
+
+Eres un ingeniero en sistemas, redes y seguridad con experiencia en desarrollo backend usando Django (sin REST Framework), enfocado en integrar procesos bancarios seguros. 
+Tu tarea es refactorizar el proceso de transferencias  utilizando el archivo conexion_banco_refactor.py. Deberás modificar los siguientes componentes dentro del módulo api/gpt4: 
+    Views : Actualizar la lógica existente, especialmente en la función send_transfer_view.
+    Utils : Reutilizar o crear funciones auxiliares necesarias para manejar peticiones HTTP al banco.
+    Templates : Diseñar nuevas plantillas HTML según los requerimientos funcionales y visuales.
+     
+
+🔁 Proceso a Implementar 
+Deberás implementar el siguiente flujo de integración con el banco oficial simulado , siguiendo estos pasos secuenciales: 
+    Obtención del Token  
+        Usar la ruta: URL_TOKEN = "api/token"
+        Enviar usuario y contraseña para obtener un token válido.
+         
+    Login Bancario  
+        Usar la ruta: URL_LOGIN = "api/login"
+        Autenticar sesión con el token obtenido previamente.
+         
+    Challenge OTP (One-Time Password)  
+        Usar la ruta: URL_CHALLENGE = "api/challenge"
+        Realizar el challenge de autenticación 2FA mediante OTP.
+         
+    Envío de Transferencia  
+        Usar la ruta: URL_SEND_TRANSFER = "api/send-transfer"
+        Ejecutar la transferencia con todos los campos requeridos del formulario original.
+         
+    Verificación del Estado de la Transferencia  
+        Usar la ruta: URL_STATUS_TRANSFER = "api/status-transfer"
+        Consultar periódicamente el estado hasta obtener una respuesta definitiva del simulador.
+         
+    Transferencias Entrantes (Opcional/Adicional)  
+        Usar la ruta: URL_TRANSFER_ENTRANTES = "api/transferencias/entrantes"
+        Si aplica, integrar esta funcionalidad como parte del proceso.
+         
+✅ Consideraciones Importantes 
+    No omitir ningún campo ya establecido en las vistas ni en los formularios actuales.
+    Adaptar la lógica nueva sin romper la funcionalidad actual.
+    Mantener consistencia en nombres de variables, funciones y estilos de código.
+    Documentar cambios realizados para facilitar auditorías futuras.
+    Asegurar manejo de errores y estados transaccionales durante todo el proceso.
+    Tienes que utilizar el diseño de las plantillas ya establecidas.
+    
+    
+
+
+Eres un Ingeniero en Sistemas, Redes y Seguridad , especializado en desarrollo backend con Django  (sin Django REST Framework). Tu tarea es realizar una refactorización integral  del módulo de transferencias del sistema, enfocándote especialmente en el archivo conexion_banco_refactor.py. 
+
+Tu objetivo es adaptar la lógica existente  para permitir la comunicación con un simulador bancario oficial , siguiendo todo el flujo de autenticación, generación de OTP mediante challenge, envío de transferencias y verificación de estado, manteniendo consistencia con el diseño actual del proyecto. 
+🔁 Flujo de Trabajo a Implementar 
+
+Deberás modificar e implementar los siguientes componentes: 
+
+    Views (views.py) 
+    Actualiza y reestructura las vistas relacionadas con transferencias, especialmente def send_transfer_view, para incluir: 
+        Inicio de sesión con usuario y contraseña.
+        Generación y resolución de challenge OTP.
+        Envío de la transferencia.
+        Consulta del estado de la transferencia.
+         
+
+    Utils (utils.py) 
+    Crea funciones auxiliares para: 
+        Gestión de sesiones seguras con el simulador.
+        Encriptación/desencriptación si es necesario.
+        Manejo de errores HTTP y respuestas del simulador.
+        Simulación DNS dinámico y obtención de IP del servidor.
+         
+
+    Templates (templates/api/gpt4/...) 
+    Diseña nuevas plantillas HTML que: 
+        Muestren el estado de cada paso del proceso.
+        Permitan al usuario resolver el challenge OTP.
+        Muestren confirmación visual de éxito o error.
+        Se integren con el estilo y diseño ya implementado en el proyecto.
+         
+     
+
+🌐 URLs del Simulador Bancario 
+
+Utiliza las siguientes rutas definidas en el entorno de prueba:
+URL_TOKEN = "api/token"
+URL_LOGIN = "api/login"
+URL_CHALLENGE = "api/challenge"
+URL_TRANSFER_ENTRANTES = "api/transferencias/entrantes"
+URL_SEND_TRANSFER = "api/send-transfer"
+URL_STATUS_TRANSFER = "api/status-transfer"
+
+🛡️ Requisitos Técnicos y de Seguridad 
+
+    Simulación DNS Dinámico  
+        Implementa lógica para simular una conexión DNS real.
+        Obtiene dinámicamente la dirección IP del servidor del banco simulado.
+         
+
+    Autenticación Oficial  
+        Realiza login usando credenciales predefinidas (usuario y contraseña).
+        Almacena tokens de sesión de forma segura.
+         
+
+    Challenge OTP  
+        Llama al endpoint /challenge para generar un token OTP.
+        Presenta el challenge al usuario en una nueva template.
+        Valida la respuesta antes de proceder con la transferencia.
+         
+
+    Manejo de Estado de Transferencia  
+        Una vez enviada la transferencia, consulta periódicamente el estado usando /status-transfer.
+        Muestra el resultado final en pantalla o redirige según corresponda.
+
+📂 Estructura Recomendada de Archivos 
+api/
+├── views.py
+├── utils.py
+└── templates/
+    └── gpt4/
+        ├── login_bancario.html
+        ├── challenge_otp.html
+        ├── confirmacion_transferencia.html
+        ├── estado_transferencia.html
+        └── ... (otras necesarias)
+
+✅ Consideraciones Finales 
+
+    Mantén la coherencia con el estilo de código existente en el proyecto.
+    Documenta claramente cualquier cambio importante o función crítica.
+    Asegúrate de no omitir ningún campo ni paso del proceso original.
+    Usa variables y nombres de funciones claros y descriptivos.
+    Prioriza la seguridad en cada paso del proceso de autenticación y transferencia.
