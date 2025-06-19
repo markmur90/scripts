@@ -33,7 +33,7 @@ Equivalentes:
 
 
 
-LOG_BACKUP="$SCRIPTS_DIR/logs/backup/$(basename "$0" .sh)_.log"
+LOG_BACKUP="$SCRIPTS_DIR/.logs/backup/$(basename "$0" .sh)_.log"
 mkdir -p "$(dirname $LOG_BACKUP)"
 
 

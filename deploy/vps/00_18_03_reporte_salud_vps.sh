@@ -59,9 +59,9 @@ verificar_huella_ssh "$IP_VPS"
 
 SCRIPT_NAME="$(basename "$0")"
 
-LOG_FILE="$SCRIPTS_DIR/logs/00_18_03_reporte_salud_vps/00_18_03_reporte_salud_vps.log"
-PROCESS_LOG="$SCRIPTS_DIR/logs/00_18_03_reporte_salud_vps/process_00_18_03_reporte_salud_vps.log"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/00_18_03_reporte_salud_vps_.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/00_18_03_reporte_salud_vps/00_18_03_reporte_salud_vps.log"
+PROCESS_LOG="$SCRIPTS_DIR/.logs/00_18_03_reporte_salud_vps/process_00_18_03_reporte_salud_vps.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/00_18_03_reporte_salud_vps_.log"
 
 mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$PROCESS_LOG")" "$(dirname "$LOG_DEPLOY")"
 

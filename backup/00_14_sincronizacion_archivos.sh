@@ -6,8 +6,8 @@ BASE_DIR="$AP_H2_DIR"
 HEROKU_ROOT="$AP_HK_DIR"
 NJALLA_ROOT="/home/markmur88/api_bank_heroku"
 SCRIPT_NAME="$(basename "$0")"
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/${SCRIPT_NAME%.sh}_.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/${SCRIPT_NAME%.sh}_.log"
 mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$LOG_DEPLOY")"
 {
   echo

@@ -38,8 +38,8 @@ ENV_FILE="$BASE_DIR/.env.production"
 HEROKU_APP=apibank2
 PEM_PATH="$BASE_DIR/schemas/keys/private_key.pem"
 
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/${SCRIPT_NAME%.sh}.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/${SCRIPT_NAME%.sh}.log"
 mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$LOG_DEPLOY")"
 
 exec > >(tee -a "$LOG_FILE" "$LOG_DEPLOY") 2>&1
@@ -69,7 +69,7 @@ echo -e "🌐 Push a GitHub..."
 git push -u origin main || { echo "❌ Error al subir a GitHub"; exit 1; }
 
 # 📝 Guardar histórico en formato Markdown
-COMMIT_LOG="$SCRIPTS_DIR/logs/commits_hist.md"
+COMMIT_LOG="$SCRIPTS_DIR/.logs/commits_hist.md"
 mkdir -p "$(dirname "$COMMIT_LOG")"
 
 # Agregar encabezado si el archivo está vacío o no existe

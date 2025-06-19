@@ -46,9 +46,9 @@ set -e -x
 SCRIPT_NAME="$(basename "$0")"
 
 SCRIPTS_DIR="$SCRIPTS_DIR"
-LOG_FILE="$SCRIPTS_DIR/logs/deploy_njalla.log"
-PROCESS_LOG="$SCRIPTS_DIR/logs/deploy_njalla.log"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/deploy_njalla_.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/deploy_njalla.log"
+PROCESS_LOG="$SCRIPTS_DIR/.logs/deploy_njalla.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/deploy_njalla_.log"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 mkdir -p "$(dirname "$PROCESS_LOG")"

@@ -227,17 +227,17 @@ alias vps_down_copy='bash $DP_VP_DIR/vps_copy_files.sh'
 # alias vps_gitsync='bash $BACKU_DIR/00_14_sincronizacion_archivos.sh && bash $DP_VP_DIR/sync_local_and_vps.sh && api'
 
 # Logs de sincronización
-alias log_sync_last='less "$(ls -1t $SCRIPTS_DIR/logs/sync/*.log 2>/dev/null | head -n1)"'
+alias log_sync_last='less "$(ls -1t $SCRIPTS_DIR/.logs/sync/*.log 2>/dev/null | head -n1)"'
 
 # Logs de despliegue general
-alias log_deploy='less "$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"'
+alias log_deploy='less "$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"'
 
 # Logs de despliegue individuales
-alias log_push='less "$SCRIPTS_DIR/logs/despliegue/00_16_01_subir_GitHub.log"'
-alias log_sync_arch='less "$SCRIPTS_DIR/logs/despliegue/00_14_sincronizacion_archivos.log"'
+alias log_push='less "$SCRIPTS_DIR/.logs/despliegue/00_16_01_subir_GitHub.log"'
+alias log_sync_arch='less "$SCRIPTS_DIR/.logs/despliegue/00_14_sincronizacion_archivos.log"'
 
 # Historial de commits
-alias log_commits='less "$SCRIPTS_DIR/logs/commits_hist.md"'
+alias log_commits='less "$SCRIPTS_DIR/.logs/commits_hist.md"'
 
 # Logs del VPS
 alias log_vps_supervisor='vps_exec "tail -f /var/log/supervisor/coretransapi.err.log"'

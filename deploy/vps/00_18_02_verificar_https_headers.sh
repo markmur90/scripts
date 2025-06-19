@@ -58,9 +58,9 @@ verificar_huella_ssh "$IP_VPS"
 
 SCRIPT_NAME="$(basename "$0")"
 
-LOG_FILE="$SCRIPTS_DIR/logs/00_18_02_verificar_https_headers/00_18_02_verificar_https_headers.log"
-PROCESS_LOG="$SCRIPTS_DIR/logs/00_18_02_verificar_https_headers/process_00_18_02_verificar_https_headers.log"
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/00_18_02_verificar_https_headers_.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/00_18_02_verificar_https_headers/00_18_02_verificar_https_headers.log"
+PROCESS_LOG="$SCRIPTS_DIR/.logs/00_18_02_verificar_https_headers/process_00_18_02_verificar_https_headers.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/00_18_02_verificar_https_headers_.log"
 
 mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$PROCESS_LOG")" "$(dirname "$LOG_DEPLOY")"
 

@@ -7,7 +7,7 @@ AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
 VENV_PATH="/home/markmur88/envAPP"
 SCRIPTS_DIR="/home/markmur88/scripts"
-LOG_DIR="$SCRIPTS_DIR/logs/00_18_05_deploy_update"
+LOG_DIR="$SCRIPTS_DIR/.logs/00_18_05_deploy_update"
 
 mkdir -p "$LOG_DIR"
 SCRIPT_NAME="$(basename "$0")"

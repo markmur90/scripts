@@ -63,7 +63,7 @@ KEYFILE="keygen_${CLAVE_SALIDA}.conf"
 # === LOGGING ===
 SCRIPT_NAME="$(basename "$0")"
 
-LOG_FILE="$SCRIPTS_DIR/logs/00_18_04_generar_clave_pgp_njalla/${SCRIPT_NAME%.sh}.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/00_18_04_generar_clave_pgp_njalla/${SCRIPT_NAME%.sh}.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 exec > >(tee -a "$LOG_FILE") 2>&1
 

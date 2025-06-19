@@ -33,7 +33,7 @@ source "/home/markmur88/Documentos/Entorno/envAPP/bin/activate"
 
 echo "🌍 Estableciendo entorno local HTTPS con certificados autofirmados..."
 
-PROJECT_DIR="$AP_H2_DIR"
+PROJECT_DIR="$SCRIPTS_DIR"
 cd "$PROJECT_DIR"
 
 CERT_DIR="$PROJECT_DIR/certs"

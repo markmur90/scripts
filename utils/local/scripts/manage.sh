@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-BASE="/home/markmur88/local"
+BASE="/home/markmur88/scripts/utils/local"
 CONF="$BASE/config"
 LOG="$BASE/logs"
 TMP_CONF="$CONF/nginx.conf"

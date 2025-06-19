@@ -31,7 +31,7 @@ set -euo pipefail
 ### CONFIGURACIÓN ###
 ENV_FILE=".env.production"
 APP_NAME="apibank2"
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
 
 ### CABECERA ###
 echo "📦 Aplicando variables de entorno a Heroku → app: $APP_NAME"

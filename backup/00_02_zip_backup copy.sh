@@ -29,7 +29,7 @@ GE_SH_DIR="$GT_GE_DIR/scripts"
 set -euo pipefail
 
 SCRIPT_NAME="$(basename "$0")"
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 
@@ -46,7 +46,7 @@ set -euo pipefail
 
 
 
-LOG_BACKUP="$SCRIPTS_DIR/logs/backup/$(basename "$0" .sh)_.log"
+LOG_BACKUP="$SCRIPTS_DIR/.logs/backup/$(basename "$0" .sh)_.log"
 mkdir -p "$(dirname $LOG_BACKUP)"
 
 

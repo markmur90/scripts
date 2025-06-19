@@ -1,0 +1,46 @@
+services:
+  # MongoDB
+  mongo:
+    image: mongo:4.4
+    container_name: graylog-mongo
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+  # Elasticsearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    container_name: graylog-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    restart: always
+
+  # Graylog
+  graylog:
+    image: graylog/graylog:4.3
+    container_name: graylog-server
+    environment:
+      # Configuración básica
+      GRAYLOG_PASSWORD_SECRET: BVhVGylZOYWflRX78im7Y2pdBOyHD9VMHqryylZvrBdQ0H5nytwL4Dq8VbzCmo1nulFIFPMhTDsXQrYhOuokItgZvXKR5bVV   # Reemplaza por tu secreto
+      GRAYLOG_ROOT_PASSWORD_SHA2: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918  # Contraseña: admin
+      GRAYLOG_MONGODB_URI: mongodb://mongo:27017/graylog
+      GRAYLOG_ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "9000:9000"    # Web interface
+      - "514:514"      # Syslog TCP
+      - "514:514/udp"  # Syslog UDP
+      - "12201:12201/udp"  # GELF UDP
+    depends_on:
+      - mongo
+      - elasticsearch
+    restart: always
+
+volumes:
+  mongo_data:
+  es_data:

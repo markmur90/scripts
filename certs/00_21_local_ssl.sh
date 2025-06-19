@@ -29,9 +29,9 @@ BASE_DIR="$SCRIPTS_DIR"
 set -euo pipefail
 
 SCRIPT_NAME="$(basename "$0")"
-LOG_FILE="$SCRIPTS_DIR/logs/01_full_deploy/full_deploy.log"
+LOG_FILE="$SCRIPTS_DIR/.logs/01_full_deploy/full_deploy.log"
 
-PROCESS_LOG="$SCRIPTS_DIR/logs/01_full_deploy/process_ssl.log"
+PROCESS_LOG="$SCRIPTS_DIR/.logs/01_full_deploy/process_ssl.log"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 mkdir -p "$(dirname "$PROCESS_LOG")"
@@ -48,7 +48,7 @@ trap 'echo -e "\n❌ Error en línea $LINENO: \"$BASH_COMMAND\"\nAbortando ejecu
 set -euo pipefail
 
 
-LOG_DEPLOY="$SCRIPTS_DIR/logs/despliegue/$(basename "$0" .sh)_.log"
+LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/$(basename "$0" .sh)_.log"
 mkdir -p "$(dirname $LOG_DEPLOY)"
 
 
