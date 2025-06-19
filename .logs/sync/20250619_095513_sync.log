@@ -1,0 +1,3620 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+.env.local
+.env.production
+api_venice.txt
+argparse
+chmod_log.txt
+file-3t5.py
+json
+package-lock.json
+package.json
+requests
+subprocess
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion_banco.py
+api/gpt4/conexion_banco_refactor.py
+api/gpt4/utils.py
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+middleware/
+node_modules/
+node_modules/.package-lock.json
+node_modules/.bin/
+node_modules/.bin/mime -> ../mime/cli.js
+node_modules/accepts/
+node_modules/accepts/HISTORY.md
+node_modules/accepts/LICENSE
+node_modules/accepts/README.md
+node_modules/accepts/index.js
+node_modules/accepts/package.json
+node_modules/array-flatten/
+node_modules/array-flatten/LICENSE
+node_modules/array-flatten/README.md
+node_modules/array-flatten/array-flatten.js
+node_modules/array-flatten/package.json
+node_modules/body-parser/
+node_modules/body-parser/HISTORY.md
+node_modules/body-parser/LICENSE
+node_modules/body-parser/README.md
+node_modules/body-parser/SECURITY.md
+node_modules/body-parser/index.js
+node_modules/body-parser/package.json
+node_modules/body-parser/lib/
+node_modules/body-parser/lib/read.js
+node_modules/body-parser/lib/types/
+node_modules/body-parser/lib/types/json.js
+node_modules/body-parser/lib/types/raw.js
+node_modules/body-parser/lib/types/text.js
+node_modules/body-parser/lib/types/urlencoded.js
+node_modules/bytes/
+node_modules/bytes/History.md
+node_modules/bytes/LICENSE
+node_modules/bytes/Readme.md
+node_modules/bytes/index.js
+node_modules/bytes/package.json
+node_modules/call-bind-apply-helpers/
+node_modules/call-bind-apply-helpers/.eslintrc
+node_modules/call-bind-apply-helpers/.nycrc
+node_modules/call-bind-apply-helpers/CHANGELOG.md
+node_modules/call-bind-apply-helpers/LICENSE
+node_modules/call-bind-apply-helpers/README.md
+node_modules/call-bind-apply-helpers/actualApply.d.ts
+node_modules/call-bind-apply-helpers/actualApply.js
+node_modules/call-bind-apply-helpers/applyBind.d.ts
+node_modules/call-bind-apply-helpers/applyBind.js
+node_modules/call-bind-apply-helpers/functionApply.d.ts
+node_modules/call-bind-apply-helpers/functionApply.js
+node_modules/call-bind-apply-helpers/functionCall.d.ts
+node_modules/call-bind-apply-helpers/functionCall.js
+node_modules/call-bind-apply-helpers/index.d.ts
+node_modules/call-bind-apply-helpers/index.js
+node_modules/call-bind-apply-helpers/package.json
+node_modules/call-bind-apply-helpers/reflectApply.d.ts
+node_modules/call-bind-apply-helpers/reflectApply.js
+node_modules/call-bind-apply-helpers/tsconfig.json
+node_modules/call-bind-apply-helpers/.github/
+node_modules/call-bind-apply-helpers/.github/FUNDING.yml
+node_modules/call-bind-apply-helpers/test/
+node_modules/call-bind-apply-helpers/test/index.js
+node_modules/call-bound/
+node_modules/call-bound/.eslintrc
+node_modules/call-bound/.nycrc
+node_modules/call-bound/CHANGELOG.md
+node_modules/call-bound/LICENSE
+node_modules/call-bound/README.md
+node_modules/call-bound/index.d.ts
+node_modules/call-bound/index.js
+node_modules/call-bound/package.json
+node_modules/call-bound/tsconfig.json
+node_modules/call-bound/.github/
+node_modules/call-bound/.github/FUNDING.yml
+node_modules/call-bound/test/
+node_modules/call-bound/test/index.js
+node_modules/content-disposition/
+node_modules/content-disposition/HISTORY.md
+node_modules/content-disposition/LICENSE
+node_modules/content-disposition/README.md
+node_modules/content-disposition/index.js
+node_modules/content-disposition/package.json
+node_modules/content-type/
+node_modules/content-type/HISTORY.md
+node_modules/content-type/LICENSE
+node_modules/content-type/README.md
+node_modules/content-type/index.js
+node_modules/content-type/package.json
+node_modules/cookie-signature/
+node_modules/cookie-signature/.npmignore
+node_modules/cookie-signature/History.md
+node_modules/cookie-signature/Readme.md
+node_modules/cookie-signature/index.js
+node_modules/cookie-signature/package.json
+node_modules/cookie/
+node_modules/cookie/LICENSE
+node_modules/cookie/README.md
+node_modules/cookie/SECURITY.md
+node_modules/cookie/index.js
+node_modules/cookie/package.json
+node_modules/debug/
+node_modules/debug/.coveralls.yml
+node_modules/debug/.eslintrc
+node_modules/debug/.npmignore
+node_modules/debug/.travis.yml
+node_modules/debug/CHANGELOG.md
+node_modules/debug/LICENSE
+node_modules/debug/Makefile
+node_modules/debug/README.md
+node_modules/debug/component.json
+node_modules/debug/karma.conf.js
+node_modules/debug/node.js
+node_modules/debug/package.json
+node_modules/debug/src/
+node_modules/debug/src/browser.js
+node_modules/debug/src/debug.js
+node_modules/debug/src/index.js
+node_modules/debug/src/inspector-log.js
+node_modules/debug/src/node.js
+node_modules/depd/
+node_modules/depd/History.md
+node_modules/depd/LICENSE
+node_modules/depd/Readme.md
+node_modules/depd/index.js
+node_modules/depd/package.json
+node_modules/depd/lib/
+node_modules/depd/lib/browser/
+node_modules/depd/lib/browser/index.js
+node_modules/destroy/
+node_modules/destroy/LICENSE
+node_modules/destroy/README.md
+node_modules/destroy/index.js
+node_modules/destroy/package.json
+node_modules/dunder-proto/
+node_modules/dunder-proto/.eslintrc
+node_modules/dunder-proto/.nycrc
+node_modules/dunder-proto/CHANGELOG.md
+node_modules/dunder-proto/LICENSE
+node_modules/dunder-proto/README.md
+node_modules/dunder-proto/get.d.ts
+node_modules/dunder-proto/get.js
+node_modules/dunder-proto/package.json
+node_modules/dunder-proto/set.d.ts
+node_modules/dunder-proto/set.js
+node_modules/dunder-proto/tsconfig.json
+node_modules/dunder-proto/.github/
+node_modules/dunder-proto/.github/FUNDING.yml
+node_modules/dunder-proto/test/
+node_modules/dunder-proto/test/get.js
+node_modules/dunder-proto/test/index.js
+node_modules/dunder-proto/test/set.js
+node_modules/ee-first/
+node_modules/ee-first/LICENSE
+node_modules/ee-first/README.md
+node_modules/ee-first/index.js
+node_modules/ee-first/package.json
+node_modules/encodeurl/
+node_modules/encodeurl/LICENSE
+node_modules/encodeurl/README.md
+node_modules/encodeurl/index.js
+node_modules/encodeurl/package.json
+node_modules/es-define-property/
+node_modules/es-define-property/.eslintrc
+node_modules/es-define-property/.nycrc
+node_modules/es-define-property/CHANGELOG.md
+node_modules/es-define-property/LICENSE
+node_modules/es-define-property/README.md
+node_modules/es-define-property/index.d.ts
+node_modules/es-define-property/index.js
+node_modules/es-define-property/package.json
+node_modules/es-define-property/tsconfig.json
+node_modules/es-define-property/.github/
+node_modules/es-define-property/.github/FUNDING.yml
+node_modules/es-define-property/test/
+node_modules/es-define-property/test/index.js
+node_modules/es-errors/
+node_modules/es-errors/.eslintrc
+node_modules/es-errors/CHANGELOG.md
+node_modules/es-errors/LICENSE
+node_modules/es-errors/README.md
+node_modules/es-errors/eval.d.ts
+node_modules/es-errors/eval.js
+node_modules/es-errors/index.d.ts
+node_modules/es-errors/index.js
+node_modules/es-errors/package.json
+node_modules/es-errors/range.d.ts
+node_modules/es-errors/range.js
+node_modules/es-errors/ref.d.ts
+node_modules/es-errors/ref.js
+node_modules/es-errors/syntax.d.ts
+node_modules/es-errors/syntax.js
+node_modules/es-errors/tsconfig.json
+node_modules/es-errors/type.d.ts
+node_modules/es-errors/type.js
+node_modules/es-errors/uri.d.ts
+node_modules/es-errors/uri.js
+node_modules/es-errors/.github/
+node_modules/es-errors/.github/FUNDING.yml
+node_modules/es-errors/test/
+node_modules/es-errors/test/index.js
+node_modules/es-object-atoms/
+node_modules/es-object-atoms/.eslintrc
+node_modules/es-object-atoms/CHANGELOG.md
+node_modules/es-object-atoms/LICENSE
+node_modules/es-object-atoms/README.md
+node_modules/es-object-atoms/RequireObjectCoercible.d.ts
+node_modules/es-object-atoms/RequireObjectCoercible.js
+node_modules/es-object-atoms/ToObject.d.ts
+node_modules/es-object-atoms/ToObject.js
+node_modules/es-object-atoms/index.d.ts
+node_modules/es-object-atoms/index.js
+node_modules/es-object-atoms/isObject.d.ts
+node_modules/es-object-atoms/isObject.js
+node_modules/es-object-atoms/package.json
+node_modules/es-object-atoms/tsconfig.json
+node_modules/es-object-atoms/.github/
+node_modules/es-object-atoms/.github/FUNDING.yml
+node_modules/es-object-atoms/test/
+node_modules/es-object-atoms/test/index.js
+node_modules/escape-html/
+node_modules/escape-html/LICENSE
+node_modules/escape-html/Readme.md
+node_modules/escape-html/index.js
+node_modules/escape-html/package.json
+node_modules/etag/
+node_modules/etag/HISTORY.md
+node_modules/etag/LICENSE
+node_modules/etag/README.md
+node_modules/etag/index.js
+node_modules/etag/package.json
+node_modules/express/
+node_modules/express/History.md
+node_modules/express/LICENSE
+node_modules/express/Readme.md
+node_modules/express/index.js
+node_modules/express/package.json
+node_modules/express/lib/
+node_modules/express/lib/application.js
+node_modules/express/lib/express.js
+node_modules/express/lib/request.js
+node_modules/express/lib/response.js
+node_modules/express/lib/utils.js
+node_modules/express/lib/view.js
+node_modules/express/lib/middleware/
+node_modules/express/lib/middleware/init.js
+node_modules/express/lib/middleware/query.js
+node_modules/express/lib/router/
+node_modules/express/lib/router/index.js
+node_modules/express/lib/router/layer.js
+node_modules/express/lib/router/route.js
+node_modules/finalhandler/
+node_modules/finalhandler/HISTORY.md
+node_modules/finalhandler/LICENSE
+node_modules/finalhandler/README.md
+node_modules/finalhandler/SECURITY.md
+node_modules/finalhandler/index.js
+node_modules/finalhandler/package.json
+node_modules/forwarded/
+node_modules/forwarded/HISTORY.md
+node_modules/forwarded/LICENSE
+node_modules/forwarded/README.md
+node_modules/forwarded/index.js
+node_modules/forwarded/package.json
+node_modules/fresh/
+node_modules/fresh/HISTORY.md
+node_modules/fresh/LICENSE
+node_modules/fresh/README.md
+node_modules/fresh/index.js
+node_modules/fresh/package.json
+node_modules/function-bind/
+node_modules/function-bind/.eslintrc
+node_modules/function-bind/.nycrc
+node_modules/function-bind/CHANGELOG.md
+node_modules/function-bind/LICENSE
+node_modules/function-bind/README.md
+node_modules/function-bind/implementation.js
+node_modules/function-bind/index.js
+node_modules/function-bind/package.json
+node_modules/function-bind/.github/
+node_modules/function-bind/.github/FUNDING.yml
+node_modules/function-bind/.github/SECURITY.md
+node_modules/function-bind/test/
+node_modules/function-bind/test/.eslintrc
+node_modules/function-bind/test/index.js
+node_modules/get-intrinsic/
+node_modules/get-intrinsic/.eslintrc
+node_modules/get-intrinsic/.nycrc
+node_modules/get-intrinsic/CHANGELOG.md
+node_modules/get-intrinsic/LICENSE
+node_modules/get-intrinsic/README.md
+node_modules/get-intrinsic/index.js
+node_modules/get-intrinsic/package.json
+node_modules/get-intrinsic/.github/
+node_modules/get-intrinsic/.github/FUNDING.yml
+node_modules/get-intrinsic/test/
+node_modules/get-intrinsic/test/GetIntrinsic.js
+node_modules/get-proto/
+node_modules/get-proto/.eslintrc
+node_modules/get-proto/.nycrc
+node_modules/get-proto/CHANGELOG.md
+node_modules/get-proto/LICENSE
+node_modules/get-proto/Object.getPrototypeOf.d.ts
+node_modules/get-proto/Object.getPrototypeOf.js
+node_modules/get-proto/README.md
+node_modules/get-proto/Reflect.getPrototypeOf.d.ts
+node_modules/get-proto/Reflect.getPrototypeOf.js
+node_modules/get-proto/index.d.ts
+node_modules/get-proto/index.js
+node_modules/get-proto/package.json
+node_modules/get-proto/tsconfig.json
+node_modules/get-proto/.github/
+node_modules/get-proto/.github/FUNDING.yml
+node_modules/get-proto/test/
+node_modules/get-proto/test/index.js
+node_modules/gopd/
+node_modules/gopd/.eslintrc
+node_modules/gopd/CHANGELOG.md
+node_modules/gopd/LICENSE
+node_modules/gopd/README.md
+node_modules/gopd/gOPD.d.ts
+node_modules/gopd/gOPD.js
+node_modules/gopd/index.d.ts
+node_modules/gopd/index.js
+node_modules/gopd/package.json
+node_modules/gopd/tsconfig.json
+node_modules/gopd/.github/
+node_modules/gopd/.github/FUNDING.yml
+node_modules/gopd/test/
+node_modules/gopd/test/index.js
+node_modules/has-symbols/
+node_modules/has-symbols/.eslintrc
+node_modules/has-symbols/.nycrc
+node_modules/has-symbols/CHANGELOG.md
+node_modules/has-symbols/LICENSE
+node_modules/has-symbols/README.md
+node_modules/has-symbols/index.d.ts
+node_modules/has-symbols/index.js
+node_modules/has-symbols/package.json
+node_modules/has-symbols/shams.d.ts
+node_modules/has-symbols/shams.js
+node_modules/has-symbols/tsconfig.json
+node_modules/has-symbols/.github/
+node_modules/has-symbols/.github/FUNDING.yml
+node_modules/has-symbols/test/
+node_modules/has-symbols/test/index.js
+node_modules/has-symbols/test/tests.js
+node_modules/has-symbols/test/shams/
+node_modules/has-symbols/test/shams/core-js.js
+node_modules/has-symbols/test/shams/get-own-property-symbols.js
+node_modules/hasown/
+node_modules/hasown/.eslintrc
+node_modules/hasown/.nycrc
+node_modules/hasown/CHANGELOG.md
+node_modules/hasown/LICENSE
+node_modules/hasown/README.md
+node_modules/hasown/index.d.ts
+node_modules/hasown/index.js
+node_modules/hasown/package.json
+node_modules/hasown/tsconfig.json
+node_modules/hasown/.github/
+node_modules/hasown/.github/FUNDING.yml
+node_modules/http-errors/
+node_modules/http-errors/HISTORY.md
+node_modules/http-errors/LICENSE
+node_modules/http-errors/README.md
+node_modules/http-errors/index.js
+node_modules/http-errors/package.json
+node_modules/iconv-lite/
+node_modules/iconv-lite/Changelog.md
+node_modules/iconv-lite/LICENSE
+node_modules/iconv-lite/README.md
+node_modules/iconv-lite/package.json
+node_modules/iconv-lite/encodings/
+node_modules/iconv-lite/encodings/dbcs-codec.js
+node_modules/iconv-lite/encodings/dbcs-data.js
+node_modules/iconv-lite/encodings/index.js
+node_modules/iconv-lite/encodings/internal.js
+node_modules/iconv-lite/encodings/sbcs-codec.js
+node_modules/iconv-lite/encodings/sbcs-data-generated.js
+node_modules/iconv-lite/encodings/sbcs-data.js
+node_modules/iconv-lite/encodings/utf16.js
+node_modules/iconv-lite/encodings/utf7.js
+node_modules/iconv-lite/encodings/tables/
+node_modules/iconv-lite/encodings/tables/big5-added.json
+node_modules/iconv-lite/encodings/tables/cp936.json
+node_modules/iconv-lite/encodings/tables/cp949.json
+node_modules/iconv-lite/encodings/tables/cp950.json
+node_modules/iconv-lite/encodings/tables/eucjp.json
+node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
+node_modules/iconv-lite/encodings/tables/gbk-added.json
+node_modules/iconv-lite/encodings/tables/shiftjis.json
+node_modules/iconv-lite/lib/
+node_modules/iconv-lite/lib/bom-handling.js
+node_modules/iconv-lite/lib/extend-node.js
+node_modules/iconv-lite/lib/index.d.ts
+node_modules/iconv-lite/lib/index.js
+node_modules/iconv-lite/lib/streams.js
+node_modules/inherits/
+node_modules/inherits/LICENSE
+node_modules/inherits/README.md
+node_modules/inherits/inherits.js
+node_modules/inherits/inherits_browser.js
+node_modules/inherits/package.json
+node_modules/ipaddr.js/
+node_modules/ipaddr.js/LICENSE
+node_modules/ipaddr.js/README.md
+node_modules/ipaddr.js/ipaddr.min.js
+node_modules/ipaddr.js/package.json
+node_modules/ipaddr.js/lib/
+node_modules/ipaddr.js/lib/ipaddr.js
+node_modules/ipaddr.js/lib/ipaddr.js.d.ts
+node_modules/math-intrinsics/
+node_modules/math-intrinsics/.eslintrc
+node_modules/math-intrinsics/CHANGELOG.md
+node_modules/math-intrinsics/LICENSE
+node_modules/math-intrinsics/README.md
+node_modules/math-intrinsics/abs.d.ts
+node_modules/math-intrinsics/abs.js
+node_modules/math-intrinsics/floor.d.ts
+node_modules/math-intrinsics/floor.js
+node_modules/math-intrinsics/isFinite.d.ts
+node_modules/math-intrinsics/isFinite.js
+node_modules/math-intrinsics/isInteger.d.ts
+node_modules/math-intrinsics/isInteger.js
+node_modules/math-intrinsics/isNaN.d.ts
+node_modules/math-intrinsics/isNaN.js
+node_modules/math-intrinsics/isNegativeZero.d.ts
+node_modules/math-intrinsics/isNegativeZero.js
+node_modules/math-intrinsics/max.d.ts
+node_modules/math-intrinsics/max.js
+node_modules/math-intrinsics/min.d.ts
+node_modules/math-intrinsics/min.js
+node_modules/math-intrinsics/mod.d.ts
+node_modules/math-intrinsics/mod.js
+node_modules/math-intrinsics/package.json
+node_modules/math-intrinsics/pow.d.ts
+node_modules/math-intrinsics/pow.js
+node_modules/math-intrinsics/round.d.ts
+node_modules/math-intrinsics/round.js
+node_modules/math-intrinsics/sign.d.ts
+node_modules/math-intrinsics/sign.js
+node_modules/math-intrinsics/tsconfig.json
+node_modules/math-intrinsics/.github/
+node_modules/math-intrinsics/.github/FUNDING.yml
+node_modules/math-intrinsics/constants/
+node_modules/math-intrinsics/constants/maxArrayLength.d.ts
+node_modules/math-intrinsics/constants/maxArrayLength.js
+node_modules/math-intrinsics/constants/maxSafeInteger.d.ts
+node_modules/math-intrinsics/constants/maxSafeInteger.js
+node_modules/math-intrinsics/constants/maxValue.d.ts
+node_modules/math-intrinsics/constants/maxValue.js
+node_modules/math-intrinsics/test/
+node_modules/math-intrinsics/test/index.js
+node_modules/media-typer/
+node_modules/media-typer/HISTORY.md
+node_modules/media-typer/LICENSE
+node_modules/media-typer/README.md
+node_modules/media-typer/index.js
+node_modules/media-typer/package.json
+node_modules/merge-descriptors/
+node_modules/merge-descriptors/HISTORY.md
+node_modules/merge-descriptors/LICENSE
+node_modules/merge-descriptors/README.md
+node_modules/merge-descriptors/index.js
+node_modules/merge-descriptors/package.json
+node_modules/methods/
+node_modules/methods/HISTORY.md
+node_modules/methods/LICENSE
+node_modules/methods/README.md
+node_modules/methods/index.js
+node_modules/methods/package.json
+node_modules/mime-db/
+node_modules/mime-db/HISTORY.md
+node_modules/mime-db/LICENSE
+node_modules/mime-db/README.md
+node_modules/mime-db/db.json
+node_modules/mime-db/index.js
+node_modules/mime-db/package.json
+node_modules/mime-types/
+node_modules/mime-types/HISTORY.md
+node_modules/mime-types/LICENSE
+node_modules/mime-types/README.md
+node_modules/mime-types/index.js
+node_modules/mime-types/package.json
+node_modules/mime/
+node_modules/mime/.npmignore
+node_modules/mime/CHANGELOG.md
+node_modules/mime/LICENSE
+node_modules/mime/README.md
+node_modules/mime/cli.js
+node_modules/mime/mime.js
+node_modules/mime/package.json
+node_modules/mime/types.json
+node_modules/mime/src/
+node_modules/mime/src/build.js
+node_modules/mime/src/test.js
+node_modules/ms/
+node_modules/ms/index.js
+node_modules/ms/license.md
+node_modules/ms/package.json
+node_modules/ms/readme.md
+node_modules/negotiator/
+node_modules/negotiator/HISTORY.md
+node_modules/negotiator/LICENSE
+node_modules/negotiator/README.md
+node_modules/negotiator/index.js
+node_modules/negotiator/package.json
+node_modules/negotiator/lib/
+node_modules/negotiator/lib/charset.js
+node_modules/negotiator/lib/encoding.js
+node_modules/negotiator/lib/language.js
+node_modules/negotiator/lib/mediaType.js
+node_modules/object-inspect/
+node_modules/object-inspect/.eslintrc
+node_modules/object-inspect/.nycrc
+node_modules/object-inspect/CHANGELOG.md
+node_modules/object-inspect/LICENSE
+node_modules/object-inspect/index.js
+node_modules/object-inspect/package-support.json
+node_modules/object-inspect/package.json
+node_modules/object-inspect/readme.markdown
+node_modules/object-inspect/test-core-js.js
+node_modules/object-inspect/util.inspect.js
+node_modules/object-inspect/.github/
+node_modules/object-inspect/.github/FUNDING.yml
+node_modules/object-inspect/example/
+node_modules/object-inspect/example/all.js
+node_modules/object-inspect/example/circular.js
+node_modules/object-inspect/example/fn.js
+node_modules/object-inspect/example/inspect.js
+node_modules/object-inspect/test/
+node_modules/object-inspect/test/bigint.js
+node_modules/object-inspect/test/circular.js
+node_modules/object-inspect/test/deep.js
+node_modules/object-inspect/test/element.js
+node_modules/object-inspect/test/err.js
+node_modules/object-inspect/test/fakes.js
+node_modules/object-inspect/test/fn.js
+node_modules/object-inspect/test/global.js
+node_modules/object-inspect/test/has.js
+node_modules/object-inspect/test/holes.js
+node_modules/object-inspect/test/indent-option.js
+node_modules/object-inspect/test/inspect.js
+node_modules/object-inspect/test/lowbyte.js
+node_modules/object-inspect/test/number.js
+node_modules/object-inspect/test/quoteStyle.js
+node_modules/object-inspect/test/toStringTag.js
+node_modules/object-inspect/test/undef.js
+node_modules/object-inspect/test/values.js
+node_modules/object-inspect/test/browser/
+node_modules/object-inspect/test/browser/dom.js
+node_modules/on-finished/
+node_modules/on-finished/HISTORY.md
+node_modules/on-finished/LICENSE
+node_modules/on-finished/README.md
+node_modules/on-finished/index.js
+node_modules/on-finished/package.json
+node_modules/parseurl/
+node_modules/parseurl/HISTORY.md
+node_modules/parseurl/LICENSE
+node_modules/parseurl/README.md
+node_modules/parseurl/index.js
+node_modules/parseurl/package.json
+node_modules/path-to-regexp/
+node_modules/path-to-regexp/LICENSE
+node_modules/path-to-regexp/Readme.md
+node_modules/path-to-regexp/index.js
+node_modules/path-to-regexp/package.json
+node_modules/proxy-addr/
+node_modules/proxy-addr/HISTORY.md
+node_modules/proxy-addr/LICENSE
+node_modules/proxy-addr/README.md
+node_modules/proxy-addr/index.js
+node_modules/proxy-addr/package.json
+node_modules/qs/
+node_modules/qs/.editorconfig
+node_modules/qs/.eslintrc
+node_modules/qs/.nycrc
+node_modules/qs/CHANGELOG.md
+node_modules/qs/LICENSE.md
+node_modules/qs/README.md
+node_modules/qs/package.json
+node_modules/qs/.github/
+node_modules/qs/.github/FUNDING.yml
+node_modules/qs/dist/
+node_modules/qs/dist/qs.js
+node_modules/qs/lib/
+node_modules/qs/lib/formats.js
+node_modules/qs/lib/index.js
+node_modules/qs/lib/parse.js
+node_modules/qs/lib/stringify.js
+node_modules/qs/lib/utils.js
+node_modules/qs/test/
+node_modules/qs/test/empty-keys-cases.js
+node_modules/qs/test/parse.js
+node_modules/qs/test/stringify.js
+node_modules/qs/test/utils.js
+node_modules/range-parser/
+node_modules/range-parser/HISTORY.md
+node_modules/range-parser/LICENSE
+node_modules/range-parser/README.md
+node_modules/range-parser/index.js
+node_modules/range-parser/package.json
+node_modules/raw-body/
+node_modules/raw-body/HISTORY.md
+node_modules/raw-body/LICENSE
+node_modules/raw-body/README.md
+node_modules/raw-body/SECURITY.md
+node_modules/raw-body/index.d.ts
+node_modules/raw-body/index.js
+node_modules/raw-body/package.json
+node_modules/safe-buffer/
+node_modules/safe-buffer/LICENSE
+node_modules/safe-buffer/README.md
+node_modules/safe-buffer/index.d.ts
+node_modules/safe-buffer/index.js
+node_modules/safe-buffer/package.json
+node_modules/safer-buffer/
+node_modules/safer-buffer/LICENSE
+node_modules/safer-buffer/Porting-Buffer.md
+node_modules/safer-buffer/Readme.md
+node_modules/safer-buffer/dangerous.js
+node_modules/safer-buffer/package.json
+node_modules/safer-buffer/safer.js
+node_modules/safer-buffer/tests.js
+node_modules/send/
+node_modules/send/HISTORY.md
+node_modules/send/LICENSE
+node_modules/send/README.md
+node_modules/send/SECURITY.md
+node_modules/send/index.js
+node_modules/send/package.json
+node_modules/send/node_modules/
+node_modules/send/node_modules/encodeurl/
+node_modules/send/node_modules/encodeurl/HISTORY.md
+node_modules/send/node_modules/encodeurl/LICENSE
+node_modules/send/node_modules/encodeurl/README.md
+node_modules/send/node_modules/encodeurl/index.js
+node_modules/send/node_modules/encodeurl/package.json
+node_modules/send/node_modules/ms/
+node_modules/send/node_modules/ms/index.js
+node_modules/send/node_modules/ms/license.md
+node_modules/send/node_modules/ms/package.json
+node_modules/send/node_modules/ms/readme.md
+node_modules/serve-static/
+node_modules/serve-static/HISTORY.md
+node_modules/serve-static/LICENSE
+node_modules/serve-static/README.md
+node_modules/serve-static/index.js
+node_modules/serve-static/package.json
+node_modules/setprototypeof/
+node_modules/setprototypeof/LICENSE
+node_modules/setprototypeof/README.md
+node_modules/setprototypeof/index.d.ts
+node_modules/setprototypeof/index.js
+node_modules/setprototypeof/package.json
+node_modules/setprototypeof/test/
+node_modules/setprototypeof/test/index.js
+node_modules/side-channel-list/
+node_modules/side-channel-list/.editorconfig
+node_modules/side-channel-list/.eslintrc
+node_modules/side-channel-list/.nycrc
+node_modules/side-channel-list/CHANGELOG.md
+node_modules/side-channel-list/LICENSE
+node_modules/side-channel-list/README.md
+node_modules/side-channel-list/index.d.ts
+node_modules/side-channel-list/index.js
+node_modules/side-channel-list/list.d.ts
+node_modules/side-channel-list/package.json
+node_modules/side-channel-list/tsconfig.json
+node_modules/side-channel-list/.github/
+node_modules/side-channel-list/.github/FUNDING.yml
+node_modules/side-channel-list/test/
+node_modules/side-channel-list/test/index.js
+node_modules/side-channel-map/
+node_modules/side-channel-map/.editorconfig
+node_modules/side-channel-map/.eslintrc
+node_modules/side-channel-map/.nycrc
+node_modules/side-channel-map/CHANGELOG.md
+node_modules/side-channel-map/LICENSE
+node_modules/side-channel-map/README.md
+node_modules/side-channel-map/index.d.ts
+node_modules/side-channel-map/index.js
+node_modules/side-channel-map/package.json
+node_modules/side-channel-map/tsconfig.json
+node_modules/side-channel-map/.github/
+node_modules/side-channel-map/.github/FUNDING.yml
+node_modules/side-channel-map/test/
+node_modules/side-channel-map/test/index.js
+node_modules/side-channel-weakmap/
+node_modules/side-channel-weakmap/.editorconfig
+node_modules/side-channel-weakmap/.eslintrc
+node_modules/side-channel-weakmap/.nycrc
+node_modules/side-channel-weakmap/CHANGELOG.md
+node_modules/side-channel-weakmap/LICENSE
+node_modules/side-channel-weakmap/README.md
+node_modules/side-channel-weakmap/index.d.ts
+node_modules/side-channel-weakmap/index.js
+node_modules/side-channel-weakmap/package.json
+node_modules/side-channel-weakmap/tsconfig.json
+node_modules/side-channel-weakmap/.github/
+node_modules/side-channel-weakmap/.github/FUNDING.yml
+node_modules/side-channel-weakmap/test/
+node_modules/side-channel-weakmap/test/index.js
+node_modules/side-channel/
+node_modules/side-channel/.editorconfig
+node_modules/side-channel/.eslintrc
+node_modules/side-channel/.nycrc
+node_modules/side-channel/CHANGELOG.md
+node_modules/side-channel/LICENSE
+node_modules/side-channel/README.md
+node_modules/side-channel/index.d.ts
+node_modules/side-channel/index.js
+node_modules/side-channel/package.json
+node_modules/side-channel/tsconfig.json
+node_modules/side-channel/.github/
+node_modules/side-channel/.github/FUNDING.yml
+node_modules/side-channel/test/
+node_modules/side-channel/test/index.js
+node_modules/statuses/
+node_modules/statuses/HISTORY.md
+node_modules/statuses/LICENSE
+node_modules/statuses/README.md
+node_modules/statuses/codes.json
+node_modules/statuses/index.js
+node_modules/statuses/package.json
+node_modules/toidentifier/
+node_modules/toidentifier/HISTORY.md
+node_modules/toidentifier/LICENSE
+node_modules/toidentifier/README.md
+node_modules/toidentifier/index.js
+node_modules/toidentifier/package.json
+node_modules/type-is/
+node_modules/type-is/HISTORY.md
+node_modules/type-is/LICENSE
+node_modules/type-is/README.md
+node_modules/type-is/index.js
+node_modules/type-is/package.json
+node_modules/unpipe/
+node_modules/unpipe/HISTORY.md
+node_modules/unpipe/LICENSE
+node_modules/unpipe/README.md
+node_modules/unpipe/index.js
+node_modules/unpipe/package.json
+node_modules/utils-merge/
+node_modules/utils-merge/.npmignore
+node_modules/utils-merge/LICENSE
+node_modules/utils-merge/README.md
+node_modules/utils-merge/index.js
+node_modules/utils-merge/package.json
+node_modules/vary/
+node_modules/vary/HISTORY.md
+node_modules/vary/LICENSE
+node_modules/vary/README.md
+node_modules/vary/index.js
+node_modules/vary/package.json
+src/
+src/index.js
+staticfiles/admin/css/
+staticfiles/admin/css/autocomplete.css
+staticfiles/admin/css/base.css
+staticfiles/admin/css/changelists.css
+staticfiles/admin/css/dark_mode.css
+staticfiles/admin/css/dashboard.css
+staticfiles/admin/css/forms.css
+staticfiles/admin/css/login.css
+staticfiles/admin/css/nav_sidebar.css
+staticfiles/admin/css/responsive.css
+staticfiles/admin/css/responsive_rtl.css
+staticfiles/admin/css/rtl.css
+staticfiles/admin/css/unusable_password_field.css
+staticfiles/admin/css/widgets.css
+staticfiles/admin/css/vendor/select2/
+staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md
+staticfiles/admin/css/vendor/select2/select2.css
+staticfiles/admin/css/vendor/select2/select2.min.css
+staticfiles/admin/img/
+staticfiles/admin/img/LICENSE
+staticfiles/admin/img/README.txt
+staticfiles/admin/img/calendar-icons.svg
+staticfiles/admin/img/icon-addlink.svg
+staticfiles/admin/img/icon-alert.svg
+staticfiles/admin/img/icon-calendar.svg
+staticfiles/admin/img/icon-changelink.svg
+staticfiles/admin/img/icon-clock.svg
+staticfiles/admin/img/icon-deletelink.svg
+staticfiles/admin/img/icon-hidelink.svg
+staticfiles/admin/img/icon-no.svg
+staticfiles/admin/img/icon-unknown-alt.svg
+staticfiles/admin/img/icon-unknown.svg
+staticfiles/admin/img/icon-viewlink.svg
+staticfiles/admin/img/icon-yes.svg
+staticfiles/admin/img/inline-delete.svg
+staticfiles/admin/img/search.svg
+staticfiles/admin/img/selector-icons.svg
+staticfiles/admin/img/sorting-icons.svg
+staticfiles/admin/img/tooltag-add.svg
+staticfiles/admin/img/tooltag-arrowright.svg
+staticfiles/admin/img/gis/
+staticfiles/admin/img/gis/move_vertex_off.svg
+staticfiles/admin/img/gis/move_vertex_on.svg
+staticfiles/admin/js/
+staticfiles/admin/js/SelectBox.js
+staticfiles/admin/js/SelectFilter2.js
+staticfiles/admin/js/actions.js
+staticfiles/admin/js/autocomplete.js
+staticfiles/admin/js/calendar.js
+staticfiles/admin/js/cancel.js
+staticfiles/admin/js/change_form.js
+staticfiles/admin/js/core.js
+staticfiles/admin/js/filters.js
+staticfiles/admin/js/inlines.js
+staticfiles/admin/js/jquery.init.js
+staticfiles/admin/js/nav_sidebar.js
+staticfiles/admin/js/popup_response.js
+staticfiles/admin/js/prepopulate.js
+staticfiles/admin/js/prepopulate_init.js
+staticfiles/admin/js/theme.js
+staticfiles/admin/js/unusable_password_field.js
+staticfiles/admin/js/urlify.js
+staticfiles/admin/js/admin/
+staticfiles/admin/js/admin/DateTimeShortcuts.js
+staticfiles/admin/js/admin/RelatedObjectLookups.js
+staticfiles/admin/js/vendor/jquery/
+staticfiles/admin/js/vendor/jquery/LICENSE.txt
+staticfiles/admin/js/vendor/jquery/jquery.js
+staticfiles/admin/js/vendor/jquery/jquery.min.js
+staticfiles/admin/js/vendor/select2/
+staticfiles/admin/js/vendor/select2/LICENSE.md
+staticfiles/admin/js/vendor/select2/select2.full.js
+staticfiles/admin/js/vendor/select2/select2.full.min.js
+staticfiles/admin/js/vendor/select2/i18n/
+staticfiles/admin/js/vendor/select2/i18n/af.js
+staticfiles/admin/js/vendor/select2/i18n/ar.js
+staticfiles/admin/js/vendor/select2/i18n/az.js
+staticfiles/admin/js/vendor/select2/i18n/bg.js
+staticfiles/admin/js/vendor/select2/i18n/bn.js
+staticfiles/admin/js/vendor/select2/i18n/bs.js
+staticfiles/admin/js/vendor/select2/i18n/ca.js
+staticfiles/admin/js/vendor/select2/i18n/cs.js
+staticfiles/admin/js/vendor/select2/i18n/da.js
+staticfiles/admin/js/vendor/select2/i18n/de.js
+staticfiles/admin/js/vendor/select2/i18n/dsb.js
+staticfiles/admin/js/vendor/select2/i18n/el.js
+staticfiles/admin/js/vendor/select2/i18n/en.js
+staticfiles/admin/js/vendor/select2/i18n/es.js
+staticfiles/admin/js/vendor/select2/i18n/et.js
+staticfiles/admin/js/vendor/select2/i18n/eu.js
+staticfiles/admin/js/vendor/select2/i18n/fa.js
+staticfiles/admin/js/vendor/select2/i18n/fi.js
+staticfiles/admin/js/vendor/select2/i18n/fr.js
+staticfiles/admin/js/vendor/select2/i18n/gl.js
+staticfiles/admin/js/vendor/select2/i18n/he.js
+staticfiles/admin/js/vendor/select2/i18n/hi.js
+staticfiles/admin/js/vendor/select2/i18n/hr.js
+staticfiles/admin/js/vendor/select2/i18n/hsb.js
+staticfiles/admin/js/vendor/select2/i18n/hu.js
+staticfiles/admin/js/vendor/select2/i18n/hy.js
+staticfiles/admin/js/vendor/select2/i18n/id.js
+staticfiles/admin/js/vendor/select2/i18n/is.js
+staticfiles/admin/js/vendor/select2/i18n/it.js
+staticfiles/admin/js/vendor/select2/i18n/ja.js
+staticfiles/admin/js/vendor/select2/i18n/ka.js
+staticfiles/admin/js/vendor/select2/i18n/km.js
+staticfiles/admin/js/vendor/select2/i18n/ko.js
+staticfiles/admin/js/vendor/select2/i18n/lt.js
+staticfiles/admin/js/vendor/select2/i18n/lv.js
+staticfiles/admin/js/vendor/select2/i18n/mk.js
+staticfiles/admin/js/vendor/select2/i18n/ms.js
+staticfiles/admin/js/vendor/select2/i18n/nb.js
+staticfiles/admin/js/vendor/select2/i18n/ne.js
+staticfiles/admin/js/vendor/select2/i18n/nl.js
+staticfiles/admin/js/vendor/select2/i18n/pl.js
+staticfiles/admin/js/vendor/select2/i18n/ps.js
+staticfiles/admin/js/vendor/select2/i18n/pt-BR.js
+staticfiles/admin/js/vendor/select2/i18n/pt.js
+staticfiles/admin/js/vendor/select2/i18n/ro.js
+staticfiles/admin/js/vendor/select2/i18n/ru.js
+staticfiles/admin/js/vendor/select2/i18n/sk.js
+staticfiles/admin/js/vendor/select2/i18n/sl.js
+staticfiles/admin/js/vendor/select2/i18n/sq.js
+staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js
+staticfiles/admin/js/vendor/select2/i18n/sr.js
+staticfiles/admin/js/vendor/select2/i18n/sv.js
+staticfiles/admin/js/vendor/select2/i18n/th.js
+staticfiles/admin/js/vendor/select2/i18n/tk.js
+staticfiles/admin/js/vendor/select2/i18n/tr.js
+staticfiles/admin/js/vendor/select2/i18n/uk.js
+staticfiles/admin/js/vendor/select2/i18n/vi.js
+staticfiles/admin/js/vendor/select2/i18n/zh-CN.js
+staticfiles/admin/js/vendor/select2/i18n/zh-TW.js
+staticfiles/admin/js/vendor/xregexp/
+staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+staticfiles/admin/js/vendor/xregexp/xregexp.js
+staticfiles/admin/js/vendor/xregexp/xregexp.min.js
+staticfiles/debug_toolbar/css/
+staticfiles/debug_toolbar/css/print.css
+staticfiles/debug_toolbar/css/toolbar.css
+staticfiles/debug_toolbar/js/
+staticfiles/debug_toolbar/js/history.js
+staticfiles/debug_toolbar/js/redirect.js
+staticfiles/debug_toolbar/js/timer.js
+staticfiles/debug_toolbar/js/toolbar.js
+staticfiles/debug_toolbar/js/utils.js
+staticfiles/drf-yasg/
+staticfiles/drf-yasg/README
+staticfiles/drf-yasg/immutable.js
+staticfiles/drf-yasg/immutable.min.js
+staticfiles/drf-yasg/insQ.js
+staticfiles/drf-yasg/insQ.min.js
+staticfiles/drf-yasg/redoc-init.js
+staticfiles/drf-yasg/style.css
+staticfiles/drf-yasg/swagger-ui-init.js
+staticfiles/drf-yasg/redoc-old/
+staticfiles/drf-yasg/redoc-old/LICENSE
+staticfiles/drf-yasg/redoc-old/redoc.min.js
+staticfiles/drf-yasg/redoc-old/redoc.min.js.map
+staticfiles/drf-yasg/redoc/
+staticfiles/drf-yasg/redoc/LICENSE
+staticfiles/drf-yasg/redoc/redoc-logo.png
+staticfiles/drf-yasg/redoc/redoc.min.js
+staticfiles/drf-yasg/redoc/redoc.standalone.js.map
+staticfiles/drf-yasg/swagger-ui-dist/
+staticfiles/drf-yasg/swagger-ui-dist/LICENSE
+staticfiles/drf-yasg/swagger-ui-dist/NOTICE
+staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js
+staticfiles/drf-yasg/swagger-ui-dist/favicon-32x32.png
+staticfiles/drf-yasg/swagger-ui-dist/index.css
+staticfiles/drf-yasg/swagger-ui-dist/index.js
+staticfiles/drf-yasg/swagger-ui-dist/oauth2-redirect.html
+staticfiles/drf-yasg/swagger-ui-dist/swagger-initializer.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.js.map
+staticfiles/rest_framework/css/
+staticfiles/rest_framework/css/bootstrap-theme.min.css
+staticfiles/rest_framework/css/bootstrap-theme.min.css.map
+staticfiles/rest_framework/css/bootstrap-tweaks.css
+staticfiles/rest_framework/css/bootstrap.min.css
+staticfiles/rest_framework/css/bootstrap.min.css.map
+staticfiles/rest_framework/css/default.css
+staticfiles/rest_framework/css/font-awesome-4.0.3.css
+staticfiles/rest_framework/css/prettify.css
+staticfiles/rest_framework/docs/css/
+staticfiles/rest_framework/docs/css/base.css
+staticfiles/rest_framework/docs/css/highlight.css
+staticfiles/rest_framework/docs/css/jquery.json-view.min.css
+staticfiles/rest_framework/docs/img/
+staticfiles/rest_framework/docs/img/favicon.ico
+staticfiles/rest_framework/docs/img/grid.png
+staticfiles/rest_framework/docs/js/
+staticfiles/rest_framework/docs/js/api.js
+staticfiles/rest_framework/docs/js/highlight.pack.js
+staticfiles/rest_framework/docs/js/jquery.json-view.min.js
+staticfiles/rest_framework/fonts/
+staticfiles/rest_framework/fonts/fontawesome-webfont.eot
+staticfiles/rest_framework/fonts/fontawesome-webfont.svg
+staticfiles/rest_framework/fonts/fontawesome-webfont.ttf
+staticfiles/rest_framework/fonts/fontawesome-webfont.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.eot
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff2
+staticfiles/rest_framework/img/
+staticfiles/rest_framework/img/glyphicons-halflings-white.png
+staticfiles/rest_framework/img/glyphicons-halflings.png
+staticfiles/rest_framework/img/grid.png
+staticfiles/rest_framework/js/
+staticfiles/rest_framework/js/ajax-form.js
+staticfiles/rest_framework/js/bootstrap.min.js
+staticfiles/rest_framework/js/coreapi-0.1.1.js
+staticfiles/rest_framework/js/csrf.js
+staticfiles/rest_framework/js/default.js
+staticfiles/rest_framework/js/jquery-3.7.1.min.js
+staticfiles/rest_framework/js/load-ajax-form.js
+staticfiles/rest_framework/js/prettify-min.js
+venv/
+venv/.gitignore
+venv/lib64 -> lib
+venv/pyvenv.cfg
+venv/bin/
+venv/bin/Activate.ps1
+venv/bin/activate
+venv/bin/activate.csh
+venv/bin/activate.fish
+venv/bin/pip
+venv/bin/pip3
+venv/bin/pip3.13
+venv/bin/python -> python3
+venv/bin/python3 -> /usr/bin/python3
+venv/bin/python3.13 -> python3
+venv/include/
+venv/include/python3.13/
+venv/lib/
+venv/lib/python3.13/
+venv/lib/python3.13/site-packages/
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/INSTALLER
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/METADATA
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/RECORD
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/REQUESTED
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/WHEEL
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/entry_points.txt
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/top_level.txt
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/AUTHORS.txt
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/LICENSE.txt
+venv/lib/python3.13/site-packages/pip/
+venv/lib/python3.13/site-packages/pip/__init__.py
+venv/lib/python3.13/site-packages/pip/__main__.py
+venv/lib/python3.13/site-packages/pip/__pip-runner__.py
+venv/lib/python3.13/site-packages/pip/py.typed
+venv/lib/python3.13/site-packages/pip/_internal/
+venv/lib/python3.13/site-packages/pip/_internal/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/build_env.py
+venv/lib/python3.13/site-packages/pip/_internal/cache.py
+venv/lib/python3.13/site-packages/pip/_internal/configuration.py
+venv/lib/python3.13/site-packages/pip/_internal/exceptions.py
+venv/lib/python3.13/site-packages/pip/_internal/main.py
+venv/lib/python3.13/site-packages/pip/_internal/pyproject.py
+venv/lib/python3.13/site-packages/pip/_internal/self_outdated_check.py
+venv/lib/python3.13/site-packages/pip/_internal/wheel_builder.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/
+venv/lib/python3.13/site-packages/pip/_internal/cli/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/autocompletion.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/base_command.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/cmdoptions.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/command_context.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/index_command.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/main.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/main_parser.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/parser.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/progress_bars.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/req_command.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/spinners.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/status_codes.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/
+venv/lib/python3.13/site-packages/pip/_internal/commands/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/cache.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/check.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/completion.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/configuration.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/debug.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/download.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/freeze.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/hash.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/help.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/index.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/inspect.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/install.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/list.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/lock.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/search.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/show.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/uninstall.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/
+venv/lib/python3.13/site-packages/pip/_internal/distributions/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/base.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/installed.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/sdist.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/index/
+venv/lib/python3.13/site-packages/pip/_internal/index/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/index/collector.py
+venv/lib/python3.13/site-packages/pip/_internal/index/package_finder.py
+venv/lib/python3.13/site-packages/pip/_internal/index/sources.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/
+venv/lib/python3.13/site-packages/pip/_internal/locations/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/_distutils.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/_sysconfig.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/base.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/
+venv/lib/python3.13/site-packages/pip/_internal/metadata/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/_json.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/base.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/pkg_resources.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_compat.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_dists.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_envs.py
+venv/lib/python3.13/site-packages/pip/_internal/models/
+venv/lib/python3.13/site-packages/pip/_internal/models/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/models/candidate.py
+venv/lib/python3.13/site-packages/pip/_internal/models/direct_url.py
+venv/lib/python3.13/site-packages/pip/_internal/models/format_control.py
+venv/lib/python3.13/site-packages/pip/_internal/models/index.py
+venv/lib/python3.13/site-packages/pip/_internal/models/installation_report.py
+venv/lib/python3.13/site-packages/pip/_internal/models/link.py
+venv/lib/python3.13/site-packages/pip/_internal/models/pylock.py
+venv/lib/python3.13/site-packages/pip/_internal/models/scheme.py
+venv/lib/python3.13/site-packages/pip/_internal/models/search_scope.py
+venv/lib/python3.13/site-packages/pip/_internal/models/selection_prefs.py
+venv/lib/python3.13/site-packages/pip/_internal/models/target_python.py
+venv/lib/python3.13/site-packages/pip/_internal/models/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/network/
+venv/lib/python3.13/site-packages/pip/_internal/network/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/network/auth.py
+venv/lib/python3.13/site-packages/pip/_internal/network/cache.py
+venv/lib/python3.13/site-packages/pip/_internal/network/download.py
+venv/lib/python3.13/site-packages/pip/_internal/network/lazy_wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/network/session.py
+venv/lib/python3.13/site-packages/pip/_internal/network/utils.py
+venv/lib/python3.13/site-packages/pip/_internal/network/xmlrpc.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/
+venv/lib/python3.13/site-packages/pip/_internal/operations/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/check.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/freeze.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/prepare.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/build_tracker.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata_editable.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata_legacy.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel_editable.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel_legacy.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/editable_legacy.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/req/
+venv/lib/python3.13/site-packages/pip/_internal/req/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/req/constructors.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_dependency_group.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_file.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_install.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_set.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_uninstall.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/
+venv/lib/python3.13/site-packages/pip/_internal/resolution/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/base.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/
+venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/resolver.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/base.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/candidates.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/factory.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/provider.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/reporter.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/requirements.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/resolver.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/
+venv/lib/python3.13/site-packages/pip/_internal/utils/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/_jaraco_text.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/_log.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/appdirs.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/compat.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/compatibility_tags.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/datetime.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/deprecation.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/direct_url_helpers.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/egg_link.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/entrypoints.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/filesystem.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/filetypes.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/glibc.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/hashes.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/logging.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/misc.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/packaging.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/retry.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/setuptools_build.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/subprocess.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/temp_dir.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/unpacking.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/urls.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/virtualenv.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/
+venv/lib/python3.13/site-packages/pip/_internal/vcs/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/bazaar.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/git.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/mercurial.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/subversion.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/versioncontrol.py
+venv/lib/python3.13/site-packages/pip/_vendor/
+venv/lib/python3.13/site-packages/pip/_vendor/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/typing_extensions.py
+venv/lib/python3.13/site-packages/pip/_vendor/vendor.txt
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/_cmd.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/adapter.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/cache.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/controller.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/filewrapper.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/heuristics.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/serialize.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/wrapper.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/cacert.pem
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/core.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_implementation.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_lint_dependency_groups.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_pip_wrapper.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_toml_compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/database.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/index.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/locators.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/manifest.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/markers.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/metadata.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/resources.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/scripts.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/util.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/version.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/wheel.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/
+venv/lib/python3.13/site-packages/pip/_vendor/distro/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/distro.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/idna/
+venv/lib/python3.13/site-packages/pip/_vendor/idna/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/codec.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/core.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/idnadata.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/intranges.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/package_data.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/idna/uts46data.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/ext.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/fallback.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_elffile.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_manylinux.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_musllinux.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_parser.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_structures.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_tokenizer.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/markers.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/metadata.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/requirements.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/specifiers.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/tags.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/utils.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/version.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/_spdx.py
+venv/lib/python3.13/site-packages/pip/_vendor/pkg_resources/
+venv/lib/python3.13/site-packages/pip/_vendor/pkg_resources/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/android.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/api.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/macos.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/unix.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/version.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/windows.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/console.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/filter.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatter.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexer.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/modeline.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/plugin.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/regexopt.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/scanner.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/sphinxext.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/style.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/token.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/unistring.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/util.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/filters/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/filters/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/_mapping.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/_mapping.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/python.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/_mapping.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_impl.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/
+venv/lib/python3.13/site-packages/pip/_vendor/requests/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/__version__.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/_internal_utils.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/adapters.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/api.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/auth.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/certs.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/cookies.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/help.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/hooks.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/models.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/packages.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/sessions.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/status_codes.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/structures.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/utils.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/providers.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/reporters.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/structs.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/abstract.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/criterion.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/resolution.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/
+venv/lib/python3.13/site-packages/pip/_vendor/rich/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_cell_widths.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_emoji_codes.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_emoji_replace.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_export_format.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_extension.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_fileno.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_inspect.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_log_render.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_loop.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_null_file.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_palettes.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_pick.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_ratio.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_spinners.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_stack.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_timer.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_win32_console.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_windows.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_windows_renderer.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_wrap.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/abc.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/align.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/ansi.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/bar.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/box.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/cells.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/color.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/color_triplet.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/columns.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/console.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/constrain.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/containers.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/control.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/default_styles.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/diagnose.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/emoji.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/errors.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/file_proxy.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/filesize.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/highlighter.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/json.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/jupyter.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/layout.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/live.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/live_render.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/logging.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/markup.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/measure.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/padding.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/pager.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/palette.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/panel.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/pretty.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/progress.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/progress_bar.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/prompt.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/protocol.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/rich/region.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/repr.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/rule.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/scope.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/screen.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/segment.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/spinner.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/status.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/style.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/styled.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/syntax.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/table.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/terminal_theme.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/text.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/theme.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/themes.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/traceback.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/tree.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/_parser.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/_re.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/_types.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/_writer.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_api.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_macos.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_openssl.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_ssl_constants.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_windows.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/_collections.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/_version.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/connection.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/connectionpool.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/fields.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/filepost.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/poolmanager.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/request.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/response.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/appengine.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/securetransport.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/socks.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/six.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/weakref_finalize.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/connection.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/proxy.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/queue.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/request.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/response.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/retry.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssl_.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssl_match_hostname.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssltransport.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/timeout.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/url.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/wait.py
+
+sent 2.384.035 bytes  received 133.986 bytes  335.736,13 bytes/sec
+total size is 56.948.428  speedup is 22,62
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting schemas/transferencias/
+deleting schemas/
+deleting api.sock
+./
+.env.local
+.env.production
+api_venice.txt
+argparse
+file-3t5.py
+json
+package-lock.json
+package.json
+requests
+subprocess
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion_banco.py
+api/gpt4/conexion_banco_refactor.py
+api/gpt4/utils.py
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+node_modules/
+node_modules/.package-lock.json
+node_modules/.bin/
+node_modules/.bin/mime -> ../mime/cli.js
+node_modules/accepts/
+node_modules/accepts/HISTORY.md
+node_modules/accepts/LICENSE
+node_modules/accepts/README.md
+node_modules/accepts/index.js
+node_modules/accepts/package.json
+node_modules/array-flatten/
+node_modules/array-flatten/LICENSE
+node_modules/array-flatten/README.md
+node_modules/array-flatten/array-flatten.js
+node_modules/array-flatten/package.json
+node_modules/body-parser/
+node_modules/body-parser/HISTORY.md
+node_modules/body-parser/LICENSE
+node_modules/body-parser/README.md
+node_modules/body-parser/SECURITY.md
+node_modules/body-parser/index.js
+node_modules/body-parser/package.json
+node_modules/body-parser/lib/
+node_modules/body-parser/lib/read.js
+node_modules/body-parser/lib/types/
+node_modules/body-parser/lib/types/json.js
+node_modules/body-parser/lib/types/raw.js
+node_modules/body-parser/lib/types/text.js
+node_modules/body-parser/lib/types/urlencoded.js
+node_modules/bytes/
+node_modules/bytes/History.md
+node_modules/bytes/LICENSE
+node_modules/bytes/Readme.md
+node_modules/bytes/index.js
+node_modules/bytes/package.json
+node_modules/call-bind-apply-helpers/
+node_modules/call-bind-apply-helpers/.eslintrc
+node_modules/call-bind-apply-helpers/.nycrc
+node_modules/call-bind-apply-helpers/CHANGELOG.md
+node_modules/call-bind-apply-helpers/LICENSE
+node_modules/call-bind-apply-helpers/README.md
+node_modules/call-bind-apply-helpers/actualApply.d.ts
+node_modules/call-bind-apply-helpers/actualApply.js
+node_modules/call-bind-apply-helpers/applyBind.d.ts
+node_modules/call-bind-apply-helpers/applyBind.js
+node_modules/call-bind-apply-helpers/functionApply.d.ts
+node_modules/call-bind-apply-helpers/functionApply.js
+node_modules/call-bind-apply-helpers/functionCall.d.ts
+node_modules/call-bind-apply-helpers/functionCall.js
+node_modules/call-bind-apply-helpers/index.d.ts
+node_modules/call-bind-apply-helpers/index.js
+node_modules/call-bind-apply-helpers/package.json
+node_modules/call-bind-apply-helpers/reflectApply.d.ts
+node_modules/call-bind-apply-helpers/reflectApply.js
+node_modules/call-bind-apply-helpers/tsconfig.json
+node_modules/call-bind-apply-helpers/test/
+node_modules/call-bind-apply-helpers/test/index.js
+node_modules/call-bound/
+node_modules/call-bound/.eslintrc
+node_modules/call-bound/.nycrc
+node_modules/call-bound/CHANGELOG.md
+node_modules/call-bound/LICENSE
+node_modules/call-bound/README.md
+node_modules/call-bound/index.d.ts
+node_modules/call-bound/index.js
+node_modules/call-bound/package.json
+node_modules/call-bound/tsconfig.json
+node_modules/call-bound/test/
+node_modules/call-bound/test/index.js
+node_modules/content-disposition/
+node_modules/content-disposition/HISTORY.md
+node_modules/content-disposition/LICENSE
+node_modules/content-disposition/README.md
+node_modules/content-disposition/index.js
+node_modules/content-disposition/package.json
+node_modules/content-type/
+node_modules/content-type/HISTORY.md
+node_modules/content-type/LICENSE
+node_modules/content-type/README.md
+node_modules/content-type/index.js
+node_modules/content-type/package.json
+node_modules/cookie-signature/
+node_modules/cookie-signature/.npmignore
+node_modules/cookie-signature/History.md
+node_modules/cookie-signature/Readme.md
+node_modules/cookie-signature/index.js
+node_modules/cookie-signature/package.json
+node_modules/cookie/
+node_modules/cookie/LICENSE
+node_modules/cookie/README.md
+node_modules/cookie/SECURITY.md
+node_modules/cookie/index.js
+node_modules/cookie/package.json
+node_modules/debug/
+node_modules/debug/.coveralls.yml
+node_modules/debug/.eslintrc
+node_modules/debug/.npmignore
+node_modules/debug/.travis.yml
+node_modules/debug/CHANGELOG.md
+node_modules/debug/LICENSE
+node_modules/debug/Makefile
+node_modules/debug/README.md
+node_modules/debug/component.json
+node_modules/debug/karma.conf.js
+node_modules/debug/node.js
+node_modules/debug/package.json
+node_modules/debug/src/
+node_modules/debug/src/browser.js
+node_modules/debug/src/debug.js
+node_modules/debug/src/index.js
+node_modules/debug/src/inspector-log.js
+node_modules/debug/src/node.js
+node_modules/depd/
+node_modules/depd/History.md
+node_modules/depd/LICENSE
+node_modules/depd/Readme.md
+node_modules/depd/index.js
+node_modules/depd/package.json
+node_modules/depd/lib/
+node_modules/depd/lib/browser/
+node_modules/depd/lib/browser/index.js
+node_modules/destroy/
+node_modules/destroy/LICENSE
+node_modules/destroy/README.md
+node_modules/destroy/index.js
+node_modules/destroy/package.json
+node_modules/dunder-proto/
+node_modules/dunder-proto/.eslintrc
+node_modules/dunder-proto/.nycrc
+node_modules/dunder-proto/CHANGELOG.md
+node_modules/dunder-proto/LICENSE
+node_modules/dunder-proto/README.md
+node_modules/dunder-proto/get.d.ts
+node_modules/dunder-proto/get.js
+node_modules/dunder-proto/package.json
+node_modules/dunder-proto/set.d.ts
+node_modules/dunder-proto/set.js
+node_modules/dunder-proto/tsconfig.json
+node_modules/dunder-proto/test/
+node_modules/dunder-proto/test/get.js
+node_modules/dunder-proto/test/index.js
+node_modules/dunder-proto/test/set.js
+node_modules/ee-first/
+node_modules/ee-first/LICENSE
+node_modules/ee-first/README.md
+node_modules/ee-first/index.js
+node_modules/ee-first/package.json
+node_modules/encodeurl/
+node_modules/encodeurl/LICENSE
+node_modules/encodeurl/README.md
+node_modules/encodeurl/index.js
+node_modules/encodeurl/package.json
+node_modules/es-define-property/
+node_modules/es-define-property/.eslintrc
+node_modules/es-define-property/.nycrc
+node_modules/es-define-property/CHANGELOG.md
+node_modules/es-define-property/LICENSE
+node_modules/es-define-property/README.md
+node_modules/es-define-property/index.d.ts
+node_modules/es-define-property/index.js
+node_modules/es-define-property/package.json
+node_modules/es-define-property/tsconfig.json
+node_modules/es-define-property/test/
+node_modules/es-define-property/test/index.js
+node_modules/es-errors/
+node_modules/es-errors/.eslintrc
+node_modules/es-errors/CHANGELOG.md
+node_modules/es-errors/LICENSE
+node_modules/es-errors/README.md
+node_modules/es-errors/eval.d.ts
+node_modules/es-errors/eval.js
+node_modules/es-errors/index.d.ts
+node_modules/es-errors/index.js
+node_modules/es-errors/package.json
+node_modules/es-errors/range.d.ts
+node_modules/es-errors/range.js
+node_modules/es-errors/ref.d.ts
+node_modules/es-errors/ref.js
+node_modules/es-errors/syntax.d.ts
+node_modules/es-errors/syntax.js
+node_modules/es-errors/tsconfig.json
+node_modules/es-errors/type.d.ts
+node_modules/es-errors/type.js
+node_modules/es-errors/uri.d.ts
+node_modules/es-errors/uri.js
+node_modules/es-errors/test/
+node_modules/es-errors/test/index.js
+node_modules/es-object-atoms/
+node_modules/es-object-atoms/.eslintrc
+node_modules/es-object-atoms/CHANGELOG.md
+node_modules/es-object-atoms/LICENSE
+node_modules/es-object-atoms/README.md
+node_modules/es-object-atoms/RequireObjectCoercible.d.ts
+node_modules/es-object-atoms/RequireObjectCoercible.js
+node_modules/es-object-atoms/ToObject.d.ts
+node_modules/es-object-atoms/ToObject.js
+node_modules/es-object-atoms/index.d.ts
+node_modules/es-object-atoms/index.js
+node_modules/es-object-atoms/isObject.d.ts
+node_modules/es-object-atoms/isObject.js
+node_modules/es-object-atoms/package.json
+node_modules/es-object-atoms/tsconfig.json
+node_modules/es-object-atoms/test/
+node_modules/es-object-atoms/test/index.js
+node_modules/escape-html/
+node_modules/escape-html/LICENSE
+node_modules/escape-html/Readme.md
+node_modules/escape-html/index.js
+node_modules/escape-html/package.json
+node_modules/etag/
+node_modules/etag/HISTORY.md
+node_modules/etag/LICENSE
+node_modules/etag/README.md
+node_modules/etag/index.js
+node_modules/etag/package.json
+node_modules/express/
+node_modules/express/History.md
+node_modules/express/LICENSE
+node_modules/express/Readme.md
+node_modules/express/index.js
+node_modules/express/package.json
+node_modules/express/lib/
+node_modules/express/lib/application.js
+node_modules/express/lib/express.js
+node_modules/express/lib/request.js
+node_modules/express/lib/response.js
+node_modules/express/lib/utils.js
+node_modules/express/lib/view.js
+node_modules/express/lib/middleware/
+node_modules/express/lib/middleware/init.js
+node_modules/express/lib/middleware/query.js
+node_modules/express/lib/router/
+node_modules/express/lib/router/index.js
+node_modules/express/lib/router/layer.js
+node_modules/express/lib/router/route.js
+node_modules/finalhandler/
+node_modules/finalhandler/HISTORY.md
+node_modules/finalhandler/LICENSE
+node_modules/finalhandler/README.md
+node_modules/finalhandler/SECURITY.md
+node_modules/finalhandler/index.js
+node_modules/finalhandler/package.json
+node_modules/forwarded/
+node_modules/forwarded/HISTORY.md
+node_modules/forwarded/LICENSE
+node_modules/forwarded/README.md
+node_modules/forwarded/index.js
+node_modules/forwarded/package.json
+node_modules/fresh/
+node_modules/fresh/HISTORY.md
+node_modules/fresh/LICENSE
+node_modules/fresh/README.md
+node_modules/fresh/index.js
+node_modules/fresh/package.json
+node_modules/function-bind/
+node_modules/function-bind/.eslintrc
+node_modules/function-bind/.nycrc
+node_modules/function-bind/CHANGELOG.md
+node_modules/function-bind/LICENSE
+node_modules/function-bind/README.md
+node_modules/function-bind/implementation.js
+node_modules/function-bind/index.js
+node_modules/function-bind/package.json
+node_modules/function-bind/test/
+node_modules/function-bind/test/.eslintrc
+node_modules/function-bind/test/index.js
+node_modules/get-intrinsic/
+node_modules/get-intrinsic/.eslintrc
+node_modules/get-intrinsic/.nycrc
+node_modules/get-intrinsic/CHANGELOG.md
+node_modules/get-intrinsic/LICENSE
+node_modules/get-intrinsic/README.md
+node_modules/get-intrinsic/index.js
+node_modules/get-intrinsic/package.json
+node_modules/get-intrinsic/test/
+node_modules/get-intrinsic/test/GetIntrinsic.js
+node_modules/get-proto/
+node_modules/get-proto/.eslintrc
+node_modules/get-proto/.nycrc
+node_modules/get-proto/CHANGELOG.md
+node_modules/get-proto/LICENSE
+node_modules/get-proto/Object.getPrototypeOf.d.ts
+node_modules/get-proto/Object.getPrototypeOf.js
+node_modules/get-proto/README.md
+node_modules/get-proto/Reflect.getPrototypeOf.d.ts
+node_modules/get-proto/Reflect.getPrototypeOf.js
+node_modules/get-proto/index.d.ts
+node_modules/get-proto/index.js
+node_modules/get-proto/package.json
+node_modules/get-proto/tsconfig.json
+node_modules/get-proto/test/
+node_modules/get-proto/test/index.js
+node_modules/gopd/
+node_modules/gopd/.eslintrc
+node_modules/gopd/CHANGELOG.md
+node_modules/gopd/LICENSE
+node_modules/gopd/README.md
+node_modules/gopd/gOPD.d.ts
+node_modules/gopd/gOPD.js
+node_modules/gopd/index.d.ts
+node_modules/gopd/index.js
+node_modules/gopd/package.json
+node_modules/gopd/tsconfig.json
+node_modules/gopd/test/
+node_modules/gopd/test/index.js
+node_modules/has-symbols/
+node_modules/has-symbols/.eslintrc
+node_modules/has-symbols/.nycrc
+node_modules/has-symbols/CHANGELOG.md
+node_modules/has-symbols/LICENSE
+node_modules/has-symbols/README.md
+node_modules/has-symbols/index.d.ts
+node_modules/has-symbols/index.js
+node_modules/has-symbols/package.json
+node_modules/has-symbols/shams.d.ts
+node_modules/has-symbols/shams.js
+node_modules/has-symbols/tsconfig.json
+node_modules/has-symbols/test/
+node_modules/has-symbols/test/index.js
+node_modules/has-symbols/test/tests.js
+node_modules/has-symbols/test/shams/
+node_modules/has-symbols/test/shams/core-js.js
+node_modules/has-symbols/test/shams/get-own-property-symbols.js
+node_modules/hasown/
+node_modules/hasown/.eslintrc
+node_modules/hasown/.nycrc
+node_modules/hasown/CHANGELOG.md
+node_modules/hasown/LICENSE
+node_modules/hasown/README.md
+node_modules/hasown/index.d.ts
+node_modules/hasown/index.js
+node_modules/hasown/package.json
+node_modules/hasown/tsconfig.json
+node_modules/http-errors/
+node_modules/http-errors/HISTORY.md
+node_modules/http-errors/LICENSE
+node_modules/http-errors/README.md
+node_modules/http-errors/index.js
+node_modules/http-errors/package.json
+node_modules/iconv-lite/
+node_modules/iconv-lite/Changelog.md
+node_modules/iconv-lite/LICENSE
+node_modules/iconv-lite/README.md
+node_modules/iconv-lite/package.json
+node_modules/iconv-lite/encodings/
+node_modules/iconv-lite/encodings/dbcs-codec.js
+node_modules/iconv-lite/encodings/dbcs-data.js
+node_modules/iconv-lite/encodings/index.js
+node_modules/iconv-lite/encodings/internal.js
+node_modules/iconv-lite/encodings/sbcs-codec.js
+node_modules/iconv-lite/encodings/sbcs-data-generated.js
+node_modules/iconv-lite/encodings/sbcs-data.js
+node_modules/iconv-lite/encodings/utf16.js
+node_modules/iconv-lite/encodings/utf7.js
+node_modules/iconv-lite/encodings/tables/
+node_modules/iconv-lite/encodings/tables/big5-added.json
+node_modules/iconv-lite/encodings/tables/cp936.json
+node_modules/iconv-lite/encodings/tables/cp949.json
+node_modules/iconv-lite/encodings/tables/cp950.json
+node_modules/iconv-lite/encodings/tables/eucjp.json
+node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
+node_modules/iconv-lite/encodings/tables/gbk-added.json
+node_modules/iconv-lite/encodings/tables/shiftjis.json
+node_modules/iconv-lite/lib/
+node_modules/iconv-lite/lib/bom-handling.js
+node_modules/iconv-lite/lib/extend-node.js
+node_modules/iconv-lite/lib/index.d.ts
+node_modules/iconv-lite/lib/index.js
+node_modules/iconv-lite/lib/streams.js
+node_modules/inherits/
+node_modules/inherits/LICENSE
+node_modules/inherits/README.md
+node_modules/inherits/inherits.js
+node_modules/inherits/inherits_browser.js
+node_modules/inherits/package.json
+node_modules/ipaddr.js/
+node_modules/ipaddr.js/LICENSE
+node_modules/ipaddr.js/README.md
+node_modules/ipaddr.js/ipaddr.min.js
+node_modules/ipaddr.js/package.json
+node_modules/ipaddr.js/lib/
+node_modules/ipaddr.js/lib/ipaddr.js
+node_modules/ipaddr.js/lib/ipaddr.js.d.ts
+node_modules/math-intrinsics/
+node_modules/math-intrinsics/.eslintrc
+node_modules/math-intrinsics/CHANGELOG.md
+node_modules/math-intrinsics/LICENSE
+node_modules/math-intrinsics/README.md
+node_modules/math-intrinsics/abs.d.ts
+node_modules/math-intrinsics/abs.js
+node_modules/math-intrinsics/floor.d.ts
+node_modules/math-intrinsics/floor.js
+node_modules/math-intrinsics/isFinite.d.ts
+node_modules/math-intrinsics/isFinite.js
+node_modules/math-intrinsics/isInteger.d.ts
+node_modules/math-intrinsics/isInteger.js
+node_modules/math-intrinsics/isNaN.d.ts
+node_modules/math-intrinsics/isNaN.js
+node_modules/math-intrinsics/isNegativeZero.d.ts
+node_modules/math-intrinsics/isNegativeZero.js
+node_modules/math-intrinsics/max.d.ts
+node_modules/math-intrinsics/max.js
+node_modules/math-intrinsics/min.d.ts
+node_modules/math-intrinsics/min.js
+node_modules/math-intrinsics/mod.d.ts
+node_modules/math-intrinsics/mod.js
+node_modules/math-intrinsics/package.json
+node_modules/math-intrinsics/pow.d.ts
+node_modules/math-intrinsics/pow.js
+node_modules/math-intrinsics/round.d.ts
+node_modules/math-intrinsics/round.js
+node_modules/math-intrinsics/sign.d.ts
+node_modules/math-intrinsics/sign.js
+node_modules/math-intrinsics/tsconfig.json
+node_modules/math-intrinsics/constants/
+node_modules/math-intrinsics/constants/maxArrayLength.d.ts
+node_modules/math-intrinsics/constants/maxArrayLength.js
+node_modules/math-intrinsics/constants/maxSafeInteger.d.ts
+node_modules/math-intrinsics/constants/maxSafeInteger.js
+node_modules/math-intrinsics/constants/maxValue.d.ts
+node_modules/math-intrinsics/constants/maxValue.js
+node_modules/math-intrinsics/test/
+node_modules/math-intrinsics/test/index.js
+node_modules/media-typer/
+node_modules/media-typer/HISTORY.md
+node_modules/media-typer/LICENSE
+node_modules/media-typer/README.md
+node_modules/media-typer/index.js
+node_modules/media-typer/package.json
+node_modules/merge-descriptors/
+node_modules/merge-descriptors/HISTORY.md
+node_modules/merge-descriptors/LICENSE
+node_modules/merge-descriptors/README.md
+node_modules/merge-descriptors/index.js
+node_modules/merge-descriptors/package.json
+node_modules/methods/
+node_modules/methods/HISTORY.md
+node_modules/methods/LICENSE
+node_modules/methods/README.md
+node_modules/methods/index.js
+node_modules/methods/package.json
+node_modules/mime-db/
+node_modules/mime-db/HISTORY.md
+node_modules/mime-db/LICENSE
+node_modules/mime-db/README.md
+node_modules/mime-db/db.json
+node_modules/mime-db/index.js
+node_modules/mime-db/package.json
+node_modules/mime-types/
+node_modules/mime-types/HISTORY.md
+node_modules/mime-types/LICENSE
+node_modules/mime-types/README.md
+node_modules/mime-types/index.js
+node_modules/mime-types/package.json
+node_modules/mime/
+node_modules/mime/.npmignore
+node_modules/mime/CHANGELOG.md
+node_modules/mime/LICENSE
+node_modules/mime/README.md
+node_modules/mime/cli.js
+node_modules/mime/mime.js
+node_modules/mime/package.json
+node_modules/mime/types.json
+node_modules/mime/src/
+node_modules/mime/src/build.js
+node_modules/mime/src/test.js
+node_modules/ms/
+node_modules/ms/index.js
+node_modules/ms/license.md
+node_modules/ms/package.json
+node_modules/ms/readme.md
+node_modules/negotiator/
+node_modules/negotiator/HISTORY.md
+node_modules/negotiator/LICENSE
+node_modules/negotiator/README.md
+node_modules/negotiator/index.js
+node_modules/negotiator/package.json
+node_modules/negotiator/lib/
+node_modules/negotiator/lib/charset.js
+node_modules/negotiator/lib/encoding.js
+node_modules/negotiator/lib/language.js
+node_modules/negotiator/lib/mediaType.js
+node_modules/object-inspect/
+node_modules/object-inspect/.eslintrc
+node_modules/object-inspect/.nycrc
+node_modules/object-inspect/CHANGELOG.md
+node_modules/object-inspect/LICENSE
+node_modules/object-inspect/index.js
+node_modules/object-inspect/package-support.json
+node_modules/object-inspect/package.json
+node_modules/object-inspect/readme.markdown
+node_modules/object-inspect/test-core-js.js
+node_modules/object-inspect/util.inspect.js
+node_modules/object-inspect/example/
+node_modules/object-inspect/example/all.js
+node_modules/object-inspect/example/circular.js
+node_modules/object-inspect/example/fn.js
+node_modules/object-inspect/example/inspect.js
+node_modules/object-inspect/test/
+node_modules/object-inspect/test/bigint.js
+node_modules/object-inspect/test/circular.js
+node_modules/object-inspect/test/deep.js
+node_modules/object-inspect/test/element.js
+node_modules/object-inspect/test/err.js
+node_modules/object-inspect/test/fakes.js
+node_modules/object-inspect/test/fn.js
+node_modules/object-inspect/test/global.js
+node_modules/object-inspect/test/has.js
+node_modules/object-inspect/test/holes.js
+node_modules/object-inspect/test/indent-option.js
+node_modules/object-inspect/test/inspect.js
+node_modules/object-inspect/test/lowbyte.js
+node_modules/object-inspect/test/number.js
+node_modules/object-inspect/test/quoteStyle.js
+node_modules/object-inspect/test/toStringTag.js
+node_modules/object-inspect/test/undef.js
+node_modules/object-inspect/test/values.js
+node_modules/object-inspect/test/browser/
+node_modules/object-inspect/test/browser/dom.js
+node_modules/on-finished/
+node_modules/on-finished/HISTORY.md
+node_modules/on-finished/LICENSE
+node_modules/on-finished/README.md
+node_modules/on-finished/index.js
+node_modules/on-finished/package.json
+node_modules/parseurl/
+node_modules/parseurl/HISTORY.md
+node_modules/parseurl/LICENSE
+node_modules/parseurl/README.md
+node_modules/parseurl/index.js
+node_modules/parseurl/package.json
+node_modules/path-to-regexp/
+node_modules/path-to-regexp/LICENSE
+node_modules/path-to-regexp/Readme.md
+node_modules/path-to-regexp/index.js
+node_modules/path-to-regexp/package.json
+node_modules/proxy-addr/
+node_modules/proxy-addr/HISTORY.md
+node_modules/proxy-addr/LICENSE
+node_modules/proxy-addr/README.md
+node_modules/proxy-addr/index.js
+node_modules/proxy-addr/package.json
+node_modules/qs/
+node_modules/qs/.editorconfig
+node_modules/qs/.eslintrc
+node_modules/qs/.nycrc
+node_modules/qs/CHANGELOG.md
+node_modules/qs/LICENSE.md
+node_modules/qs/README.md
+node_modules/qs/package.json
+node_modules/qs/dist/
+node_modules/qs/dist/qs.js
+node_modules/qs/lib/
+node_modules/qs/lib/formats.js
+node_modules/qs/lib/index.js
+node_modules/qs/lib/parse.js
+node_modules/qs/lib/stringify.js
+node_modules/qs/lib/utils.js
+node_modules/qs/test/
+node_modules/qs/test/empty-keys-cases.js
+node_modules/qs/test/parse.js
+node_modules/qs/test/stringify.js
+node_modules/qs/test/utils.js
+node_modules/range-parser/
+node_modules/range-parser/HISTORY.md
+node_modules/range-parser/LICENSE
+node_modules/range-parser/README.md
+node_modules/range-parser/index.js
+node_modules/range-parser/package.json
+node_modules/raw-body/
+node_modules/raw-body/HISTORY.md
+node_modules/raw-body/LICENSE
+node_modules/raw-body/README.md
+node_modules/raw-body/SECURITY.md
+node_modules/raw-body/index.d.ts
+node_modules/raw-body/index.js
+node_modules/raw-body/package.json
+node_modules/safe-buffer/
+node_modules/safe-buffer/LICENSE
+node_modules/safe-buffer/README.md
+node_modules/safe-buffer/index.d.ts
+node_modules/safe-buffer/index.js
+node_modules/safe-buffer/package.json
+node_modules/safer-buffer/
+node_modules/safer-buffer/LICENSE
+node_modules/safer-buffer/Porting-Buffer.md
+node_modules/safer-buffer/Readme.md
+node_modules/safer-buffer/dangerous.js
+node_modules/safer-buffer/package.json
+node_modules/safer-buffer/safer.js
+node_modules/safer-buffer/tests.js
+node_modules/send/
+node_modules/send/HISTORY.md
+node_modules/send/LICENSE
+node_modules/send/README.md
+node_modules/send/SECURITY.md
+node_modules/send/index.js
+node_modules/send/package.json
+node_modules/send/node_modules/
+node_modules/send/node_modules/encodeurl/
+node_modules/send/node_modules/encodeurl/HISTORY.md
+node_modules/send/node_modules/encodeurl/LICENSE
+node_modules/send/node_modules/encodeurl/README.md
+node_modules/send/node_modules/encodeurl/index.js
+node_modules/send/node_modules/encodeurl/package.json
+node_modules/send/node_modules/ms/
+node_modules/send/node_modules/ms/index.js
+node_modules/send/node_modules/ms/license.md
+node_modules/send/node_modules/ms/package.json
+node_modules/send/node_modules/ms/readme.md
+node_modules/serve-static/
+node_modules/serve-static/HISTORY.md
+node_modules/serve-static/LICENSE
+node_modules/serve-static/README.md
+node_modules/serve-static/index.js
+node_modules/serve-static/package.json
+node_modules/setprototypeof/
+node_modules/setprototypeof/LICENSE
+node_modules/setprototypeof/README.md
+node_modules/setprototypeof/index.d.ts
+node_modules/setprototypeof/index.js
+node_modules/setprototypeof/package.json
+node_modules/setprototypeof/test/
+node_modules/setprototypeof/test/index.js
+node_modules/side-channel-list/
+node_modules/side-channel-list/.editorconfig
+node_modules/side-channel-list/.eslintrc
+node_modules/side-channel-list/.nycrc
+node_modules/side-channel-list/CHANGELOG.md
+node_modules/side-channel-list/LICENSE
+node_modules/side-channel-list/README.md
+node_modules/side-channel-list/index.d.ts
+node_modules/side-channel-list/index.js
+node_modules/side-channel-list/list.d.ts
+node_modules/side-channel-list/package.json
+node_modules/side-channel-list/tsconfig.json
+node_modules/side-channel-list/test/
+node_modules/side-channel-list/test/index.js
+node_modules/side-channel-map/
+node_modules/side-channel-map/.editorconfig
+node_modules/side-channel-map/.eslintrc
+node_modules/side-channel-map/.nycrc
+node_modules/side-channel-map/CHANGELOG.md
+node_modules/side-channel-map/LICENSE
+node_modules/side-channel-map/README.md
+node_modules/side-channel-map/index.d.ts
+node_modules/side-channel-map/index.js
+node_modules/side-channel-map/package.json
+node_modules/side-channel-map/tsconfig.json
+node_modules/side-channel-map/test/
+node_modules/side-channel-map/test/index.js
+node_modules/side-channel-weakmap/
+node_modules/side-channel-weakmap/.editorconfig
+node_modules/side-channel-weakmap/.eslintrc
+node_modules/side-channel-weakmap/.nycrc
+node_modules/side-channel-weakmap/CHANGELOG.md
+node_modules/side-channel-weakmap/LICENSE
+node_modules/side-channel-weakmap/README.md
+node_modules/side-channel-weakmap/index.d.ts
+node_modules/side-channel-weakmap/index.js
+node_modules/side-channel-weakmap/package.json
+node_modules/side-channel-weakmap/tsconfig.json
+node_modules/side-channel-weakmap/test/
+node_modules/side-channel-weakmap/test/index.js
+node_modules/side-channel/
+node_modules/side-channel/.editorconfig
+node_modules/side-channel/.eslintrc
+node_modules/side-channel/.nycrc
+node_modules/side-channel/CHANGELOG.md
+node_modules/side-channel/LICENSE
+node_modules/side-channel/README.md
+node_modules/side-channel/index.d.ts
+node_modules/side-channel/index.js
+node_modules/side-channel/package.json
+node_modules/side-channel/tsconfig.json
+node_modules/side-channel/test/
+node_modules/side-channel/test/index.js
+node_modules/statuses/
+node_modules/statuses/HISTORY.md
+node_modules/statuses/LICENSE
+node_modules/statuses/README.md
+node_modules/statuses/codes.json
+node_modules/statuses/index.js
+node_modules/statuses/package.json
+node_modules/toidentifier/
+node_modules/toidentifier/HISTORY.md
+node_modules/toidentifier/LICENSE
+node_modules/toidentifier/README.md
+node_modules/toidentifier/index.js
+node_modules/toidentifier/package.json
+node_modules/type-is/
+node_modules/type-is/HISTORY.md
+node_modules/type-is/LICENSE
+node_modules/type-is/README.md
+node_modules/type-is/index.js
+node_modules/type-is/package.json
+node_modules/unpipe/
+node_modules/unpipe/HISTORY.md
+node_modules/unpipe/LICENSE
+node_modules/unpipe/README.md
+node_modules/unpipe/index.js
+node_modules/unpipe/package.json
+node_modules/utils-merge/
+node_modules/utils-merge/.npmignore
+node_modules/utils-merge/LICENSE
+node_modules/utils-merge/README.md
+node_modules/utils-merge/index.js
+node_modules/utils-merge/package.json
+node_modules/vary/
+node_modules/vary/HISTORY.md
+node_modules/vary/LICENSE
+node_modules/vary/README.md
+node_modules/vary/index.js
+node_modules/vary/package.json
+src/
+src/index.js
+venv/
+venv/lib64 -> lib
+venv/pyvenv.cfg
+venv/bin/
+venv/bin/Activate.ps1
+venv/bin/activate
+venv/bin/activate.csh
+venv/bin/activate.fish
+venv/bin/pip
+venv/bin/pip3
+venv/bin/pip3.13
+venv/bin/python -> python3
+venv/bin/python3 -> /usr/bin/python3
+venv/bin/python3.13 -> python3
+venv/include/
+venv/include/python3.13/
+venv/lib/
+venv/lib/python3.13/
+venv/lib/python3.13/site-packages/
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/INSTALLER
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/METADATA
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/RECORD
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/REQUESTED
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/WHEEL
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/entry_points.txt
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/top_level.txt
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/AUTHORS.txt
+venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/LICENSE.txt
+venv/lib/python3.13/site-packages/pip/
+venv/lib/python3.13/site-packages/pip/__init__.py
+venv/lib/python3.13/site-packages/pip/__main__.py
+venv/lib/python3.13/site-packages/pip/__pip-runner__.py
+venv/lib/python3.13/site-packages/pip/py.typed
+venv/lib/python3.13/site-packages/pip/_internal/
+venv/lib/python3.13/site-packages/pip/_internal/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/build_env.py
+venv/lib/python3.13/site-packages/pip/_internal/cache.py
+venv/lib/python3.13/site-packages/pip/_internal/configuration.py
+venv/lib/python3.13/site-packages/pip/_internal/exceptions.py
+venv/lib/python3.13/site-packages/pip/_internal/main.py
+venv/lib/python3.13/site-packages/pip/_internal/pyproject.py
+venv/lib/python3.13/site-packages/pip/_internal/self_outdated_check.py
+venv/lib/python3.13/site-packages/pip/_internal/wheel_builder.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/
+venv/lib/python3.13/site-packages/pip/_internal/cli/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/autocompletion.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/base_command.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/cmdoptions.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/command_context.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/index_command.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/main.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/main_parser.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/parser.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/progress_bars.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/req_command.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/spinners.py
+venv/lib/python3.13/site-packages/pip/_internal/cli/status_codes.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/
+venv/lib/python3.13/site-packages/pip/_internal/commands/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/cache.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/check.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/completion.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/configuration.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/debug.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/download.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/freeze.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/hash.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/help.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/index.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/inspect.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/install.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/list.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/lock.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/search.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/show.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/uninstall.py
+venv/lib/python3.13/site-packages/pip/_internal/commands/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/
+venv/lib/python3.13/site-packages/pip/_internal/distributions/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/base.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/installed.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/sdist.py
+venv/lib/python3.13/site-packages/pip/_internal/distributions/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/index/
+venv/lib/python3.13/site-packages/pip/_internal/index/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/index/collector.py
+venv/lib/python3.13/site-packages/pip/_internal/index/package_finder.py
+venv/lib/python3.13/site-packages/pip/_internal/index/sources.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/
+venv/lib/python3.13/site-packages/pip/_internal/locations/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/_distutils.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/_sysconfig.py
+venv/lib/python3.13/site-packages/pip/_internal/locations/base.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/
+venv/lib/python3.13/site-packages/pip/_internal/metadata/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/_json.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/base.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/pkg_resources.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_compat.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_dists.py
+venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_envs.py
+venv/lib/python3.13/site-packages/pip/_internal/models/
+venv/lib/python3.13/site-packages/pip/_internal/models/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/models/candidate.py
+venv/lib/python3.13/site-packages/pip/_internal/models/direct_url.py
+venv/lib/python3.13/site-packages/pip/_internal/models/format_control.py
+venv/lib/python3.13/site-packages/pip/_internal/models/index.py
+venv/lib/python3.13/site-packages/pip/_internal/models/installation_report.py
+venv/lib/python3.13/site-packages/pip/_internal/models/link.py
+venv/lib/python3.13/site-packages/pip/_internal/models/pylock.py
+venv/lib/python3.13/site-packages/pip/_internal/models/scheme.py
+venv/lib/python3.13/site-packages/pip/_internal/models/search_scope.py
+venv/lib/python3.13/site-packages/pip/_internal/models/selection_prefs.py
+venv/lib/python3.13/site-packages/pip/_internal/models/target_python.py
+venv/lib/python3.13/site-packages/pip/_internal/models/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/network/
+venv/lib/python3.13/site-packages/pip/_internal/network/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/network/auth.py
+venv/lib/python3.13/site-packages/pip/_internal/network/cache.py
+venv/lib/python3.13/site-packages/pip/_internal/network/download.py
+venv/lib/python3.13/site-packages/pip/_internal/network/lazy_wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/network/session.py
+venv/lib/python3.13/site-packages/pip/_internal/network/utils.py
+venv/lib/python3.13/site-packages/pip/_internal/network/xmlrpc.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/
+venv/lib/python3.13/site-packages/pip/_internal/operations/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/check.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/freeze.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/prepare.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/build_tracker.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata_editable.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata_legacy.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel_editable.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel_legacy.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/editable_legacy.py
+venv/lib/python3.13/site-packages/pip/_internal/operations/install/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/req/
+venv/lib/python3.13/site-packages/pip/_internal/req/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/req/constructors.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_dependency_group.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_file.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_install.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_set.py
+venv/lib/python3.13/site-packages/pip/_internal/req/req_uninstall.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/
+venv/lib/python3.13/site-packages/pip/_internal/resolution/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/base.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/
+venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/resolver.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/base.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/candidates.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/factory.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/provider.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/reporter.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/requirements.py
+venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/resolver.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/
+venv/lib/python3.13/site-packages/pip/_internal/utils/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/_jaraco_text.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/_log.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/appdirs.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/compat.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/compatibility_tags.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/datetime.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/deprecation.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/direct_url_helpers.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/egg_link.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/entrypoints.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/filesystem.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/filetypes.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/glibc.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/hashes.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/logging.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/misc.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/packaging.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/retry.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/setuptools_build.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/subprocess.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/temp_dir.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/unpacking.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/urls.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/virtualenv.py
+venv/lib/python3.13/site-packages/pip/_internal/utils/wheel.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/
+venv/lib/python3.13/site-packages/pip/_internal/vcs/__init__.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/bazaar.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/git.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/mercurial.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/subversion.py
+venv/lib/python3.13/site-packages/pip/_internal/vcs/versioncontrol.py
+venv/lib/python3.13/site-packages/pip/_vendor/
+venv/lib/python3.13/site-packages/pip/_vendor/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/typing_extensions.py
+venv/lib/python3.13/site-packages/pip/_vendor/vendor.txt
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/_cmd.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/adapter.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/cache.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/controller.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/filewrapper.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/heuristics.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/serialize.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/wrapper.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py
+venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/cacert.pem
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/core.py
+venv/lib/python3.13/site-packages/pip/_vendor/certifi/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_implementation.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_lint_dependency_groups.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_pip_wrapper.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_toml_compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/database.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/index.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/locators.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/manifest.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/markers.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/metadata.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/resources.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/scripts.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/util.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/version.py
+venv/lib/python3.13/site-packages/pip/_vendor/distlib/wheel.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/
+venv/lib/python3.13/site-packages/pip/_vendor/distro/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/distro.py
+venv/lib/python3.13/site-packages/pip/_vendor/distro/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/idna/
+venv/lib/python3.13/site-packages/pip/_vendor/idna/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/codec.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/core.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/idnadata.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/intranges.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/package_data.py
+venv/lib/python3.13/site-packages/pip/_vendor/idna/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/idna/uts46data.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/ext.py
+venv/lib/python3.13/site-packages/pip/_vendor/msgpack/fallback.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_elffile.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_manylinux.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_musllinux.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_parser.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_structures.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/_tokenizer.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/markers.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/metadata.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/requirements.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/specifiers.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/tags.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/utils.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/version.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/_spdx.py
+venv/lib/python3.13/site-packages/pip/_vendor/pkg_resources/
+venv/lib/python3.13/site-packages/pip/_vendor/pkg_resources/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/android.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/api.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/macos.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/unix.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/version.py
+venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/windows.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/console.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/filter.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatter.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexer.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/modeline.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/plugin.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/regexopt.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/scanner.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/sphinxext.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/style.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/token.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/unistring.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/util.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/filters/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/filters/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/_mapping.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/_mapping.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/python.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/_mapping.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_impl.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/
+venv/lib/python3.13/site-packages/pip/_vendor/requests/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/__version__.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/_internal_utils.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/adapters.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/api.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/auth.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/certs.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/compat.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/cookies.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/help.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/hooks.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/models.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/packages.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/sessions.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/status_codes.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/structures.py
+venv/lib/python3.13/site-packages/pip/_vendor/requests/utils.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/providers.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/reporters.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/structs.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/abstract.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/criterion.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/resolution.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/
+venv/lib/python3.13/site-packages/pip/_vendor/rich/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/__main__.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_cell_widths.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_emoji_codes.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_emoji_replace.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_export_format.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_extension.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_fileno.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_inspect.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_log_render.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_loop.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_null_file.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_palettes.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_pick.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_ratio.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_spinners.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_stack.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_timer.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_win32_console.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_windows.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_windows_renderer.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/_wrap.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/abc.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/align.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/ansi.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/bar.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/box.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/cells.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/color.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/color_triplet.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/columns.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/console.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/constrain.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/containers.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/control.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/default_styles.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/diagnose.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/emoji.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/errors.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/file_proxy.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/filesize.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/highlighter.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/json.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/jupyter.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/layout.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/live.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/live_render.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/logging.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/markup.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/measure.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/padding.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/pager.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/palette.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/panel.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/pretty.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/progress.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/progress_bar.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/prompt.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/protocol.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/rich/region.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/repr.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/rule.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/scope.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/screen.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/segment.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/spinner.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/status.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/style.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/styled.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/syntax.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/table.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/terminal_theme.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/text.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/theme.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/themes.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/traceback.py
+venv/lib/python3.13/site-packages/pip/_vendor/rich/tree.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/_parser.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/_re.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/_types.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/_writer.py
+venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_api.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_macos.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_openssl.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_ssl_constants.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/_windows.py
+venv/lib/python3.13/site-packages/pip/_vendor/truststore/py.typed
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/_collections.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/_version.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/connection.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/connectionpool.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/exceptions.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/fields.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/filepost.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/poolmanager.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/request.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/response.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/appengine.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/securetransport.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/socks.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/six.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/weakref_finalize.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__init__.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/connection.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/proxy.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/queue.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/request.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/response.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/retry.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssl_.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssl_match_hostname.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssltransport.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/timeout.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/url.py
+venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/wait.py
+
+sent 2.366.345 bytes  received 22.575 bytes  318.522,67 bytes/sec
+total size is 56.301.539  speedup is 23,57
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: simulador_banco/middleware
+logs/
+logs/gunicorn_access.log
+logs/gunicorn_error.log
+logs/supervisord.log
+logs/supervisord.pid
+logs/supervisord.sock
+logs/tor.log
+simulador_banco/
+simulador_banco/db.sqlite3
+tor_data/
+tor_data/cached-microdesc-consensus
+tor_data/cached-microdescs.new
+tor_data/lock
+tor_data/state
+
+sent 853.845 bytes  received 57.399 bytes  140.191,38 bytes/sec
+total size is 61.610.187  speedup is 67,61
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/sync/20250618_011903_sync.log
+deleting logs/sync/20250618_003713_sync.log
+deleting logs/sync/20250617_235716_sync.log
+deleting logs/sync/20250617_231008_sync.log
+deleting logs/sync/20250617_222422_sync.log
+deleting logs/sync/20250617_202156_sync.log
+deleting logs/sync/20250617_195916_sync.log
+deleting logs/sync/20250617_154848_sync.log
+deleting logs/sync/20250617_143359_sync.log
+deleting logs/sync/20250617_054233_sync.log
+deleting logs/sync/20250617_050531_sync.log
+deleting logs/sync/20250617_045701_sync.log
+deleting logs/sync/20250617_041340_sync.log
+deleting logs/sync/20250617_040124_sync.log
+deleting logs/sync/20250617_024153_sync.log
+deleting logs/sync/20250617_020909_sync.log
+deleting logs/sync/20250617_015422_sync.log
+deleting logs/sync/20250617_014745_sync.log
+deleting logs/sync/20250617_013007_sync.log
+deleting logs/sync/20250617_011342_sync.log
+deleting logs/sync/20250617_004211_sync.log
+deleting logs/sync/20250617_003542_sync.log
+deleting logs/sync/20250617_002615_sync.log
+deleting logs/sync/20250616_225823_sync.log
+deleting logs/sync/20250616_225212_sync.log
+deleting logs/sync/20250616_224223_sync.log
+deleting logs/sync/20250616_222224_sync.log
+deleting logs/sync/20250616_221752_sync.log
+deleting logs/sync/20250616_220036_sync.log
+deleting logs/sync/20250616_210625_sync.log
+deleting logs/sync/20250616_204303_sync.log
+deleting logs/sync/20250616_202939_sync.log
+deleting logs/sync/20250616_200258_sync.log
+deleting logs/sync/20250616_200039_sync.log
+deleting logs/sync/20250614_101835_sync.log
+deleting logs/sync/20250614_100029_sync.log
+deleting logs/sync/20250614_083104_sync.log
+deleting logs/sync/20250614_081031_sync.log
+deleting logs/sync/20250614_080321_sync.log
+deleting logs/sync/20250614_075830_sync.log
+deleting logs/sync/20250614_071947_sync.log
+deleting logs/sync/20250614_043124_sync.log
+deleting logs/sync/20250614_035453_sync.log
+deleting logs/sync/20250614_032109_sync.log
+deleting logs/sync/20250614_025408_sync.log
+deleting logs/sync/20250614_024624_sync.log
+deleting logs/sync/20250614_013021_sync.log
+deleting logs/sync/20250614_010605_sync.log
+deleting logs/sync/20250613_195332_sync.log
+deleting logs/sync/20250613_110458_sync.log
+deleting logs/sync/20250613_104814_sync.log
+deleting logs/sync/20250613_095608_sync.log
+deleting logs/sync/20250613_095123_sync.log
+deleting logs/sync/20250613_094638_sync.log
+deleting logs/sync/20250613_093608_sync.log
+deleting logs/sync/20250613_093155_sync.log
+deleting logs/sync/20250613_083455_sync.log
+deleting logs/sync/20250613_072642_sync.log
+deleting logs/sync/20250613_063345_sync.log
+deleting logs/sync/20250613_055146_sync.log
+deleting logs/sync/20250613_054715_sync.log
+deleting logs/sync/20250613_053942_sync.log
+deleting logs/sync/20250613_051737_sync.log
+deleting logs/sync/20250613_051544_sync.log
+deleting logs/sync/20250613_044013_sync.log
+deleting logs/sync/20250613_035631_sync.log
+deleting logs/sync/20250613_032040_sync.log
+deleting logs/sync/20250613_023935_sync.log
+deleting logs/sync/20250613_013049_sync.log
+deleting logs/sync/20250612_224318_sync.log
+deleting logs/sync/20250612_185001_sync.log
+deleting logs/sync/20250612_175831_sync.log
+deleting logs/sync/20250612_112006_sync.log
+deleting logs/sync/20250612_110246_sync.log
+deleting logs/sync/20250612_105836_sync.log
+deleting logs/sync/20250612_105257_sync.log
+deleting logs/sync/20250612_104910_sync.log
+deleting logs/sync/20250612_103548_sync.log
+deleting logs/sync/20250612_102345_sync.log
+deleting logs/sync/20250612_100338_sync.log
+deleting logs/sync/20250612_094936_sync.log
+deleting logs/sync/20250612_084902_sync.log
+deleting logs/sync/20250612_083219_sync.log
+deleting logs/sync/20250612_064021_sync.log
+deleting logs/sync/20250612_060012_sync.log
+deleting logs/sync/20250612_053921_sync.log
+deleting logs/sync/20250612_053544_sync.log
+deleting logs/sync/20250612_041414_sync.log
+deleting logs/sync/20250612_032615_sync.log
+deleting logs/sync/20250612_032254_sync.log
+deleting logs/sync/20250612_030844_sync.log
+deleting logs/sync/20250612_015301_sync.log
+deleting logs/sync/20250612_013925_sync.log
+deleting logs/sync/20250611_235351_sync.log
+deleting logs/sync/20250611_232027_sync.log
+deleting logs/sync/20250611_231843_sync.log
+deleting logs/sync/20250611_230824_sync.log
+deleting logs/sync/20250611_230718_sync.log
+deleting logs/sync/20250611_230542_sync.log
+deleting logs/sync/20250611_230212_sync.log
+deleting logs/sync/20250611_230120_sync.log
+deleting logs/sync/20250611_225448_sync.log
+deleting logs/sync/20250611_224829_sync.log
+deleting logs/sync/20250611_223730_sync.log
+deleting logs/sync/20250611_223232_sync.log
+deleting logs/sync/20250611_222947_scp_sync.log
+deleting logs/sync/20250611_222707_scp_sync.log
+deleting logs/sync/20250611_220301_scp_sync.log
+deleting logs/sync/20250611_215847_sync.log
+deleting logs/sync/20250611_215555_sync.log
+deleting logs/sync/20250611_214953_sync.log
+deleting logs/sync/20250611_212543_sync.log
+deleting logs/sync/20250611_013758_sync_clean.log
+deleting logs/sync/20250611_013241_sync_clean.log
+deleting logs/sync/20250611_013225_sync.log
+deleting logs/sync/20250611_013118_sync.log
+deleting logs/sync/20250611_011901_sync.log
+deleting logs/sync/20250611_011826_sync.log
+deleting logs/sync/20250611_011104_sync.log
+deleting logs/sync/20250611_010628_sync.log
+deleting logs/sync/20250611_010430_sync_clean.log
+deleting logs/sync/20250611_001157_sync_clean.log
+deleting logs/sync/20250611_000301_sync.log
+deleting logs/sync/20250610_235854_sync.log
+deleting logs/sync/20250610_130600_sync_clean.log
+deleting logs/sync/20250610_130317_sync_clean.log
+deleting logs/sync/20250610_075107_sync_clean.log
+deleting logs/sync/20250610_070840_sync.log
+deleting logs/sync/20250610_070227_sync_clean.log
+deleting logs/sync/20250610_060921_sync_clean.log
+deleting logs/sync/20250610_055015_sync_clean.log
+deleting logs/sync/20250610_054612_sync.log
+deleting logs/sync/20250610_054246_sync.log
+deleting logs/sync/20250610_053030_sync.log
+deleting logs/sync/20250610_044428_sync.log
+deleting logs/sync/20250609_135903_sync.log
+deleting logs/sync/20250609_131155_sync.log
+deleting logs/sync/20250609_131036_sync_clean.log
+deleting logs/sync/20250609_125331_sync_clean.log
+deleting logs/sync/20250609_121034_sync_clean.log
+deleting logs/sync/20250609_112839_sync.log
+deleting logs/sync/20250609_110819_sync.log
+deleting logs/sync/20250609_105000_sync_clean.log
+deleting logs/sync/20250609_104617_sync_clean.log
+deleting logs/sync/20250609_052236_sync_clean.log
+deleting logs/sync/20250609_050301_sync_clean.log
+deleting logs/sync/20250609_044928_sync_clean.log
+deleting logs/sync/20250608_160825_sync_clean.log
+deleting logs/sync/20250608_152555_sync_clean.log
+deleting logs/sync/20250608_150914_sync_clean.log
+deleting logs/sync/20250608_124032_sync_clean.log
+deleting logs/sync/20250608_123436_sync_clean.log
+deleting logs/sync/20250608_123033_sync_clean.log
+deleting logs/sync/20250608_122859_sync_clean.log
+deleting logs/sync/20250608_122315_sync_clean.log
+deleting logs/sync/20250608_121218_sync_clean.log
+deleting logs/sync/20250608_114736_sync_clean.log
+deleting logs/sync/20250608_113245_sync_clean.log
+deleting logs/sync/20250608_112814_sync_clean.log
+deleting logs/sync/20250608_111845_sync_clean.log
+deleting logs/sync/20250608_110755_sync_clean.log
+deleting logs/sync/20250608_103913_sync_clean.log
+deleting logs/sync/20250608_101201_sync_clean.log
+deleting logs/sync/20250608_055637_sync_clean.log
+deleting logs/sync/20250608_054658_sync_clean.log
+deleting logs/sync/20250608_053437_sync.log
+deleting logs/sync/20250608_053050_sync.log
+deleting logs/sync/20250608_051700_sync.log
+deleting logs/sync/20250608_051323_sync.log
+deleting logs/sync/20250608_044439_sync_clean.log
+deleting logs/sync/20250608_034809_sync_clean.log
+deleting logs/sync/20250608_031826_sync_clean.log
+deleting logs/sync/20250608_031447_sync_clean.log
+deleting logs/sync/20250608_024050_sync_clean.log
+deleting logs/sync/20250608_023017_sync_clean.log
+deleting logs/sync/20250607_154153_sync_clean.log
+deleting logs/sync/20250607_153702_sync_clean.log
+deleting logs/sync/20250607_152634_sync_clean.log
+deleting logs/sync/20250607_151413_sync_clean.log
+deleting logs/sync/20250607_150637_sync_clean.log
+deleting logs/sync/20250607_150411_sync_clean.log
+deleting logs/sync/20250607_145248_sync_clean.log
+deleting logs/sync/20250607_144750_sync_clean.log
+deleting logs/sync/20250607_143252_sync_clean.log
+deleting logs/sync/20250607_142247_sync_clean.log
+deleting logs/sync/20250607_140400_sync_clean.log
+deleting logs/sync/20250607_140105_sync_clean.log
+deleting logs/sync/20250607_135620_sync_clean.log
+deleting logs/sync/20250607_135314_sync_clean.log
+deleting logs/sync/20250607_134803_sync_clean.log
+deleting logs/sync/20250607_134357_sync_clean.log
+deleting logs/sync/20250607_133817_sync_clean.log
+deleting logs/sync/20250607_133616_sync_clean.log
+deleting logs/sync/20250607_133217_sync_clean.log
+deleting logs/sync/20250607_115008_sync_clean.log
+deleting logs/sync/20250607_110301_sync_clean.log
+deleting logs/sync/20250607_104234_sync_clean.log
+deleting logs/sync/20250607_093501_sync_clean.log
+deleting logs/sync/20250607_092857_sync_clean.log
+deleting logs/sync/20250607_090425_sync_clean.log
+deleting logs/sync/20250607_085626_sync_clean.log
+deleting logs/sync/20250607_085412_sync_clean.log
+deleting logs/sync/20250607_085117_sync_clean.log
+deleting logs/sync/20250607_084836_sync_clean.log
+deleting logs/sync/20250607_084403_sync_clean.log
+deleting logs/sync/20250607_083749_sync_clean.log
+deleting logs/sync/20250607_081558_sync_clean.log
+deleting logs/sync/20250606_153913_sync.log
+deleting logs/sync/20250606_134818_sync_clean.log
+deleting logs/sync/20250606_133000_sync_clean.log
+deleting logs/sync/20250606_132757_sync_clean.log
+deleting logs/sync/20250606_130352_sync_clean.log
+deleting logs/sync/20250606_124046_sync_clean.log
+deleting logs/sync/20250606_104750_sync_clean.log
+deleting logs/sync/20250606_085108_sync_clean.log
+deleting logs/sync/20250606_084511_sync_clean.log
+deleting logs/sync/20250606_082355_sync_clean.log
+deleting logs/sync/20250606_082112_sync_clean.log
+deleting logs/sync/20250606_081801_sync_clean.log
+deleting logs/sync/20250606_080037_sync_clean.log
+deleting logs/sync/20250606_075528_sync_clean.log
+deleting logs/sync/20250606_073621_sync_clean.log
+deleting logs/sync/20250606_073012_sync_clean.log
+deleting logs/sync/20250606_065410_sync_clean.log
+deleting logs/sync/20250606_065204_sync_clean.log
+deleting logs/sync/20250606_064619_sync_clean.log
+deleting logs/sync/20250606_063720_sync_clean.log
+deleting logs/sync/20250606_062746_sync_clean.log
+deleting logs/sync/20250606_060635_sync_clean.log
+deleting logs/sync/20250606_053221_sync_clean.log
+deleting logs/sync/20250606_033314_sync_clean.log
+deleting logs/sync/20250606_033107_sync_clean.log
+deleting logs/sync/20250606_025448_sync_clean.log
+deleting logs/sync/20250606_005452_sync_clean.log
+deleting logs/sync/20250605_211807_sync_clean.log
+deleting logs/sync/20250605_131942_sync_clean.log
+deleting logs/sync/20250605_125217_sync_clean.log
+deleting logs/sync/20250605_112847_sync_clean.log
+deleting logs/sync/20250605_112241_sync_clean.log
+deleting logs/sync/20250605_111443_sync_clean.log
+deleting logs/sync/20250605_091859_sync_clean.log
+deleting logs/sync/20250605_091519_sync_clean.log
+deleting logs/sync/20250605_091117_sync_clean.log
+deleting logs/sync/20250605_090904_sync_clean.log
+deleting logs/sync/20250605_090714_sync_clean.log
+deleting logs/sync/20250605_085937_sync_clean.log
+deleting logs/sync/20250605_085604_sync_clean.log
+deleting logs/sync/20250605_085340_sync_clean.log
+deleting logs/sync/20250605_085227_sync_clean.log
+deleting logs/sync/20250605_084953_sync_clean.log
+deleting logs/sync/20250605_084434_sync_clean.log
+deleting logs/sync/20250605_084252_sync_clean.log
+deleting logs/sync/20250605_083844_sync_clean.log
+deleting logs/sync/20250605_083721_sync_clean.log
+deleting logs/sync/20250605_083546_sync_clean.log
+deleting logs/sync/20250605_082954_sync_clean.log
+deleting logs/sync/20250605_082417_sync_clean.log
+deleting logs/sync/20250605_081914_sync_clean.log
+deleting logs/sync/20250605_081751_sync_clean.log
+deleting logs/sync/20250605_081735_sync.log
+deleting logs/sync/20250605_081220_sync_clean.log
+deleting logs/sync/20250605_081104_sync_clean.log
+deleting logs/sync/20250605_080957_sync_clean.log
+deleting logs/sync/20250605_080938_sync_clean.log
+deleting logs/sync/20250605_080428_sync_clean.log
+deleting logs/sync/20250605_074641_sync_clean.log
+deleting logs/sync/20250605_074529_sync_clean.log
+deleting logs/sync/20250605_073519_sync_clean.log
+deleting logs/sync/20250605_065830_sync.log
+deleting logs/sync/20250605_064742_sync.log
+deleting logs/sync/20250605_064149_sync.log
+deleting logs/sync/20250604_092254_sync.log
+deleting logs/sync/20250604_090909_sync.log
+deleting logs/sync/20250604_090149_sync.log
+deleting logs/sync/20250604_085855_sync.log
+deleting logs/sync/20250603_110933_sync.log
+deleting logs/sync/20250603_085144_sync.log
+deleting logs/sync/20250603_082614_sync.log
+deleting logs/sync/20250603_082506_sync.log
+deleting logs/sync/20250603_075621_sync.log
+deleting logs/sync/20250603_074707_sync.log
+deleting logs/sync/20250603_071021_sync.log
+deleting logs/sync/20250603_070935_sync.log
+deleting logs/sync/20250603_045422_sync.log
+deleting logs/sync/20250602_193439_sync.log
+deleting logs/sync/20250602_191021_sync.log
+deleting logs/sync/20250602_190339_sync.log
+deleting logs/sync/20250602_190306_sync.log
+deleting logs/sync/20250602_190124_sync.log
+deleting logs/sync/20250601_075413_sync.log
+deleting logs/sync/20250601_074154_sync.log
+deleting logs/sync/20250601_074006_sync.log
+deleting logs/sync/20250601_072754_sync.log
+deleting logs/sync/20250601_072748_sync.log
+deleting logs/sync/20250601_072106_sync.log
+deleting logs/sync/20250601_072018_sync.log
+deleting logs/sync/20250601_070242_sync.log
+deleting logs/sync/
+deleting logs/sistema/ports_stop_.log
+deleting logs/sistema/00_06_ufw_.log
+deleting logs/sistema/00_05_mac_.log
+deleting logs/sistema/00_04_container_.log
+deleting logs/sistema/00_03_puertos_.log
+deleting logs/sistema/00_01_sistema_.log
+deleting logs/sistema/
+deleting logs/gpg_keys/jmoltke_public.asc
+deleting logs/gpg_keys/jmoltke_private.asc
+deleting logs/gpg_keys/fingerprint.txt
+deleting logs/gpg_keys/
+deleting logs/despliegue/restart_gunicorn.log
+deleting logs/despliegue/deploy_njalla_.log
+deleting logs/despliegue/00_21_local_ssl_.log
+deleting logs/despliegue/00_21_local_ssl.log
+deleting logs/despliegue/00_18_01_01_deploy_njalla_.log
+deleting logs/despliegue/00_18_00_deploy_njalla_.log
+deleting logs/despliegue/00_17_sincronizar_bdd_.log
+deleting logs/despliegue/00_16_subir_heroku.log
+deleting logs/despliegue/00_16_01_subir_GitHub.log
+deleting logs/despliegue/00_14_sincronizacion_archivos_.log
+deleting logs/despliegue/00_11_hacer_json_.log
+deleting logs/despliegue/00_10_usuario_.log
+deleting logs/despliegue/00_09_cargar_json_.log
+deleting logs/despliegue/00_09_cargar_json.log
+deleting logs/despliegue/00_08_migraciones_.log
+deleting logs/despliegue/00_07_postgres_.log
+deleting logs/despliegue/
+deleting logs/deploy_coretransapi/
+deleting logs/backup/00_19_borrar_zip_sql_.log
+deleting logs/backup/00_02_zip_backup_.log
+deleting logs/backup/
+deleting logs/archivados/
+deleting logs/01_full_deploy/process_ssl.log
+deleting logs/01_full_deploy/full_deploy.log
+deleting logs/01_full_deploy/00_20_ssl.log
+deleting logs/01_full_deploy/
+deleting logs/00_18_05_deploy_update/00_18_05_deploy_update.log
+deleting logs/00_18_05_deploy_update/
+deleting logs/00_18_01_05_deploy_njalla/00_18_00_deploy_njalla.log
+deleting logs/00_18_01_05_deploy_njalla/
+deleting logs/00_18_01_01_deploy_njalla/00_18_00_deploy_njalla.log
+deleting logs/00_18_01_01_deploy_njalla/
+deleting logs/00_18_01_00_deploy_njalla/00_18_00_deploy_njalla.log
+deleting logs/00_18_01_00_deploy_njalla/
+deleting logs/00_18_00_deploy_njalla/00_18_00_deploy_njalla.log
+deleting logs/00_18_00_deploy_njalla/
+deleting logs/restaurar_local_descifrado.log
+deleting logs/respaldo_local_cifrado.log
+deleting logs/deploy_njalla.log
+deleting logs/commits_hist.md
+deleting logs/
+./
+chmod_log.txt
+dirs.sh
+fake_user
+deleting .logs/notificador_30.log
+deleting .logs/notificador.log
+deleting utils/chmod_log.txt
+deleting utils/conexion_segura_db/README.txt
+.logs/
+.logs/commits_hist.md
+.logs/deploy_njalla.log
+.logs/respaldo_local_cifrado.log
+.logs/restaurar_local_descifrado.log
+.logs/00_18_00_deploy_njalla/
+.logs/00_18_00_deploy_njalla/00_18_00_deploy_njalla.log
+.logs/00_18_01_00_deploy_njalla/
+.logs/00_18_01_00_deploy_njalla/00_18_00_deploy_njalla.log
+.logs/00_18_01_01_deploy_njalla/
+.logs/00_18_01_01_deploy_njalla/00_18_00_deploy_njalla.log
+.logs/00_18_01_05_deploy_njalla/
+.logs/00_18_01_05_deploy_njalla/00_18_00_deploy_njalla.log
+.logs/00_18_05_deploy_update/
+.logs/00_18_05_deploy_update/00_18_05_deploy_update.log
+.logs/01_full_deploy/
+.logs/01_full_deploy/00_20_ssl.log
+.logs/01_full_deploy/full_deploy.log
+.logs/01_full_deploy/process_ssl.log
+.logs/archivados/
+.logs/backup/
+.logs/backup/00_02_zip_backup_.log
+.logs/backup/00_19_borrar_zip_sql_.log
+.logs/deploy_coretransapi/
+.logs/despliegue/
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_09_cargar_json.log
+.logs/despliegue/00_09_cargar_json_.log
+.logs/despliegue/00_10_usuario_.log
+.logs/despliegue/00_11_hacer_json_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/despliegue/00_16_subir_heroku.log
+.logs/despliegue/00_17_sincronizar_bdd_.log
+.logs/despliegue/00_18_00_deploy_njalla_.log
+.logs/despliegue/00_18_01_01_deploy_njalla_.log
+.logs/despliegue/00_21_local_ssl.log
+.logs/despliegue/00_21_local_ssl_.log
+.logs/despliegue/deploy_njalla_.log
+.logs/despliegue/restart_gunicorn.log
+.logs/gpg_keys/
+.logs/gpg_keys/fingerprint.txt
+.logs/gpg_keys/jmoltke_private.asc
+.logs/gpg_keys/jmoltke_public.asc
+.logs/sistema/
+.logs/sistema/00_01_sistema_.log
+.logs/sistema/00_03_puertos_.log
+.logs/sistema/00_04_container_.log
+.logs/sistema/00_05_mac_.log
+.logs/sistema/00_06_ufw_.log
+.logs/sistema/ports_stop_.log
+.logs/sync/
+.logs/sync/20250601_070242_sync.log
+.logs/sync/20250601_072018_sync.log
+.logs/sync/20250601_072106_sync.log
+.logs/sync/20250601_072748_sync.log
+.logs/sync/20250601_072754_sync.log
+.logs/sync/20250601_074006_sync.log
+.logs/sync/20250601_074154_sync.log
+.logs/sync/20250601_075413_sync.log
+.logs/sync/20250602_190124_sync.log
+.logs/sync/20250602_190306_sync.log
+.logs/sync/20250602_190339_sync.log
+.logs/sync/20250602_191021_sync.log
+.logs/sync/20250602_193439_sync.log
+.logs/sync/20250603_045422_sync.log
+.logs/sync/20250603_070935_sync.log
+.logs/sync/20250603_071021_sync.log
+.logs/sync/20250603_074707_sync.log
+.logs/sync/20250603_075621_sync.log
+.logs/sync/20250603_082506_sync.log
+.logs/sync/20250603_082614_sync.log
+.logs/sync/20250603_085144_sync.log
+.logs/sync/20250603_110933_sync.log
+.logs/sync/20250604_085855_sync.log
+.logs/sync/20250604_090149_sync.log
+.logs/sync/20250604_090909_sync.log
+.logs/sync/20250604_092254_sync.log
+.logs/sync/20250605_064149_sync.log
+.logs/sync/20250605_064742_sync.log
+.logs/sync/20250605_065830_sync.log
+.logs/sync/20250605_073519_sync_clean.log
+.logs/sync/20250605_074529_sync_clean.log
+.logs/sync/20250605_074641_sync_clean.log
+.logs/sync/20250605_080428_sync_clean.log
+.logs/sync/20250605_080938_sync_clean.log
+.logs/sync/20250605_080957_sync_clean.log
+.logs/sync/20250605_081104_sync_clean.log
+.logs/sync/20250605_081220_sync_clean.log
+.logs/sync/20250605_081735_sync.log
+.logs/sync/20250605_081751_sync_clean.log
+.logs/sync/20250605_081914_sync_clean.log
+.logs/sync/20250605_082417_sync_clean.log
+.logs/sync/20250605_082954_sync_clean.log
+.logs/sync/20250605_083546_sync_clean.log
+.logs/sync/20250605_083721_sync_clean.log
+.logs/sync/20250605_083844_sync_clean.log
+.logs/sync/20250605_084252_sync_clean.log
+.logs/sync/20250605_084434_sync_clean.log
+.logs/sync/20250605_084953_sync_clean.log
+.logs/sync/20250605_085227_sync_clean.log
+.logs/sync/20250605_085340_sync_clean.log
+.logs/sync/20250605_085604_sync_clean.log
+.logs/sync/20250605_085937_sync_clean.log
+.logs/sync/20250605_090714_sync_clean.log
+.logs/sync/20250605_090904_sync_clean.log
+.logs/sync/20250605_091117_sync_clean.log
+.logs/sync/20250605_091519_sync_clean.log
+.logs/sync/20250605_091859_sync_clean.log
+.logs/sync/20250605_111443_sync_clean.log
+.logs/sync/20250605_112241_sync_clean.log
+.logs/sync/20250605_112847_sync_clean.log
+.logs/sync/20250605_125217_sync_clean.log
+.logs/sync/20250605_131942_sync_clean.log
+.logs/sync/20250605_211807_sync_clean.log
+.logs/sync/20250606_005452_sync_clean.log
+.logs/sync/20250606_025448_sync_clean.log
+.logs/sync/20250606_033107_sync_clean.log
+.logs/sync/20250606_033314_sync_clean.log
+.logs/sync/20250606_053221_sync_clean.log
+.logs/sync/20250606_060635_sync_clean.log
+.logs/sync/20250606_062746_sync_clean.log
+.logs/sync/20250606_063720_sync_clean.log
+.logs/sync/20250606_064619_sync_clean.log
+.logs/sync/20250606_065204_sync_clean.log
+.logs/sync/20250606_065410_sync_clean.log
+.logs/sync/20250606_073012_sync_clean.log
+.logs/sync/20250606_073621_sync_clean.log
+.logs/sync/20250606_075528_sync_clean.log
+.logs/sync/20250606_080037_sync_clean.log
+.logs/sync/20250606_081801_sync_clean.log
+.logs/sync/20250606_082112_sync_clean.log
+.logs/sync/20250606_082355_sync_clean.log
+.logs/sync/20250606_084511_sync_clean.log
+.logs/sync/20250606_085108_sync_clean.log
+.logs/sync/20250606_104750_sync_clean.log
+.logs/sync/20250606_124046_sync_clean.log
+.logs/sync/20250606_130352_sync_clean.log
+.logs/sync/20250606_132757_sync_clean.log
+.logs/sync/20250606_133000_sync_clean.log
+.logs/sync/20250606_134818_sync_clean.log
+.logs/sync/20250606_153913_sync.log
+.logs/sync/20250607_081558_sync_clean.log
+.logs/sync/20250607_083749_sync_clean.log
+.logs/sync/20250607_084403_sync_clean.log
+.logs/sync/20250607_084836_sync_clean.log
+.logs/sync/20250607_085117_sync_clean.log
+.logs/sync/20250607_085412_sync_clean.log
+.logs/sync/20250607_085626_sync_clean.log
+.logs/sync/20250607_090425_sync_clean.log
+.logs/sync/20250607_092857_sync_clean.log
+.logs/sync/20250607_093501_sync_clean.log
+.logs/sync/20250607_104234_sync_clean.log
+.logs/sync/20250607_110301_sync_clean.log
+.logs/sync/20250607_115008_sync_clean.log
+.logs/sync/20250607_133217_sync_clean.log
+.logs/sync/20250607_133616_sync_clean.log
+.logs/sync/20250607_133817_sync_clean.log
+.logs/sync/20250607_134357_sync_clean.log
+.logs/sync/20250607_134803_sync_clean.log
+.logs/sync/20250607_135314_sync_clean.log
+.logs/sync/20250607_135620_sync_clean.log
+.logs/sync/20250607_140105_sync_clean.log
+.logs/sync/20250607_140400_sync_clean.log
+.logs/sync/20250607_142247_sync_clean.log
+.logs/sync/20250607_143252_sync_clean.log
+.logs/sync/20250607_144750_sync_clean.log
+.logs/sync/20250607_145248_sync_clean.log
+.logs/sync/20250607_150411_sync_clean.log
+.logs/sync/20250607_150637_sync_clean.log
+.logs/sync/20250607_151413_sync_clean.log
+.logs/sync/20250607_152634_sync_clean.log
+.logs/sync/20250607_153702_sync_clean.log
+.logs/sync/20250607_154153_sync_clean.log
+.logs/sync/20250608_023017_sync_clean.log
+.logs/sync/20250608_024050_sync_clean.log
+.logs/sync/20250608_031447_sync_clean.log
+.logs/sync/20250608_031826_sync_clean.log
+.logs/sync/20250608_034809_sync_clean.log
+.logs/sync/20250608_044439_sync_clean.log
+.logs/sync/20250608_051323_sync.log
+.logs/sync/20250608_051700_sync.log
+.logs/sync/20250608_053050_sync.log
+.logs/sync/20250608_053437_sync.log
+.logs/sync/20250608_054658_sync_clean.log
+.logs/sync/20250608_055637_sync_clean.log
+.logs/sync/20250608_101201_sync_clean.log
+.logs/sync/20250608_103913_sync_clean.log
+.logs/sync/20250608_110755_sync_clean.log
+.logs/sync/20250608_111845_sync_clean.log
+.logs/sync/20250608_112814_sync_clean.log
+.logs/sync/20250608_113245_sync_clean.log
+.logs/sync/20250608_114736_sync_clean.log
+.logs/sync/20250608_121218_sync_clean.log
+.logs/sync/20250608_122315_sync_clean.log
+.logs/sync/20250608_122859_sync_clean.log
+.logs/sync/20250608_123033_sync_clean.log
+.logs/sync/20250608_123436_sync_clean.log
+.logs/sync/20250608_124032_sync_clean.log
+.logs/sync/20250608_150914_sync_clean.log
+.logs/sync/20250608_152555_sync_clean.log
+.logs/sync/20250608_160825_sync_clean.log
+.logs/sync/20250609_044928_sync_clean.log
+.logs/sync/20250609_050301_sync_clean.log
+.logs/sync/20250609_052236_sync_clean.log
+.logs/sync/20250609_104617_sync_clean.log
+.logs/sync/20250609_105000_sync_clean.log
+.logs/sync/20250609_110819_sync.log
+.logs/sync/20250609_112839_sync.log
+.logs/sync/20250609_121034_sync_clean.log
+.logs/sync/20250609_125331_sync_clean.log
+.logs/sync/20250609_131036_sync_clean.log
+.logs/sync/20250609_131155_sync.log
+.logs/sync/20250609_135903_sync.log
+.logs/sync/20250610_044428_sync.log
+.logs/sync/20250610_053030_sync.log
+.logs/sync/20250610_054246_sync.log
+.logs/sync/20250610_054612_sync.log
+.logs/sync/20250610_055015_sync_clean.log
+.logs/sync/20250610_060921_sync_clean.log
+.logs/sync/20250610_070227_sync_clean.log
+.logs/sync/20250610_070840_sync.log
+.logs/sync/20250610_075107_sync_clean.log
+.logs/sync/20250610_130317_sync_clean.log
+.logs/sync/20250610_130600_sync_clean.log
+.logs/sync/20250610_235854_sync.log
+.logs/sync/20250611_000301_sync.log
+.logs/sync/20250611_001157_sync_clean.log
+.logs/sync/20250611_010430_sync_clean.log
+.logs/sync/20250611_010628_sync.log
+.logs/sync/20250611_011104_sync.log
+.logs/sync/20250611_011826_sync.log
+.logs/sync/20250611_011901_sync.log
+.logs/sync/20250611_013118_sync.log
+.logs/sync/20250611_013225_sync.log
+.logs/sync/20250611_013241_sync_clean.log
+.logs/sync/20250611_013758_sync_clean.log
+.logs/sync/20250611_212543_sync.log
+.logs/sync/20250611_214953_sync.log
+.logs/sync/20250611_215555_sync.log
+.logs/sync/20250611_215847_sync.log
+.logs/sync/20250611_220301_scp_sync.log
+.logs/sync/20250611_222707_scp_sync.log
+.logs/sync/20250611_222947_scp_sync.log
+.logs/sync/20250611_223232_sync.log
+.logs/sync/20250611_223730_sync.log
+.logs/sync/20250611_224829_sync.log
+.logs/sync/20250611_225448_sync.log
+.logs/sync/20250611_230120_sync.log
+.logs/sync/20250611_230212_sync.log
+.logs/sync/20250611_230542_sync.log
+.logs/sync/20250611_230718_sync.log
+.logs/sync/20250611_230824_sync.log
+.logs/sync/20250611_231843_sync.log
+.logs/sync/20250611_232027_sync.log
+.logs/sync/20250611_235351_sync.log
+.logs/sync/20250612_013925_sync.log
+.logs/sync/20250612_015301_sync.log
+.logs/sync/20250612_030844_sync.log
+.logs/sync/20250612_032254_sync.log
+.logs/sync/20250612_032615_sync.log
+.logs/sync/20250612_041414_sync.log
+.logs/sync/20250612_053544_sync.log
+.logs/sync/20250612_053921_sync.log
+.logs/sync/20250612_060012_sync.log
+.logs/sync/20250612_064021_sync.log
+.logs/sync/20250612_083219_sync.log
+.logs/sync/20250612_084902_sync.log
+.logs/sync/20250612_094936_sync.log
+.logs/sync/20250612_100338_sync.log
+.logs/sync/20250612_102345_sync.log
+.logs/sync/20250612_103548_sync.log
+.logs/sync/20250612_104910_sync.log
+.logs/sync/20250612_105257_sync.log
+.logs/sync/20250612_105836_sync.log
+.logs/sync/20250612_110246_sync.log
+.logs/sync/20250612_112006_sync.log
+.logs/sync/20250612_175831_sync.log
+.logs/sync/20250612_185001_sync.log
+.logs/sync/20250612_224318_sync.log
+.logs/sync/20250613_013049_sync.log
+.logs/sync/20250613_023935_sync.log
+.logs/sync/20250613_032040_sync.log
+.logs/sync/20250613_035631_sync.log
+.logs/sync/20250613_044013_sync.log
+.logs/sync/20250613_051544_sync.log
+.logs/sync/20250613_051737_sync.log
+.logs/sync/20250613_053942_sync.log
+.logs/sync/20250613_054715_sync.log
+.logs/sync/20250613_055146_sync.log
+.logs/sync/20250613_063345_sync.log
+.logs/sync/20250613_072642_sync.log
+.logs/sync/20250613_083455_sync.log
+.logs/sync/20250613_093155_sync.log
+.logs/sync/20250613_093608_sync.log
+.logs/sync/20250613_094638_sync.log
+.logs/sync/20250613_095123_sync.log
+.logs/sync/20250613_095608_sync.log
+.logs/sync/20250613_104814_sync.log
+.logs/sync/20250613_110458_sync.log
+.logs/sync/20250613_195332_sync.log
+.logs/sync/20250614_010605_sync.log
+.logs/sync/20250614_013021_sync.log
+.logs/sync/20250614_024624_sync.log
+.logs/sync/20250614_025408_sync.log
+.logs/sync/20250614_032109_sync.log
+.logs/sync/20250614_035453_sync.log
+.logs/sync/20250614_043124_sync.log
+.logs/sync/20250614_071947_sync.log
+.logs/sync/20250614_075830_sync.log
+.logs/sync/20250614_080321_sync.log
+.logs/sync/20250614_081031_sync.log
+.logs/sync/20250614_083104_sync.log
+.logs/sync/20250614_100029_sync.log
+.logs/sync/20250614_101835_sync.log
+.logs/sync/20250616_200039_sync.log
+.logs/sync/20250616_200258_sync.log
+.logs/sync/20250616_202939_sync.log
+.logs/sync/20250616_204303_sync.log
+.logs/sync/20250616_210625_sync.log
+.logs/sync/20250616_220036_sync.log
+.logs/sync/20250616_221752_sync.log
+.logs/sync/20250616_222224_sync.log
+.logs/sync/20250616_224223_sync.log
+.logs/sync/20250616_225212_sync.log
+.logs/sync/20250616_225823_sync.log
+.logs/sync/20250617_002615_sync.log
+.logs/sync/20250617_003542_sync.log
+.logs/sync/20250617_004211_sync.log
+.logs/sync/20250617_011342_sync.log
+.logs/sync/20250617_013007_sync.log
+.logs/sync/20250617_014745_sync.log
+.logs/sync/20250617_015422_sync.log
+.logs/sync/20250617_020909_sync.log
+.logs/sync/20250617_024153_sync.log
+.logs/sync/20250617_040124_sync.log
+.logs/sync/20250617_041340_sync.log
+.logs/sync/20250617_045701_sync.log
+.logs/sync/20250617_050531_sync.log
+.logs/sync/20250617_054233_sync.log
+.logs/sync/20250617_143359_sync.log
+.logs/sync/20250617_154848_sync.log
+.logs/sync/20250617_195916_sync.log
+.logs/sync/20250617_202156_sync.log
+.logs/sync/20250617_222422_sync.log
+.logs/sync/20250617_231008_sync.log
+.logs/sync/20250617_235716_sync.log
+.logs/sync/20250618_003713_sync.log
+.logs/sync/20250618_011903_sync.log
+.logs/sync/20250619_095513_sync.log
+backup/00_02_zip_backup copy.sh
+backup/00_02_zip_backup.sh
+backup/00_14_sincronizacion_archivos.sh
+backup/00_17_sincronizar_bdd.sh
+backup/00_19_borrar_zip_sql.sh
+deploy/django/00_07_postgres.sh
+deploy/django/00_08_migraciones.sh
+deploy/django/00_09_cargar_json copy.sh
+deploy/django/00_09_cargar_json.sh
+deploy/django/00_10_usuario.sh
+deploy/django/00_11_hacer_json copy.sh
+deploy/django/00_11_hacer_json.sh
+deploy/django/00_13_verificar_transferencias.sh
+deploy/github/00_16_01_subir_GitHub.sh
+deploy/heroku/00_15_variables_heroku.sh
+deploy/heroku/00_16_subir_heroku.sh
+deploy/heroku/set_heroku_env.sh
+deploy/vps/00_18_00_deploy_njalla.sh
+deploy/vps/00_18_02_verificar_https_headers.sh
+deploy/vps/00_18_03_reporte_salud_vps.sh
+deploy/vps/00_18_04_generar_clave_pgp_njalla.sh
+deploy/vps/00_18_05_deploy_update.sh
+deploy/vps/00_18_06_restart_coretransapi.sh
+deploy/vps/00_18_07_status_coretransapi.sh
+deploy/vps/00_18_08_check_ssl_ports.sh
+deploy/vps/00_18_09_all_status_coretransapi.sh
+deploy/vps/sync_dir.sh
+deploy/vps/vps_sync_clean.sh
+menu/01_full.sh
+menu/aliases_deploy.sh
+service/00_22_gunicorn.sh
+service/configurar_gunicorn.sh
+service/diagnostico_entorno.sh
+service/reiniciar_servicios.sh
+service/run_local_ssl_env.sh
+service/summarize_logs.sh
+src/00_01_sistema.sh
+src/00_03_puertos.sh
+src/00_04_container.sh
+src/00_05_mac.sh
+src/00_06_ufw copy.sh
+src/00_06_ufw.sh
+utils/
+utils/deploy_remote_report.sh
+utils/conexion_segura_db/
+utils/conexion_segura_db/README.md
+utils/local/config/
+utils/local/config/nginx.conf
+utils/local/scripts/manage.sh
+utils/security/
+utils/security/README.md
+utils/security/auditoria_wifi.md
+utils/security/scripts/
+utils/security/scripts/aud_elk_stack.sh
+utils/security/scripts/aud_graylog.sh
+utils/security/scripts/aud_splunk.sh
+utils/security/scripts/aud_splunk_graylog.sh
+utils/security/scripts/graylog-4.3-repository_latest.deb
+utils/security/scripts/splunk-8.2.5.deb
+utils/security/scripts/aud_graylog_docker/
+utils/security/scripts/aud_graylog_docker/README.md
+utils/security/scripts/aud_graylog_docker/docker-compose.yml
+utils/security/scripts/aud_graylog_docker/graylog.env
+utils/security/scripts/aud_graylog_docker/setup_graylog.sh
+
+sent 4.419.919 bytes  received 23.746 bytes  467.754,21 bytes/sec
+total size is 204.136.040  speedup is 45,94
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.
