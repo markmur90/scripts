@@ -37,19 +37,32 @@ sudo ufw allow 9055/tcp comment "Extra"
 sudo ufw allow 9056/tcp comment "Extra"
 sudo ufw allow 9180/tcp comment "Extra"
 
-sudo ufw allow 9200/tcp comment "Graylog"
-sudo ufw allow 9200/tcp comment "Graylog"
-sudo ufw allow 9200/tcp comment "Graylog"
-sudo ufw allow 9200/tcp comment "Graylog"
-sudo ufw allow 9200/tcp comment "Graylog"
-sudo ufw allow 27017/tcp comment "Graylog"
+# sudo ufw allow 9200/tcp comment "Graylog"
+# sudo ufw allow 9200/tcp comment "Graylog"
+# sudo ufw allow 9200/tcp comment "Graylog"
+# sudo ufw allow 9200/tcp comment "Graylog"
+# sudo ufw allow 9200/tcp comment "Graylog"
+# sudo ufw allow 27017/tcp comment "Graylog"
 
-# Salida libre para desarrollo
+# Salidas necesarias
+sudo ufw allow out 53              # DNS
+sudo ufw allow out 123/udp         # NTP
+sudo ufw allow out to any port 443 proto tcp
+
+# Logging
+sudo ufw logging on
+sudo ufw logging medium
+
+# Reglas iptables anti-escaneo
+sudo iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
+sudo iptables -A INPUT -p tcp ! --syn -m state --state NEW -j DROP
+sudo iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
+sudo iptables -A INPUT -p tcp --tcp-flags ALL FIN,URG,PSH -j DROP
+sudo iptables -A INPUT -p tcp --tcp-flags ALL SYN,RST,ACK,FIN,URG -j DROP
+
+# Políticas por defecto
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-
-# Logging opcional
-sudo ufw logging off
 
 # Activar UFW
 sudo ufw --force enable
