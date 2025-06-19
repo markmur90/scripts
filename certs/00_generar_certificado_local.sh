@@ -48,7 +48,7 @@ echo -e "\033[1;36m🔐 Generando certificado SSL local autofirmado...\033[0m"
 LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/$(basename "$0" .sh)_.log"
 mkdir -p "$(dirname $LOG_DEPLOY)"
 
-CERT_DIR="$BASE_DIR/certs"
+CERT_DIR="/home/markmur88/scripts/schemas/certs"
 CERT_KEY="$CERT_DIR/desarrollo.key"
 CERT_CRT="$CERT_DIR/desarrollo.crt"
 

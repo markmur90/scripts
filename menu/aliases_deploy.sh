@@ -123,7 +123,7 @@ alias 17gtareas='nohup bash $GE_SH_DIR/gestor_tareas_17.sh >/dev/null 2>&1 & dis
 # === VARIABLES ENTORNOS ===
 
 alias api="source ~/.zshrc && cd $AP_H2_DIR && envAPP"
-alias deploy_full='bash "$SCRIPTS_DIR/menu/01_full.sh"'
+alias deploy_full='bash "/home/markmur88/scripts/menu/01_full.sh"'
 alias d_help='deploy_full --help'
 alias d_step='deploy_full -s'
 alias d_all='deploy_full -a'
