@@ -1,0 +1,862 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/wait.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/url.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/timeout.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssltransport.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssl_match_hostname.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/ssl_.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/retry.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/response.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/request.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/queue.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/proxy.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/connection.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/weakref_finalize.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/six.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_securetransport/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/socks.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/securetransport.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/appengine.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/contrib/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/response.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/request.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/poolmanager.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/filepost.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/fields.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/exceptions.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/connectionpool.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/connection.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/_version.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/_collections.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/urllib3/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/_windows.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/_ssl_constants.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/_openssl.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/_macos.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/_api.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/truststore/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/_writer.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli_w/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli/_types.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli/_re.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli/_parser.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/tomli/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/tree.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/traceback.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/themes.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/theme.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/text.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/terminal_theme.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/table.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/syntax.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/styled.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/style.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/status.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/spinner.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/segment.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/screen.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/scope.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/rule.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/repr.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/region.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/protocol.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/prompt.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/progress_bar.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/progress.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/pretty.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/panel.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/palette.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/pager.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/padding.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/measure.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/markup.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/logging.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/live_render.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/live.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/layout.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/jupyter.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/json.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/highlighter.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/filesize.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/file_proxy.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/errors.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/emoji.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/diagnose.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/default_styles.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/control.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/containers.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/constrain.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/console.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/columns.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/color_triplet.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/color.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/cells.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/box.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/bar.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/ansi.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/align.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/abc.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_wrap.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_windows_renderer.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_windows.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_win32_console.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_timer.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_stack.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_spinners.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_ratio.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_pick.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_palettes.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_null_file.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_loop.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_log_render.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_inspect.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_fileno.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_extension.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_export_format.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_emoji_replace.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_emoji_codes.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/_cell_widths.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/rich/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/resolution.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/exceptions.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/criterion.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/abstract.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/resolvers/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/structs.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/reporters.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/providers.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/resolvelib/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/utils.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/structures.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/status_codes.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/sessions.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/packages.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/models.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/hooks.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/help.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/exceptions.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/cookies.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/compat.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/certs.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/auth.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/api.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/adapters.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/_internal_utils.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/__version__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/requests/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_impl.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/_mapping.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/styles/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/python.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/_mapping.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexers/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/_mapping.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatters/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/filters/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/filters/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/util.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/unistring.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/token.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/style.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/sphinxext.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/scanner.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/regexopt.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/plugin.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/modeline.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/lexer.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/formatter.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/filter.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/console.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pygments/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/windows.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/version.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/unix.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/macos.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/api.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/android.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/platformdirs/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pkg_resources/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/pkg_resources/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/_spdx.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/version.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/utils.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/tags.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/specifiers.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/requirements.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/metadata.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/markers.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/_tokenizer.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/_structures.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/_parser.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/_musllinux.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/_manylinux.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/_elffile.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/packaging/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/msgpack/fallback.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/msgpack/ext.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/msgpack/exceptions.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/msgpack/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/msgpack/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/uts46data.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/package_data.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/intranges.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/idnadata.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/core.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/compat.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/codec.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/idna/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distro/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distro/distro.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distro/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distro/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distro/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/version.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/util.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/scripts.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/resources.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/metadata.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/markers.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/manifest.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/locators.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/index.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/database.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/compat.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/distlib/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_toml_compat.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_pip_wrapper.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_lint_dependency_groups.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/_implementation.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/dependency_groups/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/certifi/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/certifi/core.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/certifi/cacert.pem
+deleting venv/lib/python3.13/site-packages/pip/_vendor/certifi/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/certifi/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/certifi/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/caches/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/wrapper.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/serialize.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/py.typed
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/heuristics.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/filewrapper.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/controller.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/cache.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/adapter.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/_cmd.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/cachecontrol/
+deleting venv/lib/python3.13/site-packages/pip/_vendor/vendor.txt
+deleting venv/lib/python3.13/site-packages/pip/_vendor/typing_extensions.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_vendor/
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/versioncontrol.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/subversion.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/mercurial.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/git.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/bazaar.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/vcs/
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/virtualenv.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/urls.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/unpacking.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/temp_dir.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/subprocess.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/setuptools_build.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/retry.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/packaging.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/misc.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/logging.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/hashes.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/glibc.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/filetypes.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/filesystem.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/entrypoints.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/egg_link.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/direct_url_helpers.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/deprecation.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/datetime.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/compatibility_tags.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/compat.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/appdirs.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/_log.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/_jaraco_text.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/utils/
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/resolver.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/requirements.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/reporter.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/provider.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/factory.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/candidates.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/base.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/resolvelib/
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/resolver.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/legacy/
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/base.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/resolution/
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/req_uninstall.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/req_set.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/req_install.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/req_file.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/req_dependency_group.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/constructors.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/req/
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/install/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/install/editable_legacy.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/install/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/install/
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel_legacy.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel_editable.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata_legacy.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata_editable.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/metadata.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/build_tracker.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/build/
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/prepare.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/freeze.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/check.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/operations/
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/xmlrpc.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/utils.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/session.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/lazy_wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/download.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/cache.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/auth.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/network/
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/target_python.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/selection_prefs.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/search_scope.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/scheme.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/pylock.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/link.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/installation_report.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/index.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/format_control.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/direct_url.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/candidate.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/models/
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_envs.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_dists.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/_compat.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/importlib/
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/pkg_resources.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/base.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/_json.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/metadata/
+deleting venv/lib/python3.13/site-packages/pip/_internal/locations/base.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/locations/_sysconfig.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/locations/_distutils.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/locations/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/locations/
+deleting venv/lib/python3.13/site-packages/pip/_internal/index/sources.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/index/package_finder.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/index/collector.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/index/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/index/
+deleting venv/lib/python3.13/site-packages/pip/_internal/distributions/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/distributions/sdist.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/distributions/installed.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/distributions/base.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/distributions/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/distributions/
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/wheel.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/uninstall.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/show.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/search.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/lock.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/list.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/install.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/inspect.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/index.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/help.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/hash.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/freeze.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/download.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/debug.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/configuration.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/completion.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/check.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/cache.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/commands/
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/status_codes.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/spinners.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/req_command.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/progress_bars.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/parser.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/main_parser.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/main.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/index_command.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/command_context.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/cmdoptions.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/base_command.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/autocompletion.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cli/
+deleting venv/lib/python3.13/site-packages/pip/_internal/wheel_builder.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/self_outdated_check.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/pyproject.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/main.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/exceptions.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/configuration.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/cache.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/build_env.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/_internal/
+deleting venv/lib/python3.13/site-packages/pip/py.typed
+deleting venv/lib/python3.13/site-packages/pip/__pip-runner__.py
+deleting venv/lib/python3.13/site-packages/pip/__main__.py
+deleting venv/lib/python3.13/site-packages/pip/__init__.py
+deleting venv/lib/python3.13/site-packages/pip/
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/LICENSE.txt
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/AUTHORS.txt
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/licenses/
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/top_level.txt
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/entry_points.txt
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/WHEEL
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/REQUESTED
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/RECORD
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/METADATA
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/INSTALLER
+deleting venv/lib/python3.13/site-packages/pip-25.1.1.dist-info/
+deleting venv/lib/python3.13/site-packages/
+deleting venv/lib/python3.13/
+deleting venv/lib/
+deleting venv/include/python3.13/
+deleting venv/include/
+deleting venv/bin/python3.13
+deleting venv/bin/python3
+deleting venv/bin/python
+deleting venv/bin/pip3.13
+deleting venv/bin/pip3
+deleting venv/bin/pip
+deleting venv/bin/activate.fish
+deleting venv/bin/activate.csh
+deleting venv/bin/activate
+deleting venv/bin/Activate.ps1
+deleting venv/bin/
+deleting venv/pyvenv.cfg
+deleting venv/lib64
+deleting venv/.gitignore
+deleting venv/
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/management/commands/
+api/core/management/commands/genkey.py
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+media/claves/
+media/claves/jwks_88709d2a-faf0-4da6-827e-15e158d270fd.json
+media/claves/priv_88709d2a-faf0-4da6-827e-15e158d270fd.pem
+media/claves/pub_88709d2a-faf0-4da6-827e-15e158d270fd.pem
+middleware/
+staticfiles/admin/css/
+staticfiles/admin/css/autocomplete.css
+staticfiles/admin/css/base.css
+staticfiles/admin/css/changelists.css
+staticfiles/admin/css/dark_mode.css
+staticfiles/admin/css/dashboard.css
+staticfiles/admin/css/forms.css
+staticfiles/admin/css/login.css
+staticfiles/admin/css/nav_sidebar.css
+staticfiles/admin/css/responsive.css
+staticfiles/admin/css/responsive_rtl.css
+staticfiles/admin/css/rtl.css
+staticfiles/admin/css/unusable_password_field.css
+staticfiles/admin/css/widgets.css
+staticfiles/admin/css/vendor/select2/
+staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md
+staticfiles/admin/css/vendor/select2/select2.css
+staticfiles/admin/css/vendor/select2/select2.min.css
+staticfiles/admin/img/
+staticfiles/admin/img/LICENSE
+staticfiles/admin/img/README.txt
+staticfiles/admin/img/calendar-icons.svg
+staticfiles/admin/img/icon-addlink.svg
+staticfiles/admin/img/icon-alert.svg
+staticfiles/admin/img/icon-calendar.svg
+staticfiles/admin/img/icon-changelink.svg
+staticfiles/admin/img/icon-clock.svg
+staticfiles/admin/img/icon-deletelink.svg
+staticfiles/admin/img/icon-hidelink.svg
+staticfiles/admin/img/icon-no.svg
+staticfiles/admin/img/icon-unknown-alt.svg
+staticfiles/admin/img/icon-unknown.svg
+staticfiles/admin/img/icon-viewlink.svg
+staticfiles/admin/img/icon-yes.svg
+staticfiles/admin/img/inline-delete.svg
+staticfiles/admin/img/search.svg
+staticfiles/admin/img/selector-icons.svg
+staticfiles/admin/img/sorting-icons.svg
+staticfiles/admin/img/tooltag-add.svg
+staticfiles/admin/img/tooltag-arrowright.svg
+staticfiles/admin/img/gis/
+staticfiles/admin/img/gis/move_vertex_off.svg
+staticfiles/admin/img/gis/move_vertex_on.svg
+staticfiles/admin/js/
+staticfiles/admin/js/SelectBox.js
+staticfiles/admin/js/SelectFilter2.js
+staticfiles/admin/js/actions.js
+staticfiles/admin/js/autocomplete.js
+staticfiles/admin/js/calendar.js
+staticfiles/admin/js/cancel.js
+staticfiles/admin/js/change_form.js
+staticfiles/admin/js/core.js
+staticfiles/admin/js/filters.js
+staticfiles/admin/js/inlines.js
+staticfiles/admin/js/jquery.init.js
+staticfiles/admin/js/nav_sidebar.js
+staticfiles/admin/js/popup_response.js
+staticfiles/admin/js/prepopulate.js
+staticfiles/admin/js/prepopulate_init.js
+staticfiles/admin/js/theme.js
+staticfiles/admin/js/unusable_password_field.js
+staticfiles/admin/js/urlify.js
+staticfiles/admin/js/admin/
+staticfiles/admin/js/admin/DateTimeShortcuts.js
+staticfiles/admin/js/admin/RelatedObjectLookups.js
+staticfiles/admin/js/vendor/jquery/
+staticfiles/admin/js/vendor/jquery/LICENSE.txt
+staticfiles/admin/js/vendor/jquery/jquery.js
+staticfiles/admin/js/vendor/jquery/jquery.min.js
+staticfiles/admin/js/vendor/select2/
+staticfiles/admin/js/vendor/select2/LICENSE.md
+staticfiles/admin/js/vendor/select2/select2.full.js
+staticfiles/admin/js/vendor/select2/select2.full.min.js
+staticfiles/admin/js/vendor/select2/i18n/
+staticfiles/admin/js/vendor/select2/i18n/af.js
+staticfiles/admin/js/vendor/select2/i18n/ar.js
+staticfiles/admin/js/vendor/select2/i18n/az.js
+staticfiles/admin/js/vendor/select2/i18n/bg.js
+staticfiles/admin/js/vendor/select2/i18n/bn.js
+staticfiles/admin/js/vendor/select2/i18n/bs.js
+staticfiles/admin/js/vendor/select2/i18n/ca.js
+staticfiles/admin/js/vendor/select2/i18n/cs.js
+staticfiles/admin/js/vendor/select2/i18n/da.js
+staticfiles/admin/js/vendor/select2/i18n/de.js
+staticfiles/admin/js/vendor/select2/i18n/dsb.js
+staticfiles/admin/js/vendor/select2/i18n/el.js
+staticfiles/admin/js/vendor/select2/i18n/en.js
+staticfiles/admin/js/vendor/select2/i18n/es.js
+staticfiles/admin/js/vendor/select2/i18n/et.js
+staticfiles/admin/js/vendor/select2/i18n/eu.js
+staticfiles/admin/js/vendor/select2/i18n/fa.js
+staticfiles/admin/js/vendor/select2/i18n/fi.js
+staticfiles/admin/js/vendor/select2/i18n/fr.js
+staticfiles/admin/js/vendor/select2/i18n/gl.js
+staticfiles/admin/js/vendor/select2/i18n/he.js
+staticfiles/admin/js/vendor/select2/i18n/hi.js
+staticfiles/admin/js/vendor/select2/i18n/hr.js
+staticfiles/admin/js/vendor/select2/i18n/hsb.js
+staticfiles/admin/js/vendor/select2/i18n/hu.js
+staticfiles/admin/js/vendor/select2/i18n/hy.js
+staticfiles/admin/js/vendor/select2/i18n/id.js
+staticfiles/admin/js/vendor/select2/i18n/is.js
+staticfiles/admin/js/vendor/select2/i18n/it.js
+staticfiles/admin/js/vendor/select2/i18n/ja.js
+staticfiles/admin/js/vendor/select2/i18n/ka.js
+staticfiles/admin/js/vendor/select2/i18n/km.js
+staticfiles/admin/js/vendor/select2/i18n/ko.js
+staticfiles/admin/js/vendor/select2/i18n/lt.js
+staticfiles/admin/js/vendor/select2/i18n/lv.js
+staticfiles/admin/js/vendor/select2/i18n/mk.js
+staticfiles/admin/js/vendor/select2/i18n/ms.js
+staticfiles/admin/js/vendor/select2/i18n/nb.js
+staticfiles/admin/js/vendor/select2/i18n/ne.js
+staticfiles/admin/js/vendor/select2/i18n/nl.js
+staticfiles/admin/js/vendor/select2/i18n/pl.js
+staticfiles/admin/js/vendor/select2/i18n/ps.js
+staticfiles/admin/js/vendor/select2/i18n/pt-BR.js
+staticfiles/admin/js/vendor/select2/i18n/pt.js
+staticfiles/admin/js/vendor/select2/i18n/ro.js
+staticfiles/admin/js/vendor/select2/i18n/ru.js
+staticfiles/admin/js/vendor/select2/i18n/sk.js
+staticfiles/admin/js/vendor/select2/i18n/sl.js
+staticfiles/admin/js/vendor/select2/i18n/sq.js
+staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js
+staticfiles/admin/js/vendor/select2/i18n/sr.js
+staticfiles/admin/js/vendor/select2/i18n/sv.js
+staticfiles/admin/js/vendor/select2/i18n/th.js
+staticfiles/admin/js/vendor/select2/i18n/tk.js
+staticfiles/admin/js/vendor/select2/i18n/tr.js
+staticfiles/admin/js/vendor/select2/i18n/uk.js
+staticfiles/admin/js/vendor/select2/i18n/vi.js
+staticfiles/admin/js/vendor/select2/i18n/zh-CN.js
+staticfiles/admin/js/vendor/select2/i18n/zh-TW.js
+staticfiles/admin/js/vendor/xregexp/
+staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+staticfiles/admin/js/vendor/xregexp/xregexp.js
+staticfiles/admin/js/vendor/xregexp/xregexp.min.js
+staticfiles/debug_toolbar/css/
+staticfiles/debug_toolbar/css/print.css
+staticfiles/debug_toolbar/css/toolbar.css
+staticfiles/debug_toolbar/js/
+staticfiles/debug_toolbar/js/history.js
+staticfiles/debug_toolbar/js/redirect.js
+staticfiles/debug_toolbar/js/timer.js
+staticfiles/debug_toolbar/js/toolbar.js
+staticfiles/debug_toolbar/js/utils.js
+staticfiles/drf-yasg/
+staticfiles/drf-yasg/README
+staticfiles/drf-yasg/immutable.js
+staticfiles/drf-yasg/immutable.min.js
+staticfiles/drf-yasg/insQ.js
+staticfiles/drf-yasg/insQ.min.js
+staticfiles/drf-yasg/redoc-init.js
+staticfiles/drf-yasg/style.css
+staticfiles/drf-yasg/swagger-ui-init.js
+staticfiles/drf-yasg/redoc-old/
+staticfiles/drf-yasg/redoc-old/LICENSE
+staticfiles/drf-yasg/redoc-old/redoc.min.js
+staticfiles/drf-yasg/redoc-old/redoc.min.js.map
+staticfiles/drf-yasg/redoc/
+staticfiles/drf-yasg/redoc/LICENSE
+staticfiles/drf-yasg/redoc/redoc-logo.png
+staticfiles/drf-yasg/redoc/redoc.min.js
+staticfiles/drf-yasg/redoc/redoc.standalone.js.map
+staticfiles/drf-yasg/swagger-ui-dist/
+staticfiles/drf-yasg/swagger-ui-dist/LICENSE
+staticfiles/drf-yasg/swagger-ui-dist/NOTICE
+staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js
+staticfiles/drf-yasg/swagger-ui-dist/favicon-32x32.png
+staticfiles/drf-yasg/swagger-ui-dist/index.css
+staticfiles/drf-yasg/swagger-ui-dist/index.js
+staticfiles/drf-yasg/swagger-ui-dist/oauth2-redirect.html
+staticfiles/drf-yasg/swagger-ui-dist/swagger-initializer.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.js.map
+staticfiles/rest_framework/css/
+staticfiles/rest_framework/css/bootstrap-theme.min.css
+staticfiles/rest_framework/css/bootstrap-theme.min.css.map
+staticfiles/rest_framework/css/bootstrap-tweaks.css
+staticfiles/rest_framework/css/bootstrap.min.css
+staticfiles/rest_framework/css/bootstrap.min.css.map
+staticfiles/rest_framework/css/default.css
+staticfiles/rest_framework/css/font-awesome-4.0.3.css
+staticfiles/rest_framework/css/prettify.css
+staticfiles/rest_framework/docs/css/
+staticfiles/rest_framework/docs/css/base.css
+staticfiles/rest_framework/docs/css/highlight.css
+staticfiles/rest_framework/docs/css/jquery.json-view.min.css
+staticfiles/rest_framework/docs/img/
+staticfiles/rest_framework/docs/img/favicon.ico
+staticfiles/rest_framework/docs/img/grid.png
+staticfiles/rest_framework/docs/js/
+staticfiles/rest_framework/docs/js/api.js
+staticfiles/rest_framework/docs/js/highlight.pack.js
+staticfiles/rest_framework/docs/js/jquery.json-view.min.js
+staticfiles/rest_framework/fonts/
+staticfiles/rest_framework/fonts/fontawesome-webfont.eot
+staticfiles/rest_framework/fonts/fontawesome-webfont.svg
+staticfiles/rest_framework/fonts/fontawesome-webfont.ttf
+staticfiles/rest_framework/fonts/fontawesome-webfont.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.eot
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff2
+staticfiles/rest_framework/img/
+staticfiles/rest_framework/img/glyphicons-halflings-white.png
+staticfiles/rest_framework/img/glyphicons-halflings.png
+staticfiles/rest_framework/img/grid.png
+staticfiles/rest_framework/js/
+staticfiles/rest_framework/js/ajax-form.js
+staticfiles/rest_framework/js/bootstrap.min.js
+staticfiles/rest_framework/js/coreapi-0.1.1.js
+staticfiles/rest_framework/js/csrf.js
+staticfiles/rest_framework/js/default.js
+staticfiles/rest_framework/js/jquery-3.7.1.min.js
+staticfiles/rest_framework/js/load-ajax-form.js
+staticfiles/rest_framework/js/prettify-min.js
+
+sent 49.817 bytes  received 146.754 bytes  20.691,68 bytes/sec
+total size is 51.949.937  speedup is 264,28
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting schemas/transferencias/
+deleting schemas/
+deleting api.sock
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/management/commands/
+api/core/management/commands/genkey.py
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/__init__.py
+media/claves/
+media/claves/jwks_88709d2a-faf0-4da6-827e-15e158d270fd.json
+media/claves/priv_88709d2a-faf0-4da6-827e-15e158d270fd.pem
+media/claves/pub_88709d2a-faf0-4da6-827e-15e158d270fd.pem
+middleware/
+
+sent 17.230 bytes  received 783 bytes  2.401,73 bytes/sec
+total size is 49.052.792  speedup is 2.723,19
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: simulador_banco/middleware
+tor_data/
+tor_data/cached-microdesc-consensus
+tor_data/cached-microdescs.new
+tor_data/state
+
+sent 749.688 bytes  received 19.813 bytes  61.560,08 bytes/sec
+total size is 61.610.187  speedup is 80,07
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+chmod_log.txt
+.logs/commits_hist.md
+.logs/01_full_deploy/00_20_ssl.log
+.logs/01_full_deploy/full_deploy.log
+.logs/01_full_deploy/process_ssl.log
+.logs/backup/00_02_zip_backup_.log
+.logs/backup/00_19_borrar_zip_sql_.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/despliegue/00_21_local_ssl.log
+.logs/despliegue/00_21_local_ssl_.log
+.logs/sync/
+.logs/sync/20250619_100421_sync.log
+.logs/sync/20250619_174848_sync.log
+menu/aliases_deploy.sh
+schemas/keys/ecdsa_private_key.pem
+schemas/keys/ecdsa_public_key.pem
+schemas/keys/jwks_public.json
+schemas/keys/logs/clave_gen.log
+
+sent 46.353 bytes  received 115.416 bytes  14.066,87 bytes/sec
+total size is 205.212.430  speedup is 1.268,55
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.
