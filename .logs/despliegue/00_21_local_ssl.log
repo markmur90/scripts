@@ -1,9 +1,12 @@
-[2025-06-18 01:22:31 +0200] [1380183] [INFO] Starting gunicorn 23.0.0
-[2025-06-18 01:22:31 +0200] [1380183] [INFO] Listening at: http://0.0.0.0:8000 (1380183)
-[2025-06-18 01:22:31 +0200] [1380183] [INFO] Using worker: sync
-[2025-06-18 01:22:31 +0200] [1380854] [INFO] Booting worker with pid: 1380854
-[2025-06-18 02:24:23 +0200] [1380183] [INFO] Handling signal: hup
-[2025-06-18 02:24:23 +0200] [1380183] [INFO] Hang up: Master
-[2025-06-18 02:24:23 +0200] [1380183] [INFO] Handling signal: term
-[2025-06-18 02:24:23 +0200] [3464110] [INFO] Booting worker with pid: 3464110
-[2025-06-18 02:24:23 +0200] [1380183] [ERROR] Worker (pid:1380854) was sent SIGHUP!
+[2025-06-19 10:24:53 +0200] [159783] [INFO] Starting gunicorn 23.0.0
+[2025-06-19 10:24:53 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2025-06-19 10:24:53 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2025-06-19 10:24:54 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2025-06-19 10:24:54 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2025-06-19 10:24:55 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2025-06-19 10:24:55 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2025-06-19 10:24:56 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2025-06-19 10:24:56 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2025-06-19 10:24:57 +0200] [159783] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2025-06-19 10:24:57 +0200] [159783] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2025-06-19 10:24:58 +0200] [159783] [ERROR] Can't connect to ('0.0.0.0', 8000)
