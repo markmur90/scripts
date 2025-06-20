@@ -6,6 +6,7 @@ AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
 BACKUPDIR="/home/markmur88/backup"
 VENV_PATH="/home/markmur88/envAPP"
+SIMU_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -45,6 +46,8 @@ vps_exec() {
 unalias envAPP 2>/dev/null
 envAPP() {source "$VENV_PATH/bin/activate" "$@"; }
 
+unalias envSIM 2>/dev/null
+envSIM() {source "$SIMU_PATH/bin/activate" "$@"; }
 
 # ───🎨 COLORES Y FUNCIONES DE LOG────────────────────────────
 RESET='\033[0m'
@@ -63,19 +66,19 @@ log_error() { echo -e "${ROJO}[ERR]  $1${RESET}"; }
 
 alias vps_sim_bank_chk='vps_exec "[ -f ~/Simulador/tor_data/hidden_service/hostname ] && cat ~/Simulador/tor_data/hidden_service/hostname || echo -e \"${AMARILLO}[WARN] Archivo hostname no encontrado${RESET}\""'
 alias vps_sim_bank_mon='vps_exec "[ -f ~/Simulador/logs/gunicorn.log ] && tail -f ~/Simulador/logs/gunicorn.log ~/Simulador/logs/gunicorn_error.log ~/Simulador/logs/tor.log ~/Simulador/logs/tor_error.log || echo -e \"${AMARILLO}[WARN] No existen los logs aún. ¿Ejecutaste start_all.sh?${RESET}\""'
-alias vps_sim_bank_env='vps_exec "bash /home/markmur88/Simulador/scripts/env_setup.sh"'
-alias vps_sim_bank_status='vps_exec "bash /home/markmur88/Simulador/scripts/status.sh"'
-alias vps_sim_bank_stop='vps_exec "bash /home/markmur88/Simulador/scripts/stop_all.sh"'
-alias vps_sim_bank_start='vps_exec "bash /home/markmur88/Simulador/scripts/start_all.sh"'
-alias vps_sim_bank_start2='vps_exec "bash /home/markmur88/Simulador/scripts/start_stack2.sh"'
-alias vps_sim_bank_restart='vps_exec "bash /home/markmur88/Simulador/scripts/restart_supervisor.sh"'
+alias vps_sim_bank_env='vps_exec "envSIM" "bash /home/markmur88/Simulador/scripts/env_setup.sh"'
+alias vps_sim_bank_status='vps_exec "envSIM" "bash /home/markmur88/Simulador/scripts/status.sh"'
+alias vps_sim_bank_stop='vps_exec "envSIM" "bash /home/markmur88/Simulador/scripts/stop_all.sh"'
+alias vps_sim_bank_start='vps_exec "envSIM" "bash /home/markmur88/Simulador/scripts/start_all.sh"'
+alias vps_sim_bank_start2='vps_exec "envSIM" "bash /home/markmur88/Simulador/scripts/start_stack2.sh"'
+alias vps_sim_bank_restart='vps_exec "envSIM" "bash /home/markmur88/Simulador/scripts/restart_supervisor.sh"'
 
-alias sim_bank_status='bash /home/markmur88/Simulador/scripts/status.sh'
-alias sim_bank_env='bash /home/markmur88/Simulador/scripts/env_setup.sh'
-alias sim_bank_stop='bash /home/markmur88/Simulador/scripts/stop_all.sh'
-alias sim_bank_start='bash /home/markmur88/Simulador/scripts/start_all.sh'
-alias sim_bank_start2='bash /home/markmur88/Simulador/scripts/start_stack2.sh'
-alias sim_bank_restart='bash /home/markmur88/Simulador/scripts/restart_supervisor.sh'
+alias sim_bank_status='envSIM && "bash /home/markmur88/Simulador/scripts/status.sh"'
+alias sim_bank_env='envSIM && "bash /home/markmur88/Simulador/scripts/env_setup.sh"'
+alias sim_bank_stop='envSIM && "bash /home/markmur88/Simulador/scripts/stop_all.sh"'
+alias sim_bank_start='envSIM && "bash /home/markmur88/Simulador/scripts/start_all.sh"'
+alias sim_bank_start2='envSIM && "bash /home/markmur88/Simulador/scripts/start_stack2.sh"'
+alias sim_bank_restart='envSIM && "bash /home/markmur88/Simulador/scripts/restart_supervisor.sh"'
 
 
 alias vps_sim_bank_ping="torsocks curl --silent --fail http://\$(vps_exec '[ -f ~/Simulador/tor_data/hidden_service/hostname ] && cat ~/Simulador/tor_data/hidden_service/hostname') || echo '[ERROR] No se pudo conectar al servicio oculto'"
@@ -88,7 +91,7 @@ alias freedom='cd "/home/markmur88/FreedomGPT" && source "/home/markmur88/venvAP
 alias BKapi='cd $AP_BK_DIR && source $VENV_PATH/bin/activate && clear && code .'
 alias api_heroku='cd $AP_HK_DIR && source $VENV_PATH/bin/activate '
 alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get full-upgrade -y && sudo apt-get autoremove -y'
-alias monero='bash /opt/monero-gui/monero/monero-wallet-gui'
+alias monero='/opt/monero-gui/monero/monero-wallet-gui'
 
 
 alias status_notify='bash $GT_NT_DIR/estado_notificadores.sh'
@@ -383,28 +386,28 @@ menu() {
     done
 }
 
-alias cAPI='code ~/api_bank_h2'
-alias cHER='code ~/api_bank_heroku'
-alias cNOT='code ~/Notas'
-alias cGIT='code ~/git'
-alias cFRE='code ~/FreedomGPT'
-alias cSIM='code ~/Simulador'
-alias cSCR='code /home/markmur88/scripts'
-alias cMEN='code /home/markmur88/scripts/menu'
+alias cAPI='code ~/api_bank_h2 && sc'
+alias cHER='code ~/api_bank_heroku && sc'
+alias cNOT='code ~/Notas && sc'
+alias cGIT='code ~/git && sc'
+alias cFRE='code ~/FreedomGPT && sc'
+alias cSIM='code ~/Simulador && sc'
+alias cSCR='code ~/scripts && sc'
+alias cMEN='code ~/scripts/menu && sc'
 alias testSIM='bash ~/scripts/test_simulador_curl.sh'
 alias localup='api && deploy_full -Z -C -S -Q -I -r'
 alias express='api && deploy_full -Z -C -S -Q -I -Gi -r'
-alias nt_dir='cd /home/markmur88/Notas && clear && ls'
-alias gt_dir='cd /home/markmur88/git && clear && ls'
-alias h2_dir='cd /home/markmur88/api_bank_h2 && clear && ls'
-alias hk_dir='cd /home/markmur88/api_bank_heroku && clear && ls'
-alias sm_dir='cd /home/markmur88/Simulador && clear && ls'
-alias sm_bnk='cd /home/markmur88/Simulador/simulador_banco && clear && ls'
-alias bk_dir='cd /home/markmur88/backup && clear && ls'
-alias lc_ufw='sudo bash /home/markmur88/scripts/src/00_06_ufw.sh'
-alias pr_ufw='sudo bash /home/markmur88/scripts/src/ufw_produccion.sh'
+alias nt_dir='cd ~/Notas && clear && ls'
+alias gt_dir='cd ~/git && clear && ls'
+alias h2_dir='cd ~/api_bank_h2 && clear && ls'
+alias hk_dir='cd ~/api_bank_heroku && clear && ls'
+alias sm_dir='cd ~/Simulador && clear && ls'
+alias sm_bnk='cd ~/Simulador/simulador_banco && clear && ls'
+alias bk_dir='cd ~/backup && clear && ls'
+alias lc_ufw='sudo bash ~/scripts/src/00_06_ufw.sh'
+alias pr_ufw='sudo bash ~/scripts/src/ufw_produccion.sh'
 alias st_ufw='sudo ufw status verbose && sudo ss -tulno | grep ssh'
-alias tor_ins='sudo bash /home/markmur88/scripts/tor/instalar_tor.sh'
+alias tor_ins='sudo bash ~/scripts/tor/instalar_tor.sh'
 
 2menu() {
     typeset -A alias_groups
