@@ -1,5 +1,4 @@
-[2025-06-20 04:24:07 +0200] [39345] [INFO] Starting gunicorn 23.0.0
-[2025-06-20 04:24:07 +0200] [39345] [INFO] Listening at: http://0.0.0.0:8000 (39345)
-[2025-06-20 04:24:07 +0200] [39345] [INFO] Using worker: sync
-[2025-06-20 04:24:07 +0200] [39355] [INFO] Booting worker with pid: 39355
-Unauthorized: /login/
+[2025-06-20 05:41:55 +0200] [103428] [INFO] Starting gunicorn 23.0.0
+[2025-06-20 05:41:55 +0200] [103428] [INFO] Listening at: http://0.0.0.0:8000 (103428)
+[2025-06-20 05:41:55 +0200] [103428] [INFO] Using worker: sync
+[2025-06-20 05:41:55 +0200] [103434] [INFO] Booting worker with pid: 103434
