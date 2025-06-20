@@ -1,52 +1,76 @@
-import os, subprocess, tempfile, shutil
+import os
+import subprocess
+import tempfile
+import shutil
 from glob import glob
 
-ppt_path    = "/home/markmur88/scripts/utils/narrar_pptx/presentaciones/presentacion_narrada_con_tiempos.pptx"
-audio_folder= "/home/markmur88/scripts/utils/narrar_pptx/audios"
-output_video= "/home/markmur88/scripts/utils/narrar_pptx/videos/presentacion_final.mp4"
+script_dir   = os.path.dirname(os.path.abspath(__file__))
+ppt_filename = "presentacion_narrada_con_tiempos.pptx"
+ppt_path     = os.path.join(script_dir, ppt_filename)
+audio_folder = os.path.join(script_dir, "audios")
+output_video = os.path.join(script_dir, "presentacion_final.mp4")
 
-slides_dir  = tempfile.mkdtemp()
-segments_dir= tempfile.mkdtemp()
+if not os.path.isfile(ppt_path):
+    raise FileNotFoundError(f"No se encuentra el PPTX en:\n  {ppt_path}")
 
-# 1) Exportar cada diapositiva a PNG
-subprocess.run([
-    "libreoffice", "--headless",
-    "--convert-to", "png", "--outdir", slides_dir, ppt_path
-], check=True)
+slides_dir   = tempfile.mkdtemp()
+segments_dir = tempfile.mkdtemp()
+
+try:
+    subprocess.run(
+        ["libreoffice", "--headless", "--convert-to", "png", "--outdir", slides_dir, ppt_path],
+        check=True
+    )
+except subprocess.CalledProcessError:
+    shutil.rmtree(slides_dir)
+    shutil.rmtree(segments_dir)
+    raise RuntimeError(f"LibreOffice no pudo procesar:\n  {ppt_path}")
 
 slide_images = sorted(glob(os.path.join(slides_dir, "*.png")))
-segment_files=[]
+audio_files  = sorted(glob(os.path.join(audio_folder, "*.mp3")))
 
-# 2) Generar un mini-vídeo por diapositiva
+print("Imágenes encontradas:")
 for img in slide_images:
-    name    = os.path.splitext(os.path.basename(img))[0]
-    audio   = os.path.join(audio_folder, f"{name}.mp3")
-    segment = os.path.join(segments_dir, f"{name}.mp4")
-    if os.path.exists(audio):
-        subprocess.run([
-            "ffmpeg", "-y",
-            "-loop", "1", "-i", img,
-            "-i", audio,
-            "-c:v", "libx264", "-c:a", "aac", "-b:a", "192k",
-            "-pix_fmt", "yuv420p", "-shortest",
-            segment
-        ], check=True)
-        segment_files.append(segment)
+    print(" ", os.path.basename(img))
+print("Audios encontrados:")
+for aud in audio_files:
+    print(" ", os.path.basename(aud))
 
-# 3) Crear lista de concatenación
-concat_list = os.path.join(segments_dir, "concat.txt")
-with open(concat_list, "w") as f:
+count = min(len(slide_images), len(audio_files))
+if count == 0:
+    shutil.rmtree(slides_dir)
+    shutil.rmtree(segments_dir)
+    raise RuntimeError("No hay imágenes o no hay audios. Revisa que:\n"
+                       f"  • {ppt_filename} existe y LibreOffice lo convierte.\n"
+                       f"  • ./audios/ contiene tus *.mp3.")
+
+segment_files = []
+for i in range(count):
+    img = slide_images[i]
+    aud = audio_files[i]
+    seg = os.path.join(segments_dir, f"segment{i+1}.mp4")
+    subprocess.run([
+        "ffmpeg", "-y",
+        "-loop", "1", "-i", img,
+        "-i", aud,
+        "-c:v", "libx264", "-c:a", "aac", "-b:a", "192k",
+        "-pix_fmt", "yuv420p",
+        "-shortest", seg
+    ], check=True)
+    segment_files.append(seg)
+
+concat_txt = os.path.join(segments_dir, "concat.txt")
+with open(concat_txt, "w") as f:
     for seg in segment_files:
         f.write(f"file '{seg}'\n")
 
-# 4) Concatenar en un único MP4
 subprocess.run([
     "ffmpeg", "-y",
     "-f", "concat", "-safe", "0",
-    "-i", concat_list,
+    "-i", concat_txt,
     "-c", "copy", output_video
 ], check=True)
 
-# 5) Limpiar temporales
 shutil.rmtree(slides_dir)
 shutil.rmtree(segments_dir)
+print(f"Vídeo generado en:\n  {output_video}")
