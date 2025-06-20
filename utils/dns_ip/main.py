@@ -5,6 +5,7 @@ import logging
 import requests
 from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
+import socks
 
 # Cargar variables de entorno desde un archivo .env
 load_dotenv()
@@ -27,10 +28,6 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-
-def obtener_usuario():
-    """Obtiene el nombre de usuario actual del sistema."""
-    return os.getenv('USER') or os.getenv('username') or 'Usuario desconocido'
 
 def obtener_dns():
     """Obtiene el servidor DNS configurado en el sistema."""
@@ -65,29 +62,45 @@ def intentar_conexion(ip, puerto, intentos=3):
             logging.error(f"Error al conectar a {ip}:{puerto} en el intento {i+1}: {e}")
     return False
 
-def realizar_solicitud(url, usuario, password):
+def realizar_solicitud(url, usuario, password, proxies):
     """Realiza una solicitud HTTP con autenticación básica."""
     try:
+        # Configurar el socket para usar el proxy SOCKS
+        socks.set_default_proxy(socks.SOCKS5, "localhost", 9050)
+        socket.socket = socks.socksocket
+
+        logging.info(f"Realizando solicitud HTTP a {url} con usuario {usuario}")
         response = requests.get(url, auth=HTTPBasicAuth(usuario, password), proxies=proxies)
         response.raise_for_status()  # Lanzará una excepción para HTTP errors
-        return response.text
-    except requests.exceptions.RequestException as e:
-        logging.error(f"Error en la solicitud HTTP: {e}")
-        return None
+        return response.status_code, response.text
+    except requests.exceptions.HTTPError as http_err:
+        logging.error(f"HTTP error occurred: {http_err}")
+        return http_err.response.status_code, None
+    except requests.exceptions.ConnectionError as conn_err:
+        logging.error(f"Connection error occurred: {conn_err}")
+        return None, None
+    except requests.exceptions.Timeout as timeout_err:
+        logging.error(f"Timeout error occurred: {timeout_err}")
+        return None, None
+    except requests.exceptions.RequestException as req_err:
+        logging.error(f"Request error occurred: {req_err}")
+        return None, None
+    except Exception as e:
+        logging.error(f"An unexpected error occurred: {e}")
+        return None, None
 
 def main():
-    usuario = obtener_usuario()
     dns = obtener_dns()
     ip_servidor = '80.78.30.242'
     puerto = 9181
 
-    logging.info(f"Usuario: {usuario}")
     logging.info(f"DNS: {dns}")
 
     if intentar_conexion(ip_servidor, puerto):
         logging.info(f"Se ha establecido una conexión exitosa con {ip_servidor}:{puerto}")
     else:
         logging.error(f"No se pudo establecer una conexión con {ip_servidor}:{puerto}")
+        return
 
     # URL del servidor con autenticación
     url_servidor = f"http://{ip_servidor}:{puerto}"
@@ -95,9 +108,13 @@ def main():
     password_autenticacion = os.getenv('AUTH_PASS')
 
     if usuario_autenticacion and password_autenticacion:
-        respuesta_servidor = realizar_solicitud(url_servidor, usuario_autenticacion, password_autenticacion)
-        if respuesta_servidor:
-            logging.info(f"Autenticación exitosa. Respuesta del servidor: {respuesta_servidor}")
+        logging.info(f"Intentando autenticar con usuario: {usuario_autenticacion}")
+        status_code, respuesta_servidor = realizar_solicitud(url_servidor, usuario_autenticacion, password_autenticacion, proxies)
+        if status_code == 200:
+            logging.info(f"Autenticación exitosa. Usuario: {usuario_autenticacion} ingresó correctamente.")
+            logging.info(f"Respuesta del servidor: {respuesta_servidor}")
+        elif status_code:
+            logging.warning(f"Autenticación fallida. Código de estado: {status_code}")
         else:
             logging.warning("No se pudo obtener una respuesta del servidor.")
     else:

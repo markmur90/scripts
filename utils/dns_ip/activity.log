@@ -1,0 +1,47 @@
+2025-06-20 02:45:10,148 - INFO - Usuario: markmur88
+2025-06-20 02:45:10,159 - INFO - DNS: 192.168.0.1
+2025-06-20 02:45:10,361 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 02:45:10,361 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 02:45:10,376 - ERROR - Error en la solicitud HTTP: Missing dependencies for SOCKS support.
+2025-06-20 02:45:10,397 - WARNING - No se pudo obtener una respuesta del servidor.
+2025-06-20 02:54:30,274 - INFO - Usuario: markmur88
+2025-06-20 02:54:30,274 - INFO - DNS: 192.168.0.1
+2025-06-20 02:54:30,462 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 02:54:30,462 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:00:59,873 - INFO - Usuario: markmur88
+2025-06-20 03:00:59,874 - INFO - DNS: 192.168.0.1
+2025-06-20 03:01:00,155 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:01:00,156 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:05:45,285 - INFO - Usuario: markmur88
+2025-06-20 03:05:45,285 - INFO - DNS: 192.168.0.1
+2025-06-20 03:05:45,550 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:05:45,551 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:07:30,872 - INFO - Usuario: markmur88
+2025-06-20 03:07:30,872 - INFO - DNS: 192.168.0.1
+2025-06-20 03:07:31,166 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:07:31,167 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:09:22,787 - INFO - DNS: 192.168.0.1
+2025-06-20 03:09:22,992 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:09:22,992 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:10:11,796 - INFO - DNS: 192.168.0.1
+2025-06-20 03:10:12,034 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:10:12,035 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:12:21,460 - INFO - DNS: 192.168.0.1
+2025-06-20 03:12:21,666 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:12:21,667 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:12:21,667 - INFO - Realizando solicitud HTTP a http://80.78.30.242:9181 con usuario 493069k2
+2025-06-20 03:15:47,074 - INFO - DNS: 192.168.0.1
+2025-06-20 03:15:47,511 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:15:47,512 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:15:47,512 - INFO - Intentando autenticar con usuario: 493069k2
+2025-06-20 03:15:47,512 - INFO - Realizando solicitud HTTP a http://80.78.30.242:9181 con usuario 493069k2
+2025-06-20 03:17:58,289 - INFO - DNS: 192.168.0.1
+2025-06-20 03:17:58,566 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:17:58,566 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:17:58,567 - INFO - Intentando autenticar con usuario: 493069k1
+2025-06-20 03:17:58,567 - INFO - Realizando solicitud HTTP a http://80.78.30.242:9181 con usuario 493069k1
+2025-06-20 03:18:39,089 - INFO - DNS: 192.168.0.1
+2025-06-20 03:18:39,306 - INFO - Conexión exitosa al servidor 80.78.30.242:9181 en el intento 1
+2025-06-20 03:18:39,307 - INFO - Se ha establecido una conexión exitosa con 80.78.30.242:9181
+2025-06-20 03:18:39,307 - INFO - Intentando autenticar con usuario: markmur88
+2025-06-20 03:18:39,307 - INFO - Realizando solicitud HTTP a http://80.78.30.242:9181 con usuario markmur88
