@@ -1,0 +1,2 @@
+✅ chmod +x -> ./logging_config.py
+✅ chmod +x -> ./main.py
