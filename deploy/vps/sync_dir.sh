@@ -55,7 +55,8 @@ ssh -tt -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" \
  echo '🔧 Activando entorno virtual en VPS: $VPS_HK_DIR';
  source '$VPS_VENV_PATH/bin/activate';
  echo '🔁 Ejecutando script 01_full.sh en VPS';
- bash /home/markmur88/scripts/menu/01_full.sh -Q -I;
+ bash /home/markmur88/scripts/menu/01_full.sh -Q -I -x -Y;
+
  sleep 3
  echo ""
  echo '🔁 Reiniciando servicios en VPS...';
@@ -70,7 +71,11 @@ ssh -tt -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" \
  };
  sleep 20
  echo ""
+ 
  echo \"\$SUDOPWD\" | sudo -S systemctl reload nginx;
+
+ bash /home/markmur88/Simulador/scripts/start_stack2.sh;
+
  echo '✅ Comandos remotos completados.'"
 echo "🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados." | tee -a "$LOG_FILE"
  sleep 3
