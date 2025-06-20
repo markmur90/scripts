@@ -556,7 +556,7 @@ pausa_y_limpiar
 # === 06 ===
 centrar_texto_coloreado $'\033[7;33mUFW\033[0m'
 centrar_texto "UFW" >> "$LOG_DEPLOY"
-ejecutar_si_activo "DO_UFW" "Configurar UFW" "bash $SYSTE_DIR/00_06_ufw.sh"
+ejecutar_si_activo "DO_UFW" "Configurar UFW" "bash $SYSTE_DIR/00_06_01_ufw.sh"
 # echo -e "\n\n"
 pausa_y_limpiar
 

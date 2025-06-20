@@ -66,5 +66,10 @@ sudo ufw default allow outgoing
 
 # Activar UFW
 sudo ufw --force enable
+sudo systemctl enable ufw
+sudo systemctl start ufw
+
+sudo ufw status verbose
+sudo ss -tulnp | grep ssh
 
 echo -e "\n✅ Reglas de firewall aplicadas para DESARROLLO LOCAL."
