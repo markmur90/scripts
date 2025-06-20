@@ -5,10 +5,10 @@ import shutil
 from glob import glob
 
 script_dir   = os.path.dirname(os.path.abspath(__file__))
-ppt_filename = "presentacion_narrada_con_tiempos.pptx"
+ppt_filename = "presentaciones/presentacion_narrada_con_tiempos.pptx"
 ppt_path     = os.path.join(script_dir, ppt_filename)
 audio_folder = os.path.join(script_dir, "audios")
-output_video = os.path.join(script_dir, "presentacion_final.mp4")
+output_video = os.path.join(script_dir, "videos/presentacion_final.mp4")
 
 if not os.path.isfile(ppt_path):
     raise FileNotFoundError(f"No se encuentra el PPTX en:\n  {ppt_path}")
@@ -17,10 +17,15 @@ slides_dir   = tempfile.mkdtemp()
 segments_dir = tempfile.mkdtemp()
 
 try:
-    subprocess.run(
-        ["libreoffice", "--headless", "--convert-to", "png", "--outdir", slides_dir, ppt_path],
-        check=True
-    )
+    # subprocess.run(
+    #     ["libreoffice", "--headless", "--convert-to", "png", "--outdir", slides_dir, ppt_path],
+    #     check=True
+    # )
+    
+    subprocess.run([
+        "unoconv", "-f", "png", "-o", slides_dir, ppt_path
+    ], check=True)
+
 except subprocess.CalledProcessError:
     shutil.rmtree(slides_dir)
     shutil.rmtree(segments_dir)
