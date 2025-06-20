@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from mutagen.mp3 import MP3
 
 ppt_path = "/home/markmur88/scripts/utils/narrar_pptx/presentaciones/presentacion.pptx"
-output_ppt = "/home/markmur88/scripts/utils/narrar_pptx/presentaciones/presentacion_narrada_con_tiempos.pptx"
+output_ppt = "/home/markmur88/scripts/utils/narrar_pptx/presentacion_narrada_con_tiempos.pptx"
 audio_folder = "/home/markmur88/scripts/utils/narrar_pptx/audios"
 
 os.makedirs(audio_folder, exist_ok=True)
