@@ -553,7 +553,20 @@ ejecutar_si_activo "DO_DOCKER" "Cerrar contenedores" "bash $SYSTE_DIR/00_04_cont
 # echo -e "\n\n"
 pausa_y_limpiar
 
+# === 06 ===
+centrar_texto_coloreado $'\033[7;33mUFW\033[0m'
+centrar_texto "UFW" >> "$LOG_DEPLOY"
+ejecutar_si_activo "DO_UFW" "Configurar UFW" "bash $SYSTE_DIR/00_06_ufw.sh"
+# echo -e "\n\n"
+pausa_y_limpiar
 
+# === 05 ===
+centrar_texto_coloreado $'\033[7;33mCAMBIO MAC\033[0m'
+centrar_texto "CAMBIO MAC" >> "$LOG_DEPLOY"
+ejecutar_si_activo "DO_MAC" "Cambiar MAC" "bash $SYSTE_DIR/00_05_mac.sh"
+# echo -e "\n\n"
+pausa_y_limpiar
+# verificar_vpn_segura
 
 # === 07 ===
 centrar_texto_coloreado $'\033[7;33mPOSTGRES\033[0m'
@@ -745,19 +758,7 @@ ejecutar_si_activo "DO_GUNICORN" "Iniciar Gunicorn, honeypot y livereload" "bash
 # echo -e "\n\n"
 pausa_y_limpiar
 
-# === 05 ===
-centrar_texto_coloreado $'\033[7;33mCAMBIO MAC\033[0m'
-centrar_texto "CAMBIO MAC" >> "$LOG_DEPLOY"
-ejecutar_si_activo "DO_MAC" "Cambiar MAC" "bash $SYSTE_DIR/00_05_mac.sh"
-# echo -e "\n\n"
-pausa_y_limpiar
-# verificar_vpn_segura
-# === 06 ===
-centrar_texto_coloreado $'\033[7;33mUFW\033[0m'
-centrar_texto "UFW" >> "$LOG_DEPLOY"
-ejecutar_si_activo "DO_UFW" "Configurar UFW" "bash $SYSTE_DIR/00_06_ufw.sh"
-# echo -e "\n\n"
-pausa_y_limpiar
+
 
 # === 23 ===
 centrar_texto_coloreado $'\033[7;34mSCRIPT COMPLETO\033[0m'
