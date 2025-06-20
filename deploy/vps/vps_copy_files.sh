@@ -28,88 +28,111 @@ set -euo pipefail
 
 USER="markmur88"
 IP="80.78.30.242"
-
-# 1) Verificar que se ejecute exclusivamente como “markmur88”
-if [ "$(whoami)" != "$USER" ]; then
-    echo "❌ Este script debe ser ejecutado por el usuario: $USER"
-    exit 1
-fi
-
-# 2) Rutas SSH
 HOME_DIR="/home/$USER"
-KEY="/home/markmur88/.ssh/vps_njalla_nueva"
-REMOTE_BASE="/home/markmur88"
-
-# 3) Preparar directorio de logs
-LOG_DIR="/home/markmur88/transfer_logs"
+KEY="$HOME_DIR/.ssh/vps_njalla_nueva"
+REMOTE_BASE="$HOME_DIR/"
+LOG_DIR="$HOME_DIR/transfer_logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/download_$(date '+%Y%m%d_%H%M%S').log"
 
-echo "📁 INICIO: Selecciona carpeta ORIGEN en VPS ($IP)."
+# 1) Verificar usuario
+if [ "$(whoami)" != "$USER" ]; then
+    echo "❌ Este script debe ejecutarse como $USER"
+    exit 1
+fi
+
+echo "📁 INICIO: Selecciona ORIGEN en VPS ($IP)."
 
 # --- NAVEGACIÓN REMOTA ---
 current_dir_remote="$REMOTE_BASE"
 while true; do
     echo
     echo "🖧 Remoto: $current_dir_remote"
-    echo "   0) [Elegir ESTE: $(basename "$current_dir_remote")]"
+    echo "   0) [Elegir ESTE: $(basename "${current_dir_remote%/}")]"
     idx=1
     if [ "$current_dir_remote" != "$REMOTE_BASE" ]; then
         echo "   $idx) ../"
         ((idx++))
     fi
-    mapfile -t remote_dirs < <(
+
+    # Listar archivos y directorios remotos
+    mapfile -t remote_entries < <(
         ssh -i "$KEY" -p 22 "$USER@$IP" \
-        "cd \"$current_dir_remote\" && \
-         find . -maxdepth 1 -mindepth 1 -type d -printf '%P\n' | sort"
+            "cd \"${current_dir_remote%/}\" && \
+             find . -maxdepth 1 -mindepth 1 -printf '%P|%y\n' | sort"
     )
-    for d in "${remote_dirs[@]}"; do
-        echo "   $idx) ${d}/"
+    remote_items=()
+    remote_types=()
+    for entry in "${remote_entries[@]}"; do
+        IFS='|' read -r name type <<< "$entry"
+        remote_items+=("$name")
+        remote_types+=("$type")
+        if [ "$type" = "d" ]; then
+            echo "   $idx) ${name}/"
+        else
+            echo "   $idx) ${name}"
+        fi
         ((idx++))
     done
 
-    read -rp "➡ Número (0=elegir, otro=navegar): " choice
+    read -rp "➡ Número: " choice
     [[ "$choice" =~ ^[0-9]+$ ]] || { echo "   ❌ Debe ser número"; continue; }
     (( choice > idx-1 )) && { echo "   ❌ Fuera de rango"; continue; }
 
     if (( choice == 0 )); then
-        REMOTE_SOURCE="$current_dir_remote"
+        REMOTE_SOURCE="${current_dir_remote%/}"
         break
     fi
 
-    # navegar
-    if (( choice == 1 && current_dir_remote != REMOTE_BASE )); then
-        current_dir_remote="$(dirname "$current_dir_remote")"
+    # Si elige "../"
+    if [ "$current_dir_remote" != "$REMOTE_BASE" ] && (( choice == 1 )); then
+        current_dir_remote="$(dirname "${current_dir_remote%/}")/"
+        continue
+    fi
+
+    # Calcular selección (ajustando offset sin aritmética de cadenas)
+    if [ "$current_dir_remote" != "$REMOTE_BASE" ]; then
+        offset=2
     else
-        # ajustar índice según si mostramos ../
-        offset=$(( current_dir_remote != REMOTE_BASE ? 2 : 1 ))
-        sel=$(( choice - offset ))
-        current_dir_remote="$current_dir_remote/${remote_dirs[$sel]}"
+        offset=1
+    fi
+    sel=$(( choice - offset ))
+    sel_name="${remote_items[$sel]}"
+    sel_type="${remote_types[$sel]}"
+
+    if [ "$sel_type" = "d" ]; then
+        # Navegar dentro
+        current_dir_remote="${current_dir_remote%/}/$sel_name/"
+    else
+        # Archivo: lo elegimos y salimos
+        REMOTE_SOURCE="${current_dir_remote%/}/$sel_name"
+        break
     fi
 done
 
-echo "✅ Carpeta remota: $REMOTE_SOURCE"
+echo "✅ Origen remoto: $REMOTE_SOURCE"
 echo
-echo "📁 Ahora: Selecciona carpeta DESTINO local."
+echo "📁 Selecciona DESTINO local."
 
-# --- NAVEGACIÓN LOCAL ---
-current_dir_local="/home/markmur88"
+# --- NAVEGACIÓN LOCAL (solo directorios) ---
+current_dir_local="$HOME_DIR"
 while true; do
     echo
     echo "🗂 Local: $current_dir_local"
     echo "   0) [Elegir ESTE: $(basename "$current_dir_local")]"
     idx=1
-    if [ "$current_dir_local" != "/home/markmur88" ]; then
+    if [ "$current_dir_local" != "$HOME_DIR" ]; then
         echo "   $idx) ../"
         ((idx++))
     fi
+
     mapfile -t local_dirs < <(find "$current_dir_local" -maxdepth 1 -mindepth 1 -type d | sort)
     for d in "${local_dirs[@]}"; do
         echo "   $idx) $(basename "$d")/"
         ((idx++))
     done
 
-    read -rp "➡ Número (0=elegir, otro=navegar): " choice
+    read -rp "➡ Número: " choice
     [[ "$choice" =~ ^[0-9]+$ ]] || { echo "   ❌ Debe ser número"; continue; }
     (( choice > idx-1 )) && { echo "   ❌ Fuera de rango"; continue; }
 
@@ -118,20 +141,25 @@ while true; do
         break
     fi
 
-    if (( choice == 1 && current_dir_local != HOME_DIR )); then
+    if [ "$current_dir_local" != "$HOME_DIR" ] && (( choice == 1 )); then
         current_dir_local="$(dirname "$current_dir_local")"
-    else
-        offset=$(( current_dir_local != HOME_DIR ? 2 : 1 ))
-        sel=$(( choice - offset ))
-        current_dir_local="${local_dirs[$sel]}"
+        continue
     fi
+
+    # Offset para selección local
+    if [ "$current_dir_local" != "$HOME_DIR" ]; then
+        offset=2
+    else
+        offset=1
+    fi
+    sel=$(( choice - offset ))
+    current_dir_local="${local_dirs[$sel]}"
 done
 
-echo "✅ Carpeta local: $LOCAL_DEST"
+echo "✅ Destino local: $LOCAL_DEST"
 echo
-echo "🚀 Iniciando rsync..."
+echo "🚀 Iniciando transferencia..."
 
-# --- EJECUTAR RSYNC para transferir ---
 {
     echo "=== DOWNLOAD $(date '+%Y-%m-%d %H:%M:%S') ==="
     echo " Origen remoto: $REMOTE_SOURCE"
