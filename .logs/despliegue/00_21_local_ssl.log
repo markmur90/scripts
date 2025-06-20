@@ -1,9 +1,4 @@
-[2025-06-20 01:55:53 +0200] [44461] [INFO] Starting gunicorn 23.0.0
-[2025-06-20 01:55:53 +0200] [44461] [INFO] Listening at: http://0.0.0.0:8000 (44461)
-[2025-06-20 01:55:53 +0200] [44461] [INFO] Using worker: sync
-[2025-06-20 01:55:53 +0200] [44475] [INFO] Booting worker with pid: 44475
-
-📅 Fecha de ejecución: 2025-06-20 02:15:05
-📄 Script: 00_21_local_ssl.sh
-🔐 Activando entorno virtual...
-🛠️ Aplicando migraciones y collectstatic...
+[2025-06-20 02:15:18 +0200] [60393] [INFO] Starting gunicorn 23.0.0
+[2025-06-20 02:15:18 +0200] [60393] [INFO] Listening at: http://0.0.0.0:8000 (60393)
+[2025-06-20 02:15:18 +0200] [60393] [INFO] Using worker: sync
+[2025-06-20 02:15:18 +0200] [60412] [INFO] Booting worker with pid: 60412
