@@ -44,26 +44,26 @@ def obtener_dns():
         logging.error(f"Error al obtener el DNS: {e}")
     return 'DNS desconocido'
 
-def obtener_ip_servidor(ip, puerto):
-    """Obtiene la dirección IP y puerto del servidor."""
-    try:
-        # Crear un socket para conectarse al servidor
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(5)  # Tiempo de espera de 5 segundos
-        result = sock.connect_ex((ip, puerto))
-        if result == 0:
-            return f"Conexión exitosa al servidor {ip}:{puerto}"
-        else:
-            return f"No se pudieron conectar al servidor {ip}:{puerto}"
-    except socket.gaierror as e:
-        logging.error(f"Error al resolver la dirección {ip}: {e}")
-        return 'Dirección desconocida'
-    except socket.timeout as e:
-        logging.error(f"Tiempo de espera agotado al conectar a {ip}:{puerto}")
-        return 'Tiempo de espera agotado'
-    except Exception as e:
-        logging.error(f"Error al conectar a {ip}:{puerto}: {e}")
-        return 'Error desconocido'
+def intentar_conexion(ip, puerto, intentos=3):
+    """Intenta conectar al servidor un número específico de veces."""
+    for i in range(intentos):
+        try:
+            # Crear un socket para conectarse al servidor
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(5)  # Tiempo de espera de 5 segundos
+            result = sock.connect_ex((ip, puerto))
+            if result == 0:
+                logging.info(f"Conexión exitosa al servidor {ip}:{puerto} en el intento {i+1}")
+                return True
+            else:
+                logging.warning(f"No se pudo conectar al servidor {ip}:{puerto} en el intento {i+1}")
+        except socket.gaierror as e:
+            logging.error(f"Error al resolver la dirección {ip}: {e}")
+        except socket.timeout as e:
+            logging.warning(f"Tiempo de espera agotado al conectar a {ip}:{puerto} en el intento {i+1}")
+        except Exception as e:
+            logging.error(f"Error al conectar a {ip}:{puerto} en el intento {i+1}: {e}")
+    return False
 
 def realizar_solicitud(url, usuario, password):
     """Realiza una solicitud HTTP con autenticación básica."""
@@ -80,11 +80,14 @@ def main():
     dns = obtener_dns()
     ip_servidor = '80.78.30.242'
     puerto = 9181
-    resultado_conexion = obtener_ip_servidor(ip_servidor, puerto)
 
     logging.info(f"Usuario: {usuario}")
     logging.info(f"DNS: {dns}")
-    logging.info(resultado_conexion)
+
+    if intentar_conexion(ip_servidor, puerto):
+        logging.info(f"Se ha establecido una conexión exitosa con {ip_servidor}:{puerto}")
+    else:
+        logging.error(f"No se pudo establecer una conexión con {ip_servidor}:{puerto}")
 
     # URL del servidor con autenticación
     url_servidor = f"http://{ip_servidor}:{puerto}"
@@ -94,7 +97,7 @@ def main():
     if usuario_autenticacion and password_autenticacion:
         respuesta_servidor = realizar_solicitud(url_servidor, usuario_autenticacion, password_autenticacion)
         if respuesta_servidor:
-            logging.info(f"Respuesta del servidor: {respuesta_servidor}")
+            logging.info(f"Autenticación exitosa. Respuesta del servidor: {respuesta_servidor}")
         else:
             logging.warning("No se pudo obtener una respuesta del servidor.")
     else:
