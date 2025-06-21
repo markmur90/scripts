@@ -3052,3 +3052,43 @@ bound to 192.168.0.100 -- renewal in 42847 seconds.
 🧭 IP Tor anterior : 192.42.116.217
 🛰️ IP Tor actual   : 192.42.116.213
 =========================================
+
+[7;30m🔁 Cambiando MAC de la interfaz wlan0[0m
+Killed old client process
+Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlan0/6a:a0:12:d7:fb:e6
+Sending on   LPF/wlan0/6a:a0:12:d7:fb:e6
+Sending on   Socket/fallback
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 5
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 14
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 10
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 15
+receive_packet failed on wlan0: Network is down
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 16
+receive_packet failed on wlan0: Network is down
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 1
+No DHCPOFFERS received.
+Trying recorded lease 192.168.0.108
+PING 192.168.0.1 (192.168.0.1) 56(84) bytes of data.
+
+--- 192.168.0.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 36.524/36.524/36.524/0.000 ms
+bound: immediate renewal.
+DHCPREQUEST for 192.168.0.108 on wlan0 to 255.255.255.255 port 67
+
+=========================================
+📅 Fecha           : 2025-06-21 02:57:41
+🛰️ Interfaz        : wlan0
+🧭 MAC anterior    : 7a:aa:7b:c7:04:13
+✨ MAC actual      : 6a:a0:12:d7:fb:e6
+🧭 IP anterior     : 192.168.0.100
+🛰️ IP actual       : 192.168.0.105
+192.168.0.108
+🧭 IP Tor anterior : 185.207.107.130
+🛰️ IP Tor actual   : 192.42.116.182
+=========================================

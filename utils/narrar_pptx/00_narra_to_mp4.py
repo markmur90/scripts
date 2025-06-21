@@ -56,7 +56,7 @@ for i in range(n):
     seg = os.path.join(tmp, f"seg{i+1:03d}.mp4")
     subprocess.run([
         "ffmpeg", "-y", "-loop", "1", "-i", img, "-i", aud,
-        "-vf", "scale=if(gt(mod(iw,2),0),iw+1,iw):if(gt(mod(ih,2),0),ih+1,ih)",
+        "-vf", "pad=ceil(iw/2)*2:ceil(ih/2)*2",
         "-c:v", "libx264", "-c:a", "aac", "-b:a", "192k",
         "-pix_fmt", "yuv420p", "-shortest", seg
     ], check=True)
