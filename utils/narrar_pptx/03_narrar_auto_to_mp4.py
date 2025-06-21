@@ -4,63 +4,44 @@ import tempfile
 import shutil
 from glob import glob
 
-script_dir   = os.path.dirname(os.path.abspath(__file__))
+base = os.path.expanduser("/home/markmur88/scripts/utils/narrar_pptx")
+presentaciones_dir = os.path.join(base, "presentaciones")
+audios_dir         = os.path.join(base, "audios")
+img_dir            = os.path.join(base, "img")
+videos_dir         = os.path.join(base, "videos")
+
+os.makedirs(img_dir,    exist_ok=True)
+os.makedirs(videos_dir, exist_ok=True)
+
 ppt_filename = "presentacion_narrada_con_tiempos.pptx"
-ppt_path     = os.path.join(script_dir, ppt_filename)
-audio_folder = os.path.join(script_dir, "audios")
-output_video = os.path.join(script_dir, "presentacion_final.mp4")
-
+ppt_path     = os.path.join(presentaciones_dir, ppt_filename)
 if not os.path.isfile(ppt_path):
-    raise FileNotFoundError(f"No encuentro el PPTX en:\n  {ppt_path}")
+    raise FileNotFoundError(f"No se encuentra PPTX en: {ppt_path}")
 
-slides_dir   = tempfile.mkdtemp()
-segments_dir = tempfile.mkdtemp()
+subprocess.run([
+    "lowriter", "--headless",
+    "--convert-to", "pdf:writer_pdf_Export",
+    "--outdir", presentaciones_dir, ppt_path
+], check=True)
 
-# Intentar convertir PPTX → PDF con libreoffice; si falla, probar con soffice
-for cmd_name in ("libreoffice", "soffice"):
-    try:
-        subprocess.run([
-            cmd_name, "--headless", "--convert-to", "pdf",
-            "--outdir", slides_dir, ppt_path
-        ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        break
-    except (FileNotFoundError, subprocess.CalledProcessError):
-        continue
-else:
-    shutil.rmtree(slides_dir)
-    shutil.rmtree(segments_dir)
-    raise RuntimeError("LibreOffice/soffice no pudo convertir el PPTX a PDF. "
-                       "Asegúrate de tener instalado libreoffice o libreoffice-core.")
-
-pdf_path = os.path.join(slides_dir, os.path.splitext(ppt_filename)[0] + ".pdf")
+pdf_path = os.path.join(presentaciones_dir, os.path.splitext(ppt_filename)[0] + ".pdf")
 if not os.path.isfile(pdf_path):
-    shutil.rmtree(slides_dir)
-    shutil.rmtree(segments_dir)
-    raise RuntimeError(f"No se generó el PDF esperado:\n  {pdf_path}")
+    raise RuntimeError(f"No se generó PDF en: {pdf_path}")
 
-# Convertir PDF → PNG
 subprocess.run([
     "convert", "-density", "150",
     pdf_path,
-    os.path.join(slides_dir, "slide_%03d.png")
+    os.path.join(img_dir, "slide_%03d.png")
 ], check=True)
 
-slide_images = sorted(glob(os.path.join(slides_dir, "slide_*.png")))
-audio_files  = sorted(glob(os.path.join(audio_folder, "*.mp3")))
-
-print("Imágenes generadas:")
-for img in slide_images:
-    print(" ", os.path.basename(img))
-print("Audios disponibles:")
-for aud in audio_files:
-    print(" ", os.path.basename(aud))
+slide_images = sorted(glob(os.path.join(img_dir, "slide_*.png")))
+audio_files  = sorted(glob(os.path.join(audios_dir, "*.mp3")))
 
 count = min(len(slide_images), len(audio_files))
 if count == 0:
-    shutil.rmtree(slides_dir)
-    shutil.rmtree(segments_dir)
-    raise RuntimeError("No hay imágenes o no hay audios. Revisa ./audios y que el PPTX exista.")
+    raise RuntimeError("No hay imágenes o no hay audios. Revisa ./img y ./audios")
 
+segments_dir = tempfile.mkdtemp()
 segment_files = []
 for i in range(count):
     img = slide_images[i]
@@ -79,12 +60,11 @@ with open(concat_txt, "w") as f:
     for seg in segment_files:
         f.write(f"file '{seg}'\n")
 
+output_video = os.path.join(videos_dir, "presentacion_final.mp4")
 subprocess.run([
     "ffmpeg", "-y", "-f", "concat", "-safe", "0",
     "-i", concat_txt, "-c", "copy", output_video
 ], check=True)
 
-shutil.rmtree(slides_dir)
 shutil.rmtree(segments_dir)
-
-print(f"Vídeo final generado en:\n  {output_video}")
+print(f"Vídeo generado en:\n  {output_video}")
