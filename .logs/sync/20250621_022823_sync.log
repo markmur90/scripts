@@ -1,0 +1,183 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+middleware/
+
+sent 21.238 bytes  received 576 bytes  2.077,52 bytes/sec
+total size is 23.878.272  speedup is 1.094,63
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting schemas/transferencias/
+deleting schemas/
+deleting proyecto_backup_2025-06-20__20.tar.gz
+deleting db_backup_2025-06-20__20.sql
+deleting api.sock
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+
+sent 14.769 bytes  received 707 bytes  2.380,92 bytes/sec
+total size is 23.205.220  speedup is 1.499,43
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+deleting logs/supervisord.pid
+deleting tor_data/control_auth_cookie
+docs/
+docs/prompt_dashboard
+simulador_banco/
+simulador_banco/db.sqlite3
+simulador_banco/banco/
+simulador_banco/banco/__init__.py
+simulador_banco/banco/apps.py
+simulador_banco/banco/conftest.py
+simulador_banco/banco/forms.py
+simulador_banco/banco/urls.py
+simulador_banco/banco/views.py
+simulador_banco/banco/templates/banco/
+simulador_banco/banco/templates/banco/dashboard_administrador.html
+simulador_banco/banco/templates/banco/dashboard_gerente.html
+simulador_banco/banco/templates/banco/dashboard_oficial_bancario.html
+simulador_banco/banco/templates/banco/dashboard_superuser.html
+simulador_banco/banco/templates/banco/dashboard_supervisor.html
+simulador_banco/banco/templates/banco/sim_creditor_form.html
+simulador_banco/banco/templates/banco/sim_creditor_list.html
+simulador_banco/banco/templates/banco/sim_debtor_form.html
+simulador_banco/banco/templates/banco/sim_debtor_list.html
+simulador_banco/banco/templates/banco/sim_transfer_form.html
+simulador_banco/banco/templates/banco/sim_transfer_list.html
+simulador_banco/banco/templates/banco/user_form.html
+simulador_banco/banco/templates/banco/user_list.html
+simulador_banco/banco/templates/banco/user_management.html
+simulador_banco/banco/templates/banco/partials/navGeneral.html
+simulador_banco/simulador_banco/settings.py
+tor_data/
+tor_data/state
+
+sent 21.984 bytes  received 3.904 bytes  4.706,91 bytes/sec
+total size is 72.293.217  speedup is 2.792,54
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+chmod_log.txt
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/backup/00_02_zip_backup_.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/sync/
+.logs/sync/20250621_022823_sync.log
+utils/
+utils/narrar_pptx/
+utils/narrar_pptx/00_narra_to_mp4.py
+utils/narrar_pptx/01_narrar_tiempos.py
+utils/narrar_pptx/02_narrar_pdf_png_mp4.py
+utils/narrar_pptx/03_narrar_auto_to_mp4.py
+utils/narrar_pptx/narrar_2.py
+utils/narrar_pptx/narrar_auto_avance.py
+utils/narrar_pptx/narrar_mx.py
+utils/narrar_pptx/narrar_video.py
+utils/narrar_pptx/audios/
+utils/narrar_pptx/audios/slide1.mp3
+utils/narrar_pptx/audios/slide10.mp3
+utils/narrar_pptx/audios/slide11.mp3
+utils/narrar_pptx/audios/slide12.mp3
+utils/narrar_pptx/audios/slide14.mp3
+utils/narrar_pptx/audios/slide15.mp3
+utils/narrar_pptx/audios/slide16.mp3
+utils/narrar_pptx/audios/slide17.mp3
+utils/narrar_pptx/audios/slide18.mp3
+utils/narrar_pptx/audios/slide19.mp3
+utils/narrar_pptx/audios/slide2.mp3
+utils/narrar_pptx/audios/slide20.mp3
+utils/narrar_pptx/audios/slide21.mp3
+utils/narrar_pptx/audios/slide22.mp3
+utils/narrar_pptx/audios/slide23.mp3
+utils/narrar_pptx/audios/slide24.mp3
+utils/narrar_pptx/audios/slide25.mp3
+utils/narrar_pptx/audios/slide26.mp3
+utils/narrar_pptx/audios/slide27.mp3
+utils/narrar_pptx/audios/slide28.mp3
+utils/narrar_pptx/audios/slide29.mp3
+utils/narrar_pptx/audios/slide3.mp3
+utils/narrar_pptx/audios/slide30.mp3
+utils/narrar_pptx/audios/slide31.mp3
+utils/narrar_pptx/audios/slide32.mp3
+utils/narrar_pptx/audios/slide33.mp3
+utils/narrar_pptx/audios/slide34.mp3
+utils/narrar_pptx/audios/slide35.mp3
+utils/narrar_pptx/audios/slide36.mp3
+utils/narrar_pptx/audios/slide4.mp3
+utils/narrar_pptx/audios/slide5.mp3
+utils/narrar_pptx/audios/slide6.mp3
+utils/narrar_pptx/audios/slide7.mp3
+utils/narrar_pptx/audios/slide8.mp3
+utils/narrar_pptx/audios/slide9.mp3
+utils/narrar_pptx/img/
+utils/narrar_pptx/presentaciones/
+utils/narrar_pptx/presentaciones/INDUCCION_LOMARAL.pptx
+utils/narrar_pptx/presentaciones/presentacion.pptx
+utils/narrar_pptx/presentaciones/presentacion_narrada_con_tiempos.pptx
+utils/narrar_pptx/videos/
+
+sent 31.272.035 bytes  received 117.423 bytes  53.611,37 bytes/sec
+total size is 242.049.915  speedup is 7,71
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.
