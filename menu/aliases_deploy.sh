@@ -7,6 +7,7 @@ AP_HK_DIR="/home/markmur88/api_bank_heroku"
 BACKUPDIR="/home/markmur88/backup"
 VENV_PATH="/home/markmur88/envAPP"
 SIMU_PATH="/home/markmur88/envSIM"
+ELIZ_PATH="/home/markmur88/envELI"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -47,6 +48,7 @@ unalias envAPP 2>/dev/null
 envAPP() {source "$VENV_PATH/bin/activate" "$@"; }
 
 alias envSIM="source $SIMU_PATH/bin/activate"
+alias envELI="source $ELIZ_PATH/bin/activate"
 
 # ───🎨 COLORES Y FUNCIONES DE LOG────────────────────────────
 RESET='\033[0m'
