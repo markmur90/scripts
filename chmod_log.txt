@@ -5,3 +5,12 @@
 ✅ chmod +x -> ./utils/narrar_pptx/narrar.py
 ✅ chmod +x -> ./utils/narrar_pptx/narrar_2.py
 ✅ chmod +x -> ./utils/narrar_pptx/narrar_mx.py
+✅ chmod +x -> ./utils/avatar/avatar_animado.py
+✅ chmod +x -> ./utils/anime/video/vid/video_loop.py
+✅ chmod +x -> ./utils/anime/video/gif/gift_loop.py
+✅ chmod +x -> ./utils/anime/video/gif/gift_loop.py
+✅ chmod +x -> ./utils/paramiko/02_ssh_connect.py
+✅ chmod +x -> ./utils/paramiko/ssh_connect.py
+✅ chmod +x -> ./utils/paramiko/03_ssh_connect.py
+✅ chmod +x -> ./utils/paramiko/01_ssh_connect.py
+✅ chmod +x -> ./utils/paramiko/generate_conf.sh
