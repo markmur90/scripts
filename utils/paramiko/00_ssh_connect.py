@@ -8,7 +8,7 @@ def generate_fake_ip():
 
 def connect_to_tor():
     with Controller.from_port(port=9051) as controller:
-        controller.authenticate(password='Ptf8454Jd55')
+        controller.authenticate(password='tu_password_de_tor')
         controller.signal(Signal.NEWNYM)
 
 def read_config(file_path):
