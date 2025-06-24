@@ -1,14 +1,4 @@
-[2025-06-23 09:21:13 +0200] [75194] [INFO] Starting gunicorn 23.0.0
-[2025-06-23 09:21:13 +0200] [75194] [INFO] Listening at: http://0.0.0.0:8000 (75194)
-[2025-06-23 09:21:13 +0200] [75194] [INFO] Using worker: sync
-[2025-06-23 09:21:13 +0200] [75200] [INFO] Booting worker with pid: 75200
-[[2025-06-23 09:31:01 +0200] [12756] [INFO] Handling signal: hup
-[2025-06-23 09:31:01 +0200] [12756] [INFO] Hang up: Master
-[2025-06-23 09:31:01 +0200] [12756] [ERROR] Worker (pid:12772) was sent SIGHUP!
-[2025-06-23 09:31:01 +0200] [81019] [INFO] Booting worker with pid: 81019
-[2025-06-23 09:31:01 +0200] [12756] [INFO] Handling signal: term
-[2025-06-23 09:31:02 +0200] [81019] [INFO] Worker exiting (pid: 81019)
-[settings] DJANGO_ENV = local
-[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.local
-⚠️ Django apps aún no están listas. Configuración dinámica omitida.
-[2025-06-23 09:31:02 +0200] [12756] [INFO] Shutting down: Master
+[2025-06-24 04:11:44 +0200] [24986] [INFO] Starting gunicorn 23.0.0
+[2025-06-24 04:11:44 +0200] [24986] [INFO] Listening at: http://0.0.0.0:8000 (24986)
+[2025-06-24 04:11:44 +0200] [24986] [INFO] Using worker: sync
+[2025-06-24 04:11:44 +0200] [24992] [INFO] Booting worker with pid: 24992
