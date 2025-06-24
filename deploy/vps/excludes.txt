@@ -18,3 +18,4 @@ certs
 01_full0.sh
 zbk
 .git
+.git/
