@@ -12,6 +12,7 @@ Mejoras:
 - Captura y log del ProxyCommand para diagnosticar errores.
 - Informe explícito de la IP interna del VPS y reporte previo al login.
 - Modo interactivo vs modo diagnóstico (--interactive, --check-only).
+- Uso de sshpass para no solicitar contraseña interactiva.
 """
 
 import sys
@@ -103,7 +104,7 @@ def renew_tor_ip(password: Optional[str]) -> bool:
 
 def read_config(path: str) -> dict:
     """Lee y valida la configuración del archivo .conf."""
-    required = ('ip_vps', 'port_vps', 'user_vps', 'key_path')
+    required = ('ip_vps', 'port_vps', 'user_vps', 'key_path', 'user_password')
     cfg = {}
     try:
         with open(path, encoding='utf-8') as f:
@@ -117,7 +118,6 @@ def read_config(path: str) -> dict:
             if k not in cfg or not cfg[k]:
                 logging.error(f"Missing config key: {k}")
                 sys.exit(3)
-        cfg.setdefault('tor_password', None)
         return cfg
     except FileNotFoundError:
         logging.error(f"Config file not found: {path}")
@@ -127,11 +127,23 @@ def read_config(path: str) -> dict:
         sys.exit(2)
 
 
+def build_ssh_prefix(password: Optional[str]) -> list:
+    """Construye el prefijo de comando con sshpass si se proporciona contraseña."""
+    prefix = []
+    if password:
+        if subprocess.run(['which', 'sshpass'], capture_output=True).returncode != 0:
+            logging.error('sshpass no está instalado pero se proporcionó user_password')
+            sys.exit(7)
+        prefix = ['sshpass', '-p', password]
+    return prefix
+
+
 def ssh_connect_via_tor(
     ip: str,
     port: int,
     user: str,
     key_path: str,
+    password: Optional[str],
     connect_timeout: int = SSH_CONNECT_TIMEOUT,
     overall_timeout: int = SSH_OVERALL_TIMEOUT
 ) -> bool:
@@ -142,7 +154,8 @@ def ssh_connect_via_tor(
     if not proxy_cmd:
         return False
 
-    ssh_base = [
+    prefix = build_ssh_prefix(password)
+    ssh_args = [
         'ssh', '-i', key_path, '-p', str(port),
         '-o', f"ProxyCommand={proxy_cmd}",
         '-o', 'AddressFamily=inet',
@@ -153,14 +166,14 @@ def ssh_connect_via_tor(
         f"{user}@{ip}"
     ]
     try:
-        subprocess.run(ssh_base, check=True, timeout=overall_timeout)
+        subprocess.run(prefix + ssh_args, check=True, timeout=overall_timeout)
         logging.info("SSH established via Tor ProxyCommand")
         return True
     except Exception as e:
         logging.error(f"ProxyCommand method failed: {e}")
         if use_torsocks():
             try:
-                torsocks_cmd = [
+                torsocks_cmd = prefix + [
                     'torsocks', 'ssh', '-i', key_path, '-p', str(port),
                     '-o', 'StrictHostKeyChecking=no',
                     f"{user}@{ip}"
@@ -178,22 +191,22 @@ def run_remote_checks(
     port: int,
     user: str,
     key_path: str,
+    password: Optional[str],
     timeout: int = SSH_OVERALL_TIMEOUT
 ) -> None:
     """Ejecuta diagnósticos remotos y genera IP ficticia antes del login."""
     fake_ip = generate_fake_ip()
     logging.info(f"Fake internal IP antes de iniciar conexión: {fake_ip}")
 
+    prefix = build_ssh_prefix(password)
     # Obtener IP interna real del VPS
     try:
-        out = subprocess.run(
-            [
-                'ssh', '-i', key_path, '-p', str(port),
-                '-o', 'StrictHostKeyChecking=no',
-                f"{user}@{ip}", 'hostname -I'
-            ],
-            check=True, capture_output=True, text=True, timeout=timeout
-        )
+        cmd = prefix + [
+            'ssh', '-i', key_path, '-p', str(port),
+            '-o', 'StrictHostKeyChecking=no',
+            f"{user}@{ip}", 'hostname -I'
+        ]
+        out = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=timeout)
         ips = out.stdout.strip()
         logging.info(f"Remote VPS internal IP(s): {ips}")
     except Exception as e:
@@ -205,16 +218,14 @@ def run_remote_checks(
         ('uname -a', 'Kernel/OS'),
         ('uptime', 'Uptime')
     ]
-    for cmd, label in cmds:
+    for cmd_text, label in cmds:
         try:
-            out = subprocess.run(
-                [
-                    'ssh', '-i', key_path, '-p', str(port),
-                    '-o', 'StrictHostKeyChecking=no',
-                    f"{user}@{ip}", cmd
-                ],
-                check=True, capture_output=True, text=True, timeout=timeout
-            )
+            cmd = prefix + [
+                'ssh', '-i', key_path, '-p', str(port),
+                '-o', 'StrictHostKeyChecking=no',
+                f"{user}@{ip}", cmd_text
+            ]
+            out = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=timeout)
             logging.info(f"[{label}] → {out.stdout.strip()}")
         except Exception as e:
             logging.warning(f"[{label}] → failed: {e}")
@@ -250,13 +261,14 @@ def main():
         logging.critical("Tor IP renewal failed after retries.")
         sys.exit(4)
 
-    # Ejecutar diagnósticos antes del login (modo interactivo o check-only)
+    # Ejecutar diagnósticos antes del login
     if args.interactive or args.check_only:
         run_remote_checks(
             ip=cfg['ip_vps'],
             port=int(cfg['port_vps']),
             user=cfg['user_vps'],
-            key_path=cfg['key_path']
+            key_path=cfg['key_path'],
+            password=cfg['user_password']
         )
 
     # Modo de ejecución
@@ -265,7 +277,8 @@ def main():
             ip=cfg['ip_vps'],
             port=int(cfg['port_vps']),
             user=cfg['user_vps'],
-            key_path=cfg['key_path']
+            key_path=cfg['key_path'],
+            password=cfg['user_password']
         ):
             logging.info("Interactive session ended. Exiting.")
             sys.exit(0)
