@@ -1,37 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-01_ssh_connect_refactor_ssh.py
-Conecta a un VPS vía SSH canalizado por Tor (SOCKS5 en localhost:9050).
+01_ssh_connect_refactor_paramiko.py
+Conecta a un VPS vía SSH canalizado por Tor (SOCKS5 en localhost:9050), sin pedir contraseña interactiva.
 Mejoras:
-- Detección automática del comando proxy (prioridad: ncat, nc.openbsd, nc).
-- Verificación previa del puerto SOCKS5.
-- Gestión configurable de ControlPort y autenticación.
-- Manejo de timeouts ajustables.
-- Opción de usar torsocks como fallback sin ProxyCommand.
-- Captura y log del ProxyCommand para diagnosticar errores.
-- Informe explícito de la IP interna del VPS y reporte previo al login.
-- Modo interactivo vs modo diagnóstico (--interactive, --check-only).
-- Uso de sshpass para no solicitar contraseña interactiva.
+- Usa paramiko para autenticación con clave o password desde config.
+- No solicita password en tiempo de ejecución (se lee pass_vps de config).
+- Detección automática de ProxyCommand (ncat, nc.openbsd, nc).
+- Verificación previa del proxy SOCKS5.
+- Gestión configurable de ControlPort y autenticación de Tor.
+- Captura y logging de ProxyCommand usado.
+- Informes claros antes de iniciar sesión interactiva.
+- Modo interactivo y modo check-only.
 """
-
 import sys
 import time
 import random
-import subprocess
 import logging
 import socket
+import subprocess
 import argparse
 from typing import Optional
 
+import paramiko
+from paramiko import ProxyCommand
 from stem import Signal
 from stem.control import Controller
 
 # Configuración de logging
-default_level = logging.INFO
-logging.basicConfig(level=default_level, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Proxy commands candidates: priority order
+# Constantes
 PROXY_COMMANDS = [
     'ncat --proxy {host}:{port} --proxy-type socks5 %h %p',
     'nc.openbsd -X 5 -x {host}:{port} %h %p',
@@ -40,13 +39,13 @@ PROXY_COMMANDS = [
 SOCKS_HOST = '127.0.0.1'
 SOCKS_PORT = 9050
 CONTROL_PORT = 9051
-SSH_CONNECT_TIMEOUT = 90   # SSH -o ConnectTimeout
-SSH_OVERALL_TIMEOUT = 300  # subprocess.run timeout
+TOR_WAIT = 15  # segundos de espera al (re)iniciar Tor
+RENEW_RETRIES = 3
 
 
 def generate_fake_ip() -> str:
     """Genera una IP interna ficticia."""
-    return f"192.168.{random.randint(0,255)}.{random.randint(1,254)}"
+    return f"192.168.{random.randint(0, 255)}.{random.randint(1, 254)}"
 
 
 def check_socks5(host: str = SOCKS_HOST, port: int = SOCKS_PORT, timeout: float = 5.0) -> bool:
@@ -61,37 +60,33 @@ def check_socks5(host: str = SOCKS_HOST, port: int = SOCKS_PORT, timeout: float 
 
 
 def pick_proxy_command(host: str = SOCKS_HOST, port: int = SOCKS_PORT) -> Optional[str]:
-    """Selecciona y envuelve el comando ProxyCommand disponible."""
-    for template in PROXY_COMMANDS:
-        cmd = template.format(host=host, port=port)
+    """Selecciona el comando ProxyCommand disponible."""
+    for tmpl in PROXY_COMMANDS:
+        cmd = tmpl.format(host=host, port=port)
         prog = cmd.split()[0]
         if subprocess.run(['which', prog], capture_output=True).returncode == 0:
-            wrapped = f"sh -c \"echo ProxyCommand exec: {cmd} >&2; exec {cmd}\""
-            logging.info(f"Selected proxy command: {cmd}")
-            return wrapped
+            logging.info(f"Selected ProxyCommand: {cmd}")
+            return cmd
     logging.error("No valid proxy command found (ncat, nc.openbsd, nc)")
     return None
 
 
-def use_torsocks() -> bool:
-    """Verifica si torsocks está disponible."""
-    return subprocess.run(['which', 'torsocks'], capture_output=True).returncode == 0
-
-
 def renew_tor_ip(password: Optional[str]) -> bool:
-    """Renueva la IP de Tor usando ControlPort o cookie de autenticación."""
+    """Renueva la IP de Tor usando ControlPort o cookie."""
+    # Intento con ControlPort (puerto como str) # type: ignore
     if password:
         try:
-            with Controller.from_port(port=CONTROL_PORT) as ctl:  # type: ignore
+            with Controller.from_port(port=str(CONTROL_PORT)) as ctl:  # type: ignore
                 ctl.authenticate(password=password)
                 ctl.signal(Signal.NEWNYM)  # type: ignore
             logging.info("Tor IP renewed via ControlPort")
             return True
         except Exception as e:
             logging.warning(f"ControlPort renewal failed: {e}")
+    # Intentar cookie
     for path in ['/var/run/tor/control', '/run/tor/control', '/var/lib/tor/control_auth_cookie']:
         try:
-            with Controller.from_socket_file(path) as ctl:
+            with Controller.from_socket_file(path) as ctl:  # type: ignore
                 ctl.authenticate()
                 ctl.signal(Signal.NEWNYM)  # type: ignore
             logging.info(f"Tor IP renewed via cookie at {path}")
@@ -104,7 +99,7 @@ def renew_tor_ip(password: Optional[str]) -> bool:
 
 def read_config(path: str) -> dict:
     """Lee y valida la configuración del archivo .conf."""
-    required = ('ip_vps', 'port_vps', 'user_vps', 'key_path', 'user_password')
+    required = ('ip_vps', 'port_vps', 'user_vps', 'key_path', 'pass_vps')
     cfg = {}
     try:
         with open(path, encoding='utf-8') as f:
@@ -127,168 +122,127 @@ def read_config(path: str) -> dict:
         sys.exit(2)
 
 
-def build_ssh_prefix(password: Optional[str]) -> list:
-    """Construye el prefijo de comando con sshpass si se proporciona contraseña."""
-    prefix = []
-    if password:
-        if subprocess.run(['which', 'sshpass'], capture_output=True).returncode != 0:
-            logging.error('sshpass no está instalado pero se proporcionó user_password')
-            sys.exit(7)
-        prefix = ['sshpass', '-p', password]
-    return prefix
-
-
-def ssh_connect_via_tor(
-    ip: str,
-    port: int,
-    user: str,
-    key_path: str,
-    password: Optional[str],
-    connect_timeout: int = SSH_CONNECT_TIMEOUT,
-    overall_timeout: int = SSH_OVERALL_TIMEOUT
-) -> bool:
-    """Realiza la conexión SSH canalizada por Tor."""
-    if not check_socks5():
-        return False
-    proxy_cmd = pick_proxy_command()
-    if not proxy_cmd:
-        return False
-
-    prefix = build_ssh_prefix(password)
-    ssh_args = [
-        'ssh', '-i', key_path, '-p', str(port),
-        '-o', f"ProxyCommand={proxy_cmd}",
-        '-o', 'AddressFamily=inet',
-        '-o', 'StrictHostKeyChecking=no',
-        '-o', f"ConnectTimeout={connect_timeout}",
-        '-o', 'ServerAliveInterval=10',
-        '-o', 'ServerAliveCountMax=3',
-        f"{user}@{ip}"
-    ]
-    try:
-        subprocess.run(prefix + ssh_args, check=True, timeout=overall_timeout)
-        logging.info("SSH established via Tor ProxyCommand")
-        return True
-    except Exception as e:
-        logging.error(f"ProxyCommand method failed: {e}")
-        if use_torsocks():
-            try:
-                torsocks_cmd = prefix + [
-                    'torsocks', 'ssh', '-i', key_path, '-p', str(port),
-                    '-o', 'StrictHostKeyChecking=no',
-                    f"{user}@{ip}"
-                ]
-                subprocess.run(torsocks_cmd, check=True, timeout=overall_timeout)
-                logging.info("SSH established via torsocks")
-                return True
-            except Exception as e2:
-                logging.error(f"torsocks method failed: {e2}")
-    return False
-
-
-def run_remote_checks(
-    ip: str,
-    port: int,
-    user: str,
-    key_path: str,
-    password: Optional[str],
-    timeout: int = SSH_OVERALL_TIMEOUT
-) -> None:
-    """Ejecuta diagnósticos remotos y genera IP ficticia antes del login."""
+def run_remote_checks(client: paramiko.SSHClient) -> dict:
+    """Ejecuta diagnósticos remotos y devuelve resultados en dict."""
+    results = {}
     fake_ip = generate_fake_ip()
-    logging.info(f"Fake internal IP antes de iniciar conexión: {fake_ip}")
+    results['fake_internal_ip'] = fake_ip
+    logging.info(f"Fake internal IP antes de conexión: {fake_ip}")
 
-    prefix = build_ssh_prefix(password)
-    # Obtener IP interna real del VPS
-    try:
-        cmd = prefix + [
-            'ssh', '-i', key_path, '-p', str(port),
-            '-o', 'StrictHostKeyChecking=no',
-            f"{user}@{ip}", 'hostname -I'
-        ]
-        out = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=timeout)
-        ips = out.stdout.strip()
-        logging.info(f"Remote VPS internal IP(s): {ips}")
-    except Exception as e:
-        logging.warning(f"Failed to retrieve internal IP: {e}")
+    stdin, stdout, stderr = client.exec_command('hostname -I')
+    real_ips = stdout.read().decode().strip()
+    results['real_internal_ips'] = real_ips
+    logging.info(f"Remote VPS internal IP(s): {real_ips}")
 
-    # Otros diagnósticos
-    cmds = [
-        ('whoami', 'Remote User'),
-        ('uname -a', 'Kernel/OS'),
-        ('uptime', 'Uptime')
-    ]
-    for cmd_text, label in cmds:
+    for cmd, label in [('whoami', 'Remote User'), ('uname -a', 'Kernel/OS'), ('uptime', 'Uptime')]:
+        stdin, stdout, stderr = client.exec_command(cmd)
+        output = stdout.read().decode().strip()
+        results[label] = output
+        logging.info(f"[{label}] → {output}")
+
+    return results
+
+
+def interactive_shell(client: paramiko.SSHClient) -> None:
+    """Abre un shell interactivo a través del canal Paramiko."""
+    chan = client.invoke_shell()
+    import threading, termios, tty, sys
+
+    def _writer(chan):
         try:
-            cmd = prefix + [
-                'ssh', '-i', key_path, '-p', str(port),
-                '-o', 'StrictHostKeyChecking=no',
-                f"{user}@{ip}", cmd_text
-            ]
-            out = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=timeout)
-            logging.info(f"[{label}] → {out.stdout.strip()}")
-        except Exception as e:
-            logging.warning(f"[{label}] → failed: {e}")
+            while True:
+                data = chan.recv(1024)
+                if not data:
+                    break
+                sys.stdout.write(data.decode())
+                sys.stdout.flush()
+        except Exception:
+            pass
+
+    def _reader(chan):
+        oldtty = termios.tcgetattr(sys.stdin)
+        try:
+            tty.setraw(sys.stdin.fileno())
+            tty.setcbreak(sys.stdin.fileno())
+            while True:
+                d = sys.stdin.read(1)
+                if not d:
+                    break
+                chan.send(d)
+        finally:
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, oldtty)
+
+    t1 = threading.Thread(target=_writer, args=(chan,))
+    t2 = threading.Thread(target=_reader, args=(chan,))
+    t1.start(); t2.start()
+    t1.join(); t2.join()
 
 
 def main():
-    parser = argparse.ArgumentParser(description="SSH vía Tor con diagnóstico opcional")
+    parser = argparse.ArgumentParser(description="SSH vía Tor con Paramiko, sin prompt de password")
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument('--interactive', action='store_true', help='Abrir shell interactiva en VPS')
-    group.add_argument('--check-only', action='store_true', help='Solo ejecutar diagnósticos sin shell')
-    group.add_argument('config', help='Ruta al archivo config.conf')
+    group.add_argument('--interactive', action='store_true', help='Shell interactiva en VPS')
+    group.add_argument('--check-only', action='store_true', help='Sólo diagnósticos sin shell')
+    parser.add_argument('config', help='Ruta al archivo config.conf')
     args = parser.parse_args()
 
     cfg = read_config(args.config)
+    ip = cfg['ip_vps']; port = int(cfg['port_vps'])
+    user = cfg['user_vps']; key = cfg['key_path']; pwd = cfg['pass_vps']
 
-    # Asegurar Tor activo
     if subprocess.run(['systemctl', 'is-active', '--quiet', 'tor']).returncode != 0:
-        logging.info("Starting Tor service...")
+        logging.info("Iniciando servicio Tor...")
         subprocess.run(['sudo', 'service', 'tor', 'start'])
-        time.sleep(15)
     else:
-        logging.info("Restarting Tor for fresh circuit...")
+        logging.info("Reiniciando Tor para circuito fresco...")
         subprocess.run(['sudo', 'service', 'tor', 'restart'])
-        time.sleep(15)
+    time.sleep(TOR_WAIT)
 
-    # Renovar IP de Tor
-    for i in range(3):
+    for i in range(RENEW_RETRIES):
         if renew_tor_ip(cfg.get('tor_password')):
             break
-        logging.info(f"Retrying Tor IP renewal in 10s (attempt {i+1}/3)")
+        logging.info(f"Reintentando renovación Tor en 10s (intento {i+1}/{RENEW_RETRIES})")
         time.sleep(10)
     else:
-        logging.critical("Tor IP renewal failed after retries.")
+        logging.critical("Renovación de IP Tor fallida.")
         sys.exit(4)
 
-    # Ejecutar diagnósticos antes del login
-    if args.interactive or args.check_only:
-        run_remote_checks(
-            ip=cfg['ip_vps'],
-            port=int(cfg['port_vps']),
-            user=cfg['user_vps'],
-            key_path=cfg['key_path'],
-            password=cfg['user_password']
-        )
+    if not check_socks5():
+        sys.exit(5)
 
-    # Modo de ejecución
-    if args.interactive:
-        if ssh_connect_via_tor(
-            ip=cfg['ip_vps'],
-            port=int(cfg['port_vps']),
-            user=cfg['user_vps'],
-            key_path=cfg['key_path'],
-            password=cfg['user_password']
-        ):
-            logging.info("Interactive session ended. Exiting.")
-            sys.exit(0)
-        else:
-            logging.error("Failed to open interactive session.")
-            sys.exit(5)
-    else:
-        # check-only sin abrir shell
-        logging.info("Check-only mode complete. Exiting.")
+    proxy_str = pick_proxy_command()
+    if not proxy_str:
+        sys.exit(6)
+
+    client = paramiko.SSHClient()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    proxy = ProxyCommand(proxy_str)
+
+    logging.info("Conectando a través de Tor... ")
+    try:
+        client.connect(
+            hostname=ip, port=port, username=user,
+            key_filename=key, password=pwd,
+            sock=proxy, allow_agent=False, look_for_keys=False, timeout=30
+        )
+    except Exception as e:
+        logging.error(f"Fallo al conectar por Tor: {e}")
+        sys.exit(7)
+
+    results = run_remote_checks(client)
+    if args.check_only:
+        logging.info("Modo check-only completado. Resultados:")
+        for k, v in results.items():
+            print(f"{k}: {v}")
         sys.exit(0)
+
+    logging.info("Datos previos al login:")
+    for k, v in results.items():
+        print(f"- {k}: {v}")
+    print("--- Abriendo sesión interactiva ---")
+    interactive_shell(client)
+    logging.info("Sesión interactiva finalizada.")
+    client.close()
 
 if __name__ == '__main__':
     main()
