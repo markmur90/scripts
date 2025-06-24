@@ -62,13 +62,13 @@ if __name__ == "__main__":
     connect_to_tor() # Cambia tu IP a través de Tor antes de conectarte
    
     try :
-       config=read_config ("config.conf ")
+       config=read_config ("/home/markmur88/scripts/utils/paramiko/config.conf")
        
-       ip_vps=config.get ("ip_vps ")
-       puerto=config.get ("puerto ")
-       dns=config.get ("dns ") 
-       usuario=config.get ("usuario ")
-       contrasena=config.get ("contrasena ")
+       ip_vps=config.get ("ip_vps")
+       puerto=config.get ("port_vps")
+       dns=config.get ("dns_vps") 
+       usuario=config.get ("user_vps")
+       contrasena=config.get ("pass_vps")
 
        if not all ([ip_vps ,puerto ,usuario ,contrasena ]):
            print("[!] Faltan datos en el archivo de configuración.")

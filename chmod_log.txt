@@ -14,3 +14,6 @@
 ✅ chmod +x -> ./utils/paramiko/03_ssh_connect.py
 ✅ chmod +x -> ./utils/paramiko/01_ssh_connect.py
 ✅ chmod +x -> ./utils/paramiko/generate_conf.sh
+✅ chmod +x -> ./utils/paramiko/ssh_connect.py
+✅ chmod +x -> ./utils/paramiko/ssh_wrapper.sh
+✅ chmod +x -> ./utils/paramiko/tor_hasg.py

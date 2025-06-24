@@ -249,143 +249,7 @@ alias log_vps_nginx_err='vps_exec "tail -f /var/log/nginx/error.log"'
 alias log_vps_nginx_acc='vps_exec "tail -f /var/log/nginx/access.log"'
 alias log_vps_all='vps_exec "tail -f /var/log/supervisor/coretransapi.err.log /var/log/nginx/error.log /var/log/nginx/access.log"'
 
-
-# # ───📚 ALIAS DE AYUDA - MENÚ COMPLETO────────────────────────
-# alias d_hp_all='clear &&
-# log_info "📚 GUÍA COMPLETA DE AYUDA DISPONIBLE"
-# log_ok "d_hp_aliases    → Alias generales y comandos del entorno"
-# log_ok "d_hp_notif      → Gestión de notificadores y tareas"
-# log_ok "d_hp_logs       → Visualización de logs locales y VPS"
-# log_ok "d_hp_vps        → Comandos y utilidades para VPS + TOR"
-# '
-
-# alias d_hp_notif='clear &&
-# log_info "🔔 HERRAMIENTAS DE NOTIFICACIÓN"
-# log_ok "start_notify     → Inicia notificaciones (interactivo)"
-# log_ok "gest_notify      → Gestor interactivo de notificadores"
-# log_ok "gtareas_status   → Estado de gestor de tareas"
-# log_ok "000gtareas       → Lanzador de tareas paralelas"
-# log_ok "00gtareas        → Lanzador de tareas paralelas"
-# log_ok "01gtareas        → Lanzador de tareas paralelas"
-# log_ok "02gtareas        → Lanzador de tareas paralelas"
-# log_ok "03gtareas        → Lanzador de tareas paralelas"
-# log_ok "04gtareas ... 17gtareas → Otros lanzadores de tareas"
-# '
-
-
-# alias d_hp_aliases='clear &&
-# log_info "🧰 ALIAS GENERALES DISPONIBLES"
-# log_ok "api               → Accede al proyecto principal"
-# log_ok "freedom           → Entra a FreedomGPT"
-# log_ok "BKapi             → Backup + VSCode"
-# log_ok "api_heroku        → Acceso Heroku del proyecto"
-# log_ok "update            → Actualiza todo el sistema"
-# log_ok "monero            → Lanza GUI de Monero"
-# log_ok "d_local           → Despliegue local completo"
-# log_ok "d_heroku          → Despliegue a Heroku"
-# log_ok "d_njalla          → Despliegue a VPS Njalla"
-# log_ok "d_env             → Activa entorno virtual"
-# log_ok "d_mig             → Migraciones + estáticos"
-# log_ok "d_pgm             → Setup DB y datos"
-# log_ok "d_hek             → Deploy Heroku"
-# log_ok "d_back            → Backup general"
-# log_ok "d_sys             → Ajustes de sistema VPS"
-# log_ok "d_cep             → Certificados SSL"
-# log_ok "d_vps             → Post-deploy VPS"
-# log_ok "chmodtree         → Aplicar chmod a un directorio"
-# '
-
-# alias d_hp_logs='clear &&
-# log_info "🪵 LOGS DISPONIBLES"
-# log_info "🔁 Sincronización"
-# log_ok "log_sync_last                           → Último log de sincronización"
-# log_info "📦 Despliegue y Push"
-# log_ok "log_deploy                              → Log de full deploy"
-# log_ok "log_push                                → Log de push a GitHub"
-# log_ok "log_sync_arch                           → Log de sincronización de archivos"
-# log_ok "log_commits                             → Historial de commits"
-# log_info "🌐 VPS - Servicios"
-# log_ok "log_vps_supervisor                      → Logs de supervisor"
-# log_ok "log_vps_nginx_err                       → Logs de error NGINX"
-# log_ok "log_vps_nginx_acc                       → Logs de acceso NGINX"
-# log_ok "log_vps_all                             → Todos los logs críticos del VPS"
-# '
-
-
-
-# alias d_hp_vps='clear &&
-# log_info "🌐 VPS & TOR"
-# log_ok "vps_tor        → Dirección onion"
-# log_ok "tor_diag       → Verifica config torrc"
-# log_ok "tor_newip      → Fuerza IP nueva"
-# log_ok "tor_refresh    → Diagnóstico + IP nueva"
-# log_info "📁 COPY FILES"
-# log_ok "vps_locsycl    → Sube archivos al VPS de los 3 directorios"
-# log_ok "vps_locsync    → Sube archivos al VPS"
-# log_ok "vps_up_copy    → Sube archivos al VPS"
-# log_ok "vps_down_copy  → Baja archivos del VPS"
-# log_ok "vps_restart  → Baja archivos del VPS"
-# log_info "🔔 NOTIFICADORES"
-# log_ok "gtareas_status → Estado general"
-# log_ok "000gtareas ... 17gtareas → Lanzadores por ID"
-# log_info "📄 SIMULADOR"
-# log_ok "sim_bank_ins   → Instala Simulador al VPS"
-# log_ok "sim_bank_chk   → Chequea Simulador del VPS"
-# log_ok "sim_fix_logs   → Chequea Simulador del VPS"
-# log_ok "sync_onion   → Chequea Simulador del VPS"
-# log_ok "sim_bank_mon   → Monitorea Simulador del VPS"
-# log_ok "sim_bank_ges   → Gestiona Simulador del VPS"
-# log_ok "sim_bank_ping   → Gestiona Simulador del VPS"
-# log_ok "sim_bank_ping_d   → Gestiona Simulador del VPS"
-# log_info "🛠️ COMANDOS"
-# log_ok "vps_reload / status / check / ping"
-# log_ok "vps_l_root / vps_l_user"
-# log_ok "pg_njalla_local → PostgreSQL desde local"
-# '
-
 alias sc='source ~/.zshrc && clear'
-
-menu() {
-    typeset -A alias_groups
-    alias_groups=(
-        ["Simulador"]="sim_bank_start sim_bank_env sim_bank_stop sim_bank_ges"
-        ["Despliegue"]="deploy_full d_help d_step d_all d_debug d_menu d_status d_Gsync d_local d_heroku d_njalla"
-        ["VPS"]="vps_exec vps_rest vps_stack re_onion vps_status vps_cert vps_check vps_ping vps_l_root vps_l_user vps_remote_check vps_sim_bank_start vps_sim_bank_stop vps_sim_bank_ges vps_sim_bank_mon vps_sim_bank_chk vps_sim_bank_ping vps_sim_bank_ping_d"
-        ["Logs"]="vps_supervisor vps_nginx_err vps_nginx_access vps_nginx_all vps_logs_all log_sync_last log_deploy log_push log_sync_arch log_commits log_vps_supervisor log_vps_nginx_err log_vps_nginx_acc log_vps_all"
-        ["Notificaciones"]="status_notify start_notify gest_notify restart_notify notificador"
-        ["Gestor_Tareas"]="gtareas_status gtareas_stop 000gtareas 00gtareas 01gtareas 02gtareas 03gtareas 04gtareas 05gtareas 06gtareas 07gtareas 08gtareas 09gtareas 10gtareas 11gtareas 12gtareas 13gtareas 14gtareas 15gtareas 16gtareas 17gtareas"
-        ["TOR"]="tor_diag tor_newip tor_refresh vps_tor"
-        ["Sincronizacion"]="sync_configs push_configs vps_locsycl vps_locsync vps_up_copy vps_down_copy"
-        ["Accesos_Directos"]="freedom BKapi api_heroku api chmodtree fase2 vps_fase2 restartapi"
-    )
-
-    while true; do
-    clear
-        echo -e "\nSelecciona un grupo de alias para ver o ejecutar:"
-        select grupo in "${(@k)alias_groups}" "Salir"; do
-            if [[ "$grupo" == "Salir" ]]; then
-                return
-            elif [[ -n "$grupo" && -n "${alias_groups[$grupo]}" ]]; then
-                while true; do
-                clear
-                    echo -e "\nAlias en el grupo: $grupo"
-                    alias_list=("${(s: :)alias_groups[$grupo]}")
-                    select alias_cmd in "${alias_list[@]}" "Volver"; do
-                        if [[ "$alias_cmd" == "Volver" ]]; then
-                            break
-                        elif [[ -n "$alias_cmd" ]]; then
-                            echo -e "\n🔧 Ejecutando alias: $alias_cmd\n"
-                            eval "$alias_cmd"
-                        fi
-                        break  # vuelve a listar los alias del grupo
-                    done
-                    [[ "$REPLY" -eq ${#alias_list[@]}+1 ]] && break
-                done
-                break
-            fi
-        done
-    done
-}
 
 alias cAPI='code ~/api_bank_h2 && sc'
 alias cHER='code ~/api_bank_heroku && sc'
@@ -413,6 +277,7 @@ alias lc_ufw='sudo bash ~/scripts/src/00_06_ufw.sh'
 alias pr_ufw='sudo bash ~/scripts/src/ufw_produccion.sh'
 alias st_ufw='sudo ufw status verbose && sudo ss -tulno | grep ssh'
 alias tor_ins='sudo bash ~/scripts/tor/instalar_tor.sh'
+alias ssh_connect='envAPP && bash /home/markmur88/scripts/utils/paramiko/ssh_wrapper.sh'
 
 2menu() {
     typeset -A alias_groups
