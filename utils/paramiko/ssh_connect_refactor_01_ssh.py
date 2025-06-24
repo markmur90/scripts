@@ -11,6 +11,7 @@ Mejoras:
 - Opción de usar torsocks como fallback sin ProxyCommand.
 - Captura y log del ProxyCommand para diagnosticar errores.
 - Informe explícito de la IP interna del VPS.
+- Modo interactivo vs modo diagnóstico (--interactive, --check-only).
 """
 
 import sys
@@ -19,6 +20,7 @@ import random
 import subprocess
 import logging
 import socket
+import argparse
 from typing import Optional
 
 from stem import Signal
@@ -56,7 +58,6 @@ def check_socks5(host: str = SOCKS_HOST, port: int = SOCKS_PORT, timeout: float 
 
 
 def pick_proxy_command(host: str = SOCKS_HOST, port: int = SOCKS_PORT) -> Optional[str]:
-    """Return wrapped proxy command for SSH ProxyCommand with debug echo."""
     for template in PROXY_COMMANDS:
         cmd = template.format(host=host, port=port)
         prog = cmd.split()[0]
@@ -130,7 +131,7 @@ def ssh_connect_via_tor(
     if not proxy_cmd: return False
 
     ssh_base = [
-        'ssh', '-i', key_path, '-p', str(port),
+        'ssh','-i', key_path,'-p', str(port),
         '-o', f"ProxyCommand={proxy_cmd}",
         '-o', 'AddressFamily=inet',
         '-o', 'StrictHostKeyChecking=no',
@@ -190,8 +191,14 @@ def run_remote_checks(
 
 
 def main():
-    cfg_path = sys.argv[1] if len(sys.argv)>1 else 'config.conf'
-    cfg = read_config(cfg_path)
+    parser = argparse.ArgumentParser(description="SSH vía Tor con diagnóstico opcional")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--interactive', action='store_true', help='Abrir shell interactiva en VPS')
+    group.add_argument('--check-only', action='store_true', help='Solo ejecutar diagnósticos sin shell')
+    parser.add_argument('config', help='Ruta al archivo config.conf')
+    args = parser.parse_args()
+
+    cfg = read_config(args.config)
 
     # Ensure Tor running
     if subprocess.run(['systemctl','is-active','--quiet','tor']).returncode != 0:
@@ -212,15 +219,29 @@ def main():
         logging.critical("Tor IP renewal failed after retries.")
         sys.exit(4)
 
-    # SSH connect and diagnostics
-    if ssh_connect_via_tor(
-        ip=cfg['ip_vps'], port=int(cfg['port_vps']),
-        user=cfg['user_vps'], key_path=cfg['key_path']
-    ):
-        run_remote_checks(
+    if args.interactive:
+        if ssh_connect_via_tor(
             ip=cfg['ip_vps'], port=int(cfg['port_vps']),
             user=cfg['user_vps'], key_path=cfg['key_path']
-        )
+        ):
+            logging.info("Interactive session ended. Exiting.")
+            sys.exit(0)
+        else:
+            logging.error("Failed to open interactive session.")
+            sys.exit(5)
+    else:
+        # check-only
+        if ssh_connect_via_tor(
+            ip=cfg['ip_vps'], port=int(cfg['port_vps']),
+            user=cfg['user_vps'], key_path=cfg['key_path']
+        ):
+            run_remote_checks(
+                ip=cfg['ip_vps'], port=int(cfg['port_vps']),
+                user=cfg['user_vps'], key_path=cfg['key_path']
+            )
+        else:
+            logging.error("Connection failed; skipping diagnostics.")
+            sys.exit(6)
 
 if __name__=='__main__':
     main()
