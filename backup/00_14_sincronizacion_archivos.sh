@@ -39,6 +39,7 @@ EXCLUDES=(
   "--exclude=/tmp/"
   "--exclude=/logs/"
   "--exclude=/.github/"
+  "--exclude=/.git/"
   "--exclude=prompts.txt"
   "--exclude=templates/api/"
   "--exclude=temp/"
@@ -82,8 +83,8 @@ EOF
 }
 sync_local_project() {
   local name="$1" dest="$2"
-  echo -e "\033[7;30m🔄 [$name] Limpiando $dest\033[0m"
-  sudo rm -rf "$dest"/.[!.]* "$dest"/* 2>/dev/null
+  # echo -e "\033[7;30m🔄 [$name] Limpiando $dest\033[0m"
+  # sudo rm -rf "$dest"/.[!.]* "$dest"/* 2>/dev/null
   echo -e "\033[7;30m🔄 [$name] Rsync a $dest\033[0m"
   rsync -av "${EXCLUDES[@]}" "$BASE_DIR/" "$dest/" | tee -a "$LOG_FILE"
   cd "$dest"
