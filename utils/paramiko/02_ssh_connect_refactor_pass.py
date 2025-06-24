@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ssh_connect.py
+02_ssh_connect_refactor_pass.py
 Conecta a un VPS vía SSH canalizado por Tor (SOCKS5 en localhost:9050).
 Soporta autenticación por clave privada o por contraseña.
 """
@@ -61,9 +61,9 @@ def renew_tor_ip(password: Optional[str]) -> bool:
     # renew via ControlPort
     if password:
         try:
-            with Controller.from_port(port=CONTROL_PORT) as ctl:
+            with Controller.from_port(port=CONTROL_PORT) as ctl: # type: ignore
                 ctl.authenticate(password=password)
-                ctl.signal(Signal.NEWNYM)
+                ctl.signal(Signal.NEWNYM) # type: ignore
             logging.info("Tor IP renewed via ControlPort")
             return True
         except Exception:
@@ -73,7 +73,7 @@ def renew_tor_ip(password: Optional[str]) -> bool:
         try:
             with Controller.from_socket_file(path) as ctl:
                 ctl.authenticate()
-                ctl.signal(Signal.NEWNYM)
+                ctl.signal(Signal.NEWNYM) # type: ignore
             logging.info(f"Tor IP renewed via cookie: {path}")
             return True
         except Exception:
@@ -140,6 +140,7 @@ def main():
     parser.add_argument('--password', dest='ssh_password', nargs='?', const=None,
                         help='Prompt for SSH password')
     parser.add_argument('--tor-pass', dest='tor_password', help='Tor ControlPort password')
+    parser.add_argument('config', help='Ruta al archivo config.conf')
     args = parser.parse_args()
 
     # prompt password if flag given without value
