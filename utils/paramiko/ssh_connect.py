@@ -75,9 +75,9 @@ def use_torsocks() -> bool:
 def renew_tor_ip(password: Optional[str]) -> bool:
     if password:
         try:
-            with Controller.from_port(port=CONTROL_PORT) as ctl:
+            with Controller.from_port(port=CONTROL_PORT) as ctl: # type: ignore
                 ctl.authenticate(password=password)
-                ctl.signal(Signal.NEWNYM)
+                ctl.signal(Signal.NEWNYM) # type: ignore
             logging.info("Tor IP renewed via ControlPort")
             return True
         except Exception as e:
@@ -86,7 +86,7 @@ def renew_tor_ip(password: Optional[str]) -> bool:
         try:
             with Controller.from_socket_file(path) as ctl:
                 ctl.authenticate()
-                ctl.signal(Signal.NEWNYM)
+                ctl.signal(Signal.NEWNYM) # type: ignore
             logging.info(f"Tor IP renewed via cookie at {path}")
             return True
         except Exception:
