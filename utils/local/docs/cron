@@ -1,1 +1,1 @@
-@reboot /home/markmur88/local/scripts/manage.sh start
+@reboot $HOME/local/scripts/manage.sh start
