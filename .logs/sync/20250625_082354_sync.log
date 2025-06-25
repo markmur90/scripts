@@ -1,0 +1,350 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+middleware/
+staticfiles/admin/css/
+staticfiles/admin/css/autocomplete.css
+staticfiles/admin/css/base.css
+staticfiles/admin/css/changelists.css
+staticfiles/admin/css/dark_mode.css
+staticfiles/admin/css/dashboard.css
+staticfiles/admin/css/forms.css
+staticfiles/admin/css/login.css
+staticfiles/admin/css/nav_sidebar.css
+staticfiles/admin/css/responsive.css
+staticfiles/admin/css/responsive_rtl.css
+staticfiles/admin/css/rtl.css
+staticfiles/admin/css/unusable_password_field.css
+staticfiles/admin/css/widgets.css
+staticfiles/admin/css/vendor/select2/
+staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md
+staticfiles/admin/css/vendor/select2/select2.css
+staticfiles/admin/css/vendor/select2/select2.min.css
+staticfiles/admin/img/
+staticfiles/admin/img/LICENSE
+staticfiles/admin/img/README.txt
+staticfiles/admin/img/calendar-icons.svg
+staticfiles/admin/img/icon-addlink.svg
+staticfiles/admin/img/icon-alert.svg
+staticfiles/admin/img/icon-calendar.svg
+staticfiles/admin/img/icon-changelink.svg
+staticfiles/admin/img/icon-clock.svg
+staticfiles/admin/img/icon-deletelink.svg
+staticfiles/admin/img/icon-hidelink.svg
+staticfiles/admin/img/icon-no.svg
+staticfiles/admin/img/icon-unknown-alt.svg
+staticfiles/admin/img/icon-unknown.svg
+staticfiles/admin/img/icon-viewlink.svg
+staticfiles/admin/img/icon-yes.svg
+staticfiles/admin/img/inline-delete.svg
+staticfiles/admin/img/search.svg
+staticfiles/admin/img/selector-icons.svg
+staticfiles/admin/img/sorting-icons.svg
+staticfiles/admin/img/tooltag-add.svg
+staticfiles/admin/img/tooltag-arrowright.svg
+staticfiles/admin/img/gis/
+staticfiles/admin/img/gis/move_vertex_off.svg
+staticfiles/admin/img/gis/move_vertex_on.svg
+staticfiles/admin/js/
+staticfiles/admin/js/SelectBox.js
+staticfiles/admin/js/SelectFilter2.js
+staticfiles/admin/js/actions.js
+staticfiles/admin/js/autocomplete.js
+staticfiles/admin/js/calendar.js
+staticfiles/admin/js/cancel.js
+staticfiles/admin/js/change_form.js
+staticfiles/admin/js/core.js
+staticfiles/admin/js/filters.js
+staticfiles/admin/js/inlines.js
+staticfiles/admin/js/jquery.init.js
+staticfiles/admin/js/nav_sidebar.js
+staticfiles/admin/js/popup_response.js
+staticfiles/admin/js/prepopulate.js
+staticfiles/admin/js/prepopulate_init.js
+staticfiles/admin/js/theme.js
+staticfiles/admin/js/unusable_password_field.js
+staticfiles/admin/js/urlify.js
+staticfiles/admin/js/admin/
+staticfiles/admin/js/admin/DateTimeShortcuts.js
+staticfiles/admin/js/admin/RelatedObjectLookups.js
+staticfiles/admin/js/vendor/jquery/
+staticfiles/admin/js/vendor/jquery/LICENSE.txt
+staticfiles/admin/js/vendor/jquery/jquery.js
+staticfiles/admin/js/vendor/jquery/jquery.min.js
+staticfiles/admin/js/vendor/select2/
+staticfiles/admin/js/vendor/select2/LICENSE.md
+staticfiles/admin/js/vendor/select2/select2.full.js
+staticfiles/admin/js/vendor/select2/select2.full.min.js
+staticfiles/admin/js/vendor/select2/i18n/
+staticfiles/admin/js/vendor/select2/i18n/af.js
+staticfiles/admin/js/vendor/select2/i18n/ar.js
+staticfiles/admin/js/vendor/select2/i18n/az.js
+staticfiles/admin/js/vendor/select2/i18n/bg.js
+staticfiles/admin/js/vendor/select2/i18n/bn.js
+staticfiles/admin/js/vendor/select2/i18n/bs.js
+staticfiles/admin/js/vendor/select2/i18n/ca.js
+staticfiles/admin/js/vendor/select2/i18n/cs.js
+staticfiles/admin/js/vendor/select2/i18n/da.js
+staticfiles/admin/js/vendor/select2/i18n/de.js
+staticfiles/admin/js/vendor/select2/i18n/dsb.js
+staticfiles/admin/js/vendor/select2/i18n/el.js
+staticfiles/admin/js/vendor/select2/i18n/en.js
+staticfiles/admin/js/vendor/select2/i18n/es.js
+staticfiles/admin/js/vendor/select2/i18n/et.js
+staticfiles/admin/js/vendor/select2/i18n/eu.js
+staticfiles/admin/js/vendor/select2/i18n/fa.js
+staticfiles/admin/js/vendor/select2/i18n/fi.js
+staticfiles/admin/js/vendor/select2/i18n/fr.js
+staticfiles/admin/js/vendor/select2/i18n/gl.js
+staticfiles/admin/js/vendor/select2/i18n/he.js
+staticfiles/admin/js/vendor/select2/i18n/hi.js
+staticfiles/admin/js/vendor/select2/i18n/hr.js
+staticfiles/admin/js/vendor/select2/i18n/hsb.js
+staticfiles/admin/js/vendor/select2/i18n/hu.js
+staticfiles/admin/js/vendor/select2/i18n/hy.js
+staticfiles/admin/js/vendor/select2/i18n/id.js
+staticfiles/admin/js/vendor/select2/i18n/is.js
+staticfiles/admin/js/vendor/select2/i18n/it.js
+staticfiles/admin/js/vendor/select2/i18n/ja.js
+staticfiles/admin/js/vendor/select2/i18n/ka.js
+staticfiles/admin/js/vendor/select2/i18n/km.js
+staticfiles/admin/js/vendor/select2/i18n/ko.js
+staticfiles/admin/js/vendor/select2/i18n/lt.js
+staticfiles/admin/js/vendor/select2/i18n/lv.js
+staticfiles/admin/js/vendor/select2/i18n/mk.js
+staticfiles/admin/js/vendor/select2/i18n/ms.js
+staticfiles/admin/js/vendor/select2/i18n/nb.js
+staticfiles/admin/js/vendor/select2/i18n/ne.js
+staticfiles/admin/js/vendor/select2/i18n/nl.js
+staticfiles/admin/js/vendor/select2/i18n/pl.js
+staticfiles/admin/js/vendor/select2/i18n/ps.js
+staticfiles/admin/js/vendor/select2/i18n/pt-BR.js
+staticfiles/admin/js/vendor/select2/i18n/pt.js
+staticfiles/admin/js/vendor/select2/i18n/ro.js
+staticfiles/admin/js/vendor/select2/i18n/ru.js
+staticfiles/admin/js/vendor/select2/i18n/sk.js
+staticfiles/admin/js/vendor/select2/i18n/sl.js
+staticfiles/admin/js/vendor/select2/i18n/sq.js
+staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js
+staticfiles/admin/js/vendor/select2/i18n/sr.js
+staticfiles/admin/js/vendor/select2/i18n/sv.js
+staticfiles/admin/js/vendor/select2/i18n/th.js
+staticfiles/admin/js/vendor/select2/i18n/tk.js
+staticfiles/admin/js/vendor/select2/i18n/tr.js
+staticfiles/admin/js/vendor/select2/i18n/uk.js
+staticfiles/admin/js/vendor/select2/i18n/vi.js
+staticfiles/admin/js/vendor/select2/i18n/zh-CN.js
+staticfiles/admin/js/vendor/select2/i18n/zh-TW.js
+staticfiles/admin/js/vendor/xregexp/
+staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+staticfiles/admin/js/vendor/xregexp/xregexp.js
+staticfiles/admin/js/vendor/xregexp/xregexp.min.js
+staticfiles/debug_toolbar/css/
+staticfiles/debug_toolbar/css/print.css
+staticfiles/debug_toolbar/css/toolbar.css
+staticfiles/debug_toolbar/js/
+staticfiles/debug_toolbar/js/history.js
+staticfiles/debug_toolbar/js/redirect.js
+staticfiles/debug_toolbar/js/timer.js
+staticfiles/debug_toolbar/js/toolbar.js
+staticfiles/debug_toolbar/js/utils.js
+staticfiles/drf-yasg/
+staticfiles/drf-yasg/README
+staticfiles/drf-yasg/immutable.js
+staticfiles/drf-yasg/immutable.min.js
+staticfiles/drf-yasg/insQ.js
+staticfiles/drf-yasg/insQ.min.js
+staticfiles/drf-yasg/redoc-init.js
+staticfiles/drf-yasg/style.css
+staticfiles/drf-yasg/swagger-ui-init.js
+staticfiles/drf-yasg/redoc-old/
+staticfiles/drf-yasg/redoc-old/LICENSE
+staticfiles/drf-yasg/redoc-old/redoc.min.js
+staticfiles/drf-yasg/redoc-old/redoc.min.js.map
+staticfiles/drf-yasg/redoc/
+staticfiles/drf-yasg/redoc/LICENSE
+staticfiles/drf-yasg/redoc/redoc-logo.png
+staticfiles/drf-yasg/redoc/redoc.min.js
+staticfiles/drf-yasg/redoc/redoc.standalone.js.map
+staticfiles/drf-yasg/swagger-ui-dist/
+staticfiles/drf-yasg/swagger-ui-dist/LICENSE
+staticfiles/drf-yasg/swagger-ui-dist/NOTICE
+staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js
+staticfiles/drf-yasg/swagger-ui-dist/favicon-32x32.png
+staticfiles/drf-yasg/swagger-ui-dist/index.css
+staticfiles/drf-yasg/swagger-ui-dist/index.js
+staticfiles/drf-yasg/swagger-ui-dist/oauth2-redirect.html
+staticfiles/drf-yasg/swagger-ui-dist/swagger-initializer.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.js.map
+staticfiles/rest_framework/css/
+staticfiles/rest_framework/css/bootstrap-theme.min.css
+staticfiles/rest_framework/css/bootstrap-theme.min.css.map
+staticfiles/rest_framework/css/bootstrap-tweaks.css
+staticfiles/rest_framework/css/bootstrap.min.css
+staticfiles/rest_framework/css/bootstrap.min.css.map
+staticfiles/rest_framework/css/default.css
+staticfiles/rest_framework/css/font-awesome-4.0.3.css
+staticfiles/rest_framework/css/prettify.css
+staticfiles/rest_framework/docs/css/
+staticfiles/rest_framework/docs/css/base.css
+staticfiles/rest_framework/docs/css/highlight.css
+staticfiles/rest_framework/docs/css/jquery.json-view.min.css
+staticfiles/rest_framework/docs/img/
+staticfiles/rest_framework/docs/img/favicon.ico
+staticfiles/rest_framework/docs/img/grid.png
+staticfiles/rest_framework/docs/js/
+staticfiles/rest_framework/docs/js/api.js
+staticfiles/rest_framework/docs/js/highlight.pack.js
+staticfiles/rest_framework/docs/js/jquery.json-view.min.js
+staticfiles/rest_framework/fonts/
+staticfiles/rest_framework/fonts/fontawesome-webfont.eot
+staticfiles/rest_framework/fonts/fontawesome-webfont.svg
+staticfiles/rest_framework/fonts/fontawesome-webfont.ttf
+staticfiles/rest_framework/fonts/fontawesome-webfont.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.eot
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff2
+staticfiles/rest_framework/img/
+staticfiles/rest_framework/img/glyphicons-halflings-white.png
+staticfiles/rest_framework/img/glyphicons-halflings.png
+staticfiles/rest_framework/img/grid.png
+staticfiles/rest_framework/js/
+staticfiles/rest_framework/js/ajax-form.js
+staticfiles/rest_framework/js/bootstrap.min.js
+staticfiles/rest_framework/js/coreapi-0.1.1.js
+staticfiles/rest_framework/js/csrf.js
+staticfiles/rest_framework/js/default.js
+staticfiles/rest_framework/js/jquery-3.7.1.min.js
+staticfiles/rest_framework/js/load-ajax-form.js
+staticfiles/rest_framework/js/prettify-min.js
+
+sent 30.003 bytes  received 111.626 bytes  16.662,24 bytes/sec
+total size is 23.881.053  speedup is 168,62
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+
+sent 16.089 bytes  received 609 bytes  2.568,92 bytes/sec
+total size is 23.293.633  speedup is 1.394,00
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+deleting logs/supervisord.pid
+deleting tor_data/control_auth_cookie
+logs/
+logs/gunicorn_access.log
+logs/gunicorn_error.log
+logs/supervisord.log
+logs/tor.log
+simulador_banco/
+simulador_banco/.env
+simulador_banco/.env.example
+simulador_banco/db.sqlite3
+simulador_banco/banco/api_login.py
+simulador_banco/banco/gpt_views.py
+simulador_banco/banco/models.py
+simulador_banco/banco/views.py
+simulador_banco/banco/management/commands/generate_jwt.py
+simulador_banco/simulador_banco/settings.py
+tor_data/
+tor_data/cached-certs
+tor_data/cached-microdesc-consensus
+tor_data/cached-microdescs.new
+tor_data/lock
+tor_data/state
+
+sent 764.680 bytes  received 34.303 bytes  84.103,47 bytes/sec
+total size is 50.289.700  speedup is 62,94
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/backup/00_02_zip_backup_.log
+.logs/backup/00_19_borrar_zip_sql_.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/despliegue/00_21_local_ssl.log
+.logs/sistema/00_01_sistema_.log
+.logs/sistema/ports_stop_.log
+.logs/sync/
+.logs/sync/20250625_071848_sync.log
+.logs/sync/20250625_082354_sync.log
+
+sent 46.308 bytes  received 123.705 bytes  17.896,11 bytes/sec
+total size is 288.516.768  speedup is 1.697,03
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.
