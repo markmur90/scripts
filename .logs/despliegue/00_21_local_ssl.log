@@ -1,9 +1,38 @@
-[2025-06-26 07:46:54 +0200] [123212] [INFO] Starting gunicorn 23.0.0
-[2025-06-26 07:46:54 +0200] [123212] [INFO] Listening at: http://0.0.0.0:8000 (123212)
-[2025-06-26 07:46:54 +0200] [123212] [INFO] Using worker: sync
-[2025-06-26 07:46:54 +0200] [123226] [INFO] Booting worker with pid: 123226
-
-📅 Fecha de ejecución: 2025-06-26 08:06:06
-📄 Script: 00_21_local_ssl.sh
-🔐 Activando entorno virtual...
-🛠️ Aplicando migraciones y collectstatic...
+[2025-06-27 07:22:54 +0200] [3026062] [INFO] Starting gunicorn 23.0.0
+[2025-06-27 07:22:54 +0200] [3026062] [INFO] Listening at: http://0.0.0.0:8000 (3026062)
+[2025-06-27 07:22:54 +0200] [3026062] [INFO] Using worker: sync
+[2025-06-27 07:22:54 +0200] [3026076] [INFO] Booting worker with pi[2025-06-27 08:13:15 +0200] [31468] [ERROR] Worker (pid:31474) was sent SIGHUP!
+[2025-06-27 08:13:15 +0200] [3056830] [INFO] Booting worker with pid: 3056830
+[2025-06-27 08:13:15 +0200] [31468] [INFO] Handling signal: term
+[2025-06-27 08:13:35 +0200] [3056830] [INFO] Worker exiting (pid: 3056830)
+[settings] DJANGO_ENV = local
+[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.local
+⚠️ Django apps aún no están listas. Configuración dinámica omitida.
+[2025-06-27 08:13:35 +0200] [31468] [INFO] Shutting down: Master
+ in readline
+2025-06-27 07:43:31,483| ERROR   |     buf += self._read_timeout(timeout)
+2025-06-27 07:43:31,483| ERROR   |            ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+2025-06-27 07:43:31,483| ERROR   |   File "/home/markmur88/envAPP/lib/python3.13/site-packages/paramiko/packet.py", line 673, in _read_timeout
+2025-06-27 07:43:31,483| ERROR   |     raise socket.timeout()
+2025-06-27 07:43:31,483| ERROR   | TimeoutError
+2025-06-27 07:43:31,483| ERROR   | 
+2025-06-27 07:43:31,484| ERROR   | During handling of the above exception, another exception occurred:
+2025-06-27 07:43:31,484| ERROR   | 
+2025-06-27 07:43:31,484| ERROR   | Traceback (most recent call last):
+2025-06-27 07:43:31,484| ERROR   |   File "/home/markmur88/envAPP/lib/python3.13/site-packages/paramiko/transport.py", line 2185, in run
+2025-06-27 07:43:31,484| ERROR   |     self._check_banner()
+2025-06-27 07:43:31,484| ERROR   |     ~~~~~~~~~~~~~~~~~~^^
+2025-06-27 07:43:31,484| ERROR   |   File "/home/markmur88/envAPP/lib/python3.13/site-packages/paramiko/transport.py", line 2373, in _check_banner
+2025-06-27 07:43:31,484| ERROR   |     raise SSHException(
+2025-06-27 07:43:31,484| ERROR   |         "Error reading SSH protocol banner" + str(e)
+2025-06-27 07:43:31,484| ERROR   |     )
+2025-06-27 07:43:31,484| ERROR   | paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+2025-06-27 07:43:31,484| ERROR   | 
+2025-06-27 07:43:31,484| ERROR   | Could not connect to gateway 80.70.30.242:22 : Error reading SSH protocol banner
+Not Found: /favicon.ico
+[2025-06-27 08:13:15 +0200] [3026062] [INFO] Handling signal: hup
+[2025-06-27 08:13:15 +0200] [3026062] [INFO] Hang up: Master
+[2025-06-27 08:13:15 +0200] [3026062] [INFO] Handling signal: term
+[2025-06-27 08:13:16 +0200] [3056849] [INFO] Booting worker with pid: 3056849
+[2025-06-27 08:13:16 +0200] [3026062] [ERROR] Worker (pid:3026076) was sent SIGHUP!
+[2025-06-27 08:13:46 +0200] [3026062] [INFO] Shutting down: Master
