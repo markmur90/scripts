@@ -20,6 +20,11 @@ set -euo pipefail
 EXCLUDES=(
   "--exclude=*.zip"
   "--exclude=*.bk"
+  "--exclude=*.pyc"
+  "--exclude=*.pyo"
+  "--exclude=*.pyc"
+  "--exclude=migrations/*"
+  "--exclude=__pycache__/"
   "--exclude=*.txt"
   "--exclude=*.sand"
   "--exclude=*_old*"

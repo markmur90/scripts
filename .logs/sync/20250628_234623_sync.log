@@ -1,0 +1,580 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+.gitignore
+deleting api/sepa_payment/migrations/__init__.py
+deleting api/sepa_payment/migrations/
+deleting api/sepa_payment/views.py
+deleting api/sepa_payment/urls.py
+deleting api/sepa_payment/tests.py
+deleting api/sepa_payment/signals.py
+deleting api/sepa_payment/services.py
+deleting api/sepa_payment/models.py
+deleting api/sepa_payment/forms.py
+deleting api/sepa_payment/apps.py
+deleting api/sepa_payment/admin.py
+deleting api/sepa_payment/__init__.py
+deleting api/sepa_payment/
+deleting api/sct/migrations/__init__.py
+deleting api/sct/migrations/
+deleting api/sct/views.py
+deleting api/sct/urls.py
+deleting api/sct/tests.py
+deleting api/sct/services.py
+deleting api/sct/serializers.py
+deleting api/sct/process_xml_send2.py
+deleting api/sct/process_xml_send.py
+deleting api/sct/process_transfer.py
+deleting api/sct/process_json.py
+deleting api/sct/process_deutsche_bank.py
+deleting api/sct/process_bank_json_xml_aml.py
+deleting api/sct/process_bank.py
+deleting api/sct/models.py
+deleting api/sct/helpers.py
+deleting api/sct/generate_xml3.py
+deleting api/sct/generate_xml2.py
+deleting api/sct/generate_xml.py
+deleting api/sct/generate_pdf.py
+deleting api/sct/generate_aml.py
+deleting api/sct/forms.py
+deleting api/sct/diagrama_proceso.txt
+deleting api/sct/apps.py
+deleting api/sct/admin.py
+deleting api/sct/__init__.py
+deleting api/sct/
+deleting api/sandbox/migrations/__init__.py
+deleting api/sandbox/migrations/
+deleting api/sandbox/views.py
+deleting api/sandbox/urls.py
+deleting api/sandbox/tests.py
+deleting api/sandbox/services.py
+deleting api/sandbox/serializers.py
+deleting api/sandbox/models.py
+deleting api/sandbox/forms.py
+deleting api/sandbox/apps.py
+deleting api/sandbox/admin.py
+deleting api/sandbox/__init__.py
+deleting api/sandbox/
+deleting api/gpt3/migrations/__init__.py
+deleting api/gpt3/migrations/
+deleting api/gpt3/views2.py
+deleting api/gpt3/utils2.py
+deleting api/gpt3/urls.py
+deleting api/gpt3/schemas.py
+deleting api/gpt3/models.py
+deleting api/gpt3/helpers.py
+deleting api/gpt3/generate_xml.py
+deleting api/gpt3/generate_aml.py
+deleting api/gpt3/forms.py
+deleting api/gpt3/bank_client.py
+deleting api/gpt3/apps.py
+deleting api/gpt3/admin.py
+deleting api/gpt3/__init__.py
+deleting api/gpt3/
+deleting api/gpt2/migrations/__init__.py
+deleting api/gpt2/migrations/
+deleting api/gpt2/views.py
+deleting api/gpt2/utils.py
+deleting api/gpt2/urls.py
+deleting api/gpt2/models.py
+deleting api/gpt2/helpers.py
+deleting api/gpt2/forms.py
+deleting api/gpt2/apps.py
+deleting api/gpt2/admin.py
+deleting api/gpt2/__init__.py
+deleting api/gpt2/
+deleting api/gpt/migrations/__init__.py
+deleting api/gpt/migrations/
+deleting api/gpt/views2.py
+deleting api/gpt/views.py
+deleting api/gpt/utils.py
+deleting api/gpt/urls.py
+deleting api/gpt/models.py
+deleting api/gpt/helpers.py
+deleting api/gpt/forms.py
+deleting api/gpt/apps.py
+deleting api/gpt/admin.py
+deleting api/gpt/__init__.py
+deleting api/gpt/
+deleting api/collection/migrations/__init__.py
+deleting api/collection/migrations/
+deleting api/collection/views.py
+deleting api/collection/urls.py
+deleting api/collection/tests.py
+deleting api/collection/serializers.py
+deleting api/collection/models.py
+deleting api/collection/forms.py
+deleting api/collection/apps.py
+deleting api/collection/admin.py
+deleting api/collection/__init__.py
+deleting api/collection/
+deleting api/accounts/migrations/__init__.py
+deleting api/accounts/migrations/
+deleting api/accounts/views.py
+deleting api/accounts/urls.py
+deleting api/accounts/tests.py
+deleting api/accounts/serializers.py
+deleting api/accounts/models.py
+deleting api/accounts/forms.py
+deleting api/accounts/apps.py
+deleting api/accounts/admin.py
+deleting api/accounts/__init__.py
+deleting api/accounts/
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+middleware/
+staticfiles/admin/css/
+staticfiles/admin/css/autocomplete.css
+staticfiles/admin/css/base.css
+staticfiles/admin/css/changelists.css
+staticfiles/admin/css/dark_mode.css
+staticfiles/admin/css/dashboard.css
+staticfiles/admin/css/forms.css
+staticfiles/admin/css/login.css
+staticfiles/admin/css/nav_sidebar.css
+staticfiles/admin/css/responsive.css
+staticfiles/admin/css/responsive_rtl.css
+staticfiles/admin/css/rtl.css
+staticfiles/admin/css/unusable_password_field.css
+staticfiles/admin/css/widgets.css
+staticfiles/admin/css/vendor/select2/
+staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md
+staticfiles/admin/css/vendor/select2/select2.css
+staticfiles/admin/css/vendor/select2/select2.min.css
+staticfiles/admin/img/
+staticfiles/admin/img/LICENSE
+staticfiles/admin/img/README.txt
+staticfiles/admin/img/calendar-icons.svg
+staticfiles/admin/img/icon-addlink.svg
+staticfiles/admin/img/icon-alert.svg
+staticfiles/admin/img/icon-calendar.svg
+staticfiles/admin/img/icon-changelink.svg
+staticfiles/admin/img/icon-clock.svg
+staticfiles/admin/img/icon-deletelink.svg
+staticfiles/admin/img/icon-hidelink.svg
+staticfiles/admin/img/icon-no.svg
+staticfiles/admin/img/icon-unknown-alt.svg
+staticfiles/admin/img/icon-unknown.svg
+staticfiles/admin/img/icon-viewlink.svg
+staticfiles/admin/img/icon-yes.svg
+staticfiles/admin/img/inline-delete.svg
+staticfiles/admin/img/search.svg
+staticfiles/admin/img/selector-icons.svg
+staticfiles/admin/img/sorting-icons.svg
+staticfiles/admin/img/tooltag-add.svg
+staticfiles/admin/img/tooltag-arrowright.svg
+staticfiles/admin/img/gis/
+staticfiles/admin/img/gis/move_vertex_off.svg
+staticfiles/admin/img/gis/move_vertex_on.svg
+staticfiles/admin/js/
+staticfiles/admin/js/SelectBox.js
+staticfiles/admin/js/SelectFilter2.js
+staticfiles/admin/js/actions.js
+staticfiles/admin/js/autocomplete.js
+staticfiles/admin/js/calendar.js
+staticfiles/admin/js/cancel.js
+staticfiles/admin/js/change_form.js
+staticfiles/admin/js/core.js
+staticfiles/admin/js/filters.js
+staticfiles/admin/js/inlines.js
+staticfiles/admin/js/jquery.init.js
+staticfiles/admin/js/nav_sidebar.js
+staticfiles/admin/js/popup_response.js
+staticfiles/admin/js/prepopulate.js
+staticfiles/admin/js/prepopulate_init.js
+staticfiles/admin/js/theme.js
+staticfiles/admin/js/unusable_password_field.js
+staticfiles/admin/js/urlify.js
+staticfiles/admin/js/admin/
+staticfiles/admin/js/admin/DateTimeShortcuts.js
+staticfiles/admin/js/admin/RelatedObjectLookups.js
+staticfiles/admin/js/vendor/jquery/
+staticfiles/admin/js/vendor/jquery/LICENSE.txt
+staticfiles/admin/js/vendor/jquery/jquery.js
+staticfiles/admin/js/vendor/jquery/jquery.min.js
+staticfiles/admin/js/vendor/select2/
+staticfiles/admin/js/vendor/select2/LICENSE.md
+staticfiles/admin/js/vendor/select2/select2.full.js
+staticfiles/admin/js/vendor/select2/select2.full.min.js
+staticfiles/admin/js/vendor/select2/i18n/
+staticfiles/admin/js/vendor/select2/i18n/af.js
+staticfiles/admin/js/vendor/select2/i18n/ar.js
+staticfiles/admin/js/vendor/select2/i18n/az.js
+staticfiles/admin/js/vendor/select2/i18n/bg.js
+staticfiles/admin/js/vendor/select2/i18n/bn.js
+staticfiles/admin/js/vendor/select2/i18n/bs.js
+staticfiles/admin/js/vendor/select2/i18n/ca.js
+staticfiles/admin/js/vendor/select2/i18n/cs.js
+staticfiles/admin/js/vendor/select2/i18n/da.js
+staticfiles/admin/js/vendor/select2/i18n/de.js
+staticfiles/admin/js/vendor/select2/i18n/dsb.js
+staticfiles/admin/js/vendor/select2/i18n/el.js
+staticfiles/admin/js/vendor/select2/i18n/en.js
+staticfiles/admin/js/vendor/select2/i18n/es.js
+staticfiles/admin/js/vendor/select2/i18n/et.js
+staticfiles/admin/js/vendor/select2/i18n/eu.js
+staticfiles/admin/js/vendor/select2/i18n/fa.js
+staticfiles/admin/js/vendor/select2/i18n/fi.js
+staticfiles/admin/js/vendor/select2/i18n/fr.js
+staticfiles/admin/js/vendor/select2/i18n/gl.js
+staticfiles/admin/js/vendor/select2/i18n/he.js
+staticfiles/admin/js/vendor/select2/i18n/hi.js
+staticfiles/admin/js/vendor/select2/i18n/hr.js
+staticfiles/admin/js/vendor/select2/i18n/hsb.js
+staticfiles/admin/js/vendor/select2/i18n/hu.js
+staticfiles/admin/js/vendor/select2/i18n/hy.js
+staticfiles/admin/js/vendor/select2/i18n/id.js
+staticfiles/admin/js/vendor/select2/i18n/is.js
+staticfiles/admin/js/vendor/select2/i18n/it.js
+staticfiles/admin/js/vendor/select2/i18n/ja.js
+staticfiles/admin/js/vendor/select2/i18n/ka.js
+staticfiles/admin/js/vendor/select2/i18n/km.js
+staticfiles/admin/js/vendor/select2/i18n/ko.js
+staticfiles/admin/js/vendor/select2/i18n/lt.js
+staticfiles/admin/js/vendor/select2/i18n/lv.js
+staticfiles/admin/js/vendor/select2/i18n/mk.js
+staticfiles/admin/js/vendor/select2/i18n/ms.js
+staticfiles/admin/js/vendor/select2/i18n/nb.js
+staticfiles/admin/js/vendor/select2/i18n/ne.js
+staticfiles/admin/js/vendor/select2/i18n/nl.js
+staticfiles/admin/js/vendor/select2/i18n/pl.js
+staticfiles/admin/js/vendor/select2/i18n/ps.js
+staticfiles/admin/js/vendor/select2/i18n/pt-BR.js
+staticfiles/admin/js/vendor/select2/i18n/pt.js
+staticfiles/admin/js/vendor/select2/i18n/ro.js
+staticfiles/admin/js/vendor/select2/i18n/ru.js
+staticfiles/admin/js/vendor/select2/i18n/sk.js
+staticfiles/admin/js/vendor/select2/i18n/sl.js
+staticfiles/admin/js/vendor/select2/i18n/sq.js
+staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js
+staticfiles/admin/js/vendor/select2/i18n/sr.js
+staticfiles/admin/js/vendor/select2/i18n/sv.js
+staticfiles/admin/js/vendor/select2/i18n/th.js
+staticfiles/admin/js/vendor/select2/i18n/tk.js
+staticfiles/admin/js/vendor/select2/i18n/tr.js
+staticfiles/admin/js/vendor/select2/i18n/uk.js
+staticfiles/admin/js/vendor/select2/i18n/vi.js
+staticfiles/admin/js/vendor/select2/i18n/zh-CN.js
+staticfiles/admin/js/vendor/select2/i18n/zh-TW.js
+staticfiles/admin/js/vendor/xregexp/
+staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+staticfiles/admin/js/vendor/xregexp/xregexp.js
+staticfiles/admin/js/vendor/xregexp/xregexp.min.js
+staticfiles/debug_toolbar/css/
+staticfiles/debug_toolbar/css/print.css
+staticfiles/debug_toolbar/css/toolbar.css
+staticfiles/debug_toolbar/js/
+staticfiles/debug_toolbar/js/history.js
+staticfiles/debug_toolbar/js/redirect.js
+staticfiles/debug_toolbar/js/timer.js
+staticfiles/debug_toolbar/js/toolbar.js
+staticfiles/debug_toolbar/js/utils.js
+staticfiles/drf-yasg/
+staticfiles/drf-yasg/README
+staticfiles/drf-yasg/immutable.js
+staticfiles/drf-yasg/immutable.min.js
+staticfiles/drf-yasg/insQ.js
+staticfiles/drf-yasg/insQ.min.js
+staticfiles/drf-yasg/redoc-init.js
+staticfiles/drf-yasg/style.css
+staticfiles/drf-yasg/swagger-ui-init.js
+staticfiles/drf-yasg/redoc-old/
+staticfiles/drf-yasg/redoc-old/LICENSE
+staticfiles/drf-yasg/redoc-old/redoc.min.js
+staticfiles/drf-yasg/redoc-old/redoc.min.js.map
+staticfiles/drf-yasg/redoc/
+staticfiles/drf-yasg/redoc/LICENSE
+staticfiles/drf-yasg/redoc/redoc-logo.png
+staticfiles/drf-yasg/redoc/redoc.min.js
+staticfiles/drf-yasg/redoc/redoc.standalone.js.map
+staticfiles/drf-yasg/swagger-ui-dist/
+staticfiles/drf-yasg/swagger-ui-dist/LICENSE
+staticfiles/drf-yasg/swagger-ui-dist/NOTICE
+staticfiles/drf-yasg/swagger-ui-dist/absolute-path.js
+staticfiles/drf-yasg/swagger-ui-dist/favicon-32x32.png
+staticfiles/drf-yasg/swagger-ui-dist/index.css
+staticfiles/drf-yasg/swagger-ui-dist/index.js
+staticfiles/drf-yasg/swagger-ui-dist/oauth2-redirect.html
+staticfiles/drf-yasg/swagger-ui-dist/swagger-initializer.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js
+deleting templates/readme copy.html
+deleting templates/login copy.html
+deleting templates/dashboard copy.html
+deleting templates/dashboard copy 5.html
+deleting templates/dashboard copy 4.html
+deleting templates/dashboard copy 3.html
+deleting templates/dashboard copy 2.html
+deleting templates/base copy.html
+deleting templates/api/sepa_payment/transfer.html
+deleting templates/api/sepa_payment/status.html
+deleting templates/api/sepa_payment/list_transfers.html
+deleting templates/api/sepa_payment/
+deleting templates/api/sandbox/incomingcollection_list.html
+deleting templates/api/sandbox/incomingcollection_form.html
+deleting templates/api/sandbox/
+deleting templates/api/collection/mandate_list.html
+deleting templates/api/collection/mandate_form.html
+deleting templates/api/collection/mandate_confirm_delete.html
+deleting templates/api/collection/collection_list.html
+deleting templates/api/collection/collection_form.html
+deleting templates/api/collection/collection_confirm_delete.html
+deleting templates/api/collection/
+deleting templates/api/accounts/account_list.html
+deleting templates/api/accounts/account_form.html
+deleting templates/api/accounts/account_confirm_delete.html
+deleting templates/api/accounts/
+deleting templates/api/SEPA/transfer_list.html
+deleting templates/api/SEPA/transfer_form.html
+deleting templates/api/SEPA/transfer_confirm_delete.html
+deleting templates/api/SEPA/
+deleting templates/api/SCT/transfer_success.html
+deleting templates/api/SCT/transfer_status.html
+deleting templates/api/SCT/transfer_list2.html
+deleting templates/api/SCT/transfer_list.html
+deleting templates/api/SCT/transfer_form.html
+deleting templates/api/SCT/transfer_confirm_delete.html
+deleting templates/api/SCT/sct_upda5.html
+deleting templates/api/SCT/sct_send5.html
+deleting templates/api/SCT/sct_proc5.html
+deleting templates/api/SCT/sct_list5.html
+deleting templates/api/SCT/initiate_transfer.html
+deleting templates/api/SCT/create_instructed_amount.html
+deleting templates/api/SCT/create_debtor.html
+deleting templates/api/SCT/create_creditor_agent.html
+deleting templates/api/SCT/create_creditor.html
+deleting templates/api/SCT/create_address.html
+deleting templates/api/SCT/create_account.html
+deleting templates/api/SCT/cancel_success.html
+deleting templates/api/SCT/
+deleting templates/api/GPT3/send_bulk_success.html
+deleting templates/api/GPT3/postal_address_list.html
+deleting templates/api/GPT3/listar_transferencias.html
+deleting templates/api/GPT3/listar_bulk.html
+deleting templates/api/GPT3/financial_institution_list.html
+deleting templates/api/GPT3/estado_bulk_success.html
+deleting templates/api/GPT3/detalle_transferencia.html
+deleting templates/api/GPT3/detalle_bulk.html
+deleting templates/api/GPT3/debtor_list.html
+deleting templates/api/GPT3/creditor_list.html
+deleting templates/api/GPT3/create_postal_address.html
+deleting templates/api/GPT3/create_financial_institution.html
+deleting templates/api/GPT3/create_debtor.html
+deleting templates/api/GPT3/create_creditor.html
+deleting templates/api/GPT3/create_amount.html
+deleting templates/api/GPT3/create_account.html
+deleting templates/api/GPT3/crear_transferencia.html
+deleting templates/api/GPT3/crear_transferencia copy.html
+deleting templates/api/GPT3/crear_bulk.html
+deleting templates/api/GPT3/cancel_success.html
+deleting templates/api/GPT3/amount_list.html
+deleting templates/api/GPT3/account_list.html
+deleting templates/api/GPT3/
+deleting templates/api/GPT/transfer_success.html
+deleting templates/api/GPT/transfer_status.html
+deleting templates/api/GPT/transfer_list.html
+deleting templates/api/GPT/retry_success.html
+deleting templates/api/GPT/postal_address_list.html
+deleting templates/api/GPT/initiate_transfer.html
+deleting templates/api/GPT/financial_institution_list.html
+deleting templates/api/GPT/debtor_list.html
+deleting templates/api/GPT/creditor_list.html
+deleting templates/api/GPT/create_postal_address.html
+deleting templates/api/GPT/create_payment_identification.html
+deleting templates/api/GPT/create_party.html
+deleting templates/api/GPT/create_financial_institution.html
+deleting templates/api/GPT/create_debtor.html
+deleting templates/api/GPT/create_creditor.html
+deleting templates/api/GPT/create_amount.html
+deleting templates/api/GPT/create_account.html
+deleting templates/api/GPT/cancel_success.html
+deleting templates/api/GPT/amount_list.html
+deleting templates/api/GPT/account_list.html
+deleting templates/api/GPT/
+deleting templates/partials/navGeneral/transfers/index.html
+deleting templates/partials/navGeneral/transfers/
+deleting templates/partials/navGeneral/transactions/index.html
+deleting templates/partials/navGeneral/transactions/
+deleting templates/partials/navGeneral/sepa_payment/index.html
+deleting templates/partials/navGeneral/sepa_payment/
+deleting templates/partials/navGeneral/sct/index.html
+deleting templates/partials/navGeneral/sct/
+deleting templates/partials/navGeneral/core/index.html
+deleting templates/partials/navGeneral/core/
+deleting templates/partials/navGeneral/collection/index.html
+deleting templates/partials/navGeneral/collection/
+deleting templates/partials/navGeneral/auth/index.html
+deleting templates/partials/navGeneral/auth/
+deleting templates/partials/navGeneral/accounts/index.html
+deleting templates/partials/navGeneral/accounts/
+deleting templates/partials/navGeneral/
+deleting templates/partials/navGeneralFuncional.html
+deleting templates/partials/navGeneral2.html
+deleting templates/partials/navGeneral copy.html
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css.map
+staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.js.map
+staticfiles/rest_framework/css/
+staticfiles/rest_framework/css/bootstrap-theme.min.css
+staticfiles/rest_framework/css/bootstrap-theme.min.css.map
+staticfiles/rest_framework/css/bootstrap-tweaks.css
+staticfiles/rest_framework/css/bootstrap.min.css
+staticfiles/rest_framework/css/bootstrap.min.css.map
+staticfiles/rest_framework/css/default.css
+staticfiles/rest_framework/css/font-awesome-4.0.3.css
+staticfiles/rest_framework/css/prettify.css
+staticfiles/rest_framework/docs/css/
+staticfiles/rest_framework/docs/css/base.css
+staticfiles/rest_framework/docs/css/highlight.css
+staticfiles/rest_framework/docs/css/jquery.json-view.min.css
+staticfiles/rest_framework/docs/img/
+staticfiles/rest_framework/docs/img/favicon.ico
+staticfiles/rest_framework/docs/img/grid.png
+staticfiles/rest_framework/docs/js/
+staticfiles/rest_framework/docs/js/api.js
+staticfiles/rest_framework/docs/js/highlight.pack.js
+staticfiles/rest_framework/docs/js/jquery.json-view.min.js
+staticfiles/rest_framework/fonts/
+staticfiles/rest_framework/fonts/fontawesome-webfont.eot
+staticfiles/rest_framework/fonts/fontawesome-webfont.svg
+staticfiles/rest_framework/fonts/fontawesome-webfont.ttf
+staticfiles/rest_framework/fonts/fontawesome-webfont.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.eot
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff
+staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff2
+staticfiles/rest_framework/img/
+staticfiles/rest_framework/img/glyphicons-halflings-white.png
+staticfiles/rest_framework/img/glyphicons-halflings.png
+staticfiles/rest_framework/img/grid.png
+staticfiles/rest_framework/js/
+staticfiles/rest_framework/js/ajax-form.js
+staticfiles/rest_framework/js/bootstrap.min.js
+staticfiles/rest_framework/js/coreapi-0.1.1.js
+staticfiles/rest_framework/js/csrf.js
+staticfiles/rest_framework/js/default.js
+staticfiles/rest_framework/js/jquery-3.7.1.min.js
+staticfiles/rest_framework/js/load-ajax-form.js
+staticfiles/rest_framework/js/prettify-min.js
+templates/
+templates/api/
+templates/partials/
+
+sent 25.198 bytes  received 119.432 bytes  26.296,36 bytes/sec
+total size is 23.262.016  speedup is 160,84
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+.gitignore
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+templates/
+templates/partials/
+
+sent 17.772 bytes  received 650 bytes  3.349,45 bytes/sec
+total size is 23.322.919  speedup is 1.266,04
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+deleting logs/supervisord.pid
+deleting tor_data/control_auth_cookie
+logs/
+logs/gunicorn_error.log
+logs/supervisord.log
+logs/tor.log
+tor_data/
+tor_data/cached-certs
+tor_data/cached-microdesc-consensus
+tor_data/cached-microdescs.new
+tor_data/lock
+tor_data/state
+
+sent 760.748 bytes  received 38.234 bytes  76.093,52 bytes/sec
+total size is 50.596.339  speedup is 63,33
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+cannot delete non-empty directory: prompts
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/backup/00_02_zip_backup_.log
+.logs/backup/00_19_borrar_zip_sql_.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/despliegue/00_21_local_ssl.log
+.logs/sistema/00_01_sistema_.log
+.logs/sistema/00_03_puertos_.log
+.logs/sistema/00_04_container_.log
+.logs/sistema/00_05_mac_.log
+.logs/sistema/ports_stop_.log
+.logs/sync/
+.logs/sync/20250628_233046_sync.log
+.logs/sync/20250628_234623_sync.log
+
+sent 51.711 bytes  received 129.261 bytes  21.290,82 bytes/sec
+total size is 295.095.248  speedup is 1.630,61
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
