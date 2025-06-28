@@ -1,12 +1,11 @@
 Paso 1: Análisis del Flujo de Transferencia
 
     Iniciación de la Transferencia:
-        La transferencia se inicia en el repositorio heroku.
+        La transferencia se inicia en el repositorio heroku externo o intreno.
         El punto de partida es en gpt4/urls.py.
 
     Conexión y Autenticación:
-        La conexión con api.gpt4 se maneja en gpt4/conexion/conexion_banco.py.
-        La autenticación y generación de tokens JWT se encuentran en authentication/generate_token.py y authentication/jwt_token_utils.py.
+        La autenticación y generación de tokens JWT se encuentran en simulador_banco/simulador_banco/middleware/jwt_auth.py.
 
     Procesamiento de la Transferencia:
         Los detalles de la transferencia se procesan en gpt4/utils_transfer.py y gpt4/views.py.
