@@ -46,7 +46,6 @@ EXCLUDES=(
   "--exclude=/.github/"
   "--exclude=/.git/"
   "--exclude=prompts.txt"
-  "--exclude=templates/api/"
   "--exclude=temp/"
   "--exclude=servers/"
   "--exclude=certs/"
