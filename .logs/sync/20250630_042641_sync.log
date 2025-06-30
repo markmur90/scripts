@@ -1,0 +1,111 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+deleting detalles_solicitud_R6.md
+deleting detalles_solicitud_R4.md
+./
+.env.production
+detalles_solicitud_R4.txt
+detalles_solicitud_R6.txt
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/views.py
+api/gpt4/conexion/
+api/gpt4/conexion/conexion_banco.py
+api/gpt4/conexion/ssh_utils.py
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4_conexion/
+api/gpt4_conexion/conexion_banco_refactor.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+api/transfers/migrations/0001_initial.py
+config/
+config/settings/
+config/settings/base1.py
+middleware/
+
+sent 28.068 bytes  received 1.184 bytes  4.500,31 bytes/sec
+total size is 23.211.463  speedup is 793,50
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+.env.production
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/views.py
+api/gpt4/conexion/
+api/gpt4/conexion/conexion_banco.py
+api/gpt4/conexion/ssh_utils.py
+api/gpt4/migrations/
+api/gpt4_conexion/
+api/gpt4_conexion/conexion_banco_refactor.py
+api/transactions/
+api/transfers/
+api/transfers/migrations/
+config/
+config/settings/
+config/settings/__init__.py
+config/settings/base1.py
+middleware/
+
+sent 17.191 bytes  received 1.024 bytes  3.311,82 bytes/sec
+total size is 22.868.165  speedup is 1.255,46
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+tor_data/
+tor_data/state
+
+sent 11.986 bytes  received 207 bytes  2.216,91 bytes/sec
+total size is 50.585.105  speedup is 4.148,70
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/backup/00_02_zip_backup_.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/sistema/00_01_sistema_.log
+.logs/sync/
+.logs/sync/20250630_023714_sync.log
+.logs/sync/20250630_042641_sync.log
+
+sent 46.211 bytes  received 135.873 bytes  15.833,39 bytes/sec
+total size is 299.844.890  speedup is 1.646,74
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.
