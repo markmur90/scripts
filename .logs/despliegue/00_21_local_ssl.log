@@ -1,4 +1,4 @@
-[2025-07-02 21:40:09 +0200] [211934] [INFO] Starting gunicorn 23.0.0
-[2025-07-02 21:40:09 +0200] [211934] [INFO] Listening at: https://0.0.0.0:8443 (211934)
-[2025-07-02 21:40:09 +0200] [211934] [INFO] Using worker: sync
-[2025-07-02 21:40:09 +0200] [211948] [INFO] Booting worker with pid: 211948
+[2025-07-03 18:52:20 +0200] [21542] [INFO] Starting gunicorn 23.0.0
+[2025-07-03 18:52:20 +0200] [21542] [INFO] Listening at: http://0.0.0.0:8000 (21542)
+[2025-07-03 18:52:20 +0200] [21542] [INFO] Using worker: sync
+[2025-07-03 18:52:20 +0200] [21556] [INFO] Booting worker with pid: 21556
