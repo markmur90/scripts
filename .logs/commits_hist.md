@@ -428,3 +428,35 @@
 | 2025-07-02 17:51:30 | cambio localhost |
 | 2025-07-02 18:08:53 | update |
 | 2025-07-02 21:35:04 | otp |
+| 2025-07-02 21:56:11 | act otp |
+| 2025-07-02 22:04:33 | act |
+| 2025-07-02 22:12:17 | act |
+| 2025-07-02 23:43:17 | act final |
+| 2025-07-03 00:12:48 | actualizacion |
+| 2025-07-03 00:21:56 | comprobación |
+| 2025-07-03 00:47:46 | SIMULADOR_URL SIMULADOR_USER SIMULADOR_PASS |
+| 2025-07-03 00:59:03 | actualización |
+| 2025-07-03 01:14:47 | Refactoriza el archivo api/gpt4/conexion/conexion_banco.py, reemplazando SIMULADOR_URL con TRANSFER_URL o la clave correcta según el uso. A continuación te dejo el código corregido y completo. |
+| 2025-07-03 01:34:08 | actualización |
+| 2025-07-03 01:40:54 | local |
+| 2025-07-03 02:48:24 | otp |
+| 2025-07-03 03:09:54 | otp |
+| 2025-07-03 03:19:36 | otp |
+| 2025-07-03 03:26:42 | otp |
+| 2025-07-03 03:41:46 | ALLOW_FAKE_BANK |
+| 2025-07-03 03:48:56 | otp |
+| 2025-07-03 04:10:39 | true |
+| 2025-07-03 04:33:18 | template send_transfer |
+| 2025-07-03 04:41:27 | otp |
+| 2025-07-03 04:49:35 | otp |
+| 2025-07-03 05:09:59 | Formulario Invalido |
+| 2025-07-03 06:03:35 | templates |
+| 2025-07-03 06:14:28 | templates otp |
+| 2025-07-03 06:30:50 | template otp |
+| 2025-07-03 06:39:55 | template otp |
+| 2025-07-03 07:26:15 | template otp |
+| 2025-07-03 07:59:58 | analisis CIA |
+| 2025-07-03 08:40:37 | template y vistas otp |
+| 2025-07-03 09:36:53 | template otp |
+| 2025-07-03 18:39:01 | inicio |
+| 2025-07-03 18:47:40 | inicio |
