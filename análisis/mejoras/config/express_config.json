@@ -1,0 +1,228 @@
+{
+  "express_intelligent": {
+    "version": "2.0",
+    "description": "Configuración del sistema Express Inteligente",
+    "author": "Análisis Automático",
+    "created": "2024-01-15",
+    "last_updated": "2024-01-15",
+    
+    "system": {
+      "project_base_dir": "/home/markmur88",
+      "scripts_dir": "/home/markmur88/scripts",
+      "api_dir": "/home/markmur88/api_bank_h2",
+      "venv_path": "/home/markmur88/envAPP",
+      "log_dir": "/home/markmur88/scripts/.logs",
+      "backup_dir": "/home/markmur88/backup/zip"
+    },
+    
+    "modes": {
+      "full": {
+        "name": "Ejecutar Todo",
+        "description": "Ejecuta el flujo completo original de Express",
+        "flags": ["-Y", "-Z", "-C", "-S", "-Q", "-I", "-Gi", "-r"],
+        "enabled": true
+      },
+      "smart": {
+        "name": "Modo Inteligente",
+        "description": "Ejecuta solo lo necesario basado en cambios detectados",
+        "enabled": true,
+        "checks": [
+          "git_changes",
+          "database_migrations",
+          "backup_needed",
+          "security_updates"
+        ]
+      },
+      "check": {
+        "name": "Verificar Estado",
+        "description": "Solo verifica el estado del sistema sin ejecutar cambios",
+        "enabled": true
+      },
+      "maintenance": {
+        "name": "Modo Mantenimiento",
+        "description": "Herramientas de mantenimiento del sistema",
+        "enabled": true,
+        "options": [
+          "clean_logs",
+          "optimize_database",
+          "restart_services",
+          "update_dependencies"
+        ]
+      }
+    },
+    
+    "dashboard": {
+      "enabled": true,
+      "auto_refresh": 30000,
+      "sections": [
+        "services_status",
+        "system_resources",
+        "application_status",
+        "security_status",
+        "recent_logs"
+      ],
+      "alerts": {
+        "disk_usage_threshold": 80,
+        "memory_usage_threshold": 85,
+        "cpu_usage_threshold": 90
+      }
+    },
+    
+    "validation": {
+      "pre_execution": {
+        "enabled": true,
+        "checks": [
+          "os_compatibility",
+          "permissions",
+          "connectivity",
+          "disk_space",
+          "project_directories",
+          "critical_services",
+          "software_dependencies",
+          "network_config",
+          "config_files"
+        ]
+      },
+      "security": {
+        "enabled": true,
+        "checks": [
+          "ufw_firewall",
+          "ssl_certificates",
+          "file_permissions",
+          "network_security",
+          "ssh_security",
+          "security_updates",
+          "tor_configuration",
+          "security_logs"
+        ]
+      }
+    },
+    
+    "logging": {
+      "enabled": true,
+      "level": "INFO",
+      "file": "/home/markmur88/scripts/.logs/express_intelligent.log",
+      "max_size": "10MB",
+      "max_files": 5,
+      "format": "[{timestamp}] {level}: {message}"
+    },
+    
+    "notifications": {
+      "enabled": false,
+      "methods": [
+        "email",
+        "telegram",
+        "slack"
+      ],
+      "triggers": [
+        "critical_error",
+        "security_alert",
+        "backup_completed",
+        "deployment_success"
+      ]
+    },
+    
+    "backup": {
+      "auto_backup": true,
+      "before_deployment": true,
+      "retention_days": 30,
+      "compression": true,
+      "encryption": false
+    },
+    
+    "deployment": {
+      "targets": {
+        "local": {
+          "enabled": true,
+          "ssl": true,
+          "port": 8000
+        },
+        "github": {
+          "enabled": true,
+          "auto_push": false
+        },
+        "heroku": {
+          "enabled": false,
+          "app_name": "api-bank-h2"
+        },
+        "vps": {
+          "enabled": false,
+          "host": "njalla",
+          "auto_deploy": false
+        }
+      }
+    },
+    
+    "security": {
+      "score_threshold": 75,
+      "auto_fix": false,
+      "critical_actions": [
+        "disable_root_login",
+        "configure_ufw",
+        "update_ssl_certificates"
+      ]
+    },
+    
+    "performance": {
+      "parallel_execution": true,
+      "max_concurrent": 3,
+      "timeout": 300,
+      "retry_attempts": 3
+    },
+    
+    "ui": {
+      "colors": {
+        "primary": "#667eea",
+        "secondary": "#764ba2",
+        "success": "#38a169",
+        "warning": "#d69e2e",
+        "error": "#e53e3e",
+        "info": "#3182ce"
+      },
+      "theme": "dark",
+      "animations": true,
+      "responsive": true
+    },
+    
+    "aliases": {
+      "express": "express_intelligent.sh",
+      "express_full": "express_intelligent.sh --full",
+      "express_smart": "express_intelligent.sh --smart",
+      "express_check": "express_intelligent.sh --check",
+      "express_dashboard": "express_intelligent.sh --dashboard",
+      "express_security": "security_check.sh",
+      "express_validate": "validate_environment.sh"
+    },
+    
+    "dependencies": {
+      "required": [
+        "bash",
+        "git",
+        "python3",
+        "postgresql",
+        "nginx"
+      ],
+      "optional": [
+        "docker",
+        "nodejs",
+        "tor",
+        "ufw"
+      ]
+    },
+    
+    "monitoring": {
+      "enabled": true,
+      "metrics": [
+        "cpu_usage",
+        "memory_usage",
+        "disk_usage",
+        "network_traffic",
+        "service_status"
+      ],
+      "alerts": {
+        "enabled": true,
+        "channels": ["dashboard", "logs"]
+      }
+    }
+  }
+} 

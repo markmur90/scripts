@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Automatización</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #4a5568;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            text-align: center;
+            color: #718096;
+            font-size: 1.1em;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-label {
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .status-value {
+            font-weight: 600;
+        }
+
+        .status-ok {
+            color: #38a169;
+        }
+
+        .status-error {
+            color: #e53e3e;
+        }
+
+        .status-warning {
+            color: #d69e2e;
+        }
+
+        .status-info {
+            color: #3182ce;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #38a169, #48bb78);
+            transition: width 0.3s ease;
+        }
+
+        .progress-fill.warning {
+            background: linear-gradient(90deg, #d69e2e, #ecc94b);
+        }
+
+        .progress-fill.danger {
+            background: linear-gradient(90deg, #e53e3e, #f56565);
+        }
+
+        .action-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #38a169, #48bb78);
+            color: white;
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #d69e2e, #ecc94b);
+            color: white;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #e53e3e, #f56565);
+            color: white;
+        }
+
+        .logs-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .log-entry {
+            background: #f7fafc;
+            border-left: 4px solid #3182ce;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 0 8px 8px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .log-entry.error {
+            border-left-color: #e53e3e;
+            background: #fed7d7;
+        }
+
+        .log-entry.warning {
+            border-left-color: #d69e2e;
+            background: #fef5e7;
+        }
+
+        .refresh-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .refresh-btn:hover {
+            transform: rotate(180deg);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .action-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Dashboard del Sistema</h1>
+            <p>Monitoreo en tiempo real del sistema de automatización</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Estado de Servicios -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">⚙️</div>
+                    <div class="card-title">Estado de Servicios</div>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">PostgreSQL</span>
+                    <span class="status-value status-ok" id="postgres-status">✅ Activo</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Nginx</span>
+                    <span class="status-value status-ok" id="nginx-status">✅ Activo</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Gunicorn</span>
+                    <span class="status-value status-ok" id="gunicorn-status">✅ Activo</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Tor</span>
+                    <span class="status-value status-warning" id="tor-status">⚠️ Configurando</span>
+                </div>
+            </div>
+
+            <!-- Recursos del Sistema -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">💾</div>
+                    <div class="card-title">Recursos del Sistema</div>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">CPU</span>
+                    <span class="status-value status-info" id="cpu-usage">45%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="cpu-bar" style="width: 45%"></div>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Memoria</span>
+                    <span class="status-value status-info" id="memory-usage">62%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill warning" id="memory-bar" style="width: 62%"></div>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Disco</span>
+                    <span class="status-value status-info" id="disk-usage">78%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill danger" id="disk-bar" style="width: 78%"></div>
+                </div>
+            </div>
+
+            <!-- Estado de la Aplicación -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🌐</div>
+                    <div class="card-title">Estado de la Aplicación</div>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">API Bank H2</span>
+                    <span class="status-value status-ok" id="api-status">✅ Online</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Ghost Blog</span>
+                    <span class="status-value status-ok" id="ghost-status">✅ Online</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">SSL Certificate</span>
+                    <span class="status-value status-ok" id="ssl-status">✅ Válido</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Último Backup</span>
+                    <span class="status-value status-info" id="backup-status">Hace 2h</span>
+                </div>
+            </div>
+
+            <!-- Seguridad -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-title">Estado de Seguridad</div>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Firewall UFW</span>
+                    <span class="status-value status-ok" id="ufw-status">✅ Activo</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">VPN</span>
+                    <span class="status-value status-ok" id="vpn-status">✅ Conectado</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Puertos Abiertos</span>
+                    <span class="status-value status-info" id="ports-status">3/65535</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Intentos de Acceso</span>
+                    <span class="status-value status-warning" id="access-status">12 hoy</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Acciones Rápidas -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">⚡</div>
+                <div class="card-title">Acciones Rápidas</div>
+            </div>
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="executeAction('express')">🚀 Ejecutar Express</button>
+                <button class="btn btn-success" onclick="executeAction('backup')">💾 Generar Backup</button>
+                <button class="btn btn-warning" onclick="executeAction('restart')">🔄 Reiniciar Servicios</button>
+                <button class="btn btn-danger" onclick="executeAction('emergency')">🚨 Modo Emergencia</button>
+            </div>
+        </div>
+
+        <!-- Logs Recientes -->
+        <div class="logs-section">
+            <div class="card-header">
+                <div class="card-icon">📋</div>
+                <div class="card-title">Logs Recientes</div>
+            </div>
+            <div id="logs-container">
+                <div class="log-entry">
+                    <strong>[2024-01-15 14:30:25]</strong> INFO: Sistema iniciado correctamente
+                </div>
+                <div class="log-entry">
+                    <strong>[2024-01-15 14:29:18]</strong> INFO: Backup completado exitosamente
+                </div>
+                <div class="log-entry warning">
+                    <strong>[2024-01-15 14:28:45]</strong> WARNING: Espacio en disco al 78%
+                </div>
+                <div class="log-entry">
+                    <strong>[2024-01-15 14:27:32]</strong> INFO: Migraciones aplicadas
+                </div>
+                <div class="log-entry error">
+                    <strong>[2024-01-15 14:26:15]</strong> ERROR: Fallo en conexión a base de datos
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="refreshDashboard()" title="Actualizar Dashboard">🔄</button>
+
+    <script>
+        // Simulación de datos en tiempo real
+        function updateSystemStatus() {
+            // Simular cambios en el estado del sistema
+            const cpuUsage = Math.floor(Math.random() * 30) + 30;
+            const memoryUsage = Math.floor(Math.random() * 20) + 50;
+            const diskUsage = Math.floor(Math.random() * 10) + 70;
+
+            document.getElementById('cpu-usage').textContent = cpuUsage + '%';
+            document.getElementById('cpu-bar').style.width = cpuUsage + '%';
+            
+            document.getElementById('memory-usage').textContent = memoryUsage + '%';
+            document.getElementById('memory-bar').style.width = memoryUsage + '%';
+            
+            document.getElementById('disk-usage').textContent = diskUsage + '%';
+            document.getElementById('disk-bar').style.width = diskUsage + '%';
+
+            // Actualizar colores de las barras
+            document.getElementById('cpu-bar').className = 'progress-fill' + (cpuUsage > 80 ? ' danger' : cpuUsage > 60 ? ' warning' : '');
+            document.getElementById('memory-bar').className = 'progress-fill' + (memoryUsage > 80 ? ' danger' : memoryUsage > 60 ? ' warning' : '');
+            document.getElementById('disk-bar').className = 'progress-fill' + (diskUsage > 90 ? ' danger' : diskUsage > 80 ? ' warning' : '');
+        }
+
+        function executeAction(action) {
+            const actions = {
+                'express': 'Ejecutando Express Inteligente...',
+                'backup': 'Generando backup del sistema...',
+                'restart': 'Reiniciando servicios...',
+                'emergency': 'Activando modo emergencia...'
+            };
+
+            alert(`🔄 ${actions[action]}\n\nEsta es una simulación del dashboard. En un entorno real, se ejecutaría la acción correspondiente.`);
+        }
+
+        function refreshDashboard() {
+            updateSystemStatus();
+            
+            // Simular actualización de logs
+            const logsContainer = document.getElementById('logs-container');
+            const newLog = document.createElement('div');
+            newLog.className = 'log-entry';
+            newLog.innerHTML = `<strong>[${new Date().toLocaleString()}]</strong> INFO: Dashboard actualizado`;
+            logsContainer.insertBefore(newLog, logsContainer.firstChild);
+            
+            // Mantener solo los últimos 5 logs
+            while (logsContainer.children.length > 5) {
+                logsContainer.removeChild(logsContainer.lastChild);
+            }
+        }
+
+        // Actualizar cada 30 segundos
+        setInterval(updateSystemStatus, 30000);
+        
+        // Actualizar inmediatamente al cargar
+        updateSystemStatus();
+    </script>
+</body>
+</html> 
