@@ -224,6 +224,8 @@ alias vps_locsycl='bash $DP_VP_DIR/vps_sync_clean.sh'
 alias vps_locsync='bash $DP_VP_DIR/vps_sync.sh'
 alias vps_up_copy='bash $DP_VP_DIR/vps_copy_up_files.sh'
 alias vps_down_copy='bash $DP_VP_DIR/vps_copy_files.sh'
+alias vps_sqlite='bash $DP_VP_DIR/vps_copy_files.sh && echo "25" && echo "20" && echo "8" && echo "4" && echo "0"'
+
 # alias vps_restart='bash ~/Simulador/reiniciar_servicios.sh'
 
 # === Sincronización por GitHub ===
