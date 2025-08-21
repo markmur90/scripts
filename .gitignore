@@ -1,0 +1,14 @@
+# Secretos y binarios sensibles
+servers/ssh/id_*
+utils/.ssh/
+*.pem
+*.key
+*.p12
+*.crt
+.env
+.env.*
+# Logs y directorios de logs
+*.log
+logs/
+.logs/
+.zsh_history
