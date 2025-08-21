@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -183,9 +183,9 @@ sudo chmod 750 /var/log/supervisor
 sudo tee /etc/supervisor/conf.d/coretransapi.conf > /dev/null <<SUPERVISOR
 [program:coretransapi]
 directory=/home/markmur88/api_bank_h2
-command=/home/markmur88/envAPP/bin/gunicorn config.wsgi:application \\
+command=/home/markmur88/envSIM/bin/gunicorn config.wsgi:application \\
   --bind unix:/home/markmur88/api_bank_h2/api.sock \\
-  --workers 3
+  --workers 4
 autostart=false
 autorestart=true
 umask=007
@@ -194,7 +194,7 @@ stdout_logfile=/var/log/supervisor/coretransapi.out.log
 user=markmur88
 group=www-data
 environment=\\
-  PATH="/home/markmur88/envAPP/bin",\\
+  PATH="/home/markmur88/envSIM/bin",\\
   DJANGO_SETTINGS_MODULE="config.settings",\\
   DJANGO_ENV="production",\\
   DEBUG="False",\\
@@ -238,7 +238,12 @@ sudo ln -sf /etc/nginx/sites-available/coretransapi.conf /etc/nginx/sites-enable
 sudo rm -f /etc/nginx/sites-enabled/default
 
 sudo nginx -t
-sudo systemctl reload nginx
+# Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 # 5.2. Obtener certificado SSL con Certbot + plugin Nginx
 sudo certbot --nginx --non-interactive --agree-tos -m "netghostx90@protonmail.com" -d api.coretransapi.com
@@ -248,7 +253,12 @@ sudo certbot --nginx --non-interactive --agree-tos -m "netghostx90@protonmail.co
 #   - Un bloque listen 443 ssl con fullchain.pem y privkey.pem
 
 sudo nginx -t
-sudo systemctl reload nginx
+# Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 echo "🔐 SSL instalado correctamente en Nginx."
 

@@ -6,7 +6,7 @@
 
 # Variables
 PROJECT_BASE_DIR="/home/markmur88"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 BACKUP_DIR="/home/markmur88/backup/zip"
 
 # Carpetas del proyecto

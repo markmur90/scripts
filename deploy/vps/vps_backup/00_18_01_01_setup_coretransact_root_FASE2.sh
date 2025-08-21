@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -122,8 +122,8 @@ sudo chown -R "$APP_USER":www-data "$CLONE_PATH"
 
 echo "🔐 Permisos ajustados en $CLONE_PATH"
 
-# python3 -m venv ~/envAPP
-source ~/envAPP/bin/activate
+# python3 -m venv ~/envSIM
+source ~/envSIM/bin/activate
 
 pip install --upgrade pip
 pip install -r ~/"$REPO_DIR"/requirements.txt

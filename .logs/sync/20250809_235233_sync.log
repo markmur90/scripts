@@ -1,0 +1,103 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/utils.py
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+api/gpt4/services/transfer_services.py
+config/
+config/settings/
+middleware/
+
+sent 18.786 bytes  received 1.119 bytes  3.619,09 bytes/sec
+total size is 23.464.080  speedup is 1.178,80
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/utils.py
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/services/
+api/gpt4/services/transfer_services.py
+config/
+config/settings/
+middleware/
+
+sent 17.229 bytes  received 893 bytes  2.416,27 bytes/sec
+total size is 23.181.196  speedup is 1.279,17
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting simulador_banco/banco/migrations/0001_initial.py
+config/
+logs/gunicorn_access.log
+simulador_banco/debug.log
+simulador_banco/banco/
+simulador_banco/banco/gpt_views.py
+simulador_banco/banco/urls.py
+simulador_banco/banco/views.py
+simulador_banco/banco/management/commands/
+simulador_banco/banco/migrations/
+simulador_banco/services/
+simulador_banco/services/transfer_services.py
+simulador_banco/simulador_banco/
+simulador_banco/simulador_banco/middleware/
+tor_data/
+tor_data/cached-microdescs
+tor_data/cached-microdescs.new
+tor_data/state
+
+sent 2.668.877 bytes  received 45.010 bytes  217.110,96 bytes/sec
+total size is 46.952.266  speedup is 17,30
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/sync/
+.logs/sync/20250809_230300_sync.log
+.logs/sync/20250809_235233_sync.log
+
+sent 38.623 bytes  received 52.330 bytes  12.127,07 bytes/sec
+total size is 322.891.933  speedup is 3.550,10
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

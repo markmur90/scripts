@@ -10,7 +10,7 @@
       "project_base_dir": "/home/markmur88",
       "scripts_dir": "/home/markmur88/scripts",
       "api_dir": "/home/markmur88/api_bank_h2",
-      "venv_path": "/home/markmur88/envAPP",
+      "venv_path": "/home/markmur88/envSIM",
       "log_dir": "/home/markmur88/scripts/.logs",
       "backup_dir": "/home/markmur88/backup/zip"
     },
@@ -146,8 +146,8 @@
           "app_name": "api-bank-h2"
         },
         "vps": {
-          "enabled": false,
-          "host": "njalla",
+          "enabled": true,
+          "host": "80.78.30.242",
           "auto_deploy": false
         }
       }
@@ -223,6 +223,14 @@
         "enabled": true,
         "channels": ["dashboard", "logs"]
       }
+    },
+
+    "vps": {
+      "host": "80.78.30.242",
+      "port": 22,
+      "user": "markmur88",
+      "ssh_key_path": "/home/markmur88/.ssh/vps_njalla_nueva",
+      "project_dir": "/home/markmur88/api_bank_h2"
     }
   }
 } 

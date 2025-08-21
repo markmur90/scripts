@@ -1,0 +1,82 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 14.727 bytes  received 373 bytes  2.013,33 bytes/sec
+total size is 23.359.106  speedup is 1.546,96
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+
+sent 14.355 bytes  received 182 bytes  2.236,46 bytes/sec
+total size is 23.083.563  speedup is 1.587,92
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+
+sent 11.711 bytes  received 62 bytes  2.140,55 bytes/sec
+total size is 46.585.236  speedup is 3.956,96
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/sync/
+.logs/sync/20250809_132625_sync.log
+
+sent 39.487 bytes  received 83.214 bytes  14.435,41 bytes/sec
+total size is 317.775.568  speedup is 2.589,84
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...

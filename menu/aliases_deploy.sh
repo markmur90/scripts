@@ -5,7 +5,7 @@ AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
 BACKUPDIR="/home/markmur88/backup"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SIMU_PATH="/home/markmur88/envSIM"
 ELIZ_PATH="/home/markmur88/envELI"
 SCRIPTS_DIR="/home/markmur88/scripts"
@@ -44,8 +44,8 @@ vps_exec() {
     source ~/.zshrc && clear && ssh -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" "$@"
 }
 
-unalias envAPP 2>/dev/null
-envAPP() {source "$VENV_PATH/bin/activate" "$@"; }
+unalias envSIM 2>/dev/null
+envSIM() {source "$VENV_PATH/bin/activate" "$@"; }
 
 alias envSIM="source $SIMU_PATH/bin/activate"
 alias envELI="source $ELIZ_PATH/bin/activate"
@@ -126,7 +126,7 @@ alias 17gtareas='nohup bash $GE_SH_DIR/gestor_tareas_17.sh >/dev/null 2>&1 & dis
 
 # === VARIABLES ENTORNOS ===
 
-alias api="source ~/.zshrc && cd $AP_H2_DIR && envAPP"
+alias api="source ~/.zshrc && cd $AP_H2_DIR && envSIM"
 alias deploy_full='bash "/home/markmur88/scripts/menu/01_full.sh"'
 alias d_help='deploy_full --help'
 alias d_step='deploy_full -s'
@@ -134,7 +134,7 @@ alias d_all='deploy_full -a'
 alias d_debug='deploy_full -d'
 alias d_menu='deploy_full --menu'
 alias d_status='api && bash $SERVI_DIR/diagnostico_entorno.sh'
-
+alias master_update='bash "/home/markmur88/scripts/deploy/00_master_update.sh"'
 
 # === VARIABLES ENTORNOS ===
 
@@ -148,7 +148,7 @@ d_njalla() {api && deploy_full --env=production -Y -P -D -M -x -Z -C -S -Q -I -G
 
 # === VARIABLES LOCALES ===
 unalias d_mig 2>/dev/null
-d_mig() {source /home/markmur88/envAPP/bin/activate && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput && clear}
+d_mig() {source /home/markmur88/envSIM/bin/activate && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput && clear}
 
 alias chmodtree='source ~/.zshrc && bash $UTILS_DIR/chmod_all.sh'
 alias fase2='source ~/.zshrc && bash /home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh'
@@ -199,7 +199,12 @@ alias vps_logs_all='vps_exec "tail -f /var/log/supervisor/coretransapi.err.log /
 alias vps_remote_check='vps_exec "bash $DP_VP_DIR/vps_remote_check.sh"'
 
 # Recarga Gunicorn vía Supervisor + NGINX
-alias vps_reload='vps_exec "sudo supervisorctl restart coretransapi && sudo systemctl reload nginx"'
+alias vps_reload='vps_exec "sudo supervisorctl restart coretransapi && # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx"'
 alias vps_stack='vps_exec "sudo bash /home/markmur88/scripts/utils/restart_stack.sh"'
 alias stack='sudo bash /home/markmur88/scripts/utils/restart_stack.sh'
 alias re_onion='sudo bash /home/markmur88/scripts/utils/restart_tor_onion.sh'
@@ -222,9 +227,14 @@ alias pg_njalla_local='ssh -i ~/.ssh/vps_njalla_nueva -p 49222 -L 5433:127.0.0.1
 # === Sincronización segura ===
 alias vps_locsycl='bash $DP_VP_DIR/vps_sync_clean.sh'
 alias vps_locsync='bash $DP_VP_DIR/vps_sync.sh'
+alias vps_sync_dir='bash $DP_VP_DIR/sync_dir.sh'
 alias vps_up_copy='bash $DP_VP_DIR/vps_copy_up_files.sh'
 alias vps_down_copy='bash $DP_VP_DIR/vps_copy_files.sh'
-alias vps_sqlite='bash $DP_VP_DIR/vps_copy_files.sh && echo "25" && echo "20" && echo "8" && echo "4" && echo "0"'
+alias vps_sqlite='scp -P 22 -i ~/.ssh/vps_njalla_nueva markmur88@80.78.30.242:/home/markmur88/Simulador/simulador_banco/db.sqlite3 /home/markmur88/Simulador/simulador_banco/ && echo "✅ Archivo db.sqlite3 copiado exitosamente"'
+
+alias venv_z_zHack='source /home/markmur88/scripts/scripts_temp/z_zHack/venv_z_hack/bin/activate'
+alias clean_up_vps='bash $DP_VP_DIR/limpiar_subir_express.sh'
+alias envTTR='deactivate && source ~/envTOR/bin/activate'
 
 # alias vps_restart='bash ~/Simulador/reiniciar_servicios.sh'
 
@@ -265,7 +275,7 @@ alias cBOT='code ~/AI && sc'
 alias cELI='code ~/AI/Gaby_fullstack && sc'
 alias testSIM='bash ~/scripts/test_simulador_curl.sh'
 alias localup='api && deploy_full -Z -C -S -Q -I -r'
-alias express='api && deploy_full -Y -Z -C -S -Q -I -Gi -r'
+alias express='api && deploy_full -Z -C -S -Q -I -Gi -r'
 alias nt_dir='cd ~/Notas && clear && ls'
 alias gt_dir='cd ~/git && clear && ls'
 alias h2_dir='cd ~/api_bank_h2 && clear && ls'
@@ -279,7 +289,36 @@ alias lc_ufw='sudo bash ~/scripts/src/00_06_ufw.sh'
 alias pr_ufw='sudo bash ~/scripts/src/ufw_produccion.sh'
 alias st_ufw='sudo ufw status verbose && sudo ss -tulno | grep ssh'
 alias tor_ins='sudo bash ~/scripts/tor/instalar_tor.sh'
-alias ssh_connect='envAPP && bash /home/markmur88/scripts/utils/paramiko/ssh_wrapper.sh'
+alias ssh_connect='envSIM && bash /home/markmur88/scripts/utils/paramiko/ssh_wrapper.sh'
+TORTOISE_DIR="/home/markmur88/AI/Agentes/ai-models/voice_models/tortoise-tts"
+TORTOISE_VENV="$TORTOISE_DIR/venv"
+alias envTOR="deactivate && source $TORTOISE_VENV/bin/activate"
+
+# === Express Inteligente y Dashboard ===
+unalias express_smart 2>/dev/null
+alias express_smart='bash "/home/markmur88/scripts/análisis/mejoras/scripts/express_inteligente.sh" --smart'
+
+unalias express_full2 2>/dev/null
+alias express_full2='bash "/home/markmur88/scripts/análisis/mejoras/scripts/express_inteligente.sh" --full'
+
+unalias express_check 2>/dev/null
+alias express_check='bash "/home/markmur88/scripts/análisis/mejoras/scripts/express_inteligente.sh" --check'
+
+unalias deploy_opt 2>/dev/null
+alias deploy_opt='bash "/home/markmur88/scripts/análisis/mejoras/scripts/deploy_optimized.sh"'
+
+unalias sync_vps 2>/dev/null
+alias sync_vps='bash "/home/markmur88/scripts/análisis/mejoras/scripts/sync_to_vps.sh"'
+
+unalias optimize_space 2>/dev/null
+alias optimize_space='bash "/home/markmur88/scripts/análisis/mejoras/scripts/optimize_deployment.sh" --full'
+
+unalias express_dash 2>/dev/null
+express_dash() {
+    nohup bash "/home/markmur88/scripts/análisis/mejoras/dashboard/start_dashboard_server.sh" >/dev/null 2>&1 & disown
+    sleep 1
+    command -v xdg-open >/dev/null 2>&1 && xdg-open "http://127.0.0.1:8765" >/dev/null 2>&1 || true
+}
 
 2menu() {
     typeset -A alias_groups

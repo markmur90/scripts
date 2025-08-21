@@ -14,7 +14,7 @@ alias express='api && deploy_full -Y -Z -C -S -Q -I -Gi -r'
 ## 🚀 FLUJO DE EJECUCIÓN
 
 ### 1. ACTIVACIÓN DEL ENTORNO (`api`)
-- Activa el entorno virtual Python (`envAPP`)
+- Activa el entorno virtual Python (`envSIM`)
 - Navega al directorio del proyecto principal (`/home/markmur88/api_bank_h2`)
 - Limpia la pantalla
 
@@ -49,7 +49,7 @@ alias express='api && deploy_full -Y -Z -C -S -Q -I -Gi -r'
 
 ### Variables de entorno:
 - `AP_H2_DIR="/home/markmur88/api_bank_h2"` - Directorio principal
-- `VENV_PATH="/home/markmur88/envAPP"` - Entorno virtual
+- `VENV_PATH="/home/markmur88/envSIM"` - Entorno virtual
 - `SCRIPTS_DIR="/home/markmur88/scripts"` - Directorio de scripts
 
 ## ⚠️ CONSIDERACIONES IMPORTANTES

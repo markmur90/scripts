@@ -2921,7 +2921,7 @@ temp/staging_markmur/config/gunicorn_staging.conf.py
 temp/staging_markmur/config/help.md
 temp/staging_markmur/config/supervisor_staging.conf
 temp/staging_markmur/config/torrc_staging
-temp/staging_markmur/envAPP_staging/
+temp/staging_markmur/envSIM_staging/
 temp/staging_markmur/logs/
 temp/staging_markmur/scripts/
 temp/staging_markmur/scripts/deploy_staging.sh
@@ -3489,7 +3489,7 @@ individual files in /usr/share/doc/*/copyright.
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 🌐 Entrando en directorio remoto: /home/markmur88/api_bank_heroku
-🔧 Activando entorno virtual en VPS: /home/markmur88/envAPP
+🔧 Activando entorno virtual en VPS: /home/markmur88/envSIM
 🔁 Reiniciando servicios en VPS...
 coretransapi: stopped
 coretransapi: started
@@ -3497,7 +3497,7 @@ coretransapi: started
 coretransapi                     RUNNING   pid 46036, uptime 0:00:02
 📄 Últimos logs de error en VPS:
     sock.close_sockets(self.LISTENERS, unlink)
-  File "/home/markmur88/envAPP/lib/python3.11/site-packages/gunicorn/sock.py", line 212, in close_sockets
+  File "/home/markmur88/envSIM/lib/python3.11/site-packages/gunicorn/sock.py", line 212, in close_sockets
     os.unlink(sock_name)
 FileNotFoundError: [Errno 2] No such file or directory: '/home/markmur88/api_bank_heroku/api.sock'
 [2025-06-07 14:53:41 +0200] [46036] [INFO] Starting gunicorn 23.0.0

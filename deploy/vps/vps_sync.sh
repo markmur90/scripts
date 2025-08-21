@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -32,7 +32,7 @@ set -euo pipefail
 
 # Rutas en MÁQUINA LOCAL
 BASE_DIR="$AP_H2_DIR"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 
 # Rutas en VPS
 VPS_USER="markmur88"
@@ -40,7 +40,7 @@ VPS_IP="80.78.30.242"
 VPS_PORT="22"
 SSH_KEY="/home/markmur88/.ssh/vps_njalla_nueva"
 VPS_BASE_DIR="/home/markmur88/api_bank_h2"
-VPS_VENV_PATH="/home/markmur88/envAPP"
+VPS_VENV_PATH="/home/markmur88/envSIM"
 
 # Exclusiones y logs (en local)
 EXCLUDES="$DP_VP_DIR/excludes.txt"
@@ -79,7 +79,12 @@ ssh -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" << EOF | tee -a "$LOG_FILE"
 
   echo "🔁 Reiniciando servicios en VPS..."
   sudo supervisorctl restart coretransapi
-  sudo systemctl reload nginx
+  # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
   echo "📋 Estado del servicio coretransapi en VPS:"
   sudo supervisorctl status coretransapi

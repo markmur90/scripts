@@ -4,7 +4,7 @@ set -euo pipefail
 
 # === VARIABLES DE PROYECTO ===
 AP_H2_DIR="/home/markmur88/api_bank_h2"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/restart_gunicorn.log"
 CERT_CRT="$AP_H2_DIR/schemas/certs/desarrollo.crt"

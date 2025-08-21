@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -42,9 +42,9 @@ echo "⚙️  Creando configuración de Supervisor..."
 sudo tee /etc/supervisor/conf.d/coretransapi.conf > /dev/null <<SUPERVISOR
 [program:coretransapi]
 directory=/home/markmur88/api_bank_h2
-command=/home/markmur88/envAPP/bin/gunicorn config.wsgi:application \
+command=/home/markmur88/envSIM/bin/gunicorn config.wsgi:application \
     --bind unix:/home/markmur88/api_bank_h2/api.sock \
-    --workers 3
+    --workers 4
 autostart=true
 autorestart=true
 
@@ -59,7 +59,7 @@ group=www-data
 
 # Variables de entorno necesarias para Django y la API bancaria
 environment=\
-  PATH="/home/markmur88/envAPP/bin",\
+  PATH="/home/markmur88/envSIM/bin",\
   DJANGO_SETTINGS_MODULE="config.settings",\
   DJANGO_ENV="production",\
   DEBUG="False",\
@@ -176,7 +176,12 @@ sudo certbot --nginx \
 echo "🔄 Probando configuración Nginx..."
 sudo nginx -t
 echo "✅ Configuración OK, recargando Nginx..."
-sudo systemctl reload nginx
+# Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 # ----------------------------
 # 6. Activar Fail2Ban

@@ -46,8 +46,8 @@ echo "📥 Clonando repositorio Django..."
 git clone "https://github.com/markmur90/api_bank_h2.git" /home/$APP_USER/$REPO_DIR
 
 echo "🐍 Creando entorno virtual..."
-# python3 -m venv ~/envAPP
-source ~/envAPP/bin/activate
+# python3 -m venv ~/envSIM
+source ~/envSIM/bin/activate
 pip install --upgrade pip
 pip install -r ~/$REPO_DIR/requirements.txt
 
@@ -80,7 +80,7 @@ GRANT CREATE ON DATABASE mydatabase TO markmur88;
 
 echo "⚙ Migraciones y archivos estáticos..."
 cd /home/markmur88/api_bank_h2
-source /home/markmur88/envAPP/bin/activate
+source /home/markmur88/envSIM/bin/activate
 find . -path "*/__pycache__" -type d -exec rm -rf {} +
 find . -name "*.pyc" -delete
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
@@ -112,9 +112,9 @@ sudo chmod 750 /var/log/supervisor
 sudo tee /etc/supervisor/conf.d/coretransapi.conf > /dev/null <<SUPERVISOR
 [program:coretransapi]
 directory=/home/markmur88/api_bank_h2
-command=/home/markmur88/envAPP/bin/gunicorn config.wsgi:application \
+command=/home/markmur88/envSIM/bin/gunicorn config.wsgi:application \
   --bind unix:/home/markmur88/api_bank_h2/api.sock \
-  --workers 3
+  --workers 4
 autostart=true
 autorestart=true
 # Ajusta el umask para que el socket sea accesible por grupo (www-data)
@@ -129,7 +129,7 @@ group=www-data
 
 # Asegúrate de incluir todas las vars de entorno que necesites:
 environment=\
-  PATH="/home/markmur88/envAPP/bin",\
+  PATH="/home/markmur88/envSIM/bin",\
   DJANGO_SETTINGS_MODULE="config.settings",\
   DJANGO_ENV="production"
 SUPERVISOR
@@ -180,7 +180,12 @@ NGINX
 ln -sf /etc/nginx/sites-available/coretransapi.conf /etc/nginx/sites-enabled/
 rm -f /etc/nginx/sites-enabled/default
 
-sudo nginx -t && sudo systemctl reload nginx
+sudo nginx -t && # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 VPS_IPV4=$(hostname -I | awk '{print $1}')
 DNS_IP=$(dig +short api.coretransapi.com | grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}' | head -n1)
@@ -206,7 +211,7 @@ sudo apt-get install -y \
   libxml2 \
   libxml2-dev \
   libxslt1-dev
-source ~/envAPP/bin/activate
+source ~/envSIM/bin/activate
 pip install --no-cache-dir --force-reinstall weasyprint
 
 
@@ -216,7 +221,12 @@ sudo certbot --nginx -d api.coretransapi.com --non-interactive --agree-tos -m ne
 
 
 echo "🔄 Reiniciando Nginx..."
-sudo nginx -t && sudo systemctl reload nginx
+sudo nginx -t && # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 
 echo "🧼 Activando Fail2Ban..."

@@ -1,0 +1,10 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🗑 [H2] Borrando: *.db
+🗑 [H2] Borrando: *.vscode
+🗑 [H2] Borrando: __pycache__
+🗑 [H2] Borrando: temp
+🗑 [H2] Borrando: z_njalla
+🗑 [H2] Borrando: tmp
+🗑 [H2] Borrando: *.devcontainer

@@ -36,6 +36,8 @@ sudo ufw allow 9054/tcp comment "Extra"
 sudo ufw allow 9055/tcp comment "Extra"
 sudo ufw allow 9056/tcp comment "Extra"
 sudo ufw allow 9180/tcp comment "Extra"
+sudo ufw allow 3000/tcp comment "Extra"
+sudo ufw allow 3001/tcp comment "Extra"
 
 # sudo ufw allow 9200/tcp comment "Graylog"
 # sudo ufw allow 9200/tcp comment "Graylog"

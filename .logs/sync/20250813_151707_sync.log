@@ -1,0 +1,67 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+
+sent 15.527 bytes  received 103 bytes  2.084,00 bytes/sec
+total size is 24.569.562  speedup is 1.571,95
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+
+sent 14.302 bytes  received 101 bytes  2.215,85 bytes/sec
+total size is 24.398.866  speedup is 1.694,01
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+logs/gunicorn_access.log
+logs/gunicorn_error.log
+tor_data/
+tor_data/cached-certs
+tor_data/state
+
+sent 20.764 bytes  received 459 bytes  2.496,82 bytes/sec
+total size is 46.968.728  speedup is 2.213,11
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/sistema/00_01_sistema_.log
+.logs/sync/
+.logs/sync/20250813_145112_sync.log
+.logs/sync/20250813_151707_sync.log
+deploy/github/00_24_sync_from_github.sh
+deploy/vps/00_18_01_00_setup_coretransact.sh
+deploy/vps/00_18_01_01_setup_coretransact.sh
+deploy/vps/00_18_01_03_setup_coretransact.sh
+deploy/vps/00_18_01_04_setup_coretransact.sh
+deploy/vps/00_18_01_05_setup_coretransact.sh
+deploy/vps/00_18_01_setup_coretransapi.sh
+deploy/vps/00_18_05_deploy_update.sh
+deploy/vps/21_deploy_ghost_njalla.sh
+deploy/vps/vps_sync.sh
+deploy/vps/vps_sync_clean.sh
+deploy/vps/vps_backup/00_18_01_01_setup_coretransact.sh
+deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root copy.sh
+deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh
+menu/aliases_deploy.sh
+utils/.zsh_history
+utils/deploy_remote_report.sh
+
+sent 59.385 bytes  received 55.296 bytes  10.922,00 bytes/sec
+total size is 264.296.066  speedup is 2.304,62
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

@@ -23,8 +23,26 @@ NC='\033[0m' # No Color
 PROJECT_BASE_DIR="/home/markmur88"
 SCRIPTS_DIR="$PROJECT_BASE_DIR/scripts"
 AP_H2_DIR="$PROJECT_BASE_DIR/api_bank_h2"
-VENV_PATH="$PROJECT_BASE_DIR/envAPP"
+VENV_PATH="$PROJECT_BASE_DIR/envSIM"
 LOG_DIR="$SCRIPTS_DIR/.logs"
+
+# Utilidades
+ensure_env() {
+    if [ -f "$HOME/.zshrc" ]; then
+        # shellcheck disable=SC1090
+        source "$HOME/.zshrc"
+    fi
+}
+
+# Ruta de mejoras (esta carpeta)
+MEJORAS_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Ejecutar deploy_full con flags, sin depender de aliases zsh
+DEPLOY_FULL_SCRIPT="/home/markmur88/scripts/menu/01_full.sh"
+deploy_full_flags() {
+    local flags="$1"
+    bash -lc "cd '$AP_H2_DIR'; source '$VENV_PATH/bin/activate' >/dev/null 2>&1 || true; bash '$DEPLOY_FULL_SCRIPT' $flags"
+}
 
 # Función para mostrar el banner
 show_banner() {
@@ -116,16 +134,21 @@ smart_mode() {
         if [ -n "$(git status --porcelain)" ]; then
             echo -e "${YELLOW}📝 Se detectaron cambios en el código${NC}"
             echo -e "${CYAN}Ejecutando: Migraciones + Backup + Despliegue${NC}"
-            execute_partial "migra,backup,deploy"
+            echo -e "${CYAN}📦 Aplicando migraciones...${NC}"
+            deploy_full_flags "-I"
+            echo -e "${CYAN}💾 Generando backup...${NC}"
+            deploy_full_flags "-Z -C"
+            echo -e "${CYAN}🚀 Desplegando...${NC}"
+            deploy_full_flags "-Gi -S -r"
         else
             echo -e "${GREEN}✅ No hay cambios en el código${NC}"
             echo -e "${CYAN}Ejecutando: Solo verificación de estado${NC}"
-            execute_partial "check"
+            bash "/home/markmur88/scripts/service/diagnostico_entorno.sh" || true
         fi
     else
         echo -e "${YELLOW}⚠️  No se detectó repositorio Git${NC}"
         echo -e "${CYAN}Ejecutando: Verificación completa${NC}"
-        execute_partial "check"
+        bash "/home/markmur88/scripts/service/diagnostico_entorno.sh" || true
     fi
 }
 
@@ -211,10 +234,27 @@ maintenance_mode() {
     read -p "Opción: " maint_choice
     
     case $maint_choice in
-        1) echo -e "${CYAN}🧹 Limpiando logs antiguos...${NC}" ;;
-        2) echo -e "${CYAN}💾 Optimizando base de datos...${NC}" ;;
-        3) echo -e "${CYAN}🔄 Reiniciando servicios...${NC}" ;;
-        4) echo -e "${CYAN}📦 Actualizando dependencias...${NC}" ;;
+        1)
+            echo -e "${CYAN}🧹 Limpiando logs antiguos...${NC}"
+            find "$PROJECT_BASE_DIR/backup" -name "*.log" -mtime +7 -delete 2>/dev/null
+            ;;
+        2)
+            echo -e "${CYAN}💾 Optimizando base de datos...${NC}"
+            sudo -u postgres psql -c "VACUUM FULL;" 2>/dev/null || true
+            ;;
+        3)
+            echo -e "${CYAN}🔄 Reiniciando servicios...${NC}"
+            if [ -f "$SCRIPTS_DIR/service/reiniciar_servicios.sh" ]; then
+                bash "$SCRIPTS_DIR/service/reiniciar_servicios.sh"
+            else
+                sudo systemctl restart gunicorn nginx || true
+            fi
+            ;;
+        4)
+            echo -e "${CYAN}📦 Actualizando dependencias...${NC}"
+            ensure_env
+            api && pip install -U -r requirements.txt --no-cache-dir || true
+            ;;
         5) 
             echo -e "${CYAN}💾 Verificando espacio en disco...${NC}"
             df -h
@@ -308,8 +348,8 @@ optimize_space() {
             ;;
         2)
             echo -e "${CYAN}💾 Ejecutando optimización completa...${NC}"
-            if [ -f "$SCRIPTS_DIR/optimize_deployment.sh" ]; then
-                bash "$SCRIPTS_DIR/optimize_deployment.sh" --full
+            if [ -f "$MEJORAS_DIR/optimize_deployment.sh" ]; then
+                bash "$MEJORAS_DIR/optimize_deployment.sh" --full
             else
                 echo -e "${RED}❌ Script de optimización no encontrado${NC}"
             fi
@@ -334,12 +374,12 @@ deploy_optimized() {
     echo -e "${BLUE}🚀 Despliegue Optimizado sin Git${NC}"
     echo ""
     
-    if [ -f "$SCRIPTS_DIR/deploy_optimized.sh" ]; then
+    if [ -f "$MEJORAS_DIR/deploy_optimized.sh" ]; then
         echo -e "${CYAN}🚀 Ejecutando despliegue optimizado...${NC}"
-        bash "$SCRIPTS_DIR/deploy_optimized.sh"
+        bash "$MEJORAS_DIR/deploy_optimized.sh"
     else
         echo -e "${RED}❌ Script de despliegue optimizado no encontrado${NC}"
-        echo -e "${YELLOW}💡 Ejecuta primero la optimización de espacio para crear el script${NC}"
+        echo -e "${YELLOW}💡 Revisa análisis/mejoras/scripts/deploy_optimized.sh${NC}"
     fi
     
     echo ""
@@ -351,13 +391,12 @@ sync_to_vps() {
     echo -e "${BLUE}🔄 Sincronización al VPS sin Git${NC}"
     echo ""
     
-    if [ -f "$SCRIPTS_DIR/sync_to_vps.sh" ]; then
+    if [ -f "$MEJORAS_DIR/sync_to_vps.sh" ]; then
         echo -e "${CYAN}🔄 Ejecutando sincronización al VPS...${NC}"
-        echo -e "${YELLOW}⚠️  Asegúrate de configurar la IP del VPS en el script${NC}"
-        bash "$SCRIPTS_DIR/sync_to_vps.sh"
+        bash "$MEJORAS_DIR/sync_to_vps.sh"
     else
         echo -e "${RED}❌ Script de sincronización no encontrado${NC}"
-        echo -e "${YELLOW}💡 Ejecuta primero la optimización de espacio para crear el script${NC}"
+        echo -e "${YELLOW}💡 Revisa análisis/mejoras/scripts/sync_to_vps.sh${NC}"
     fi
     
     echo ""
@@ -408,12 +447,11 @@ main() {
         case $choice in
             1)
                 echo -e "${BLUE}🚀 Ejecutando Express Original...${NC}"
-                echo -e "${CYAN}Esto ejecutará: api && deploy_full -Y -Z -C -S -Q -I -Gi -r${NC}"
+                echo -e "${CYAN}Esto ejecutará: api && deploy_full -Z -C -S -Q -I -Gi -r${NC}"
                 echo ""
                 read -p "¿Continuar? (s/n): " confirm
                 if [[ $confirm =~ ^[Ss]$ ]]; then
-                    echo -e "${GREEN}✅ Ejecutando flujo completo...${NC}"
-                    # Aquí iría la ejecución del express original
+                    deploy_full_flags "-Z -C -S -Q -I -Gi -r"
                     echo -e "${GREEN}✅ Flujo completado${NC}"
                 fi
                 ;;
@@ -443,7 +481,7 @@ main() {
 case "${1:-}" in
     --full)
         echo -e "${BLUE}🚀 Ejecutando Express Original...${NC}"
-        # Aquí iría la ejecución del express original
+        deploy_full_flags "-Z -C -S -Q -I -Gi -r"
         ;;
     --smart)
         smart_mode

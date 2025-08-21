@@ -5,7 +5,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -173,6 +173,7 @@ echo
     echo "🗂 Carpeta local a subir: $FOLDER_PATH"
     echo "➡️ Carpeta remota destino: $REMOTE_DEST"
     rsync -aHvz \
+        --exclude=".git" \
         -e "ssh -i \"$KEY\" -p 22" \
         "$FOLDER_PATH" "$USER@$IP:$REMOTE_DEST"
     echo "✅ Carpeta subida con éxito."

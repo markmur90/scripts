@@ -201,7 +201,7 @@ gtareas_status  # Estado de tareas
 AP_H2_DIR="/home/markmur88/api_bank_h2"      # Proyecto principal
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"   # Backup del proyecto
 AP_HK_DIR="/home/markmur88/api_bank_heroku"  # Proyecto Heroku
-VENV_PATH="/home/markmur88/envAPP"           # Entorno virtual
+VENV_PATH="/home/markmur88/envSIM"           # Entorno virtual
 SCRIPTS_DIR="/home/markmur88/scripts"        # Directorio de scripts
 VPS_USER="markmur88"                         # Usuario VPS
 VPS_IP="80.78.30.242"                        # IP del VPS

@@ -89,9 +89,9 @@ chmod 750 /var/log/supervisor
 tee /etc/supervisor/conf.d/coretransapi.conf > /dev/null <<SUPERVISOR
 [program:coretransapi]
 directory=/home/markmur88/$REPO_DIR
-command=/home/markmur88/envAPP/bin/gunicorn config.wsgi:application \\
+command=/home/markmur88/envSIM/bin/gunicorn config.wsgi:application \\
   --bind unix:/home/markmur88/$REPO_DIR/api.sock \\
-  --workers 3
+  --workers 4
 autostart=false
 autorestart=true
 umask=007
@@ -100,7 +100,7 @@ stdout_logfile=/var/log/supervisor/coretransapi.out.log
 user=markmur88
 group=www-data
 environment=\\
-  PATH="/home/markmur88/envAPP/bin",\\
+  PATH="/home/markmur88/envSIM/bin",\\
   DJANGO_SETTINGS_MODULE="config.settings",\\
   DJANGO_ENV="production",\\
   DEBUG="False",\\

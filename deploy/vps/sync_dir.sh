@@ -3,7 +3,7 @@ AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
 AP_SM_DIR="/home/markmur88/Simulador"
 AP_SC_DIR="/home/markmur88/scripts"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 EXCLUDES="$SCRIPTS_DIR/deploy/vps/excludes.txt"
 VPS_USER="markmur88"
@@ -14,7 +14,7 @@ VPS_BASE_DIR="/home/markmur88/api_bank_h2"
 VPS_HK_DIR="/home/markmur88/api_bank_heroku"
 VPS_SM_DIR="/home/markmur88/Simulador"
 VPS_SC_DIR="/home/markmur88/scripts"
-VPS_VENV_PATH="/home/markmur88/envAPP"
+VPS_VENV_PATH="/home/markmur88/envSIM"
 LOG_DIR="$SCRIPTS_DIR/.logs/sync"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/$(date +%Y%m%d_%H%M%S)_sync.log"
@@ -42,7 +42,7 @@ sync_project() {
 
 sync_project "H2" "$AP_H2_DIR" "$VPS_BASE_DIR"
 sync_project "HK" "$AP_HK_DIR" "$VPS_HK_DIR"
-sync_project "SM" "$AP_SM_DIR" "$VPS_SM_DIR"
+# sync_project "SM" "$AP_SM_DIR" "$VPS_SM_DIR"
 sync_project "SC" "$AP_SC_DIR" "$VPS_SC_DIR"
 
 echo "📡 Ejecutando comandos remotos en el VPS..." | tee -a "$LOG_FILE"
@@ -72,7 +72,12 @@ ssh -tt -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" \
  sleep 20
  echo ""
  
- echo \"\$SUDOPWD\" | sudo -S systemctl reload nginx;
+# Usar:
+if sudo systemctl is-active --quiet nginx; then
+    echo "$SUDOPWD" | sudo -S systemctl reload nginx;
+else
+    echo "$SUDOPWD" | sudo -S systemctl start nginx;
+fi
 
  bash /home/markmur88/Simulador/scripts/start_stack2.sh;
 

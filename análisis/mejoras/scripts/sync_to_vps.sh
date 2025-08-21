@@ -7,8 +7,9 @@
 # Variables
 LOCAL_BASE_DIR="/home/markmur88"
 VPS_USER="markmur88"
-VPS_HOST="tu-vps-ip"
+VPS_HOST="80.78.30.242"
 VPS_BASE_DIR="/home/markmur88"
+SSH_KEY="/home/markmur88/.ssh/vps_njalla_nueva"
 
 # Carpetas del proyecto que se deben sincronizar
 PROJECT_FOLDERS=(
@@ -55,10 +56,10 @@ sync_folder() {
     echo -e "${BLUE}🔄 Sincronizando $folder...${NC}"
     
     # Crear directorio en VPS si no existe
-    ssh "$VPS_USER@$VPS_HOST" "mkdir -p $vps_path"
+    ssh -i "$SSH_KEY" "$VPS_USER@$VPS_HOST" "mkdir -p $vps_path"
     
     # Sincronizar con exclusiones
-    rsync -avz --delete \
+    rsync -avz --delete -e "ssh -i $SSH_KEY" \
         --exclude='.git/' \
         --exclude='__pycache__/' \
         --exclude='*.pyc' \
@@ -117,7 +118,7 @@ if [[ $SYNC_ERRORS -eq 0 ]]; then
     
     # Ejecutar despliegue en el VPS
     echo -e "${YELLOW}🚀 Ejecutando despliegue en VPS...${NC}"
-    ssh "$VPS_USER@$VPS_HOST" "cd $VPS_BASE_DIR && ./deploy_optimized.sh"
+    ssh -i "$SSH_KEY" "$VPS_USER@$VPS_HOST" "bash /home/markmur88/scripts/análisis/mejoras/scripts/deploy_optimized.sh"
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✅ Despliegue completado exitosamente${NC}"

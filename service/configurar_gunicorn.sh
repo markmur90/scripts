@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -54,7 +54,7 @@ echo "⚙️ Configurando Gunicorn para dominio api.coretransapi.com..." | tee -
 # Rutas
 PROJECT_NAME="api_bank_h2"
 USER="markmur88"
-VENV_PATH="/home/${USER}/Documentos/Entorno/envAPP"
+VENV_PATH="/home/${USER}/Documentos/Entorno/envSIM"
 PROJECT_DIR="/home/${USER}/${PROJECT_NAME}"
 SOCK_FILE="${PROJECT_DIR}/servers/gunicorn/api.sock"
 GUNICORN_DIR="${PROJECT_DIR}/servers/gunicorn"
@@ -93,7 +93,7 @@ WorkingDirectory=${PROJECT_DIR}
 Environment="PATH=${VENV_PATH}/bin"
 ExecStart=${VENV_PATH}/bin/gunicorn \\
           --access-logfile - \\
-          --workers 3 \\
+          --workers 4 \\
           --bind unix:${SOCK_FILE} \\
           config.wsgi:application
 

@@ -1,4 +1,18 @@
-[2025-07-03 18:52:20 +0200] [21542] [INFO] Starting gunicorn 23.0.0
-[2025-07-03 18:52:20 +0200] [21542] [INFO] Listening at: http://0.0.0.0:8000 (21542)
-[2025-07-03 18:52:20 +0200] [21542] [INFO] Using worker: sync
-[2025-07-03 18:52:20 +0200] [21556] [INFO] Booting worker with pid: 21556
+[settings] DJANGO_ENV = production
+[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.production
+⚠️ Django apps aún no están listas. Configuración dinámica omitida.
+[settings] DJANGO_ENV = production
+[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.production
+⚠️ Django apps aún no están listas. Configuración dinámica omitida.
+[settings] DJANGO_ENV = production
+[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.production
+⚠️ Django apps aún no están listas. Configuración dinámica omitida.
+[settings] DJANGO_ENV = production
+[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.production
+⚠️ Django apps aún no están listas. Configuración dinámica omitida.
+[settings] DJANGO_ENV = production
+[settings] Variables cargadas desde: /home/markmur88/api_bank_h2/.env.production
+⚠️ Django apps aún no están listas. Configuración dinámica omitida.
+✅ Puerto 8000 liberado exitosamente
+🛑 Terminando procesos Gunicorn...
+✅ Puerto 8443 liberado exitosamente

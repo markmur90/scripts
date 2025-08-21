@@ -7,10 +7,10 @@ After=network.target
 User=markmur88
 Group=www-data
 WorkingDirectory=/home/markmur88/Documentos/GitHub/api_bank_h2
-Environment="PATH=/home/markmur88/Documentos/Entorno/envAPP/bin"
-ExecStart=/home/markmur88/Documentos/Entorno/envAPP/bin/gunicorn \
+Environment="PATH=/home/markmur88/Documentos/Entorno/envSIM/bin"
+ExecStart=/home/markmur88/Documentos/Entorno/envSIM/bin/gunicorn \
           --access-logfile - \
-          --workers 3 \
+          --workers 4 \
           --bind unix:/home/markmur88/Documentos/GitHub/api_bank_h2/servers/gunicorn/api.sock \
           config.wsgi:application
 

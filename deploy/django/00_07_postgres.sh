@@ -6,7 +6,7 @@ set -euo pipefail
 # === VARIABLES DE PROYECTO ===
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BASE_DIR="$AP_H2_DIR"
 LOG_DEPLOY="$SCRIPTS_DIR/.logs/despliegue/$(basename "$0" .sh)_.log"
@@ -110,5 +110,76 @@ echo -e "\033[7;30m✅ Base de datos y usuario listos.\033[0m" | tee -a $LOG_DEP
 
 # chmodtree
 cd $AP_H2_DIR
-bash restore_and_upload_force.sh
+
+# Ejecutar solo la restauración de BD (crear script temporal)
+echo "🔧 Ejecutando restauración corregida de BD..."
+
+# Crear script temporal que solo restaura BD sin variables
+cat > temp_restore_only.sh << 'RESTORE_SCRIPT'
+#!/usr/bin/env bash
+DB_USER="markmur88"
+DB_PASSWORD="Ptf8454Jd55"
+DB_HOST="localhost"
+DB_PORT="5432"
+DB_NAME="mydatabase"
+BACKUP_FILE="backup_local.sql"
+
+# Exporta la contraseña para que los comandos no la pidan
+export PGPASSWORD="$DB_PASSWORD"
+
+echo "--- PASO 1: RESTAURANDO LA BASE DE DATOS DESDE '$BACKUP_FILE' ---"
+echo "Cerrando todas las conexiones existentes a la base de datos '$DB_NAME'..."
+psql -U "$DB_USER" -h "$DB_HOST" -p "$DB_PORT" -d "postgres" -c "
+SELECT pg_terminate_backend(pid) 
+FROM pg_stat_activity 
+WHERE datname = '$DB_NAME' AND pid <> pg_backend_pid();"
+
+echo "Eliminando la base de datos antigua '$DB_NAME' (si existe)..."
+psql -U "$DB_USER" -h "$DB_HOST" -p "$DB_PORT" -d "postgres" -c "DROP DATABASE IF EXISTS $DB_NAME;"
+
+echo "Creando una base de datos limpia '$DB_NAME'..."
+psql -U "$DB_USER" -h "$DB_HOST" -p "$DB_PORT" -d "postgres" -c "CREATE DATABASE $DB_NAME;"
+
+echo "Restaurando la base de datos..."
+psql -U "$DB_USER" -h "$DB_HOST" -p "$DB_PORT" -d "$DB_NAME" < "$BACKUP_FILE"
+
+echo "✅ Restauración completada."
+RESTORE_SCRIPT
+
+chmod +x temp_restore_only.sh
+bash temp_restore_only.sh
+rm temp_restore_only.sh
+
+# Ejecutar migraciones para crear tablas faltantes (como configuraciones_api)
+echo "🔄 Ejecutando migraciones Django..."
+source $VENV_PATH/bin/activate
+python manage.py migrate --skip-checks
+
+# Ejecutar importación de variables .env usando el script Python
+echo "📝 Subiendo variables desde archivos .env..."
+if [ -f "importar_env_a_db.py" ]; then
+    if [ -f ".env.local" ]; then
+        echo "Procesando archivo: '.env.local' para el entorno: 'local'"
+        python importar_env_a_db.py .env.local local
+    fi
+    if [ -f ".env.production" ]; then
+        echo "Procesando archivo: '.env.production' para el entorno: 'production'"
+        python importar_env_a_db.py .env.production production
+    fi
+    if [ -f ".env.sandbox" ]; then
+        echo "Procesando archivo: '.env.sandbox' para el entorno: 'sandbox'"
+        python importar_env_a_db.py .env.sandbox sandbox
+    fi
+else
+    echo "⚠️ Archivo importar_env_a_db.py no encontrado, copiando desde scripts..."
+    cp /home/markmur88/scripts/importar_env_a_db.py .
+    if [ -f ".env.local" ]; then
+        python importar_env_a_db.py .env.local local
+    fi
+fi
+
+echo "✅ Proceso PostgreSQL completado exitosamente!"
+
 cd $AP_HK_DIR
+
+

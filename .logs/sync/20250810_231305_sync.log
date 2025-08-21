@@ -1,0 +1,132 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 15.035 bytes  received 386 bytes  3.426,89 bytes/sec
+total size is 23.440.909  speedup is 1.520,06
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting requirements.txt
+./
+deleting api/gpt4/conexion/conexion_banco_sim.py
+deleting schemas/transferencias/fccaefe5-36df-4f3f-8686-d27d5155dd0f/transferencia_fccaefe5-36df-4f3f-8686-d27d5155dd0f.log
+deleting schemas/transferencias/fccaefe5-36df-4f3f-8686-d27d5155dd0f/
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/transferencia_fc2ff92f-de64-452d-8162-cbd2ceb96d76.log
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/pain001_fc2ff92f-de64-452d-8162-cbd2ceb96d76.xml
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/aml_fc2ff92f-de64-452d-8162-cbd2ceb96d76.xml
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/
+deleting schemas/transferencias/conexion/transferencia_conexion.log
+deleting schemas/transferencias/conexion/
+deleting schemas/transferencias/c39b8ad7-7586-4bc2-9665-08188f63dfaf/transferencia_c39b8ad7-7586-4bc2-9665-08188f63dfaf.log
+deleting schemas/transferencias/c39b8ad7-7586-4bc2-9665-08188f63dfaf/pain001_c39b8ad7-7586-4bc2-9665-08188f63dfaf.xml
+deleting schemas/transferencias/c39b8ad7-7586-4bc2-9665-08188f63dfaf/aml_c39b8ad7-7586-4bc2-9665-08188f63dfaf.xml
+deleting schemas/transferencias/c39b8ad7-7586-4bc2-9665-08188f63dfaf/
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/transferencia_a5e0662c-da8b-463a-98e8-c8e1edc84bee.log
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/pain001_a5e0662c-da8b-463a-98e8-c8e1edc84bee.xml
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/aml_a5e0662c-da8b-463a-98e8-c8e1edc84bee.xml
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/transferencia_6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d.log
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/pain001_6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d.xml
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/aml_6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d.xml
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/transferencia_66cdec97-41b6-4e4f-a917-ded9e689d480.log
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/pain001_66cdec97-41b6-4e4f-a917-ded9e689d480.xml
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/aml_66cdec97-41b6-4e4f-a917-ded9e689d480.xml
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/transferencia_62955092-78f2-4248-8ac8-5101c1fb43fc.log
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/pain001_62955092-78f2-4248-8ac8-5101c1fb43fc.xml
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/aml_62955092-78f2-4248-8ac8-5101c1fb43fc.xml
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/transferencia_6210b495-5980-434f-b1d5-471d76d1ab8d.log
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/pain001_6210b495-5980-434f-b1d5-471d76d1ab8d.xml
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/aml_6210b495-5980-434f-b1d5-471d76d1ab8d.xml
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/transferencia_44b5bc2c-a2bb-4ec4-9ad2-7596f1844863.log
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/pain001_44b5bc2c-a2bb-4ec4-9ad2-7596f1844863.xml
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/aml_44b5bc2c-a2bb-4ec4-9ad2-7596f1844863.xml
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/transferencia_3d18f215-d89c-4170-8ac5-9221639aa89e.log
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/pain001_3d18f215-d89c-4170-8ac5-9221639aa89e.xml
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/aml_3d18f215-d89c-4170-8ac5-9221639aa89e.xml
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/transferencia_0f1e159b-1021-4ff4-929e-0593b5f306dc.log
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/pain001_0f1e159b-1021-4ff4-929e-0593b5f306dc.xml
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/aml_0f1e159b-1021-4ff4-929e-0593b5f306dc.xml
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/
+deleting schemas/transferencias/global_errors.log
+deleting staticfiles/admin/img/README.txt
+deleting staticfiles/admin/js/vendor/jquery/LICENSE.txt
+deleting staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 12.683 bytes  received 4.686 bytes  3.859,78 bytes/sec
+total size is 23.136.528  speedup is 1.332,06
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+
+sent 11.728 bytes  received 87 bytes  2.625,56 bytes/sec
+total size is 46.968.728  speedup is 3.975,35
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/sync/
+.logs/sync/20250810_231305_sync.log
+
+sent 39.450 bytes  received 52.582 bytes  20.451,56 bytes/sec
+total size is 323.429.354  speedup is 3.514,31
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

@@ -1,0 +1,103 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+deleting api/authentication/migrations/0001_initial.py
+deleting api/configuraciones_api/migrations/0001_initial.py
+deleting api/core/migrations/0001_initial.py
+deleting api/gpt4/migrations/0001_initial.py
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 13.585 bytes  received 324 bytes  3.090,89 bytes/sec
+total size is 23.348.932  speedup is 1.678,69
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+api_bank_h2.code-workspace
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+
+sent 15.221 bytes  received 229 bytes  3.433,33 bytes/sec
+total size is 23.091.371  speedup is 1.494,59
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+./
+scripts/env_setup.sh
+scripts/start_stack.sh
+
+sent 12.418 bytes  received 165 bytes  2.796,22 bytes/sec
+total size is 46.600.981  speedup is 3.703,49
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/sync/
+.logs/sync/20250809_105621_sync.log
+análisis/mejoras/scripts/deploy_optimized.sh
+análisis/mejoras/scripts/optimize_deployment.sh
+deploy/django/00_07_postgres.sh
+deploy/django/00_08_migraciones.sh
+deploy/vps/00_18_01_01_setup_coretransact.sh
+deploy/vps/00_18_01_02_setup_coretransact.sh
+deploy/vps/00_18_01_04_setup_coretransact.sh
+deploy/vps/00_18_01_05_setup_coretransact.sh
+deploy/vps/00_18_01_setup_coretransapi.sh
+deploy/vps/00_18_05_deploy_update.sh
+deploy/vps/21_deploy_ghost_njalla.sh
+deploy/vps/vps_backup/00_18_01_01_setup_coretransact.sh
+deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root copy.sh
+deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE2.sh
+utils/.zsh_history
+utils/deploy_remote_report.sh
+utils/token/pem_help.txt
+
+sent 58.689 bytes  received 85.207 bytes  26.162,91 bytes/sec
+total size is 318.000.881  speedup is 2.209,94
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...

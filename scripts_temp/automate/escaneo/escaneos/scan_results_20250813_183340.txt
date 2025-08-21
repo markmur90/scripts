@@ -1,0 +1,25 @@
+Fecha y hora de ejecución: 2025-08-13 18:33:40.015174
+IP escaneada: 193.150.166.1
+Resultados del escaneo:
+IP: 193.150.166.1, Puerto: 22
+IP: 193.150.166.1, Puerto: 80
+IP: 193.150.166.1, Puerto: 443
+IP: 193.150.166.1, Puerto: 445
+IP: 193.150.166.1, Puerto: 3389
+IP: 193.150.166.1, Puerto: 3306
+IP: 193.150.166.1, Puerto: 1433
+IP: 193.150.166.1, Puerto: 1521
+IP: 193.150.166.1, Puerto: 27017
+IP: 193.150.166.1, Puerto: 6379
+IP: 193.150.166.1, Puerto: 5432
+IP: 193.150.166.1, Puerto: 8080
+IP: 193.150.166.1, Puerto: 8081
+IP: 193.150.166.1, Puerto: 8443
+IP: 193.150.166.1, Puerto: 8888
+IP: 193.150.166.1, Puerto: 9090
+IP: 193.150.166.1, Puerto: 5000
+IP: 193.150.166.1, Puerto: 1
+IP: 193.150.166.1, Puerto: 2
+
+Comparación de puertos:
+Puertos listados no encontrados: []

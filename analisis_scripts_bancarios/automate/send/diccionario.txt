@@ -1,0 +1,14 @@
+admin
+root
+user
+test
+password
+123456
+admin123
+guest
+administrator
+operator
+manager
+12345678
+qwerty
+password123

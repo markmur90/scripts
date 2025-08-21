@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -121,7 +121,7 @@ WorkingDirectory=$VPS_API_DIR
 Environment="PATH=$VPS_API_DIR/venv/bin"
 ExecStart=$VPS_API_DIR/venv/bin/gunicorn \\
           --access-logfile - \\
-          --workers 3 \\
+          --workers 4 \\
           --bind unix:$VPS_API_DIR/servers/gunicorn/api.sock \\
           config.wsgi:application
 
@@ -170,7 +170,12 @@ EOL
 
 sudo ln -sf /etc/nginx/sites-available/api.coretransapi.com /etc/nginx/sites-enabled/
 sudo nginx -t
-sudo systemctl reload nginx
+# Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 # Permisos reforzados post-deploy
 chmod 600 .env || true

@@ -5,12 +5,12 @@ AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
 BACKUPDIR="/home/markmur88/backup"
 BANK_GHOST="/home/markmur88/bank_ghost"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 DP_VP_DIR="$SCRIPTS_DIR/deploy/vps"
 BASE_DIR="$AP_H2_DIR"
 VPS_BASE_DIR="/home/markmur88/api_bank_h2"
-VPS_VENV_PATH="/home/markmur88/envAPP"
+VPS_VENV_PATH="/home/markmur88/envSIM"
 VPS_CORETRANS_ROOT="/home/markmur88/coretransapi"
 
 EXCLUDES="/home/markmur88/scripts/deploy/vps/excludes.txt"
@@ -149,7 +149,7 @@ ssh -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" << EOF | tee -a "$LOG_FILE"
   cd "/home/markmur88/api_bank_h2"
 
   echo "🔧 Activando entorno virtual en VPS: /home/markmur88/api_bank_h2"
-  source "/home/markmur88/envAPP/bin/activate"
+  source "/home/markmur88/envSIM/bin/activate"
 
   # echo "🔁 Ejecutando script 01_full.sh en VPS"
   # bash /home/markmur88/scripts/menu/01_full.sh -Q -I -l
@@ -166,7 +166,12 @@ ssh -i "$SSH_KEY" -p "$VPS_PORT" "$VPS_USER@$VPS_IP" << EOF | tee -a "$LOG_FILE"
       echo "⚠️ Servicio 'coretransapi' no está registrado en supervisor. Saltando reinicio..."
   fi
 
-  sudo systemctl reload nginx
+  # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
   echo "✅ Comandos remotos completados."
 
 EOF

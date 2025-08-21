@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -97,8 +97,8 @@ git clone "$REPO_GIT" /home/$APP_USER/$REPO_DIR
 
 
 echo "🐍 Configurando entorno virtual..."
-# python3 -m venv /home/$APP_USER/envAPP
-source /home/$APP_USER/envAPP/bin/activate
+# python3 -m venv /home/$APP_USER/envSIM
+source /home/$APP_USER/envSIM/bin/activate
 pip install --upgrade pip
 pip install -r /home/$APP_USER/$REPO_DIR/requirements.txt
 
@@ -133,7 +133,7 @@ EOSQL
 
 echo "⚙ Migraciones y archivos estáticos..."
 cd /home/$APP_USER/$REPO_DIR
-source /home/$APP_USER/envAPP/bin/activate
+source /home/$APP_USER/envSIM/bin/activate
 find . -path "*/__pycache__" -type d -exec rm -rf {} +
 find . -name "*.pyc" -delete
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
@@ -154,14 +154,14 @@ echo "🧭 Configurando Supervisor para Gunicorn..."
 sudo cat > /etc/supervisor/conf.d/coretransapi.conf <<SUPERVISOR
 [program:coretransapi]
 directory=/home/$APP_USER/$REPO_DIR
-command=/home/$APP_USER/envAPP/bin/gunicorn config.wsgi:application --bind unix:/home/$APP_USER/$REPO_DIR/api.sock --workers 3
+command=/home/$APP_USER/envSIM/bin/gunicorn config.wsgi:application --bind unix:/home/$APP_USER/$REPO_DIR/api.sock --workers 4
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/supervisor/coretransapi.err.log
 stdout_logfile=/var/log/supervisor/coretransapi.out.log
 user=$APP_USER
 group=www-data
-environment=PATH="/home/$APP_USER/envAPP/bin",DJANGO_SETTINGS_MODULE="config.settings"
+environment=PATH="/home/$APP_USER/envSIM/bin",DJANGO_SETTINGS_MODULE="config.settings"
 SUPERVISOR
 
 sudo supervisorctl reread
@@ -217,7 +217,12 @@ sudo certbot --nginx -d api.coretransapi.com --non-interactive --agree-tos -m $E
 
 
 echo "🔄 Reiniciando Nginx..."
-sudo nginx -t && sudo systemctl reload nginx
+sudo nginx -t && # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 
 echo "🧼 Activando Fail2Ban..."

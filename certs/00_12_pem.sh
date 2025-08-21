@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -51,7 +51,7 @@ mkdir -p "$(dirname $LOG_SISTEMA)"
 
 echo -e "\033[7;30m🚀 Generando PEM...\033[0m" | tee -a $LOG_SISTEMA
 cd /home/markmur88/api_bank_h2
-source /home/markmur88/envAPP/bin/activate
+source /home/markmur88/envSIM/bin/activate
 
 python3 manage.py genkey
 echo -e "\033[7;94m---///---///---///---///---///---///---///---///---///---\033[0m" | tee -a $LOG_SISTEMA

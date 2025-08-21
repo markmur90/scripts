@@ -31,7 +31,7 @@ individual files in /usr/share/doc/*/copyright.
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 🌐 Entrando en directorio remoto: /home/markmur88/api_bank_heroku
-🔧 Activando entorno virtual en VPS: /home/markmur88/envAPP
+🔧 Activando entorno virtual en VPS: /home/markmur88/envSIM
 🔁 Reiniciando servicios en VPS...
 coretransapi: stopped
 coretransapi: started
@@ -39,7 +39,7 @@ coretransapi: started
 coretransapi                     RUNNING   pid 124118, uptime 0:00:06
 📄 Últimos logs de error en VPS:
     sock.close_sockets(self.LISTENERS, unlink)
-  File "/home/markmur88/envAPP/lib/python3.11/site-packages/gunicorn/sock.py", line 212, in close_sockets
+  File "/home/markmur88/envSIM/lib/python3.11/site-packages/gunicorn/sock.py", line 212, in close_sockets
     os.unlink(sock_name)
 FileNotFoundError: [Errno 2] No such file or directory: '/home/markmur88/api_bank_heroku/api.sock'
 [2025-06-11 01:19:15 +0200] [124118] [INFO] Starting gunicorn 23.0.0

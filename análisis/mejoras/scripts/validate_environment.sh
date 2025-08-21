@@ -23,7 +23,7 @@ NC='\033[0m' # No Color
 PROJECT_BASE_DIR="/home/markmur88"
 SCRIPTS_DIR="$PROJECT_BASE_DIR/scripts"
 AP_H2_DIR="$PROJECT_BASE_DIR/api_bank_h2"
-VENV_PATH="$PROJECT_BASE_DIR/envAPP"
+VENV_PATH="$PROJECT_BASE_DIR/envSIM"
 LOG_DIR="$SCRIPTS_DIR/.logs"
 
 # Variables de estado

@@ -1,0 +1,46 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+
+sent 13.541 bytes  received 98 bytes  2.479,82 bytes/sec
+total size is 23.348.932  speedup is 1.711,92
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+
+sent 14.257 bytes  received 102 bytes  2.610,73 bytes/sec
+total size is 23.091.371  speedup is 1.608,15
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+
+sent 11.736 bytes  received 62 bytes  2.621,78 bytes/sec
+total size is 46.600.981  speedup is 3.949,91
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/commits_hist.md
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_16_01_subir_GitHub.log
+.logs/sync/
+.logs/sync/20250809_110058_sync.log
+
+sent 39.529 bytes  received 82.998 bytes  14.414,94 bytes/sec
+total size is 318.041.144  speedup is 2.595,68
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...

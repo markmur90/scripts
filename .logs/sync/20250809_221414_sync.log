@@ -1,0 +1,100 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+deleting schemas/transferencias/fccaefe5-36df-4f3f-8686-d27d5155dd0f/transferencia_fccaefe5-36df-4f3f-8686-d27d5155dd0f.log
+deleting schemas/transferencias/fccaefe5-36df-4f3f-8686-d27d5155dd0f/
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/transferencia_62955092-78f2-4248-8ac8-5101c1fb43fc.log
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/pain001_62955092-78f2-4248-8ac8-5101c1fb43fc.xml
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/aml_62955092-78f2-4248-8ac8-5101c1fb43fc.xml
+deleting schemas/transferencias/62955092-78f2-4248-8ac8-5101c1fb43fc/
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 14.441 bytes  received 967 bytes  3.424,00 bytes/sec
+total size is 23.446.869  speedup is 1.521,73
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/conexion/conexion_views.py
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+config/settings/__init__.py
+middleware/
+schemas/transferencias/
+schemas/transferencias/global_errors.log
+schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/
+schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/aml_a5e0662c-da8b-463a-98e8-c8e1edc84bee.xml
+schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/pain001_a5e0662c-da8b-463a-98e8-c8e1edc84bee.xml
+schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/transferencia_a5e0662c-da8b-463a-98e8-c8e1edc84bee.log
+
+sent 16.466 bytes  received 362 bytes  3.739,56 bytes/sec
+total size is 23.187.073  speedup is 1.377,89
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+simulador_banco/debug.log
+tor_data/
+tor_data/state
+
+sent 14.496 bytes  received 1.280 bytes  3.505,78 bytes/sec
+total size is 46.960.607  speedup is 2.976,71
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_21_local_ssl.log
+.logs/sync/
+.logs/sync/20250809_221414_sync.log
+
+sent 42.031 bytes  received 52.104 bytes  14.482,31 bytes/sec
+total size is 322.794.788  speedup is 3.429,06
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

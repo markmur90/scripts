@@ -1,0 +1,123 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🗑 [H2] Borrando: *.db
+🗑 [H2] Borrando: *.vscode
+🗑 [H2] Borrando: __pycache__
+🗑 [H2] Borrando: temp
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+deleting schemas/transferencias/conexion/transferencia_conexion.log
+deleting schemas/transferencias/conexion/
+deleting schemas/transferencias/0b0d9726-56c9-4325-ae30-30ffa6c87c0d/transferencia_0b0d9726-56c9-4325-ae30-30ffa6c87c0d.log
+deleting schemas/transferencias/0b0d9726-56c9-4325-ae30-30ffa6c87c0d/pain001_0b0d9726-56c9-4325-ae30-30ffa6c87c0d.xml
+deleting schemas/transferencias/0b0d9726-56c9-4325-ae30-30ffa6c87c0d/aml_0b0d9726-56c9-4325-ae30-30ffa6c87c0d.xml
+deleting schemas/transferencias/0b0d9726-56c9-4325-ae30-30ffa6c87c0d/
+deleting schemas/transferencias/0aa448d4-e7c0-43cf-ba44-c22fa392a134/transferencia_0aa448d4-e7c0-43cf-ba44-c22fa392a134.log
+deleting schemas/transferencias/0aa448d4-e7c0-43cf-ba44-c22fa392a134/pain001_0aa448d4-e7c0-43cf-ba44-c22fa392a134.xml
+deleting schemas/transferencias/0aa448d4-e7c0-43cf-ba44-c22fa392a134/aml_0aa448d4-e7c0-43cf-ba44-c22fa392a134.xml
+deleting schemas/transferencias/0aa448d4-e7c0-43cf-ba44-c22fa392a134/
+deleting schemas/transferencias/global_errors.log
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 14.797 bytes  received 1.329 bytes  2.480,92 bytes/sec
+total size is 23.437.801  speedup is 1.453,42
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+.env.local
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/utils.py
+api/gpt4/conexion/
+api/gpt4/conexion/conexion_banco.py
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+config/settings/env_vars.py
+middleware/
+
+sent 18.139 bytes  received 1.063 bytes  3.491,27 bytes/sec
+total size is 23.185.279  speedup is 1.207,44
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🗑 [SM] Borrando: *.db
+🗑 [SM] Borrando: *.vscode
+🗑 [SM] Borrando: __pycache__
+🗑 [SM] Borrando: temp
+🗑 [SM] Borrando: z_njalla
+🗑 [SM] Borrando: tmp
+🗑 [SM] Borrando: servers
+🗑 [SM] Borrando: prompts.txt
+🗑 [SM] Borrando: Problema.md
+🗑 [SM] Borrando: pendientes.txt
+🗑 [SM] Borrando: importar_env_a_db.py
+🗑 [SM] Borrando: *.devcontainer
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+logs/gunicorn_error.log
+
+sent 11.773 bytes  received 116 bytes  2.642,00 bytes/sec
+total size is 46.968.918  speedup is 3.950,62
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🗑 [SC] Borrando: *.db
+🗑 [SC] Borrando: *.vscode
+🗑 [SC] Borrando: __pycache__
+🗑 [SC] Borrando: temp
+🗑 [SC] Borrando: z_njalla
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/despliegue/00_21_local_ssl.log
+.logs/sistema/00_01_sistema_.log
+.logs/sistema/ports_stop_.log
+.logs/sync/
+.logs/sync/20250810_010234_sync.log
+.logs/sync/20250810_123638_sync.log
+
+sent 39.367 bytes  received 52.868 bytes  16.770,00 bytes/sec
+total size is 323.052.824  speedup is 3.502,50
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

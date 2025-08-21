@@ -1,0 +1,55 @@
+# Dependencias identificadas en los scripts bancarios analizados
+
+# Conexiones SSH y redes
+paramiko>=2.7.2
+sshtunnel>=0.4.0
+
+# Peticiones HTTP/HTTPS
+requests>=2.25.1
+urllib3>=1.26.0
+
+# Manejo de certificados SSL/TLS
+pyOpenSSL>=20.0.1
+cryptography>=3.4.8
+
+# Resolución DNS
+dnspython>=2.1.0
+
+# Tokens JWT
+PyJWT>=2.1.0
+
+# Manejo de fechas y tiempo
+python-dateutil>=2.8.2
+
+# Variables de entorno
+python-dotenv>=0.19.0
+
+# Procesamiento de imágenes (para algunos scripts)
+Pillow>=8.3.2
+
+# Generación de reportes
+reportlab>=3.6.0
+
+# Validación de datos
+jsonschema>=3.2.0
+
+# Logging avanzado
+colorlog>=6.6.0
+
+# Manejo de archivos y rutas
+pathlib2>=2.3.6
+
+# Procesamiento de XML
+lxml>=4.6.3
+
+# Criptografía adicional
+bcrypt>=3.2.0
+
+# Manejo de archivos de configuración
+configparser>=5.0.2
+
+# Utilidades de sistema
+psutil>=5.8.0
+
+# Nota: Algunas de estas dependencias pueden no estar disponibles
+# en versiones específicas o pueden requerir instalación manual

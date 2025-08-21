@@ -1,0 +1,126 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+deleting api.sock
+./
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/transferencia_fc2ff92f-de64-452d-8162-cbd2ceb96d76.log
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/pain001_fc2ff92f-de64-452d-8162-cbd2ceb96d76.xml
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/aml_fc2ff92f-de64-452d-8162-cbd2ceb96d76.xml
+deleting schemas/transferencias/fc2ff92f-de64-452d-8162-cbd2ceb96d76/
+deleting schemas/transferencias/f27defde-2720-4ec3-b192-fd334a34514a/transferencia_f27defde-2720-4ec3-b192-fd334a34514a.log
+deleting schemas/transferencias/f27defde-2720-4ec3-b192-fd334a34514a/pain001_f27defde-2720-4ec3-b192-fd334a34514a.xml
+deleting schemas/transferencias/f27defde-2720-4ec3-b192-fd334a34514a/aml_f27defde-2720-4ec3-b192-fd334a34514a.xml
+deleting schemas/transferencias/f27defde-2720-4ec3-b192-fd334a34514a/
+deleting schemas/transferencias/conexion/transferencia_conexion.log
+deleting schemas/transferencias/conexion/
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/transferencia_a5e0662c-da8b-463a-98e8-c8e1edc84bee.log
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/pain001_a5e0662c-da8b-463a-98e8-c8e1edc84bee.xml
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/aml_a5e0662c-da8b-463a-98e8-c8e1edc84bee.xml
+deleting schemas/transferencias/a5e0662c-da8b-463a-98e8-c8e1edc84bee/
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/transferencia_6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d.log
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/pain001_6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d.xml
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/aml_6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d.xml
+deleting schemas/transferencias/6fd7e5c0-5252-4ad5-ac86-af7cce2a7c8d/
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/transferencia_66cdec97-41b6-4e4f-a917-ded9e689d480.log
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/pain001_66cdec97-41b6-4e4f-a917-ded9e689d480.xml
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/aml_66cdec97-41b6-4e4f-a917-ded9e689d480.xml
+deleting schemas/transferencias/66cdec97-41b6-4e4f-a917-ded9e689d480/
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/transferencia_6210b495-5980-434f-b1d5-471d76d1ab8d.log
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/pain001_6210b495-5980-434f-b1d5-471d76d1ab8d.xml
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/aml_6210b495-5980-434f-b1d5-471d76d1ab8d.xml
+deleting schemas/transferencias/6210b495-5980-434f-b1d5-471d76d1ab8d/
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/transferencia_44b5bc2c-a2bb-4ec4-9ad2-7596f1844863.log
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/pain001_44b5bc2c-a2bb-4ec4-9ad2-7596f1844863.xml
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/aml_44b5bc2c-a2bb-4ec4-9ad2-7596f1844863.xml
+deleting schemas/transferencias/44b5bc2c-a2bb-4ec4-9ad2-7596f1844863/
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/transferencia_3d18f215-d89c-4170-8ac5-9221639aa89e.log
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/pain001_3d18f215-d89c-4170-8ac5-9221639aa89e.xml
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/aml_3d18f215-d89c-4170-8ac5-9221639aa89e.xml
+deleting schemas/transferencias/3d18f215-d89c-4170-8ac5-9221639aa89e/
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/transferencia_0f1e159b-1021-4ff4-929e-0593b5f306dc.log
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/pain001_0f1e159b-1021-4ff4-929e-0593b5f306dc.xml
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/aml_0f1e159b-1021-4ff4-929e-0593b5f306dc.xml
+deleting schemas/transferencias/0f1e159b-1021-4ff4-929e-0593b5f306dc/
+deleting schemas/transferencias/global_errors.log
+deleting schemas/transferencias/
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+schemas/
+
+sent 14.688 bytes  received 4.171 bytes  3.428,91 bytes/sec
+total size is 23.437.025  speedup is 1.242,75
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/conexion/conexion_views.py
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+schemas/
+
+sent 15.753 bytes  received 247 bytes  2.909,09 bytes/sec
+total size is 23.181.110  speedup is 1.448,82
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+deleting logs/supervisord.sock
+deleting simulador_banco/banco/migrations/0001_initial.py
+
+sent 11.048 bytes  received 139 bytes  1.316,12 bytes/sec
+total size is 46.952.266  speedup is 4.197,04
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/sync/
+.logs/sync/20250810_001712_sync.log
+
+sent 38.180 bytes  received 52.195 bytes  16.431,82 bytes/sec
+total size is 322.923.208  speedup is 3.573,15
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

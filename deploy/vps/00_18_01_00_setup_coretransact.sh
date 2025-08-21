@@ -6,7 +6,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -139,14 +139,19 @@ location /simulador/ {
     proxy_set_header X-Real-IP $remote_addr;
 }
 NGINX_SIM
-sudo nginx -t && sudo systemctl reload nginx
+sudo nginx -t && # Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 # 🧠 Supervisor: configuración para el simulador
 echo "🧠 Configurando Supervisor para el simulador..."
 sudo tee /etc/supervisor/conf.d/simulador.conf > /dev/null <<'SUPERVISOR_SIM'
 [program:simulador]
 directory=/home/markmur88/simulador_banco
-command=/home/markmur88/envAPP/bin/gunicorn simulador_banco.wsgi:application --bind 127.0.0.1:9180 --workers 2
+command=/home/markmur88/envSIM/bin/gunicorn simulador_banco.wsgi:application --bind 127.0.0.1:9180 --workers 4
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/supervisor/simulador.err.log
@@ -154,7 +159,7 @@ stdout_logfile=/var/log/supervisor/simulador.out.log
 user=markmur88
 group=www-data
 environment=\
-  PATH="/home/markmur88/envAPP/bin",\
+  PATH="/home/markmur88/envSIM/bin",\
   DJANGO_SETTINGS_MODULE="simulador_banco.settings",\
   DJANGO_ENV="production"
 SUPERVISOR_SIM

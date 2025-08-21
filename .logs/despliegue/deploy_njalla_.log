@@ -3662,3 +3662,73 @@ Rules updated (v6)
 
 [1;36m🔍 Instalando la segunda fase...[0m
 [1;32m✅ Despliegue remoto al VPS completado.[0m
+
+[1;36m🌐 Desplegando api_bank_h2 en VPS Njalla...[0m
+++ basename /home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh
++ SCRIPT_NAME=00_18_01_01_setup_coretransact_root_FASE1.sh
++ PROJECT_DIR=/home/markmur88/api_bank_h2
++ IP_VPS=80.78.30.242
++ verificar_huella_ssh 80.78.30.242
++ local host=80.78.30.242
++ echo '🔍 Verificando huella SSH para 80.78.30.242...'
+🔍 Verificando huella SSH para 80.78.30.242...
++ ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=5 80.78.30.242 exit
++ echo '⚠️  Posible conflicto de huella, limpiando...'
+⚠️  Posible conflicto de huella, limpiando...
++ ssh-keygen -f /home/markmur88/.ssh/known_hosts -R 80.78.30.242
++ '[' -z '5.2.37(1)-release' ']'
++ REMOTE_USER=root
++ APP_USER=markmur88
++ REPO_GIT=https://github.com/markmur90/api_bank_h2.git
++ DB_NAME=mydatabase
++ DB_USER=markmur88
++ DB_PASS=Ptf8454Jd55
++ EMAIL_SSL=netghostx90@protonmail.com
++ REPO_DIR=api_bank_h2
++ IP_VPS=80.78.30.242
++ PORT_VPS=22
++ SSH_KEY=/home/markmur88/.ssh/vps_njalla_nueva
++ echo '📦 Iniciando despliegue en 80.78.30.242…'
+📦 Iniciando despliegue en 80.78.30.242…
++ set -e -x
++ apt-get update
+Leyendo lista de paquetes...
+E: No se pudo abrir el fichero de bloqueo «/var/lib/apt/lists/lock» - open (13: Permiso denegado)
+E: No se pudo bloquear el directorio /var/lib/apt/lists/
+W: Se produjo un problema al desligar el fichero /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permiso denegado)
+W: Se produjo un problema al desligar el fichero /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permiso denegado)
+[1;31m⚠️ Fallo en el primer intento de deploy. Ejecutando instalación de dependencias...[0m
+++ basename /home/markmur88/scripts/deploy/vps/vps_backup/00_18_01_01_setup_coretransact_root_FASE1.sh
++ SCRIPT_NAME=00_18_01_01_setup_coretransact_root_FASE1.sh
++ PROJECT_DIR=/home/markmur88/api_bank_h2
++ IP_VPS=80.78.30.242
++ verificar_huella_ssh 80.78.30.242
++ local host=80.78.30.242
++ echo '🔍 Verificando huella SSH para 80.78.30.242...'
+🔍 Verificando huella SSH para 80.78.30.242...
++ ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=5 80.78.30.242 exit
++ echo '⚠️  Posible conflicto de huella, limpiando...'
+⚠️  Posible conflicto de huella, limpiando...
++ ssh-keygen -f /home/markmur88/.ssh/known_hosts -R 80.78.30.242
++ '[' -z '5.2.37(1)-release' ']'
++ REMOTE_USER=root
++ APP_USER=markmur88
++ REPO_GIT=https://github.com/markmur90/api_bank_h2.git
++ DB_NAME=mydatabase
++ DB_USER=markmur88
++ DB_PASS=Ptf8454Jd55
++ EMAIL_SSL=netghostx90@protonmail.com
++ REPO_DIR=api_bank_h2
++ IP_VPS=80.78.30.242
++ PORT_VPS=22
++ SSH_KEY=/home/markmur88/.ssh/vps_njalla_nueva
++ echo '📦 Iniciando despliegue en 80.78.30.242…'
+📦 Iniciando despliegue en 80.78.30.242…
++ set -e -x
++ apt-get update
+Leyendo lista de paquetes...
+E: No se pudo abrir el fichero de bloqueo «/var/lib/apt/lists/lock» - open (13: Permiso denegado)
+E: No se pudo bloquear el directorio /var/lib/apt/lists/
+W: Se produjo un problema al desligar el fichero /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permiso denegado)
+W: Se produjo un problema al desligar el fichero /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permiso denegado)
+[1;31m❌ Fallo final en despliegue remoto. Consulta logs en /home/markmur88/scripts/.logs/despliegue/deploy_njalla_.log[0m

@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -30,7 +30,7 @@ set -euo pipefail
 
 echo "📡 Sincronizando VPS con GitHub..."
 cd ~/api_bank_heroku
-source ~/envAPP/bin/activate
+source ~/envSIM/bin/activate
 
 # # Verificar y stashear si hay cambios locales
 # if ! git diff --quiet || ! git diff --cached --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
@@ -50,11 +50,16 @@ python3 manage.py collectstatic --noinput
 echo "🔁 Reiniciando servicios..."
 sudo supervisorctl restart coretransapi
 
-sudo systemctl reload nginx
+# Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 echo "✅ Servicios reiniciados. Estado:"
 
 echo "📋 Estado del servicio coretransapi:"
 sudo supervisorctl status coretransapi
-echo "📄 Últimos logs de error:"
-tail -n 10 /var/log/supervisor/coretransapi.err.log
+# echo "📄 Últimos logs de error:"
+# tail -n 10 /var/log/supervisor/coretransapi.err.log

@@ -2917,7 +2917,7 @@ temp/staging_markmur/config/gunicorn_staging.conf.py
 temp/staging_markmur/config/help.md
 temp/staging_markmur/config/supervisor_staging.conf
 temp/staging_markmur/config/torrc_staging
-temp/staging_markmur/envAPP_staging/
+temp/staging_markmur/envSIM_staging/
 temp/staging_markmur/logs/
 temp/staging_markmur/scripts/
 temp/staging_markmur/scripts/deploy_staging.sh
@@ -3485,7 +3485,7 @@ individual files in /usr/share/doc/*/copyright.
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 🌐 Entrando en directorio remoto: /home/markmur88/api_bank_heroku
-🔧 Activando entorno virtual en VPS: /home/markmur88/envAPP
+🔧 Activando entorno virtual en VPS: /home/markmur88/envSIM
 🔁 Reiniciando servicios en VPS...
 ⚠️ Servicio 'coretransapi' no está registrado en supervisor. Saltando reinicio...
 ✅ Comandos remotos completados.

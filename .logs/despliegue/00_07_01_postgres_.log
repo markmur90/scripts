@@ -1,0 +1,7 @@
+
+📅 Fecha de ejecución: 2025-08-15 13:34:54
+📄 Script: 00_07_01_postgres.sh
+═══════════════════════════════════════════
+🔍 Verificando PostgreSQL...
+📦 Instalando dependencias...
+[7;30m✅ Base de datos y usuario listos.[0m

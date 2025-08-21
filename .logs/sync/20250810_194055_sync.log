@@ -1,0 +1,133 @@
+🆕 [H2] Proyecto local: /home/markmur88/api_bank_h2
+🧹 [H2] Eliminando patrones excluidos en VPS...
+🗑 [H2] Borrando: *.zip
+🗑 [H2] Borrando: *.db
+🗑 [H2] Borrando: *.vscode
+🗑 [H2] Borrando: __pycache__
+🗑 [H2] Borrando: temp
+🔄 [H2] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/authentication/migrations/0001_initial.py
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/configuraciones_api/migrations/0001_initial.py
+api/core/
+api/core/migrations/
+api/core/migrations/0001_initial.py
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/migrations/0001_initial.py
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 15.025 bytes  received 374 bytes  2.799,82 bytes/sec
+total size is 23.446.702  speedup is 1.522,61
+✅ [H2] Sincronización completada.
+🆕 [HK] Proyecto local: /home/markmur88/api_bank_heroku
+🧹 [HK] Eliminando patrones excluidos en VPS...
+🗑 [HK] Borrando: *.zip
+🗑 [HK] Borrando: *.db
+🗑 [HK] Borrando: *.vscode
+🗑 [HK] Borrando: __pycache__
+🗑 [HK] Borrando: temp
+🗑 [HK] Borrando: z_njalla
+🗑 [HK] Borrando: tmp
+🗑 [HK] Borrando: servers
+🗑 [HK] Borrando: prompts.txt
+🗑 [HK] Borrando: Problema.md
+🔄 [HK] Iniciando rsync local→VPS...
+sending incremental file list
+./
+api/
+api/authentication/
+api/authentication/migrations/
+api/configuraciones_api/
+api/configuraciones_api/migrations/
+api/core/
+api/core/migrations/
+api/core/templatetags/
+api/gpt4/
+api/gpt4/conexion/
+api/gpt4/migrations/
+api/gpt4/services/
+config/
+config/settings/
+middleware/
+
+sent 15.924 bytes  received 154 bytes  3.572,89 bytes/sec
+total size is 23.192.531  speedup is 1.442,50
+✅ [HK] Sincronización completada.
+🆕 [SM] Proyecto local: /home/markmur88/Simulador
+🧹 [SM] Eliminando patrones excluidos en VPS...
+🗑 [SM] Borrando: *.zip
+🗑 [SM] Borrando: *.db
+🗑 [SM] Borrando: *.vscode
+🗑 [SM] Borrando: __pycache__
+🗑 [SM] Borrando: temp
+🗑 [SM] Borrando: z_njalla
+🗑 [SM] Borrando: tmp
+🗑 [SM] Borrando: servers
+🗑 [SM] Borrando: prompts.txt
+🗑 [SM] Borrando: Problema.md
+🗑 [SM] Borrando: pendientes.txt
+🗑 [SM] Borrando: *.devcontainer
+🗑 [SM] Borrando: datos_sensibles.txt
+🗑 [SM] Borrando: *.codesandbox
+🗑 [SM] Borrando: chatgpt.md
+🗑 [SM] Borrando: certs
+🗑 [SM] Borrando: 01_full0.sh
+🔄 [SM] Iniciando rsync local→VPS...
+sending incremental file list
+logs/gunicorn_error.log
+tor_data/
+tor_data/cached-microdescs
+tor_data/cached-microdescs.new
+
+sent 2.658.926 bytes  received 43.055 bytes  284.419,05 bytes/sec
+total size is 46.968.828  speedup is 17,38
+✅ [SM] Sincronización completada.
+🆕 [SC] Proyecto local: /home/markmur88/scripts
+🧹 [SC] Eliminando patrones excluidos en VPS...
+🗑 [SC] Borrando: *.zip
+🗑 [SC] Borrando: *.db
+🗑 [SC] Borrando: *.vscode
+🗑 [SC] Borrando: __pycache__
+🗑 [SC] Borrando: temp
+🗑 [SC] Borrando: z_njalla
+🗑 [SC] Borrando: tmp
+🗑 [SC] Borrando: servers
+🗑 [SC] Borrando: prompts.txt
+🗑 [SC] Borrando: Problema.md
+🗑 [SC] Borrando: pendientes.txt
+🗑 [SC] Borrando: *.devcontainer
+🗑 [SC] Borrando: datos_sensibles.txt
+🗑 [SC] Borrando: *.codesandbox
+🗑 [SC] Borrando: chatgpt.md
+🗑 [SC] Borrando: certs
+🗑 [SC] Borrando: 01_full0.sh
+🗑 [SC] Borrando: zbk
+🗑 [SC] Borrando: .git
+🗑 [SC] Borrando: .git/
+🔄 [SC] Iniciando rsync local→VPS...
+sending incremental file list
+./
+.logs/01_full_deploy/full_deploy.log
+.logs/despliegue/00_07_postgres_.log
+.logs/despliegue/00_08_migraciones_.log
+.logs/despliegue/00_14_sincronizacion_archivos_.log
+.logs/sync/
+.logs/sync/20250810_194055_sync.log
+
+sent 39.132 bytes  received 52.518 bytes  14.100,00 bytes/sec
+total size is 323.339.302  speedup is 3.527,98
+✅ [SC] Sincronización completada.
+📡 Ejecutando comandos remotos en el VPS...
+🎉 Todo listo, sincronizaciones y despliegue en VPS finalizados.

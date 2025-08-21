@@ -23,7 +23,7 @@ NC='\033[0m' # No Color
 PROJECT_BASE_DIR="/home/markmur88"
 SCRIPTS_DIR="$PROJECT_BASE_DIR/scripts"
 AP_H2_DIR="$PROJECT_BASE_DIR/api_bank_h2"
-VENV_PATH="$PROJECT_BASE_DIR/envAPP"
+VENV_PATH="$PROJECT_BASE_DIR/envSIM"
 BACKUP_DIR="$PROJECT_BASE_DIR/backup/zip"
 
 # Variables de optimización
@@ -401,7 +401,7 @@ create_optimized_deploy_script() {
 
 # Variables
 PROJECT_DIR="/home/markmur88/api_bank_h2"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 BACKUP_DIR="/home/markmur88/backup/zip"
 
 # Colores

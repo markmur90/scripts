@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -81,7 +81,7 @@ trap '{
     --certfile="$CERT_CRT" \
     --keyfile="$CERT_KEY" \
     --bind 0.0.0.0:8443 \
-    --workers 3 \
+    --workers 4 \
     --timeout 300 \
     --log-file - >> "$PROCESS_LOG" 2>&1 &
 } >> "$PROCESS_LOG" 2>&1

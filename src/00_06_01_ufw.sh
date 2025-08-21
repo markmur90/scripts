@@ -33,9 +33,9 @@ INBOUND_RULES=(
   "9100/tcp:Sup Sim"
   "9181/tcp:Sim local"
   # extras
-  "8001/tcp:Extra"  "8080/tcp:Extra"  "9001/tcp:Extra"
-  "9050/tcp:Extra"  "9052/tcp:Extra"  "9053/tcp:Extra"
-  "9054/tcp:Extra"  "9180/tcp:Extra"
+  # "8001/tcp:Extra"  "8080/tcp:Extra"  "9001/tcp:Extra"
+  # "9050/tcp:Extra"  "9052/tcp:Extra"  "9053/tcp:Extra"
+  # "9054/tcp:Extra"  "9180/tcp:Extra"
 )
 
 OUTBOUND_RULES=(

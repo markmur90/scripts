@@ -410,7 +410,7 @@ Este documento analiza los scripts más críticos del proyecto, identificando su
 Todos los scripts siguen el mismo patrón de variables:
 ```bash
 AP_H2_DIR="/home/markmur88/api_bank_h2"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 # ... más variables
 ```

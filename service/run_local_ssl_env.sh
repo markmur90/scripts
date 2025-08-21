@@ -3,7 +3,7 @@
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 BACKU_DIR="$SCRIPTS_DIR/backup"
 CERTS_DIR="$SCRIPTS_DIR/certs"
@@ -29,7 +29,7 @@ BASE_DIR="$AP_H2_DIR"
 set -euo pipefail
 
 echo "🔐 Activando entorno virtual..."
-source "/home/markmur88/Documentos/Entorno/envAPP/bin/activate"
+source "/home/markmur88/Documentos/Entorno/envSIM/bin/activate"
 
 echo "🌍 Estableciendo entorno local HTTPS con certificados autofirmados..."
 

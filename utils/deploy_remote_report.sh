@@ -5,7 +5,7 @@ set -e -x
 AP_H2_DIR="/home/markmur88/api_bank_h2"
 AP_BK_DIR="/home/markmur88/api_bank_h2_BK"
 AP_HK_DIR="/home/markmur88/api_bank_heroku"
-VENV_PATH="/home/markmur88/envAPP"
+VENV_PATH="/home/markmur88/envSIM"
 SCRIPTS_DIR="/home/markmur88/scripts"
 LOG_DIR="$SCRIPTS_DIR/.logs/00_18_05_deploy_update"
 
@@ -20,7 +20,7 @@ VPS_USER="${1:-markmur88}"
 VPS_IP="${2:-$IP_VPS}"
 SSH_KEY="${3:-/home/markmur88/.ssh/vps_njalla_nueva}"
 PROYECTO_DIR="/home/$VPS_USER/api_bank_heroku"
-VENV_DIR="/home/$VPS_USER/envAPP"
+VENV_DIR="/home/$VPS_USER/envSIM"
 
 echo "📅 $(date '+%Y-%m-%d %H:%M:%S')"
 echo "📄 Script: $SCRIPT_NAME"
@@ -60,7 +60,7 @@ cd /home/markmur88/api_bank_heroku || exit 1
 
 echo ""
 echo "🐍 Activando entorno virtual..."
-source /home/markmur88/envAPP/bin/activate
+source /home/markmur88/envSIM/bin/activate
 reporte_estado $? "Activación de entorno virtual"
 
 echo ""
@@ -97,7 +97,12 @@ reporte_estado $? "Chequeo configuración Nginx"
 
 echo ""
 echo "♻️ Recargando Nginx y PostgreSQL..."
-sudo systemctl reload nginx
+# Instalar nginx
+sudo apt update && sudo apt install nginx -y
+
+# Iniciar y habilitar
+sudo systemctl start nginx
+sudo systemctl enable nginx
 sudo systemctl restart nginx
 sudo systemctl restart postgresql
 reporte_estado $? "Recarga Nginx y PostgreSQL"

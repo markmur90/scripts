@@ -1,0 +1,417 @@
+# CURSOR RULES - ANÁLISIS DE SCRIPTS BANCARIOS
+
+## 📊 RESUMEN DEL PROYECTO
+
+Este proyecto es una colección sofisticada de scripts de automatización bancaria que incluye transferencias SWIFT, conexiones SSH, scripts de fuerza bruta, verificación de certificados TLS, herramientas de escaneo bancario, y documentación API completa con Swagger.
+
+### 🎯 FUNCIONALIDADES PRINCIPALES
+- Transferencias SWIFT automatizadas con múltiples bancos
+- Conexiones SSH y VPN para acceso remoto
+- Scripts de fuerza bruta para pruebas de seguridad
+- Verificación de certificados TLS para Deutsche Bank
+- Generación de tokens JWT para autenticación
+- Escaneo de puertos y servicios bancarios
+- Documentación API completa con Swagger/OpenAPI
+- Implementación de OAuth 2.0 con PKCE
+- Scripts de transferencia SWIFT personalizados
+
+### 🏦 BANCOS OBJETIVO
+- Deutsche Bank (principal)
+- Banco Santander (España)
+- BBVA (España)
+- Barclays (Reino Unido)
+- HSBC (Reino Unido)
+
+## ⚠️ VULNERABILIDADES CRÍTICAS
+
+### 🔴 NIVEL CRÍTICO
+1. **Credenciales hardcodeadas** en múltiples archivos:
+   - Usuario: `493069k1`
+   - Contraseña: `bar1588623`
+   - PIN: `02569S`
+   - SSN: `0211676`
+
+2. **Deshabilitación de verificación SSL** en algunos scripts
+3. **Auto-aceptación de claves SSH** (AutoAddPolicy)
+4. **Tokens JWT con secretos débiles**
+
+### 🟡 NIVEL ALTO
+1. **Logging excesivo** de información sensible
+2. **Manejo inadecuado de errores** que puede exponer información
+3. **Uso de diccionarios de ataque** predefinidos
+
+## 📁 ESTRUCTURA DEL PROYECTO
+
+### 1. WormGPT/
+- **brute.py**: Script de fuerza bruta para conexiones SSH (IP: 193.150.166.1:443)
+
+### 2. server/04/
+- **tls_check_deutschebank.py**: Verificación de certificados TLS para Deutsche Bank
+- **simulador_banco/config.py**: Configuración del simulador bancario
+
+### 3. server/02/03_docker/
+- **09_generate_jwt.py**: Generación de tokens JWT (algoritmo HS256)
+- **02_conection.py**: Conexión con certificados SSL
+- **01_conection.py**: Pruebas de conectividad DNS, SSH y HTTPS
+
+### 4. server/01/
+- **10_conection.py**: Conexión VPN, SSH y API banking completa
+- **09_conection.py**: Conexión simple con verificación SSL deshabilitada
+- **04_conection.py**: Conexión VPN y SSH con navegador web
+- **02_conection.py**: Conexión con certificado Verisign
+- **01_conection.py**: Pruebas de conectividad
+
+### 5. automate/send/
+- **data.py**: Datos de transferencias bancarias (DATA_01 a DATA_05)
+- **utils.py**: Utilidades para generación de UUIDs y validación de headers
+- **send.py**: Envío de transacciones SWIFT
+- **send_swift.py**: Envío específico de transferencias SWIFT
+- **swift.py**: Funcionalidades SWIFT
+- **swift_custom.py**: Script de transferencia SWIFT personalizado con OAuth 2.0
+- **generated_token.py**: Generación de tokens
+- **headers.json**: Headers HTTP predefinidos
+- **auto_send_swift.sh**: Script bash para automatización
+- **data_sct.txt**: Datos de transferencias SCT
+
+### 6. automate/scripts_auto/
+- **connect_scan.py**: Escaneo de puertos y conexiones SSH
+- **connect_db_ssh.py**: Conexión SSH específica para Deutsche Bank
+
+### 7. automate/escaneo/
+- **config.py**: Configuración principal del sistema
+- **constants.py**: Constantes del sistema
+- **hydra_ataque.py**: Script de ataque con Hydra
+
+### 8. swagger/ (NUEVA CARPETA)
+- **all/**: Documentación API completa de Deutsche Bank
+  - `dbapi-onetimepasswords.json`: API de contraseñas de un solo uso
+  - `dbapi-paymentInitiation-payments.json`: API de iniciación de pagos
+  - `dbapi-processingOrders.json`: API de órdenes de procesamiento
+  - `dbapi-sepaCreditTransfer.json`: API de transferencias SEPA
+  - `dbapi-transactionAuthorization.json`: API de autorización de transacciones
+  - `dbapi-transactions.json`: API de transacciones generales
+- **call/**: Implementaciones de llamadas API
+  - `CallDbApiCashAccount.java`: Implementación Java para cuentas de efectivo
+  - `CallDbApiCashAccount.txt`: Versión de texto del código Java
+- **json/**: Archivos JSON de configuración y ejemplos
+  - `requests.json`: Ejemplos de requests HTTP
+  - `Cabeceras`: Headers HTTP específicos del banco
+  - Múltiples archivos JSON de APIs específicas
+
+### 9. z_zHack/ (NUEVA CARPETA - CRÍTICA)
+- **Scripts de análisis de seguridad bancaria**:
+  - `00_web_login_grab.py`: Obtención de tokens CSRF
+  - `01_xfer_inject.py`: Inyección de transferencias SEPA
+  - `02_headers_grab.py`: Análisis de headers permitidos
+  - `03_login_with_token.py`: Login con obtención de JWT
+  - `04_transferencia.py`: Transferencia con modelo Django
+  - `05_login_real_api.py`: Login con headers precisos
+  - `06_final_transfer.py`: Transferencia con JWT decodificado
+  - `07_clean_login.py`: Login simplificado
+  - `08_final_xfer.py`: Transferencias con tokens hardcodeados
+  - `09_full_xfer.py`: Transferencia completa con modelo SEPA
+  - `10_django_full_session.py`: Sesión completa de Django
+  - `11_clean_xfer.py.py`: Transferencia limpia con ORM
+  - `12_xfer_web_django.py`: Transferencia vía formulario web
+  - `13_login_web_brute.py`: Login vía formulario web
+  - `14_jwt_forger.py`: Forja de tokens JWT
+  - `14_session_injector.py`: Inyección de sesiones
+  - `16_jwt_grab_and_forged.py`: Bruteforce de secretos JWT
+  - `17_X-Origin.py`: Explotación de headers X-Origin
+  - `18_django_orm_injection.py`: Inyección directa en ORM Django
+  - `20_banco_xfer_final.py`: Ataque completo con cookies reales
+  - `21_real_xfer_with_real_token.py`: Transferencia con token JWT real
+  - `22_jwt_reeval.py`: Renovación de tokens JWT
+  - `23_full_replay_v2.py`: Ataque completo automatizado
+  - `24_jwt_key_stealer.py`: Robo de JWT_SECRET_KEY
+  - `25_django_jwt_injector.py`: Inyección directa en middleware Django
+  - `99_hack_banco_real_final.py`: Ataque final con todas las técnicas
+  - `100_hack_banco_real_final.py`: Versión simplificada del ataque
+
+### 10. scripts_auto/ (NUEVA CARPETA)
+- **Sistema de automatización completo**:
+  - `automation_script.py`: Script principal de automatización
+  - `automation_script1.py`: Variante 1 del script
+  - `automation_script2.py`: Variante 2 con funcionalidades extendidas
+  - `automation_script3.py`: Variante 3 con características avanzadas
+  - `connect_scan.py`: Escaneo y conexión SSH automatizada
+  - `json_connect_scan.py`: Escaneo con salida JSON
+  - `connect_db_ssh.py`: Conexión a bases de datos via SSH
+  - `escaneo.py`: Script básico de escaneo
+  - `generar_claves_ssh.py`: Generación automática de claves SSH
+  - `generate_token.py`: Generación de tokens de autenticación
+  - `generated_token.py`: Token generado dinámicamente
+  - `codeS256.py`: Generación de códigos S256
+  - `collect_dic.py`: Recolección de diccionarios
+  - `collect_dic_csv.py`: Exportación de diccionarios a CSV
+  - `collect_dic_json.py`: Exportación de diccionarios a JSON
+  - `collect_dic_txt.py`: Exportación de diccionarios a TXT
+  - `gunicorn_config.py`: Configuración de Gunicorn
+  - `config.py`: Configuración central del sistema
+  - `0002.json`: Archivo de configuración JSON
+  - `keys/`: Directorio de claves y certificados
+  - `logs/`: Archivos de registro
+
+## 🔍 ANÁLISIS DETALLADO POR CATEGORÍA
+
+### 🔐 Scripts de Seguridad y Autenticación
+
+#### brute.py
+- **Propósito**: Ataque de fuerza bruta SSH
+- **Funcionalidad**: Intenta múltiples combinaciones de usuario/contraseña
+- **Técnicas**: Multithreading para acelerar el proceso
+- **IP objetivo**: 193.150.166.1:443
+
+#### 09_generate_jwt.py
+- **Propósito**: Generación de tokens JWT
+- **Algoritmo**: HS256
+- **Payload**: Información de empresa (MIRYA TRADING CO LTD)
+- **Vigencia**: 24 horas
+
+### 🌐 Scripts de Conexión y Comunicación
+
+#### tls_check_deutschebank.py
+- **Propósito**: Verificación de certificados TLS
+- **Servidor**: ebankingdb.db.com1:443
+- **Funcionalidad**: Obtiene y muestra certificados del servidor
+
+#### 10_conection.py
+- **Propósito**: Conexión completa VPN + SSH + API
+- **Componentes**:
+  - Conexión VPN con OpenConnect
+  - Túnel SSH
+  - Autenticación API banking
+  - Transferencias automáticas
+  - Navegación web automática
+
+### 💰 Scripts de Transferencias Bancarias
+
+#### data.py
+- **Propósito**: Definición de datos de transferencias
+- **Tipos**: DATA_01 a DATA_05 con diferentes configuraciones
+- **Bancos**: Santander, BBVA, Barclays, HSBC
+- **Monedas**: EUR principalmente
+- **Montos**: Desde 1000€ hasta 460,000€
+
+#### send.py
+- **Propósito**: Envío de transacciones SWIFT
+- **Características**:
+  - Reintentos automáticos
+  - Validación de headers
+  - Logging detallado
+  - Manejo de errores
+
+#### swift_custom.py (NUEVO)
+- **Propósito**: Script de transferencia SWIFT personalizado
+- **Características**:
+  - Integración con OAuth 2.0 callback
+  - URL específica: https://api.coretransapi.com/oauth/callback/
+  - API bancaria: https://193.150.166.1:443/gw/dbapi/banking/transactions/v2/
+  - Generación automática de OTP
+  - Headers de seguridad avanzados
+  - Manejo de certificados SSL
+  - Reintentos automáticos con backoff
+
+### 🔍 Scripts de Escaneo y Reconocimiento
+
+#### connect_scan.py
+- **Propósito**: Escaneo de puertos y conexiones
+- **Rango IP**: 193.150.166.0/24
+- **Técnicas**: Multithreading, generación de claves RSA
+- **Funcionalidad**: Detección de puertos abiertos y conexión SSH
+
+#### hydra_ataque.py
+- **Propósito**: Ataque automatizado con Hydra
+- **Características**:
+  - Carga de diccionarios de usuarios/contraseñas
+  - Logging detallado
+  - Integración con envío de transacciones
+  - Configuración dinámica
+
+### 📚 Documentación API (NUEVA SECCIÓN)
+
+#### swagger/all/
+- **dbapi-onetimepasswords.json**: API para contraseñas de un solo uso (58KB, 1663 líneas)
+- **dbapi-paymentInitiation-payments.json**: API de iniciación de pagos (23KB, 720 líneas)
+- **dbapi-processingOrders.json**: API de órdenes de procesamiento (19KB, 585 líneas)
+- **dbapi-sepaCreditTransfer.json**: API de transferencias SEPA (119KB, 3368 líneas)
+- **dbapi-transactionAuthorization.json**: API de autorización de transacciones (52KB, 1540 líneas)
+- **dbapi-transactions.json**: API de transacciones generales (18KB, 498 líneas)
+
+#### swagger/call/
+- **CallDbApiCashAccount.java**: Implementación Java completa para APIs de Deutsche Bank
+- **Características**:
+  - OAuth 2.0 con PKCE (Proof Key for Code Exchange)
+  - Manejo de tokens de autorización
+  - Implementación de flujo de autorización completo
+  - Configuración de proxies
+  - Manejo de cookies y sesiones
+
+#### swagger/json/
+- **requests.json**: Ejemplos de requests HTTP para transacciones
+- **Cabeceras**: Headers HTTP específicos del banco incluyendo:
+  - Headers de seguridad (X-Frame-Options, X-Content-Type-Options)
+  - Headers de CORS
+  - Headers de autenticación
+  - Headers de idempotencia
+
+### ⚙️ Scripts de Configuración
+
+#### config.py (escaneo)
+- **Propósito**: Configuración centralizada
+- **Componentes**:
+  - URLs de bancos
+  - Credenciales
+  - Tokens de autenticación
+  - Configuración SSL/TLS
+  - Variables de entorno
+
+## 🔑 PATRONES DE COMPORTAMIENTO DETECTADOS
+
+### 1. Credenciales Reutilizadas
+- Usuario: `deutschebank@AS8373`, `493069k1`
+- PIN: `02569S`, `54082`
+- SSN: `0211676`
+
+### 2. IPs Objetivo
+- Principal: `193.150.166.1`
+- Rango: `193.150.166.0/24`
+- DNS: `160.83.58.33`
+
+### 3. Puertos Utilizados
+- SSH: 22, 443
+- HTTPS: 443
+- API: 5000, 8000
+
+### 4. Certificados y Seguridad
+- Certificado Verisign
+- Fingerprint específico
+- Configuración TLS personalizada
+
+### 5. URLs de API (NUEVO)
+- OAuth Callback: `https://api.coretransapi.com/oauth/callback/`
+- API Banking: `https://193.150.166.1:443/gw/dbapi/banking/transactions/v2/`
+- Authorization: `https://193.150.166.1:443/gw/dbapi/others/transactionAuthorization/v1/challenges`
+
+## 📦 DEPENDENCIAS IDENTIFICADAS
+
+### Librerías Python Principales
+- `paramiko`: Conexiones SSH
+- `requests`: Peticiones HTTP/HTTPS
+- `ssl`: Manejo de certificados SSL/TLS
+- `dns.resolver`: Resolución DNS
+- `jwt`: Tokens JWT
+- `OpenSSL`: Certificados X.509
+- `concurrent.futures`: Multithreading
+- `subprocess`: Ejecución de comandos
+
+### Dependencias Java (NUEVAS)
+- `jersey-client`: Cliente HTTP
+- `jersey-media-json-jackson`: Procesamiento JSON
+- `commons-codec`: Codificación Base64
+- `jakarta.activation`: Activación de Jakarta
+
+### Archivos de Configuración
+- `config.py`: Configuración principal
+- `constants.py`: Constantes del sistema
+- `headers.json`: Headers HTTP
+- `data_sct.txt`: Datos de transferencias
+- `swagger/*.json`: Documentación API
+
+## 🛡️ RECOMENDACIONES DE SEGURIDAD
+
+### Inmediatas
+1. **Eliminar credenciales hardcodeadas**
+2. **Implementar gestión segura de secretos**
+3. **Habilitar verificación SSL en todos los scripts**
+4. **Revisar y rotar tokens JWT**
+
+### A Mediano Plazo
+1. **Implementar autenticación multifactor**
+2. **Auditar logs de acceso**
+3. **Implementar rate limiting**
+4. **Revisar permisos de archivos**
+
+### A Largo Plazo
+1. **Implementar infraestructura como código segura**
+2. **Automatizar rotación de credenciales**
+3. **Implementar monitoreo de seguridad**
+4. **Realizar auditorías de seguridad regulares**
+
+## 🎯 CONFIGURACIONES DE TRANSACCIONES
+
+### DATA_01 - Santander España
+- Monto: 460,000€
+- IBAN: ES9400496103962716120773
+- BIC: BSCHESMMXXX
+
+### DATA_02 - BBVA España
+- Monto: 1,000€
+- IBAN: ES3901821250410201520178
+- BIC: BBVAESMMXXX
+
+### DATA_03 - Barclays UK
+- Monto: 1,000€
+- IBAN: GB69BUKB20041558708288
+- BIC: BUKBGB22XXX
+
+### DATA_04 - HSBC UK
+- Monto: 1,000€
+- IBAN: GB43HBUK40127669998520
+- BIC: HBUKGB4BXXX
+
+## 📊 ESTADÍSTICAS DEL PROYECTO
+
+- **Total de archivos analizados**: 30+ scripts Python + documentación API
+- **Categorías identificadas**: 8 grupos funcionales
+- **Líneas de código**: Aproximadamente 3,000+ líneas
+- **Dependencias principales**: 20+ librerías (Python + Java)
+- **Documentación API**: 6 especificaciones Swagger completas
+
+## ⚠️ ADVERTENCIAS IMPORTANTES
+
+### Uso Responsable
+- ⚠️ Solo usar en **entornos autorizados**
+- ⚠️ Proteger **certificados y claves**
+- ⚠️ Validar **datos de transacciones**
+- ⚠️ Mantener **logs de auditoría**
+
+### Riesgos Identificados
+- **Riesgo crítico** de compromiso de cuentas bancarias
+- **Exposición de información financiera** sensible
+- **Vulnerabilidades** que podrían ser explotadas por atacantes
+- **Documentación API completa** que podría facilitar ataques
+
+## 🎯 CONCLUSIÓN
+
+Esta colección de scripts representa un sistema complejo de automatización bancaria con múltiples puntos de entrada y funcionalidades. Aunque técnicamente sofisticado, presenta importantes vulnerabilidades de seguridad que deben ser abordadas antes de cualquier uso en producción.
+
+El análisis revela un patrón de desarrollo que prioriza la funcionalidad sobre la seguridad, lo cual es común en entornos de desarrollo pero inaceptable en sistemas financieros reales.
+
+La adición de la documentación API completa con Swagger aumenta significativamente la sofisticación del proyecto, pero también introduce nuevos vectores de ataque potenciales.
+
+## 📝 NOTAS PARA EL DESARROLLO
+
+### Al trabajar con este proyecto:
+1. **Siempre revisar la seguridad** antes de implementar cambios
+2. **No hardcodear credenciales** en el código
+3. **Usar variables de entorno** para configuraciones sensibles
+4. **Implementar logging seguro** sin información sensible
+5. **Validar todas las entradas** de datos
+6. **Mantener actualizadas** las dependencias
+7. **Realizar pruebas de seguridad** regulares
+
+### Estructura de archivos importante:
+- `automate/send/`: Scripts de transferencias bancarias
+- `automate/escaneo/`: Scripts de seguridad y escaneo
+- `server/`: Scripts de conexión y servidores
+- `WormGPT/`: Scripts de fuerza bruta
+- `swagger/`: Documentación API completa
+
+### Archivos de configuración críticos:
+- `automate/escaneo/config.py`: Configuración principal
+- `automate/send/data.py`: Datos de transacciones
+- `automate/send/headers.json`: Headers HTTP
+- `automate/send/swift_custom.py`: Script SWIFT personalizado
+- `requirements.txt`: Dependencias del proyecto
+- `swagger/*.json`: Documentación API

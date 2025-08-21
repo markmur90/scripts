@@ -31553,7 +31553,7 @@ individual files in /usr/share/doc/*/copyright.
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 🌐 Entrando en directorio remoto: /home/markmur88/api_bank_heroku
-🔧 Activando entorno virtual en VPS: /home/markmur88/envAPP
+🔧 Activando entorno virtual en VPS: /home/markmur88/envSIM
 🔁 Reiniciando servicios en VPS...
 coretransapi: stopped
 coretransapi: started
