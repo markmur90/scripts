@@ -101,27 +101,137 @@ if ! command -v tor >/dev/null 2>&1; then
   }
 fi
 
-TORRC_PATH="Ptf8454Jd55"
-TOR_PROC=$(pgrep -af tor | grep -v grep | head -n 1 || true)
-
-if [[ -z "$TOR_PROC" ]]; then
-  echo "No se encontró proceso Tor activo. Abortando."
-  exit 1
-fi
-
-if echo "$TOR_PROC" | grep -q -- "-f"; then
-  TORRC_PATH=$(echo "$TOR_PROC" | grep -oP '(?<=-f )\S+')
-  echo "Tor usa archivo de configuración personalizado: $TORRC_PATH"
-else
-  TORRC_PATH="/etc/tor/torrc"
-  echo "Tor usa archivo de configuración por defecto: $TORRC_PATH"
-fi
-
-sudo cp "$TORRC_PATH" "${TORRC_PATH}.bak_$(date +%Y%m%d_%H%M%S)"
-echo "Backup de torrc creado."
-
 TOR_PASS="${TOR_PASS:-Ptf8454Jd55}"
 HASHED_PASS=$(tor --hash-password "$TOR_PASS" | tail -n 1)
+
+# Asegurar que Tor esté activo ahora y siempre (arranque automático y autoreinicio)
+ensure_tor_always_on() {
+  local unit=""
+  # Preferir explícitamente la unidad con instancia por defecto
+  if systemctl list-unit-files | awk '{print $1}' | grep -qx "tor@default.service"; then
+    unit="tor@default.service"
+  elif systemctl list-unit-files | awk '{print $1}' | grep -qx "tor.service"; then
+    unit="tor.service"
+  else
+    # Último recurso: intentar tor@default aunque no aparezca listado
+    unit="tor@default.service"
+  fi
+
+  # Solo aplicar drop-in de autoreinicio a unidades nativas (evitar SysV wrapper en tor.service)
+  if [ "$unit" = "tor@default.service" ]; then
+    sudo mkdir -p "/etc/systemd/system/${unit}.d"
+    sudo tee "/etc/systemd/system/${unit}.d/override.conf" >/dev/null <<'EOF'
+[Service]
+Restart=always
+RestartSec=5
+EOF
+  fi
+
+  sudo systemctl daemon-reload || true
+
+  # Intentar habilitar/arrancar la unidad seleccionada, con fallback
+  if ! sudo systemctl enable --now "$unit"; then
+    if [ "$unit" = "tor.service" ]; then
+      unit="tor@default.service"
+    else
+      unit="tor.service"
+    fi
+    # No crear drop-in si caemos a tor.service (posible SysV)
+    sudo systemctl daemon-reload || true
+    sudo systemctl enable --now "$unit"
+  fi
+
+  sleep 2
+
+  if ! systemctl is-active --quiet "$unit"; then
+    echo "❌ Tor no arrancó correctamente. Estado:"
+    systemctl status "$unit" --no-pager
+    exit 1
+  fi
+
+  echo "✔️ Tor activo y habilitado en arranque: $unit"
+}
+
+ensure_tor_always_on
+
+# Obtener la unidad de Tor a usar (eco de nombre de unidad completa)
+get_tor_unit() {
+  if systemctl list-unit-files | awk '{print $1}' | grep -qx "tor@default.service"; then
+    echo "tor@default.service"
+  elif systemctl list-unit-files | awk '{print $1}' | grep -qx "tor.service"; then
+    echo "tor.service"
+  else
+    # Fallback
+    echo "tor@default.service"
+  fi
+}
+
+ensure_torrc_file() {
+  local default_torrc="/etc/tor/torrc"
+  if [ ! -f "$default_torrc" ]; then
+    sudo mkdir -p "/etc/tor"
+    sudo tee "$default_torrc" >/dev/null <<EOF
+SOCKSPort 9050
+ControlPort 9051
+CookieAuthentication 0
+HashedControlPassword $HASHED_PASS
+EOF
+  fi
+  echo "$default_torrc"
+}
+
+TORRC_PATH=""
+TOR_PROC=$(pgrep -af -x tor | head -n1 || true)
+if [[ -z "$TOR_PROC" ]]; then
+  TOR_PROC=$(pgrep -af -x tor.real | head -n1 || true)
+fi
+
+if [[ -z "$TOR_PROC" ]]; then
+  # Crear torrc por defecto si no existe y arrancar servicio
+  TORRC_PATH=$(ensure_torrc_file)
+  unit_to_restart=$(get_tor_unit)
+  sudo systemctl try-reload-or-restart "$unit_to_restart" || sudo systemctl restart "$unit_to_restart" || true
+  sleep 2
+  TOR_PROC=$(pgrep -af -x tor | head -n1 || true)
+fi
+
+TOR_PID=$(echo "$TOR_PROC" | awk '{print $1}')
+if [[ "$TOR_PID" =~ ^[0-9]+$ ]] && [ -r "/proc/$TOR_PID/cmdline" ]; then
+  CMDLINE=$(tr '\0' ' ' < "/proc/$TOR_PID/cmdline")
+else
+  CMDLINE="$TOR_PROC"
+fi
+
+GET_NEXT=0
+for token in $CMDLINE; do
+  case "$token" in
+    --torrc-file=*)
+      TORRC_PATH="${token#*=}"; break ;;
+    -f)
+      GET_NEXT=1 ;;
+    -f*)
+      TORRC_PATH="${token#-f}"; break ;;
+    *)
+      if [ "$GET_NEXT" -eq 1 ]; then TORRC_PATH="$token"; break; fi ;;
+  esac
+done
+
+if [ -z "$TORRC_PATH" ] || [[ "$TORRC_PATH" == -* ]]; then
+  if [ -f "/etc/tor/torrc" ]; then
+    TORRC_PATH="/etc/tor/torrc"
+  elif [ -f "/usr/local/etc/tor/torrc" ]; then
+    TORRC_PATH="/usr/local/etc/tor/torrc"
+  else
+    # Crear uno por defecto
+    TORRC_PATH=$(ensure_torrc_file)
+  fi
+  echo "Tor usa archivo de configuración por defecto: $TORRC_PATH"
+else
+  echo "Tor usa archivo de configuración personalizado: $TORRC_PATH"
+fi
+
+[ -f "$TORRC_PATH" ] || { echo "❌ No existe $TORRC_PATH"; exit 1; }
+sudo cp "$TORRC_PATH" "${TORRC_PATH}.bak_$(date +%Y%m%d_%H%M%S)"
 
 replace_or_add_line() {
   local file="$1"
@@ -138,11 +248,18 @@ replace_or_add_line "$TORRC_PATH" "ControlPort" "9051"
 replace_or_add_line "$TORRC_PATH" "CookieAuthentication" "0"
 replace_or_add_line "$TORRC_PATH" "HashedControlPassword" "$HASHED_PASS"
 
-sudo systemctl enable tor
-sudo systemctl restart tor || exit 1
-sleep 3
+ensure_tor_always_on
+
+# Reiniciar Tor para aplicar cambios de torrc en la unidad correcta
+unit_to_restart=$(get_tor_unit)
+sudo systemctl try-reload-or-restart "$unit_to_restart" || sudo systemctl restart "$unit_to_restart"
+sleep 2
 
 echo "🔑 Autenticando con ControlPort..."
+# Asegurar netcat disponible para conectar al ControlPort
+if ! command -v nc >/dev/null 2>&1; then
+  sudo apt-get update && sudo apt-get install -y netcat-openbsd || true
+fi
 AUTH_CMD=$(printf 'AUTHENTICATE "%s"\r\nSIGNAL NEWNYM\r\nQUIT\r\n' "$TOR_PASS")
 CHECK=$(echo -e "$AUTH_CMD" | nc 127.0.0.1 9051 || true)
 
